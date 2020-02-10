@@ -1,0 +1,54 @@
+@white: #ffffff;
+@smoky-white: #fefefe; // #fcfcfd
+@light-black: #2f2f2f;
+
+@circe: 'Circe', 'Arial', sans-serif;
+@gotham: 'GothamPro', 'Arial', sans-serif;
+@font-size: 19px;
+@font-weight: 400;
+
+@mobile-width: 755px;
+@desktop-width: 1690px;
+@max-desktop-width: 1921px;
+
+@retina-dpi: 144dpi;
+@retina-dppx: 1.5dppx;
+
+@a: auto;
+
+@br: 1px solid red;
+
+.bred() {
+  border: 1px solid red;
+}
+
+.reset-list() {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.mn () {
+  max-width: none;
+  max-height: none;
+}
+
+.padding-inline(@value) {
+  padding-left: @value;
+  padding-right: @value;
+}
+
+.margin-inline(@value) {
+  margin-left: @value;
+  margin-right: @value;
+}
+
+.mp-reset(@margin; @padding) {
+  margin: @margin;
+  padding: @padding;
+}
+
+.b(@color) {
+  border: 1px solid @color;
+}
