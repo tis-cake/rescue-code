@@ -1,14 +1,11 @@
 @white: #ffffff;
-@smoky-white: #fefefe; // #fcfcfd
-@light-black: #2f2f2f;
 
+@myriad: 'Myriad Pro', 'Arial', sans-serif;
 @circe: 'Circe', 'Arial', sans-serif;
-@gotham: 'GothamPro', 'Arial', sans-serif;
-@font-size: 19px;
-@font-weight: 400;
+@roboto: 'Roboto', 'Arial', sans-serif;
+// @gotham: 'GothamPro', 'Arial', sans-serif;
 
 @mobile-width: 755px;
-@desktop-width: 1690px;
 @max-desktop-width: 1921px;
 
 @retina-dpi: 144dpi;
@@ -16,22 +13,18 @@
 
 @a: auto;
 
-@br: 1px solid red;
-
 .bred() {
   border: 1px solid red;
+}
+
+.b(@color) {
+  border: 1px solid @color;
 }
 
 .reset-list() {
   margin: 0;
   padding: 0;
-
   list-style: none;
-}
-
-.mn () {
-  max-width: none;
-  max-height: none;
 }
 
 .padding-inline(@value) {
@@ -47,8 +40,4 @@
 .mp-reset(@margin; @padding) {
   margin: @margin;
   padding: @padding;
-}
-
-.b(@color) {
-  border: 1px solid @color;
 }

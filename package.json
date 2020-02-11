@@ -1,13 +1,9 @@
 {
   "name": "rescue-code",
   "version": "1.0.0",
-  "description": ",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {},
   "devDependencies": {
     "autoprefixer": "^9.7.3",
     "browser-sync": "^2.26.7",
@@ -21,5 +17,18 @@
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^3.0.2",
     "gulp-webp": "^4.0.1"
-  }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tis-cake/rescue-code.git"
+  },
+  "author": "tis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tis-cake/rescue-code/issues"
+  },
+  "homepage": "https://github.com/tis-cake/rescue-code#readme"
 }
