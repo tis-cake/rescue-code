@@ -5,7 +5,8 @@ body {
   font-weight: 400;
 
   color: #000;
-  background-color: #e5e5e5;
+  // background-color: #e5e5e5;
+  background-color: #f9f9f9;
 }
 
 img {
@@ -115,33 +116,111 @@ input[type="radio"].visually-hidden {
 //   display: none;
 // }
 
-.btn {
-  box-sizing: border-box;
+.link-callback,
+.link-region {
+  position: relative;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  font-family: @myriad;
+  font-size: 18px;
+  font-weight: 400;
+  color: #161616;
 
-  // width: @d243px;
-  // height: @d55px;
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
 
-  text-align: center;
-  text-transform: uppercase;
-
-  // font-size: 0.9375vw;
-  // font-weight: 400;
-  // letter-spacing: 0.09px;
-
-  // color: @white;
-  // background-color: #14b250;
-
-  border: none;
-  border-radius: 19px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 }
 
-.btn:active {
-  padding: 0;
+.link-callback {
+  padding-right: 39px;
+  &::before {
+    top: @a;
+    bottom: -12px;
+    width: 100%;
+    height: 1px;
+    background-color: #9BB1FF;
+  }
+  &::after {
+    top: 2px;
+    width: 10px;
+    height: 17px;
+    right: 0px;
+
+    background-image: url('../img/svg/arrow-b.svg');
+  }
 }
+
+.link-region {
+  text-decoration-line: underline;
+  &::before {
+    top: -8px;
+    left: -55px;
+    width: 45px;
+    height: 45px;
+    background-image: url('../img/svg/region-point-b.svg');
+  }
+}
+
+.bg {
+  .link-callback,
+  .link-region {
+    font-family: @roboto;
+    font-weight: 700;
+    color: #fff;
+  }
+  .link-callback {
+    padding-right: 29px;
+    &::before {
+      bottom: -8px;
+      background-color: #fff;
+    }
+    &::after {
+      background-image: url('../img/svg/arrow-w.svg');
+    }
+  }
+}
+
+.subtitle-pink {
+  margin-bottom: 12px;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #C63067;
+}
+
+// .btn {
+//   box-sizing: border-box;
+
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+
+//   width: @d243px;
+//   height: @d55px;
+
+//   text-align: center;
+//   text-transform: uppercase;
+
+//   font-size: 0.9375vw;
+//   font-weight: 400;
+//   letter-spacing: 0.09px;
+
+//   color: @white;
+//   background-color: #14b250;
+
+//   border: none;
+//   border-radius: 19px;
+// }
+
+// .btn:active {
+//   padding: 0;
+// }
 
 // @media (max-width: @mobile-width) {
 //   .container {
