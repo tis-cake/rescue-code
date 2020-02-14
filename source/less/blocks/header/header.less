@@ -4,10 +4,10 @@
   z-index: 5;
   width: 100%;
 
-  margin-top: 25px;
+  margin-top: @d25px;
 
   .container {
-    width: 1542px;
+    width: 80.31vw; //1542px
   }
 }
 
@@ -29,12 +29,34 @@
 .header__phone {
   display: inline-block;
 
-  margin-bottom: 8px;
-  font-size: 24px;
+  margin-bottom: @d8px;
+  font-size: @d24px;
   font-weight: 500;
 }
 
 .header__phone-text {
-  font-size: 18px;
+  font-size: @d18px;
   font-weight: 300;
+}
+
+@media (max-width: @mobile-width) {
+}
+
+@media (min-width: @max-desktop-width) {
+  .header {
+    margin-top: 25px;
+    .container {
+      width: 1542px;
+    }
+  }
+
+  .header__phone {
+    margin-bottom: 8px;
+    font-size: 24px;
+  }
+
+  .header__phone-text {
+    font-size: 18px;
+    font-weight: 300;
+  }
 }

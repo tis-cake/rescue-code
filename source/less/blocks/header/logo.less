@@ -1,36 +1,66 @@
 .logo {
   position: relative;
 
-  width: 182px;
-  margin-top: 3px;
-  padding-left: 76px;
+  width: @d182px;
+  margin-top: @d3px;
+  padding-left: @d76px;
 
   &::before {
     content: '';
     position: absolute;
-    top: 6px;
-    left: 10px;
+    top: @d6px;
+    left: @d10px;
 
-    width: 50px;
-    height: 68px;
+    width: @d50px;
+    height: @d68px;
 
     background-image: url('../img/logo/logo-white.svg');
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 }
 
 .logo__title {
-  margin-bottom: 6px;
-  font-size: 30px;
+  margin-bottom: @d6px;
+  font-size: @d30px;
   font-weight: 600;
   // line-height: 36px;
 }
 
 .logo__description {
-  margin-left: 2px;
+  margin-left: @d2px;
 
   font-family: @roboto;
-  font-size: 15px;
+  font-size: @d15px;
   font-weight: 300;
-  line-height: 18px;
+  line-height: @d18px;
+}
+
+@media (max-width: @mobile-width) {
+}
+
+@media (min-width: @max-desktop-width) {
+  .logo {
+    width: 182px;
+    margin-top: 3px;
+    padding-left: 76px;
+    &::before {
+      top: 6px;
+      left: 10px;
+      width: 50px;
+      height: 68px;
+    }
+  }
+
+  .logo__title {
+    margin-bottom: 6px;
+    font-size: 30px;
+  }
+
+  .logo__description {
+    margin-left: 2px;
+    font-size: 15px;
+    line-height: 18px;
+  }
 }

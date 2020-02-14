@@ -2,57 +2,57 @@
   display: flex;
   .link-callback {
     align-self: flex-end;
-    margin-left: 85px;
-    margin-bottom: 28px;
+    margin-left: @d85px;
+    margin-bottom: @d28px;
   }
 }
 
 .features--without-icon {
   display: flex;
-  font-size: 20px;
+  font-size: @d20px;
   font-weight: 400;
   color: #262628;
 }
 
 .features__text-long {
-  margin-top: 18px;
+  margin-top: @d18px;
 }
 
 .features__text-big {
-  margin-left: 4px;
-  font-size: 40px;
+  margin-left: @d4px;
+  font-size: @d40px;
   font-weight: 700;
 }
 
 .features__text-small {
-  margin-top: 6px;
-  margin-left: 4px;
+  margin-top: @d6px;
+  margin-left: @d4px;
   // margin-left: 8px;
 }
 
 .features__list {
   display: flex;
   justify-content: space-between;
-  width: 530px;
-  font-size: 18px;
+  width: @d530px;
+  font-size: @d18px;
   font-weight: 300;
 }
 
 .features__item {
   position: relative;
-  width: 178px;
-  padding-left: 51px;
+  width: @d178px;
+  padding-left: @d51px;
 
   color: #262628;
 
   &::before {
     content: '';
     position: absolute;
-    top: 4px;
+    top: @d4px;
     left: 0;
 
-    width: 32px;
-    height: 32px;
+    width: @d32px;
+    height: @d32px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -63,20 +63,20 @@
   }
 
   &--call::before {
-    left: 8px;
+    left: @d8px;
     background-image: url("../img/features/call-b.svg");
   }
 }
 
 .features__title {
-  margin-bottom: 24px;
+  margin-bottom: @d24px;
   color: #3F5FD3;
 }
 
 .features__description {
-  width: 170px;
-  line-height: 22px;
-  font-weight: normal;
+  width: @d170px;
+  line-height: @d22px;
+  font-weight: 400;
 }
 
 .bg {
@@ -99,6 +99,60 @@
   }
 }
 
-// .features--white.features--without-icon {
-//   font-weight: 600;
-// }
+@media (max-width: @mobile-width) {
+}
+
+@media (min-width: @max-desktop-width) {
+  .features {
+    .link-callback {
+      margin-left: 85px;
+      margin-bottom: 28px;
+    }
+  }
+
+  .features--without-icon {
+    font-size: 20px;
+  }
+
+  .features__text-long {
+    margin-top: 18px;
+  }
+
+  .features__text-big {
+    margin-left: 4px;
+    font-size: 40px;
+  }
+
+  .features__text-small {
+    margin-top: 6px;
+    margin-left: 4px;
+  }
+
+  .features__list {
+    width: 530px;
+    font-size: 18px;
+  }
+
+  .features__item {
+    width: 178px;
+    padding-left: 51px;
+    &::before {
+      top: 4px;
+      left: 0;
+      width: 32px;
+      height: 32px;
+    }
+    &--call::before {
+      left: 8px;
+    }
+  }
+
+  .features__title {
+    margin-bottom: 24px;
+  }
+
+  .features__description {
+    width: 170px;
+    line-height: 22px;
+  }
+}
