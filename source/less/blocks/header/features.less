@@ -66,6 +66,15 @@
     left: @d8px;
     background-image: url("../img/features/call-b.svg");
   }
+
+  &--mef::before,
+  &--alpha::before {
+    top: -@d10px;
+    left: @d2px;
+    width: @d40px;
+    height: @d40px;
+    background-image: url("../img/features/research-b.svg");
+  }
 }
 
 .features__title {
@@ -74,7 +83,7 @@
 }
 
 .features__description {
-  width: @d170px;
+  // width: @d170px;
   line-height: @d22px;
   font-weight: 400;
 }
@@ -145,6 +154,13 @@
     &--call::before {
       left: 8px;
     }
+    &--mef::before,
+    &--alpha::before {
+      top: -10px;
+      left: 2px;
+      width: 40px;
+      height: 40px;
+    }
   }
 
   .features__title {
@@ -152,7 +168,7 @@
   }
 
   .features__description {
-    width: 170px;
+    // width: 170px;
     line-height: 22px;
   }
 }

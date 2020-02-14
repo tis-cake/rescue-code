@@ -46,3 +46,43 @@ $(document).ready(function () {
   $('.anyClass').liMarquee();
 
 });
+
+$(document).ready(function () {
+  var mySwiper = new Swiper('#program-swiper', {
+    slidesPerView: '3',
+    touchRatio: 1,
+    loop: false,
+    // centeredSlides: true,
+    spaceBetween: 40,
+    scrollbar: {
+      el: '.swiper-scrollbar',
+      draggable: true,
+      dragSize: 48
+    },
+     pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      renderBullet: function (index, className) {
+        return '<span class="' + className + '">' + (index + 1) + '</span>';
+      }
+    },
+    // slidesOffsetBefore: '40',
+
+    // freeMode: true,
+    // autoplay: {
+    //   delay: 3000,
+    //   disableOnInteraction: false,
+    // },
+    breakpoints: {
+      756: {
+        // direction: 'vertical',
+        slidesPerView: '3.4',
+        centeredSlides: false,
+        // spaceBetween: 35
+        spaceBetween: 40
+        // slidesOffsetBefore: '0',
+        // loop: false
+      }
+    }
+  });
+});
