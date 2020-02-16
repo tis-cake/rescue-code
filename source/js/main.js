@@ -49,37 +49,117 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   var programSwiperMain = new Swiper('#program-swiper', {
-    slidesPerView: '3',
-    touchRatio: 1,
+    slidesPerView: 3.5,
+    slidesOffsetBefore: 280,
+    spaceBetween: 32,
+
     loop: true,
     centeredSlides: true,
-    spaceBetween: 10,
-    // scrollbar: {
-    //   el: '.swiper-scrollbar',
-    //   draggable: true,
-    //   dragSize: 48
-    // },
+
     breakpoints: {
-      756: {
-        // direction: 'vertical',
-        // slidesPerView: '3',
-        // spaceBetween: 40
-      }
+      1921: {
+        slidesPerView: 3,
+        slidesOffsetBefore: 35,
+      },
+      1920: {
+        slidesOffsetBefore: 280,
+      },
+      1700: {
+        slidesOffsetBefore: 240,
+      },
+      1600: {
+        slidesOffsetBefore: 220,
+      },
+      1500: {
+        slidesOffsetBefore: 200,
+      },
+      1400: {
+        slidesOffsetBefore: 180,
+      },
+      1300: {
+        slidesOffsetBefore: 160,
+      },
+      1200: {
+        slidesOffsetBefore: 150,
+        spaceBetween: 26,
+      },
+      1100: {
+        slidesOffsetBefore: 140,
+        spaceBetween: 24,
+      },
+      1000: {
+        slidesOffsetBefore: 130,
+        spaceBetween: 22,
+      },
+      900: {
+        slidesOffsetBefore: 120,
+      },
+      800: {
+        slidesOffsetBefore: 110,
+        spaceBetween: 20,
+      },
     },
+
     pagination: {
       el: '.program-progressbar',
-      type: 'progressbar',
-    },
+      type: 'progressbar'
+    }
+
+
   });
 
   var programSwiperPagination = new Swiper('#program-swiper-pagination', {
-    slidesPerView: '3',
-    spaceBetween: 40,
+    slidesPerView: 3.5,
+    slidesOffsetBefore: 280,
+    spaceBetween: 32,
+
     loop: true,
     centeredSlides: true,
-    // thumbs: {
-    //   swiper: programSwiperMain
-    // },
+
+    breakpoints: {
+      1921: {
+        slidesPerView: 3,
+        slidesOffsetBefore: 35,
+      },
+      1920: {
+        slidesOffsetBefore: 280,
+      },
+      1700: {
+        slidesOffsetBefore: 240,
+      },
+      1600: {
+        slidesOffsetBefore: 220,
+      },
+      1500: {
+        slidesOffsetBefore: 200,
+      },
+      1400: {
+        slidesOffsetBefore: 180,
+      },
+      1300: {
+        slidesOffsetBefore: 160,
+      },
+      1200: {
+        slidesOffsetBefore: 150,
+        spaceBetween: 26,
+      },
+      1100: {
+        slidesOffsetBefore: 140,
+        spaceBetween: 24,
+      },
+      1000: {
+        slidesOffsetBefore: 130,
+        spaceBetween: 22,
+      },
+      900: {
+        slidesOffsetBefore: 120,
+      },
+      800: {
+        slidesOffsetBefore: 110,
+        spaceBetween: 20,
+      },
+    },
+
     pagination: {
       el: '.program-pagination',
       clickable: true,
@@ -91,4 +171,29 @@ $(document).ready(function () {
 
   programSwiperMain.controller.control = programSwiperPagination;
   programSwiperPagination.controller.control = programSwiperMain;
+});
+
+
+// слайдер центров
+$(document).ready(function () {
+  var mySwiper = new Swiper('#center-swiper', {
+    slidesPerView: '1.5',
+    // centeredSlides: true,
+    speed: 3000,
+    spaceBetween: 25,
+    touchRatio: 1,
+    loop: true,
+    freeMode: true,
+    // autoplay: {
+    //   delay: 3000,
+    //   disableOnInteraction: false,
+    // },
+    breakpoints: {
+      756: {
+        slidesPerView: '3',
+        spaceBetween: 30,
+        // loop: true
+      }
+    }
+  });
 });
