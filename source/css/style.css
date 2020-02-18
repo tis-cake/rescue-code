@@ -36,8 +36,8 @@
 @font-face {
   font-display: swap;
   font-family: Circe;
-  src: local("Circe Light"), local("Circe-Light"), url("../fonts/Circe/light/Circe-Light.woff2") format("woff2"), url("../fonts/Circe/light/Circe-Light.woff") format("woff"), url("../fonts/Circe/light/Circe-Light.ttf") format("truetype");
-  font-weight: 300;
+  src: local("Circe"), local("Circe Regular"), local("Circe-Regular"), url("../fonts/Circe/regular/Circe-Regular.woff2") format("woff2"), url("../fonts/Circe/regular/Circe-Regular.woff") format("woff"), url("../fonts/Circe/regular/Circe-Regular.ttf") format("truetype");
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {
@@ -138,6 +138,7 @@ input[type="radio"].visually-hidden {
 .link-callback,
 .link-region {
   position: relative;
+  display: inline-block;
   font-family: 'Myriad Pro', 'Arial', sans-serif;
   font-size: 0.9375vw;
   font-weight: 400;
@@ -807,59 +808,81 @@ input[type="radio"].visually-hidden {
   }
 }
 .banner {
+  box-sizing: border-box;
+  position: relative;
+  height: 34.896vw;
   margin-bottom: 14.844vw;
   background-color: #fff;
 }
-.banner .link-callback {
-  font-family: 'Roboto', 'Arial', sans-serif;
-  font-weight: 500;
-  padding-right: 1.302vw;
-}
 .banner__wrapper {
-  display: flex;
-}
-.banner__column-left {
   position: relative;
-  z-index: 0;
-  padding-top: 2.3437vw;
-  padding-left: 3.3854vw;
+  height: 100%;
 }
-.banner__img-wrapper {
-  position: relative;
-  left: 0.8854vw;
+.banner__bg-img-wrapper {
+  position: absolute;
+  bottom: 0;
+}
+.banner__bg-img-wrapper--left {
+  left: 4.1666vw;
   width: 28.802vw;
   height: 32.552vw;
 }
-.banner__img {
+.banner__bg-img-wrapper--right {
+  right: 0;
+  width: 100%;
+  height: 34.896vw;
+}
+.banner__bg-img,
+.banner__slogan-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.banner__column-right {
+.banner__main-wrapper {
+  padding-top: 7.708vw;
+  padding-left: 0.41666vw;
+}
+.banner__main-wrapper--padding-left {
+  padding-left: 32.188vw;
+}
+.banner-icon {
   position: relative;
-  z-index: 1;
-  padding-top: 7.656vw;
+}
+.banner-icon--blue-therapy {
+  padding-left: 72px;
+}
+.banner-icon::before,
+.banner-icon::after {
+  content: '';
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.banner-icon--round-one::after {
+  top: -4.427vw;
+  right: -5.99vw;
+  width: 8.385vw;
+  height: 8.594vw;
+  background-image: url('../img/banner/banner1.2.png');
+}
+.banner-icon--blue-therapy::before {
+  top: -23px;
+  left: 0px;
+  width: 54px;
+  height: 54px;
+  background-image: url('../img/banner/banner2.3.svg');
 }
 .banner__subtitle {
   position: relative;
   display: inline-block;
   margin-bottom: 2.3437vw;
+  font-family: 'Circe', 'Arial', sans-serif;
   font-size: 1.0416vw;
+  font-weight: 400;
 }
-.banner__subtitle-big {
+.banner__subtitle--big {
   font-size: 2.0833vw;
-}
-.banner__subtitle::before {
-  content: '';
-  position: absolute;
-  top: -4.427vw;
-  right: -5.99vw;
-  width: 8.385vw;
-  height: 8.594vw;
-  background-image: url('../img/banner/banner2.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 .banner__title {
   width: 41.667vw;
@@ -872,31 +895,64 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 }
 .banner__description {
-  font-weight: 300;
+  width: 40.104vw;
+  font-family: 'Circe', 'Arial', sans-serif;
+  font-weight: 400;
   font-size: 0.9375vw;
   line-height: 1.25vw;
 }
 .banner__description:last-of-type {
   margin-bottom: 1.7708vw;
 }
+.banner__link-callback {
+  width: 18.542vw;
+  padding-right: 0;
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-weight: 500;
+}
+.banner__slogan-img-wrapper {
+  position: absolute;
+  top: 5.208vw;
+  right: 12.5vw;
+  width: 13.073vw;
+  height: 13.125vw;
+}
 @media (min-width: 1921px) {
   .banner {
+    height: 670px;
     margin-bottom: 285px;
   }
-  .banner .link-callback {
-    padding-right: 25px;
-  }
-  .banner__column-left {
-    padding-top: 45px;
-    padding-left: 65px;
-  }
-  .banner__img-wrapper {
-    left: 17px;
+  .banner__bg-img-wrapper--left {
+    left: 80px;
     width: 553px;
     height: 625px;
   }
-  .banner__column-right {
-    padding-top: 147px;
+  .banner__bg-img-wrapper--right {
+    right: 0;
+    width: 100%;
+    height: 670px;
+  }
+  .banner__main-wrapper {
+    padding-top: 148px;
+    padding-left: 8px;
+  }
+  .banner__main-wrapper--padding-left {
+    padding-left: 618px;
+  }
+  .banner-icon--blue-therapy {
+    padding-left: 72px;
+  }
+  .banner-icon--round-one::after {
+    top: -85px;
+    right: -115px;
+    width: 161px;
+    height: 165px;
+  }
+  .banner-icon--blue-therapy::before {
+    top: -23px;
+    left: 0px;
+    width: 54px;
+    height: 54px;
   }
   .banner__subtitle {
     margin-bottom: 45px;
@@ -904,12 +960,6 @@ input[type="radio"].visually-hidden {
   }
   .banner__subtitle-big {
     font-size: 40px;
-  }
-  .banner__subtitle::before {
-    top: -85px;
-    right: -115px;
-    width: 161px;
-    height: 165px;
   }
   .banner__title {
     width: 800px;
@@ -919,11 +969,22 @@ input[type="radio"].visually-hidden {
     line-height: 90px;
   }
   .banner__description {
+    width: 770px;
     font-size: 18px;
     line-height: 24px;
   }
   .banner__description:last-of-type {
     margin-bottom: 34px;
+  }
+  .banner__link-callback {
+    width: 356px;
+    padding-right: 0;
+  }
+  .banner__slogan-img-wrapper {
+    top: 100px;
+    right: 240px;
+    width: 251px;
+    height: 252px;
   }
 }
 .research {
@@ -1025,6 +1086,9 @@ input[type="radio"].visually-hidden {
 .rehab-swiper {
   margin-bottom: 16.146vw;
 }
+.rehab-swiper-clinics {
+  margin-bottom: 8.594vw;
+}
 .rehab-swiper__main-title-wrapper {
   display: flex;
   justify-content: space-between;
@@ -1099,6 +1163,9 @@ input[type="radio"].visually-hidden {
 @media (min-width: 1921px) {
   .rehab-swiper {
     margin-bottom: 310px;
+  }
+  .rehab-swiper-clinics {
+    margin-bottom: 165px;
   }
   .rehab-swiper__main-title-wrapper {
     margin-bottom: 48px;

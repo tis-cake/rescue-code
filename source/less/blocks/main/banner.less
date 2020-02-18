@@ -1,44 +1,84 @@
 .banner {
+  box-sizing: border-box;
+  position: relative;
+  height: @d670px;
+
   margin-bottom: @d285px;
   background-color: #fff;
-
-  .link-callback {
-    font-family: @roboto;
-    font-weight: 500;
-    padding-right: @d25px;
-  }
 }
 
 .banner__wrapper {
-  display: flex;
-}
-
-.banner__column-left {
   position: relative;
-  z-index: 0;
-
-  padding-top: @d45px;
-  padding-left: @d65px;
+  height: 100%;
 }
 
-.banner__img-wrapper {
-  position: relative;
-  left: @d17px;
-  width: @d553px;
-  height: @d625px;
+.banner__bg-img-wrapper {
+  position: absolute;
+  bottom: 0;
+
+  &--left {
+    left: @d80px;
+    width: @d553px;
+    height: @d625px;
+  }
+
+  &--right {
+    right: 0;
+    width: 100%;
+    height: @d670px;
+  }
 }
 
-.banner__img {
+.banner__bg-img,
+.banner__slogan-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.banner__column-right {
-  position: relative;
-  z-index: 1;
+.banner__main-wrapper {
+  padding-top: @d148px;
+  padding-left: @d8px;
+  &--padding-left {
+    padding-left: @d618px;
+  }
+}
 
-  padding-top: @d147px;
+.banner-icon {
+  position: relative;
+
+  &--blue-therapy {
+    padding-left: 72px;
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &--round-one::after {
+    top: -@d85px;
+    right: -@d115px;
+
+    width: @d161px;
+    height: @d165px;
+
+    background-image: url('../img/banner/banner1.2.png');
+  }
+
+  &--blue-therapy::before {
+    top: -23px;
+    left: 0px;
+    width: 54px;
+    height: 54px;
+
+    background-image: url('../img/banner/banner2.3.svg');
+  }
 }
 
 .banner__subtitle {
@@ -46,24 +86,12 @@
   display: inline-block;
   margin-bottom: @d45px;
 
+  font-family: @circe;
   font-size: @d20px;
-  &-big {
+  font-weight: 400;
+
+  &--big {
     font-size: @d40px;
-  }
-  &::before {
-    content: '';
-    position: absolute;
-
-    top: -@d85px;
-    right: -@d115px;
-
-    width: @d161px;
-    height: @d165px;
-
-    background-image: url('../img/banner/banner2.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
   }
 }
 
@@ -80,11 +108,45 @@
 }
 
 .banner__description {
-  font-weight: 300;
+  width: @d770px;
+  font-family: @circe;
+  font-weight: 400;
   font-size: @d18px;
   line-height: @d24px;
   &:last-of-type {
     margin-bottom: @d34px;
+  }
+}
+
+.banner__link-callback {
+  width: @d356px;
+  padding-right: 0;
+
+  font-family: @roboto;
+  font-weight: 500;
+}
+
+.banner__slogan-img-wrapper {
+  position: absolute;
+  top: @d100px;
+  right: @d240px;
+  width: @d251px;
+  height: @d252px;
+}
+
+.banner-therapy {
+  .banner__main-wrapper {
+    // padding-top: 137px;
+    // padding-left: 8px;
+  }
+  .banner__subtitle {
+    // padding-bottom: 4px;
+  }
+  .banner__title {
+    // margin-bottom: 24px;
+  }
+  .banner__link-callback {
+    // padding-right: 182px;
   }
 }
 
@@ -93,25 +155,47 @@
 
 @media (min-width: @max-desktop-width) {
   .banner {
+    height: 670px;
     margin-bottom: 285px;
-    .link-callback {
-      padding-right: 25px;
+  }
+
+  .banner__bg-img-wrapper {
+    &--left {
+      left: 80px;
+      width: 553px;
+      height: 625px;
+    }
+    &--right {
+      right: 0;
+      width: 100%;
+      height: 670px;
     }
   }
 
-  .banner__column-left {
-    padding-top: 45px;
-    padding-left: 65px;
+  .banner__main-wrapper {
+    padding-top: 148px;
+    padding-left: 8px;
+    &--padding-left {
+      padding-left: 618px;
+    }
   }
 
-  .banner__img-wrapper {
-    left: 17px;
-    width: 553px;
-    height: 625px;
-  }
-
-  .banner__column-right {
-    padding-top: 147px;
+  .banner-icon {
+    &--blue-therapy {
+      padding-left: 72px;
+    }
+    &--round-one::after {
+      top: -85px;
+      right: -115px;
+      width: 161px;
+      height: 165px;
+    }
+    &--blue-therapy::before {
+      top: -23px;
+      left: 0px;
+      width: 54px;
+      height: 54px;
+    }
   }
 
   .banner__subtitle {
@@ -119,12 +203,6 @@
     font-size: 20px;
     &-big {
       font-size: 40px;
-    }
-    &::before {
-      top: -85px;
-      right: -115px;
-      width: 161px;
-      height: 165px;
     }
   }
 
@@ -137,10 +215,23 @@
   }
 
   .banner__description {
+    width: 770px;
     font-size: 18px;
     line-height: 24px;
     &:last-of-type {
       margin-bottom: 34px;
     }
   }
+
+  .banner__link-callback {
+    width: 356px;
+    padding-right: 0;
+  }
+
+  .banner__slogan-img-wrapper {
+    top: 100px;
+    right: 240px;
+    width: 251px;
+    height: 252px;
+}
 }
