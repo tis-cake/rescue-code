@@ -59,7 +59,7 @@ $(document).ready(function () {
     breakpoints: {
       1921: {
         slidesPerView: 3,
-        slidesOffsetBefore: 35,
+        slidesOffsetBefore: 0,
       },
       1920: {
         slidesOffsetBefore: 280,
