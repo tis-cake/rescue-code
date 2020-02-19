@@ -14,10 +14,19 @@
     width: @d50px;
     height: @d68px;
 
-    background-image: url('../img/logo/logo-white.svg');
+    background-image: url('../img/logo/logo-blue.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+  }
+
+  &--empty {
+    margin-top: 0;
+    padding-left: 0;
+  }
+
+  &--empty::before {
+    content: none;
   }
 }
 
@@ -26,6 +35,10 @@
   font-size: @d30px;
   font-weight: 600;
   // line-height: 36px;
+  &--less {
+    margin-bottom: @d12px;
+    font-size: @d24px;
+  }
 }
 
 .logo__description {
@@ -35,6 +48,24 @@
   font-size: @d15px;
   font-weight: 300;
   line-height: @d18px;
+}
+
+.logo__img {
+  margin-bottom: 9px;
+}
+
+.logo__about {
+  margin-top: @d33px;
+  font-weight: 300;
+  &--block {
+    display: block;
+  }
+}
+
+.bg {
+  .logo::before {
+    background-image: url('../img/logo/logo-white.svg');
+  }
 }
 
 @media (max-width: @mobile-width) {
@@ -51,16 +82,32 @@
       width: 50px;
       height: 68px;
     }
+    &--empty {
+      margin-top: 0;
+      padding-left: 0;
+    }
   }
 
   .logo__title {
     margin-bottom: 6px;
     font-size: 30px;
+    &--less {
+      margin-bottom: 12px;
+      font-size: 24px;
+    }
   }
 
   .logo__description {
     margin-left: 2px;
     font-size: 15px;
     line-height: 18px;
+  }
+
+  .logo__img {
+    margin-bottom: 9px;
+  }
+
+  .logo__about {
+    margin-top: 33px;
   }
 }

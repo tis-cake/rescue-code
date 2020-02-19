@@ -5,6 +5,9 @@
 
   margin-bottom: @d285px;
   background-color: #fff;
+  &--margin-empty {
+    margin-bottom: 0;
+  }
 }
 
 .banner__wrapper {
@@ -15,17 +18,25 @@
 .banner__bg-img-wrapper {
   position: absolute;
   bottom: 0;
+}
 
-  &--left {
+.banner-img {
+  &-motivation {
     left: @d80px;
     width: @d553px;
     height: @d625px;
   }
 
-  &--right {
+  &-therapy {
     right: 0;
     width: 100%;
     height: @d670px;
+  }
+
+  &-transport {
+    right: 0;
+    width: @d882px;
+    height: @d552px;
   }
 }
 
@@ -42,13 +53,20 @@
   &--padding-left {
     padding-left: @d618px;
   }
+  &--padding-top {
+    padding-top: @d207px;
+  }
 }
 
 .banner-icon {
   position: relative;
 
   &--blue-therapy {
-    padding-left: 72px;
+    padding-left: @d72px;
+  }
+
+  &--blue-transport {
+    padding-left: @d56px;
   }
 
   &::before,
@@ -71,13 +89,33 @@
     background-image: url('../img/banner/banner1.2.png');
   }
 
+  &--round-two::after {
+    top: -@d115px;
+    right: -@d45px;
+
+    width: @d152px;
+    height: @d154px;
+
+    background-image: url('../img/banner/banner3.2.png');
+  }
+
   &--blue-therapy::before {
-    top: -23px;
+    top: -@d23px;
     left: 0px;
-    width: 54px;
-    height: 54px;
+    width: @d54px;
+    height: @d54px;
 
     background-image: url('../img/banner/banner2.3.svg');
+  }
+
+  &--blue-transport::before {
+    top: -@d10px;
+    left: -@d10px;
+
+    width: @d55px;
+    height: @d35px;
+
+    background-image: url('../img/banner/banner3.3.svg');
   }
 }
 
@@ -105,6 +143,9 @@
   font-size: @d90px;
   line-height: @d90px;
   text-transform: uppercase;
+  &--long {
+    width: @d950px;
+  }
 }
 
 .banner__description {
@@ -134,22 +175,6 @@
   height: @d252px;
 }
 
-.banner-therapy {
-  .banner__main-wrapper {
-    // padding-top: 137px;
-    // padding-left: 8px;
-  }
-  .banner__subtitle {
-    // padding-bottom: 4px;
-  }
-  .banner__title {
-    // margin-bottom: 24px;
-  }
-  .banner__link-callback {
-    // padding-right: 182px;
-  }
-}
-
 @media (max-width: @mobile-width) {
 }
 
@@ -157,18 +182,25 @@
   .banner {
     height: 670px;
     margin-bottom: 285px;
+    &--margin-empty {
+      margin-bottom: 0;
+    }
   }
 
-  .banner__bg-img-wrapper {
-    &--left {
+  .banner-img {
+    &-motivation {
       left: 80px;
       width: 553px;
       height: 625px;
     }
-    &--right {
-      right: 0;
-      width: 100%;
+
+    &-therapy {
       height: 670px;
+    }
+
+    &-transport {
+      width: 882px;
+      height: 552px;
     }
   }
 
@@ -178,11 +210,17 @@
     &--padding-left {
       padding-left: 618px;
     }
+    &--padding-top {
+      padding-top: 207px;
+    }
   }
 
   .banner-icon {
     &--blue-therapy {
       padding-left: 72px;
+    }
+    &--blue-transport {
+      padding-left: 56px;
     }
     &--round-one::after {
       top: -85px;
@@ -190,11 +228,22 @@
       width: 161px;
       height: 165px;
     }
+    &--round-two::after {
+      top: -115px;
+      right: -45px;
+      width: 152px;
+      height: 154px;
+    }
     &--blue-therapy::before {
       top: -23px;
-      left: 0px;
       width: 54px;
       height: 54px;
+    }
+    &--blue-transport::before {
+      top: -10px;
+      left: -10px;
+      width: 55px;
+      height: 35px;
     }
   }
 
@@ -212,6 +261,9 @@
     margin-bottom: 27px;
     font-size: 90px;
     line-height: 90px;
+    &--long {
+      width: 950px;
+    }
   }
 
   .banner__description {
