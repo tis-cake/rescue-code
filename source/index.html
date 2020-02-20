@@ -66,45 +66,47 @@
           <img class="main-info__bg-img" src="img/main-info/bg1.jpg" alt="">
         </div>
         <div class="main-info__content">
-          <div class="container">
-            <div class="main-info__features-text features--without-icon">
+          <!-- <div class="container"> -->
+            <div class="main-info__features-text features--without-icon container">
               <span class="features__text-long">Помощь</span>
               <span class="features__text-big">24</span>
               <span class="features__text-small">/7</span>
             </div>
 
-            <h1 class="main-info__title" id="#marquee">Лечение мефедроновой наркомании</h1>
+            <h1 class="main-info__title" id="main-info-marquee">Лечение мефедроновой наркомании</h1>
 
-            <div class="main-info__features features">
-              <ul class="features__list">
-                <li class="features__item features__item--program">
-                  <p class="features__title">Программа</p>
-                  <p class="features__description">Уникальная программа лечения.</p>
-                </li>
-                <li class="features__item features__item--call">
-                  <p class="features__title">Свяжитесь с нами</p>
-                  <p class="features__description">И вы успеете спасти близкого!</p>
-                </li>
-              </ul>
+            <div class="container">
+              <div class="main-info__features features">
+                <ul class="features__list">
+                  <li class="features__item features__item--program">
+                    <p class="features__title">Программа</p>
+                    <p class="features__description">Уникальная программа лечения.</p>
+                  </li>
+                  <li class="features__item features__item--call">
+                    <p class="features__title">Свяжитесь с нами</p>
+                    <p class="features__description">И вы успеете спасти близкого!</p>
+                  </li>
+                </ul>
 
-              <div class="main-info__slogan-img-wrapper">
-                <img class="main-info__slogan-img" src="img/main-info/слоган.png" alt="Солевые наркотики уьивают за срок от 2 до 6 месяцев">
+                <div class="main-info__slogan-img-wrapper">
+                  <img class="main-info__slogan-img" src="img/main-info/слоган.png" alt="Солевые наркотики уьивают за срок от 2 до 6 месяцев">
+                </div>
               </div>
-            </div>
 
-            <div class="main-info__link-wrapper">
-              <a class="main-info__link-callback link-callback modal-callback" href="#">Отправить заявку на лечение</a>
-              <a class="main-info__link-region link-region modal-region" href="#">Москва и область</a>
-            </div>
+              <div class="main-info__link-wrapper">
+                <a class="main-info__link-callback link-callback modal-callback" href="#">Отправить заявку на лечение</a>
+                <a class="main-info__link-region link-region modal-region" href="#">Москва и область</a>
+              </div>
 
-            <button class="main-info__btn-bottom">
-              <img class="main-info__btn-bottom-img" src="img/main-info/btn-bottom-text.png" alt="">
-            </button>
+              <a class="main-info__btn-bottom" href="#main-info-btn-bottom">
+                <img class="main-info__btn-bottom-img" src="img/main-info/btn-bottom-text.png" alt="">
+              </a>
+            </div>
           </div>
-        </div>
+        <!-- </div> -->
       </section>
 
-      <section class="program container">
+      <section class="program container" id="main-info-btn-bottom">
         <div class="program__features-text features--without-icon">
           <span class="features__text-long">Составление индивидуальной программы, консультация</span>
           <span class="features__text-big">24</span>
@@ -705,7 +707,16 @@
           </li>
         </ul>
         <div class="footer__center-column">
-
+          <a class="footer__logo logo logo--empty" href="index.html">
+            <img class="logo__img" src="img/logo/logo-blue.svg" alt="Логотип портала «Код спасения»" width="52" height="70">
+            <h3 class="logo__title logo__title">Код спасения</h3>
+            <p class="logo__description">Портал помощи солевым наркоманам</p>
+          </a>
+          <a class="footer__link-callback link-callback modal-callback" href="#">Заявка на бесплатную консультацию</a>
+          <div class="footer__phone-wrapper">
+            <a class="footer__phone" href="tel:+78009009090">8 800 900 90 90</a>
+            <p class="footer__phone-text">Круглосуточная бесплатная помощь</p>
+          </div>
         </div>
         <ul class="footer__list footer__list--right">
           <li class="footer__item footer__item--bold">Лечение
@@ -739,8 +750,8 @@
     </footer>
 
     <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery.marquee.min.js"></script>
     <script src="js/swiper.min.js"></script>
-    <script src="js/jquery.limarquee.js"></script>
 
     <script src="js/main.js"></script>
   </body>

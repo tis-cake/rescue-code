@@ -4,49 +4,25 @@ if ($(".main-info").hasClass("bg")) {
 }
 
 // [index page]
-// карусель заголовка
-// $(document).ready(function () {
-  // var mySwiper = new Swiper('#main-title-swiper', {
-  //   slidesPerView: '0.1',
-  //   centeredSlides: true,
-  //   speed: 3000,
-  //   spaceBetween: 55,
-  //   touchRatio: 1,
-  //   loop: true,
-  //   freeMode: true,
-  //   // autoplay: {
-  //   //   delay: 3000,
-  //   //   disableOnInteraction: false,
-  //   // },
-  //   breakpoints: {
-  //     756: {
-  //       slidesPerView: '3',
-  //       spaceBetween: 30,
-  //       // loop: true
-  //     }
-  //   }
-  // });
-// });
-
-$(document).ready(function () {
-  // var marquee = $("#marquee");
-  // marquee.css({"overflow": "hidden", "width": "100%"});
-  // // оболочка для текста ввиде span (IE не любит дивы с inline-block)
-  // marquee.wrapInner("<span>");
-  // marquee.find("span").css({ "width": "50%", "display": "inline-block", "text-align":"center" });
-  // marquee.append(marquee.find("span").clone()); // тут у нас два span с текстом
-  // marquee.wrapInner("<div>");
-  // marquee.find("div").css("width", "200%");
-  // var reset = function() {
-  //   $(this).css("margin-left", "0%");
-  //   $(this).animate({ "margin-left": "-100%" }, 12000, 'linear', reset);
-  // };
-  // reset.call(marquee.find("div"));
-  // $('.string').liMarquee();
-  $('.anyClass').liMarquee();
-
+// якорь на main-info
+$(document).ready(function(){
+  $(".main-info__btn-bottom" ).on("click", function () {
+    var id  = $(this).attr('href'),
+        top = $(id).offset().top;
+    $('body,html').animate({scrollTop: top}, 1000);
+  });
 });
 
+// карусель заголовка
+$(document).ready(function () {
+  $('#main-info-marquee').marquee({
+    duration: 10000,       // время на прохождение
+    // startVisible: true, // заполненный текст
+    // duplicated: true    // дублировать
+  });
+});
+
+// слайдер программы
 $(document).ready(function () {
   var programSwiperMain = new Swiper('#program-swiper', {
     slidesPerView: 3.5,
@@ -104,8 +80,6 @@ $(document).ready(function () {
       el: '.program-progressbar',
       type: 'progressbar'
     }
-
-
   });
 
   var programSwiperPagination = new Swiper('#program-swiper-pagination', {
