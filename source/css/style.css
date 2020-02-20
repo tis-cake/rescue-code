@@ -1828,7 +1828,6 @@ input[type="radio"].visually-hidden {
   }
 }
 .footer {
-  height: 26.042vw;
   padding-top: 4.5833vw;
   padding-bottom: 4.5833vw;
 }
@@ -1883,7 +1882,6 @@ input[type="radio"].visually-hidden {
 }
 @media (min-width: 1921px) {
   .footer {
-    height: 500px;
     padding-top: 88px;
     padding-bottom: 88px;
   }
