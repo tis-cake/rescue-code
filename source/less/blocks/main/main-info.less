@@ -41,7 +41,7 @@
 
   position: relative;
   margin-bottom: @d33px;
-  // padding-left: 198px;
+  padding-left: @d198px;
 
   font-size: @d105px;
   font-family: @circe;
@@ -118,6 +118,12 @@
 }
 
 @media (max-width: @mobile-width) {
+  .bg.main-info {
+    height: 1540px;
+  }
+  .main-info__bg-wrapper {
+    height: 1540px;
+  }
 }
 
 @media (min-width: @max-desktop-width) {
@@ -140,10 +146,14 @@
   }
 
   .main-info__title {
-    margin-left: 196px;
-    margin-left: auto;
+    // margin-left: 196px;
+    // margin-left: auto;
+    padding-left: 198px;
     margin-bottom: 33px;
     font-size: 105px;
+    @media (min-width: 1930px) {
+      padding-left: 0;
+    }
   }
 
   .main-info__features {

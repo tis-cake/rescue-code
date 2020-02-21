@@ -123,10 +123,16 @@ input[type="radio"].visually-hidden {
   position: relative;
   display: inline-block;
 
-  font-family: @roboto;
+  font-family: @myriad;
+  // font-weight: 400;
   font-size: @d18px;
-  font-weight: 500;
   color: #161616;
+
+  &--roboto-bold {
+    font-family: @roboto;
+    font-weight: 500;
+    color: #000;
+  }
 
   &::before,
   &::after {
@@ -147,7 +153,7 @@ input[type="radio"].visually-hidden {
     top: @a;
     bottom: -@d12px;
     width: 100%;
-    height: @d1px;
+    height: @d2px;
     background-color: #9BB1FF;
   }
   &::after {
@@ -175,10 +181,11 @@ input[type="radio"].visually-hidden {
   .container {
     width: 79.375vw; //1524px;
   }
+  .link,
   .link-callback,
   .link-region {
-    font-family: @roboto;
-    font-weight: 700;
+    // font-family: @roboto;
+    // font-weight: 700;
     color: #fff;
   }
   .link-callback {
@@ -268,7 +275,7 @@ input[type="radio"].visually-hidden {
     &::before {
       top: @a;
       bottom: -12px;
-      height: 1px;
+      height: 2px;
     }
     &::after {
       top: 2px;

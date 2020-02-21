@@ -1,3 +1,5 @@
+var width = $(window).width();
+
 // главный блок с фоном
 if ($(".main-info").hasClass("bg")) {
   $('.header').addClass('bg');
@@ -15,11 +17,13 @@ $(document).ready(function(){
 
 // карусель заголовка
 $(document).ready(function () {
-  $('#main-info-marquee').marquee({
-    duration: 10000,       // время на прохождение
-    // startVisible: true, // заполненный текст
-    // duplicated: true    // дублировать
-  });
+  if (width > 755) {
+    $('#main-info-marquee').marquee({
+      duration: 20000,       // время на прохождение
+      startVisible: true, // заполненный текст
+      duplicated: true    // дублировать
+    });
+  }
 });
 
 // слайдер программы

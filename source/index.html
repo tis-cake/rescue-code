@@ -63,7 +63,12 @@
     <main class="main">
       <section class="main-info bg">
         <div class="main-info__bg-wrapper">
-          <img class="main-info__bg-img" src="img/main-info/bg1.jpg" alt="">
+          <picture>
+            <!-- <source type="image/webp" media="(max-width: 750px)" srcset="img/main-info/bg-m.webp"> -->
+            <source media="(max-width: 750px)" srcset="img/main-info/bg-m.png">
+            <!-- <source type="image/webp" srcset="img/main-info/bg-d.webp"> -->
+            <img class="main-info__bg-img" src="img/main-info/bg-d.png" alt="">
+          </picture>
         </div>
         <div class="main-info__content">
           <!-- <div class="container"> -->
@@ -73,7 +78,9 @@
               <span class="features__text-small">/7</span>
             </div>
 
-            <h1 class="main-info__title" id="main-info-marquee">Лечение мефедроновой наркомании</h1>
+            <h1 class="visually-hidden">Лечение мефедроновой наркомании</h1>
+
+            <p class="main-info__title" id="main-info-marquee">Лечение мефедроновой наркомании Лечение мефедроновой наркомании Лечение мефедроновой наркомании Лечение мефедроновой наркомании Лечение мефедроновой наркомании Лечение мефедроновой наркомании Лечение мефедроновой наркомании Лечение мефедроновой наркомании Лечение мефедроновой наркомании Лечение мефедроновой наркомании</p>
 
             <div class="container">
               <div class="main-info__features features">
@@ -94,7 +101,7 @@
               </div>
 
               <div class="main-info__link-wrapper">
-                <a class="main-info__link-callback link-callback modal-callback" href="#">Отправить заявку на лечение</a>
+                <a class="main-info__link-callback link-callback link-callback--roboto-bold modal-callback" href="#">Отправить заявку на лечение</a>
                 <a class="main-info__link-region link-region modal-region" href="#">Москва и область</a>
               </div>
 
@@ -154,7 +161,7 @@
                  </li>
                </ul>
 
-               <a class="program__link-callback link-callback" href="#">Подробнее о программе</a>
+               <a class="program__link link" href="#">Подробнее о программе</a>
             </div>
           </div>
           <div class="program__column-right">
@@ -176,7 +183,7 @@
             <h2 class="banner__title">Замотивируем на лечение</h2>
             <p class="banner__description">Зачастую сами зависимые неосознают проблему, поэтому отказываются от лечения!</p>
             <p class="banner__description">Мы поможем уговорить на лечение вашего близкого на бесплатной консультации.</p>
-            <a class="banner__link-callback link-callback modal-callback" href="#">Заявка на бесплатную консультацию</a>
+            <a class="banner__link-callback link-callback link-callback--roboto-bold modal-callback" href="#">Заявка на бесплатную консультацию</a>
           </div>
 
         </div>
@@ -271,7 +278,7 @@
         <div class="program-swiper__main-title-wrapper container">
           <h2 class="program-swiper__main-title section-title">Что входит в программу лечения?</h2>
           <p class="program-swiper__main-description">Солевая наркомания сегодня самая опасная! Поэтому мы разработали для ее лечения уникальную программу.</p>
-          <a class="program-swiper__link-callback link-callback" href="centers.html">Подробнее о программе</a>
+          <a class="program-swiper__link link--roboto-bold link" href="centers.html">Подробнее о программе</a>
         </div>
 
         <div class="swiper-container swiper-container--progressbar" id="program-swiper">
@@ -279,7 +286,7 @@
 
             <!-- 2 -->
             <div class="swiper-slide">
-              <div class="program-swiper__slide">
+              <a class="program-swiper__slide" href="#">
                 <div class="program-swiper__img-wrapper">
                   <img class="program-swiper__img" src="img/program-swiper/step2.jpg" alt="">
                 </div>
@@ -287,12 +294,12 @@
                   <p class="program-swiper__steps-count">2 шаг</p>
                   <h3 class="program-swiper__slide-title">Реабилитация</h3>
                 </div>
-              </div>
+              </a>
             </div>
 
             <!-- 3 -->
             <div class="swiper-slide">
-              <div class="program-swiper__slide">
+              <a class="program-swiper__slide" href="#">
                 <div class="program-swiper__img-wrapper">
                   <img class="program-swiper__img" src="img/program-swiper/step3.jpg" alt="">
                 </div>
@@ -300,12 +307,12 @@
                   <p class="program-swiper__steps-count">3 шаг</p>
                   <h3 class="program-swiper__slide-title">Амбулаторное лечение</h3>
                 </div>
-              </div>
+              </a>
             </div>
 
             <!-- 4 -->
             <div class="swiper-slide">
-              <div class="program-swiper__slide">
+              <a class="program-swiper__slide" href="#">
                 <div class="program-swiper__img-wrapper">
                   <img class="program-swiper__img" src="img/program-swiper/step4.jpg" alt="">
                 </div>
@@ -313,12 +320,12 @@
                   <p class="program-swiper__steps-count">4 шаг</p>
                   <h3 class="program-swiper__slide-title">Ресоциализация</h3>
                 </div>
-              </div>
+              </a>
             </div>
 
             <!-- 5 -->
             <div class="swiper-slide">
-              <div class="program-swiper__slide">
+              <a class="program-swiper__slide" href="#">
                 <div class="program-swiper__img-wrapper">
                   <img class="program-swiper__img" src="img/program-swiper/step5.jpg" alt="">
                 </div>
@@ -326,12 +333,12 @@
                   <p class="program-swiper__steps-count">5 шаг</p>
                   <h3 class="program-swiper__slide-title">Поддержка психолога</h3>
                 </div>
-              </div>
+              </a>
             </div>
 
             <!-- 1 -->
             <div class="swiper-slide">
-              <div class="program-swiper__slide">
+              <a class="program-swiper__slide" href="#">
                 <div class="program-swiper__img-wrapper">
                   <img class="program-swiper__img" src="img/program-swiper/step1.jpg" alt="">
                 </div>
@@ -339,7 +346,7 @@
                   <p class="program-swiper__steps-count">1 шаг</p>
                   <h3 class="program-swiper__slide-title">Детоксикация</h3>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
           <div class="swiper-pagination program-progressbar"></div>
@@ -350,45 +357,45 @@
 
             <!-- 2 -->
             <div class="swiper-slide">
-              <div class="program-swiper__slide">
+              <a class="program-swiper__slide" href="#">
                 <div class="program-swiper__img-wrapper">
                   <img class="program-swiper__img" src="img/program-swiper/step2.jpg" alt="">
                 </div>
-              </div>
+              </a>
             </div>
 
             <div class="swiper-slide">
-              <div class="program-swiper__slide">
+              <a class="program-swiper__slide" href="#">
                 <div class="program-swiper__img-wrapper">
                   <img class="program-swiper__img" src="img/program-swiper/step3.jpg" alt="">
                 </div>
-              </div>
+              </a>
             </div>
 
             <div class="swiper-slide">
-              <div class="program-swiper__slide">
+              <a class="program-swiper__slide" href="#">
                 <div class="program-swiper__img-wrapper">
                   <img class="program-swiper__img" src="img/program-swiper/step4.jpg" alt="">
                 </div>
-              </div>
+              </a>
             </div>
 
             <!-- 5 -->
             <div class="swiper-slide">
-              <div class="program-swiper__slide">
+              <a class="program-swiper__slide" href="#">
                 <div class="program-swiper__img-wrapper">
                   <img class="program-swiper__img" src="img/program-swiper/step5.jpg" alt="">
                 </div>
-              </div>
+              </a>
             </div>
 
             <!-- 1 -->
             <div class="swiper-slide">
-              <div class="program-swiper__slide">
+              <a class="program-swiper__slide" href="#">
                 <div class="program-swiper__img-wrapper">
                   <img class="program-swiper__img" src="img/program-swiper/step1.jpg" alt="">
                 </div>
-              </div>
+              </a>
             </div>
           </div>
           <!-- <div class="program-swiper__pagination-wrapper"> -->
@@ -531,7 +538,7 @@
             <p class="banner__subtitle banner-icon banner-icon--blue-therapy">Организуем группы и терапию для родственников!</p>
             <h2 class="banner__title">Терапия созависимых</h2>
             <p class="banner__description">Лечение мефедроновой наркомании зависит не только от желания самого наркомана лечиться, но и от желания родственников помочь и бороться вместе с зависимым! </p>
-            <a class="banner__link-callback link-callback modal-callback" href="#">Заявка на лечение</a>
+            <a class="banner__link-callback link-callback--roboto-bold link-callback modal-callback" href="#">Заявка на лечение</a>
           </div>
           <div class="banner__slogan-img-wrapper">
             <img class="banner__slogan-img" src="img/banner/banner2.2.png" alt="">
@@ -670,7 +677,7 @@
             <h2 class="banner__title banner__title--long banner-icon banner-icon--round-two">Транспортировка</h2>
             <p class="banner__description">Зачастую сами зависимые неосознают проблему, поэтому отказываются от лечения!</p>
             <p class="banner__description">Мы поможем уговорить на лечение вашего близкого на бесплатной консультации.</p>
-            <a class="banner__link-callback link-callback modal-callback" href="#">Вызов скорой помощи</a>
+            <a class="banner__link-callback link-callback link-callback--roboto-bold modal-callback" href="#">Вызов скорой помощи</a>
           </div>
         </div>
       </article>
