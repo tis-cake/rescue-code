@@ -51,7 +51,7 @@
 }
 
 .logo__img {
-  margin-bottom: 9px;
+  margin-bottom: @d9px;
 }
 
 .logo__about {
@@ -69,6 +69,23 @@
 }
 
 @media (max-width: @mobile-width) {
+  .logo {
+    width: @m134px;
+    margin-top: 0px;
+    padding-left: @m58px;
+
+    &::before {
+      top: @m8px;
+      left: @m4px;
+      width: @m42px;
+      height: @m58px;
+    }
+  }
+  .logo__title {
+    margin-bottom: 0px;
+    font-size: @m32px;
+    line-height: @m38px;
+  }
 }
 
 @media (min-width: @max-desktop-width) {

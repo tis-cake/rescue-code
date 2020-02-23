@@ -1,5 +1,4 @@
 .header {
-  // .bred;
   position: absolute;
   z-index: 5;
   width: 100%;
@@ -39,7 +38,74 @@
   font-weight: 300;
 }
 
+.header__menu-toggle,
+.header__link-call-back {
+  display: none;
+}
+
 @media (max-width: @mobile-width) {
+  .header {
+    height: @a;
+    margin-top: 0;
+    padding-top: @m54px;
+    .container {
+      width: @a;
+    }
+    .logo__description {
+      display: none;
+    }
+  }
+
+  .active.header {
+    height: 100vh;      // убрать если js подключен
+    overflow-y: scroll; // убрать если js подключен
+    overflow-x: hidden; // убрать если js подключен
+
+    background-color: #303030;
+
+    .header__wrapper {
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      // align-items: stretch;
+    }
+
+    .header__link-call-back,
+    .header__main-nav {
+      display: block;
+    }
+
+    .header__phone-wrapper {
+      display: none;
+    }
+  }
+
+  .header__menu-toggle {
+    display: block;
+  }
+
+  .header__link-call-back,
+  .header__main-nav {
+    display: none;
+  }
+
+  .header__logo {
+    margin-left: @m33px;
+    margin-right: auto;
+  }
+
+  .header__main-nav {
+    margin-top: @m52px;
+    padding-left: @m5px;
+  }
+
+  .header__phone {
+    margin-bottom: @m8px;
+    font-size: @m24px;
+  }
+
+  .header__phone-text {
+    font-size: @m18px;
+  }
 }
 
 @media (min-width: @max-desktop-width) {

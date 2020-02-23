@@ -18,9 +18,18 @@
     <header class="header">
       <div class="container">
         <div class="header__wrapper">
+
+          <button class="header__menu-toggle menu-toggle">
+            <span>Открыть меню</span>
+          </button>
+
           <a class="header__logo logo" href="index.html">
             <h2 class="logo__title">Код спасения</h2>
             <p class="logo__description">Портал помощи солевым наркоманам</p>
+          </a>
+
+          <a class="header__link-call-back modal-callback" href="#">
+            <img src="img/svg/call-w.svg" alt="Обратный звонок">
           </a>
 
           <nav class="header__main-nav main-nav">
@@ -33,6 +42,32 @@
               </li>
               <li class="main-nav__item">
                 <a class="main-nav__link" href="#">Лечение</a>
+                <ul class="main-nav__sublist">
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Детоксикация</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Реабилитация</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Программы лечения</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Амбулаторное лечение</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Лечение за границей</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Адвокатская помощь</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Ресоциализация</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="#">Кодирование</a>
+                  </li>
+                </ul>
               </li>
               <li class="main-nav__item">
                 <a class="main-nav__link" href="#">Родственникам</a>
@@ -72,13 +107,16 @@
         </div>
         <div class="main-info__content">
           <!-- <div class="container"> -->
-            <div class="main-info__features-text features--without-icon container">
-              <span class="features__text-long">Помощь</span>
-              <span class="features__text-big">24</span>
-              <span class="features__text-small">/7</span>
+            <div class="main-info__top-wrapper container">
+              <div class="main-info__features-text features--without-icon">
+                <span class="features__text-long">Помощь</span>
+                <span class="features__text-big">24</span>
+                <span class="features__text-small">/7</span>
+              </div>
+              <a class="main-info__link-region link-region modal-region mobile-block" href="#">Москва и область</a>
             </div>
 
-            <h1 class="visually-hidden">Лечение мефедроновой наркомании</h1>
+            <h1 class="visually-hidden container">Лечение мефедроновой наркомании</h1>
 
             <p class="main-info__title" id="main-info-marquee">Лечение мефедроновой наркомании Лечение мефедроновой наркомании Лечение мефедроновой наркомании Лечение мефедроновой наркомании Лечение мефедроновой наркомании Лечение мефедроновой наркомании Лечение мефедроновой наркомании Лечение мефедроновой наркомании Лечение мефедроновой наркомании Лечение мефедроновой наркомании</p>
 
@@ -102,7 +140,7 @@
 
               <div class="main-info__link-wrapper">
                 <a class="main-info__link-callback link-callback link-callback--roboto-bold modal-callback" href="#">Отправить заявку на лечение</a>
-                <a class="main-info__link-region link-region modal-region" href="#">Москва и область</a>
+                <a class="main-info__link-region link-region modal-region desktop-block" href="#">Москва и область</a>
               </div>
 
               <a class="main-info__btn-bottom" href="#main-info-btn-bottom">

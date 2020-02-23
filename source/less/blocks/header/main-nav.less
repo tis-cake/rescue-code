@@ -10,13 +10,125 @@
 }
 
 .main-nav__item {
+  position: relative;
   margin-top: @d5px;
   &:not(:last-child) {
     margin-right: @d27px;
   }
 }
 
+.main-nav__item:hover .main-nav__sublist,
+.main-nav__link:focus + .main-nav__sublist {
+  visibility: visible;
+  opacity: 1;
+}
+
+.main-nav__link {
+  position: relative;
+  padding-bottom: @d20px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    // bottom: -14px;
+    bottom: @d6px;
+    left: 0;
+
+    width: 0;
+    height: @d2px;
+
+    background-color: #fff;
+
+    transition-duration: 0.3s;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    width: 92%;
+  }
+}
+
+.main-nav__sublist {
+  box-sizing: border-box;
+  position: absolute;
+  top: @d30px;
+
+  visibility: hidden;
+  opacity: 0;
+
+  transition-duration: 0.3s;
+
+
+  width: @d301px;
+  padding: @d26px;
+
+  background-color: #364FA2;
+}
+
+.main-nav__subitem {
+  &:not(:last-child) {
+    margin-bottom: @d20px;
+  }
+}
+
+.main-nav__sublink {
+  display: block;
+}
+
 @media (max-width: @mobile-width) {
+  .main-nav {
+    width: 100%;
+    margin-left: 0;
+
+    font-size: 30px;
+    text-transform: uppercase;
+  }
+
+  .main-nav__list {
+    flex-direction: column;
+  }
+
+  .main-nav__item {
+    position: relative;
+    margin-top: 0;
+    &:not(:last-child) {
+      margin-right: 0px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .main-nav__link {
+    display: block;
+    &::before {
+      content: none;
+    }
+  }
+
+  .main-nav__sublist {
+    position: relative;
+    visibility: visible;
+    opacity: 1;
+
+    width: @a;
+    padding: 0;
+    padding-top: 13px;
+    padding-left: 38px;
+
+    font-weight: 300;
+    text-transform: none;
+    background-color: transparent;
+  }
+
+  .main-nav__subitem {
+    &:not(:last-child) {
+      margin-bottom: 37px;
+    }
+    &:last-child {
+      margin-bottom: 25px;
+    }
+
+  }
 }
 
 @media (min-width: @max-desktop-width) {
@@ -30,6 +142,26 @@
     margin-top: 5px;
     &:not(:last-child) {
       margin-right: 27px;
+    }
+  }
+
+  .main-nav__link {
+    padding-bottom: 20px;
+    &::before {
+      bottom: 6px;
+      height: 2px;
+    }
+  }
+
+  .main-nav__sublist {
+    top: 30px;
+    width: 301px;
+    padding: 26px;
+  }
+
+  .main-nav__subitem {
+    &:not(:last-child) {
+      margin-bottom: 20px;
     }
   }
 }
