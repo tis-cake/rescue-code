@@ -2,20 +2,20 @@
   display: flex;
   .link-callback {
     align-self: flex-end;
-    margin-left: @d85px;
-    margin-bottom: @d28px;
+    // margin-left: @d85px;
+    // margin-bottom: @d28px;
   }
 }
 
 .features--without-icon {
-  display: flex;
+  // display: flex;
   font-size: @d20px;
   font-weight: 400;
   color: #262628;
 }
 
 .features__text-long {
-  margin-top: @d18px;
+  // margin-top: @d18px;
 }
 
 .features__text-big {
@@ -25,7 +25,9 @@
 }
 
 .features__text-small {
-  margin-top: @d6px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: @d5px;
   margin-left: @d4px;
   // margin-left: 8px;
 }
@@ -109,14 +111,90 @@
 }
 
 @media (max-width: @mobile-width) {
+
+  .features--without-icon {
+    font-size: @m30px;
+  }
+
+  .features__text-big {
+    margin-left: @m4px;
+    font-size: @m50px;
+  }
+
+  .features__text-small {
+    margin-top: @m5px;
+    margin-left: @m4px;
+  }
+
+  .features__list {
+    width: @a;
+    font-size: @m30px;
+  }
+
+  .features__item {
+    width: @m240px;
+    // padding-left: @m51px;
+    padding-left: 70px;
+    // font-size: 30px;
+
+    &::before {
+      top: -@m4px;
+      left: 0;
+
+      width: @m41px;
+      height: @m41px;
+    }
+
+    &--program::before,
+    &--call::before {
+      left: 10px;
+    }
+
+    // &--mef::before,
+    // &--alpha::before {
+    //   top: -@d10px;
+    //   left: @d2px;
+    //   width: @d40px;
+    //   height: @d40px;
+    // }
+  }
+
+  .features__title {
+    margin-bottom: @m32px;
+  }
+
+  .features__description {
+    line-height: @m36px;
+  }
+
+  .bg {
+    .features--without-icon {
+      font-size: @m20px;
+    }
+    .features__text-big {
+      font-size: @m40px;
+    }
+    .features__item {
+      padding-left: @m51px;
+      &--program::before {
+        left: 0;
+      }
+      &--call::before {
+        left: -@m4px;
+      }
+    }
+    .features__title {
+      margin-bottom: @m26px;
+    }
+  }
 }
 
 @media (min-width: @max-desktop-width) {
   .features {
-    .link-callback {
-      margin-left: 85px;
-      margin-bottom: 28px;
-    }
+    // .link-callback {
+    //   margin-left: 85px;
+    //   margin-bottom: 28px;
+    // }
   }
 
   .features--without-icon {
@@ -124,7 +202,7 @@
   }
 
   .features__text-long {
-    margin-top: 18px;
+    // margin-top: 18px;
   }
 
   .features__text-big {

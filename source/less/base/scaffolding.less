@@ -113,11 +113,10 @@ input[type="radio"].visually-hidden {
   display: inline-block;
 
   font-family: @myriad;
-  // font-weight: 400;
   font-size: @d18px;
   color: #161616;
 
-  &--roboto-bold {
+  &--roboto-medium {
     font-family: @roboto;
     font-weight: 500;
     color: #000;
@@ -173,15 +172,14 @@ input[type="radio"].visually-hidden {
   .link,
   .link-callback,
   .link-region {
-    // font-family: @roboto;
-    // font-weight: 700;
+    font-family: @roboto;
+    font-weight: 700;
     color: #fff;
   }
   .link-callback {
-    padding-right: @d29px;
+    // padding-right: @d29px;
     &::before {
       bottom: -@d8px;
-      // background-color: #fff;
       background-color: rgba(255, 255, 255, 0.3);
     }
     &::after {
@@ -225,7 +223,7 @@ input[type="radio"].visually-hidden {
   color: #161616;
 }
 
-.mobile-block {
+body .mobile-block {
   display: none;
 }
 
@@ -240,12 +238,92 @@ input[type="radio"].visually-hidden {
 //   .double-aside-wrapper {
 //     display: none;
 //   }
-  .desktop-block {
+  body .desktop-block {
     display: none;
   }
 
-  .mobile-block {
+  body .mobile-block {
     display: block;
+  }
+
+  .link,
+  .link-callback,
+  .link-region {
+    font-size: @m30px;
+  }
+
+  .link,
+  .link-callback {
+    padding-right: @m45px;
+    &::before {
+      bottom: -@m15px;
+      height: @m3px;
+    }
+    &::after {
+      top: @m3px;
+      width: @m14px;
+      height: @m26px;
+      right: 0px;
+    }
+  }
+
+  .link-region {
+    &::before {
+      top: -@m8px;
+      left: -@m55px;
+      width: @m45px;
+      height: @m45px;
+    }
+  }
+
+  .bg {
+    .container {
+      // width: 79.375vw; //1524px;
+    }
+    .link,
+    .link-callback {
+      &::before {
+        bottom: -@m12px;
+      }
+      &::after {
+        top: @m7px;
+        width: @m10px;
+        height: @m17px;
+      }
+    }
+  }
+
+  .subtitle-pink {
+    margin-bottom: 40px;
+    font-size: 35px;
+    line-height: 42px;
+  }
+
+  // .section-title-wrapper {
+  //   display: flex;
+  //   justify-content: space-between;
+
+  //   margin-bottom: @d54px;
+
+  //   .section-title {
+  //     margin-bottom: 0;
+  //   }
+
+  //   .link,
+  //   .link-callback,
+  //   .link-region {
+  //     align-self: center;
+  //     margin-bottom: @d10px;
+  //   }
+  // }
+
+  .section-title {
+    margin-bottom: @d54px;
+
+    font-weight: 300;
+    font-size: @d60px;
+
+    color: #161616;
   }
 }
 
@@ -291,10 +369,10 @@ input[type="radio"].visually-hidden {
 
   .bg {
     .container {
-      width: 1524px;
+      // width: 1524px;
     }
     .link-callback {
-      padding-right: 29px;
+      // padding-right: 29px;
       &::before {
         bottom: -8px;
       }

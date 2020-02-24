@@ -19,6 +19,11 @@ $(document).ready(function () {
 });
 
 // [index page]
+// заголовок h1 в main-info
+if (width <= 755) {
+  $('.main-info__title.visually-hidden').removeClass('visually-hidden');
+}
+
 // якорь на main-info
 $(document).ready(function(){
   $(".main-info__btn-bottom" ).on("click", function () {

@@ -15,7 +15,6 @@
   z-index: 0;
   width: 100%;
   height: @d934px;
-  // text-align: center;
 }
 
 .main-info__bg-img {
@@ -51,11 +50,6 @@
   white-space: nowrap;
 }
 
-.main-info__link-wrapper {
-  display: flex;
-  justify-content: space-between;
-}
-
 .main-info__features {
   position: relative;
   margin-bottom: @d162px;
@@ -73,6 +67,15 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.main-info__link-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-info__link-callback {
+  padding-right: @d29px;
 }
 
 .main-info__btn-bottom {
@@ -118,11 +121,80 @@
 }
 
 @media (max-width: @mobile-width) {
-  .bg.main-info {
-    height: 1540px;
+  .main-info {
+    position: relative;
+    margin-bottom: @m153px;
   }
+
+  .bg.main-info {
+    // height: 1540px;
+    height: 205.33vw; // 1540px;
+  }
+
   .main-info__bg-wrapper {
-    height: 1540px;
+    // height: 1540px;
+    height: 205.33vw; // 1540px;
+  }
+
+  .main-info__content {
+    overflow: visible;
+    padding-top: @m236px;
+  }
+
+  .main-info__top-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-info__link-region {
+    margin-top: @m12px;
+    font-size: @m18px;
+  }
+
+  .main-info__features-text {
+    margin-bottom: @m70px;
+  }
+
+  .main-info__title {
+    overflow: visible;
+
+    margin-bottom: @m62px;
+    .padding-inline(@m43px);
+
+    font-size: @m75px;
+    line-height: @m90px;
+    white-space: normal;
+  }
+
+  .main-info__slogan-img-wrapper {
+    top: @m492px;
+    right: -@m28px;
+    width: @m257px;
+    height: @m254px;
+    margin-right: 0;
+  }
+
+  .main-info__link-callback {
+    padding-right: @m28px;
+    font-size: @m25px;
+    &::before {
+      height: @m2px;
+    }
+  }
+
+  .main-info__btn-bottom {
+    position: absolute;
+    bottom: @m65px;
+    left: 50%;
+    transform: translateX(-50%);
+
+
+    width: @m92px;
+    height: @m91px;
+    &::before {
+      width: @m25px;
+      height: @m40px;
+    }
   }
 }
 
@@ -164,6 +236,10 @@
     width: 257px;
     height: 254px;
     margin-right: 330px;
+  }
+
+  .main-info__link-callback {
+    padding-right: 29px;
   }
 
   .main-info__btn-bottom {
