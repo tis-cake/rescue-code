@@ -47,8 +47,13 @@ $(document).ready(function () {
 // слайдер программы
 $(document).ready(function () {
   var programSwiperMain = new Swiper('#program-swiper', {
+    // slidesPerView: 2,
+    // slidesOffsetBefore: 0,
+    // spaceBetween: 20,
+
     slidesPerView: 3.5,
-    slidesOffsetBefore: 280,
+    // slidesPerView: 3,
+    // slidesOffsetBefore: 120,
     spaceBetween: 32,
 
     loop: true,
@@ -60,42 +65,48 @@ $(document).ready(function () {
         slidesOffsetBefore: 0,
       },
       1920: {
-        slidesOffsetBefore: 280,
+        // slidesOffsetBefore: 280,
       },
       1700: {
-        slidesOffsetBefore: 240,
+        // slidesOffsetBefore: 240,
       },
       1600: {
-        slidesOffsetBefore: 220,
+        // slidesOffsetBefore: 220,
       },
       1500: {
-        slidesOffsetBefore: 200,
+        // slidesOffsetBefore: 200,
       },
       1400: {
-        slidesOffsetBefore: 180,
+        // slidesOffsetBefore: 180,
       },
       1300: {
-        slidesOffsetBefore: 160,
+        // slidesOffsetBefore: 160,
       },
       1200: {
-        slidesOffsetBefore: 150,
-        spaceBetween: 26,
+        // slidesOffsetBefore: 150,
+        // spaceBetween: 26,
       },
       1100: {
-        slidesOffsetBefore: 140,
-        spaceBetween: 24,
+        // slidesOffsetBefore: 140,
+        // spaceBetween: 24,
       },
       1000: {
-        slidesOffsetBefore: 130,
-        spaceBetween: 22,
+        // slidesOffsetBefore: 130,
+        // spaceBetween: 22,
       },
       900: {
-        slidesOffsetBefore: 120,
+        // slidesOffsetBefore: 120,
       },
       800: {
-        slidesOffsetBefore: 110,
-        spaceBetween: 20,
+        slidesPerView: 3.5,
+        // slidesOffsetBefore: 110,
+        // spaceBetween: 20,
       },
+      300: {
+        slidesPerView: 2,
+        slidesOffsetBefore: 0,
+        spaceBetween: 20,
+      }
     },
 
     pagination: {
@@ -105,8 +116,13 @@ $(document).ready(function () {
   });
 
   var programSwiperPagination = new Swiper('#program-swiper-pagination', {
+    // slidesPerView: 2,
+    // slidesOffsetBefore: 0,
+    // spaceBetween: 20,
+
     slidesPerView: 3.5,
-    slidesOffsetBefore: 280,
+    // slidesPerView: 3,
+    // slidesOffsetBefore: 120,
     spaceBetween: 32,
 
     loop: true,
@@ -115,45 +131,51 @@ $(document).ready(function () {
     breakpoints: {
       1921: {
         slidesPerView: 3,
-        slidesOffsetBefore: 35,
+        slidesOffsetBefore: 0,
       },
       1920: {
-        slidesOffsetBefore: 280,
+        // slidesOffsetBefore: 280,
       },
       1700: {
-        slidesOffsetBefore: 240,
+        // slidesOffsetBefore: 240,
       },
       1600: {
-        slidesOffsetBefore: 220,
+        // slidesOffsetBefore: 220,
       },
       1500: {
-        slidesOffsetBefore: 200,
+        // slidesOffsetBefore: 200,
       },
       1400: {
-        slidesOffsetBefore: 180,
+        // slidesOffsetBefore: 180,
       },
       1300: {
-        slidesOffsetBefore: 160,
+        // slidesOffsetBefore: 160,
       },
       1200: {
-        slidesOffsetBefore: 150,
-        spaceBetween: 26,
+        // slidesOffsetBefore: 150,
+        // spaceBetween: 26,
       },
       1100: {
-        slidesOffsetBefore: 140,
-        spaceBetween: 24,
+        // slidesOffsetBefore: 140,
+        // spaceBetween: 24,
       },
       1000: {
-        slidesOffsetBefore: 130,
-        spaceBetween: 22,
+        // slidesOffsetBefore: 130,
+        // spaceBetween: 22,
       },
       900: {
-        slidesOffsetBefore: 120,
+        // slidesOffsetBefore: 120,
       },
       800: {
-        slidesOffsetBefore: 110,
-        spaceBetween: 20,
+        slidesPerView: 3.5,
+        // slidesOffsetBefore: 110,
+        // spaceBetween: 20,
       },
+      300: {
+        slidesPerView: 2,
+        slidesOffsetBefore: 0,
+        spaceBetween: 20,
+      }
     },
 
     pagination: {
@@ -169,26 +191,37 @@ $(document).ready(function () {
   programSwiperPagination.controller.control = programSwiperMain;
 });
 
-
 // слайдер центров
 $(document).ready(function () {
   var mySwiper = new Swiper('#center-swiper', {
     slidesPerView: '1.5',
-    // centeredSlides: true,
-    speed: 3000,
-    spaceBetween: 25,
-    touchRatio: 1,
-    loop: true,
-    freeMode: true,
+    spaceBetween: 30,
     // autoplay: {
     //   delay: 3000,
     //   disableOnInteraction: false,
     // },
     breakpoints: {
       756: {
-        slidesPerView: '3',
-        spaceBetween: 30,
-        // loop: true
+        slidesPerView: '4',
+        spaceBetween: 26,
+      }
+    }
+  });
+});
+
+// слайдер клиник
+$(document).ready(function () {
+  var mySwiper = new Swiper('#clinic-swiper', {
+    slidesPerView: '1.5',
+    spaceBetween: 30,
+    // autoplay: {
+    //   delay: 3000,
+    //   disableOnInteraction: false,
+    // },
+    breakpoints: {
+      756: {
+        slidesPerView: '4',
+        spaceBetween: 26,
       }
     }
   });

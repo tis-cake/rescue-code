@@ -18,7 +18,7 @@ gulp.task("css", function () {
     .pipe(plumber())
     .pipe(sourcemap.init())             //*min
     .pipe(less())
-    // .pipe(postcss([autoprefixer()]))
+    .pipe(postcss([autoprefixer()]))
     // .pipe(gulp.dest("source/css"))      //*source
     // .pipe(cleanCSS({level: 2}))         //*min
     // .pipe(rename("style.min.css"))      //*min

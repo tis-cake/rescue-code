@@ -16,10 +16,7 @@
 }
 
 .rehab-swiper__link {
-  // align-self: center;
   width: @d284px;
-  // margin-bottom: @d10px;
-  // padding-right: @d195px;
   padding-right: 0;
 }
 
@@ -30,15 +27,16 @@
 .rehab-swiper__slide {
   display: flex;
   flex-direction: column;
-  width: @d361px;
-  margin-right: @d26px;
-  &:nth-child(4n) {
-    margin-right: 0;
-  }
+  // width: @d361px;
+  // margin-right: @d26px;
+  // &:nth-child(4n) {
+  //   margin-right: 0;
+  // }
 }
 
 .rehab-swiper__img-wrapper {
-  width: @d361px;
+  // width: @d361px;
+  width: 100%;
   height: @d298px;
 }
 
@@ -94,6 +92,61 @@
 }
 
 @media (max-width: @mobile-width) {
+  .rehab-swiper {
+    margin-bottom: @m272px;
+    &-clinics {
+      margin-bottom: @m290px;
+    }
+  }
+
+  .rehab-swiper__main-title-wrapper {
+    margin-bottom: @m100px;
+  }
+
+  .rehab-swiper__link {
+    width: @m520px;
+    padding-right: 0;
+  }
+
+  .rehab-swiper__slide {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0;
+  }
+
+  .rehab-swiper__img-wrapper {
+    height: @m334px;
+  }
+
+  .rehab-swiper__text-wrapper {
+    padding-top: @m35px;
+  }
+
+  .rehab-swiper__price {
+    margin-bottom: @m22px;
+    font-size: @m27px;
+  }
+
+  .rehab-swiper__location {
+    width: @m340px;
+    margin-bottom: @m22px;
+
+    font-size: @m30px;
+    line-height: @m36px;
+    text-align: center;
+  }
+
+  .rehab-swiper__comfort-lvl {
+    padding-left: @m14px;
+    font-size: @m25px;
+    &::before {
+      top: -@m2px;
+      left: -@m25px;
+
+      width: @m30px;
+      height: @m30px;
+    }
+  }
 }
 
 @media (min-width: @max-desktop-width) {
@@ -119,15 +172,15 @@
   }
 
   .rehab-swiper__slide {
-    width: 361px;
-    margin-right: 26px;
-    &:nth-child(4n) {
-      margin-right: 0;
-    }
+    // width: 361px;
+    // margin-right: 26px;
+    // &:nth-child(4n) {
+    //   margin-right: 0;
+    // }
   }
 
   .rehab-swiper__img-wrapper {
-    width: 361px;
+    // width: 361px;
     height: 298px;
   }
 

@@ -254,7 +254,10 @@ body .mobile-block {
 
   .link,
   .link-callback {
-    padding-right: @m45px;
+    // padding-right: @m45px;
+    width: @m520px;
+    padding-right: 0;
+
     &::before {
       bottom: -@m15px;
       height: @m3px;
@@ -282,6 +285,8 @@ body .mobile-block {
     }
     .link,
     .link-callback {
+      width: @a;
+      padding-right: @m30px;
       &::before {
         bottom: -@m12px;
       }
@@ -294,36 +299,35 @@ body .mobile-block {
   }
 
   .subtitle-pink {
-    margin-bottom: 40px;
-    font-size: 35px;
-    line-height: 42px;
+    margin-bottom: @m40px;
+    font-size: @m35px;
+    line-height: @m42px;
   }
 
-  // .section-title-wrapper {
-  //   display: flex;
-  //   justify-content: space-between;
+  .section-title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 
-  //   margin-bottom: @d54px;
+    margin-bottom: 0;
 
-  //   .section-title {
-  //     margin-bottom: 0;
-  //   }
+    .section-title {
+      margin-bottom: @m62px;
+    }
 
-  //   .link,
-  //   .link-callback,
-  //   .link-region {
-  //     align-self: center;
-  //     margin-bottom: @d10px;
-  //   }
-  // }
+    .link,
+    .link-callback,
+    .link-region {
+      align-self: stretch;
+      margin-bottom: 0;
+    }
+  }
 
   .section-title {
-    margin-bottom: @d54px;
+    margin-bottom: @m37px;
 
-    font-weight: 300;
-    font-size: @d60px;
-
-    color: #161616;
+    font-size: @m70px;
+    color: #000;
   }
 }
 

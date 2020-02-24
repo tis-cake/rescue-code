@@ -61,14 +61,6 @@
 .banner-icon {
   position: relative;
 
-  &--blue-therapy {
-    padding-left: @d72px;
-  }
-
-  &--blue-transport {
-    padding-left: @d56px;
-  }
-
   &::before,
   &::after {
     content: '';
@@ -79,7 +71,32 @@
     background-size: cover;
   }
 
-  &--round-one::after {
+  &-blue-therapy {
+    padding-left: @d72px;
+    &::before {
+      top: -@d23px;
+      left: 0px;
+      width: @d54px;
+      height: @d54px;
+
+      background-image: url('../img/banner/banner2.3.svg');
+    }
+  }
+
+  &-blue-transport {
+    padding-left: @d56px;
+    &::before {
+      top: -@d10px;
+      left: -@d10px;
+
+      width: @d55px;
+      height: @d35px;
+
+      background-image: url('../img/banner/banner3.3.svg');
+    }
+  }
+
+  &-round-one::after {
     top: -@d85px;
     right: -@d115px;
 
@@ -89,7 +106,7 @@
     background-image: url('../img/banner/banner1.2.png');
   }
 
-  &--round-two::after {
+  &-round-two::after {
     top: -@d115px;
     right: -@d45px;
 
@@ -99,24 +116,6 @@
     background-image: url('../img/banner/banner3.2.png');
   }
 
-  &--blue-therapy::before {
-    top: -@d23px;
-    left: 0px;
-    width: @d54px;
-    height: @d54px;
-
-    background-image: url('../img/banner/banner2.3.svg');
-  }
-
-  &--blue-transport::before {
-    top: -@d10px;
-    left: -@d10px;
-
-    width: @d55px;
-    height: @d35px;
-
-    background-image: url('../img/banner/banner3.3.svg');
-  }
 }
 
 .banner__subtitle {
@@ -176,6 +175,146 @@
 }
 
 @media (max-width: @mobile-width) {
+  .banner {
+    // height: 1366px;
+    height: 182.13vw; // 1366px;
+
+    margin-bottom: @m192px;
+    &--margin-empty {
+      // margin-bottom: 0;
+    }
+    &-therapy {
+      padding-top: @m10px;
+      margin-bottom: @m152px;
+    }
+  }
+
+  .banner-img {
+    &-motivation {
+      left: @m215px;
+      width: @m490px;
+      height: @m554px;
+    }
+
+    &-therapy {
+      right: 0;
+      width: 100%;
+      height: @m670px;
+      img {
+        object-position: 86.7%;
+      }
+    }
+
+    // &-transport {
+    //   right: 0;
+    //   width: @d882px;
+    //   height: @d552px;
+    // }
+  }
+
+  .banner__main-wrapper {
+    padding-top: @m148px;
+    padding-left: 0px;
+    &--padding-left {
+      padding-left: 0;
+    }
+    &--padding-top {
+      // padding-top: @d207px;
+    }
+  }
+
+  .banner-icon {
+    &-blue-therapy {
+      padding-left: @m106px;
+      line-height: @m44px;
+      &::before {
+        top: -@m13px;
+        left: 0px;
+        width: @m84px;
+        height: @m84px;
+      }
+    }
+
+    // &-blue-transport {
+    //   padding-left: @d56px;
+    // }
+
+    &-round-one::after {
+      top: -@m92px;
+      right: -@m90px;
+      transform: rotate(8deg);
+
+      width: @m205px;
+      height: @m205px;
+    }
+
+    // &-round-two::after {
+    //   top: -@d115px;
+    //   right: -@d45px;
+
+    //   width: @d152px;
+    //   height: @d154px;
+    // }
+
+    // &-blue-transport::before {
+    //   top: -@d10px;
+    //   left: -@d10px;
+
+    //   width: @d55px;
+    //   height: @d35px;
+    // }
+  }
+
+  .banner__subtitle {
+    width: @m580px;
+    margin-bottom: @m60px;
+    font-size: @m30px;
+    &--big {
+      font-size: @m50px;
+    }
+  }
+
+  .banner__title {
+    width: @a;
+    margin-left: 0;
+    margin-bottom: @m45px;
+
+    font-weight: 400;
+    font-size: @m75px;
+    line-height: @m90px;
+    &--long {
+      width: @a;
+    }
+  }
+
+  .banner__description {
+    width: @a;
+    font-family: @myriad;
+    font-weight: 300;
+    font-size: @m30px;
+    line-height: @m36px;
+
+    &:last-of-type {
+      margin-bottom: @m53px;
+    }
+  }
+
+  .banner__link-callback {
+    width: @m520px;
+    padding-right: 0;
+
+    font-family: @myriad;
+    font-weight: 400;
+  }
+
+  .banner__slogan-img-wrapper {
+    top: @a;
+    bottom: @m295px;
+    right: @m290px;
+
+    width: @m260px;
+    height: @m260px;
+  }
 }
 
 @media (min-width: @max-desktop-width) {
@@ -216,34 +355,34 @@
   }
 
   .banner-icon {
-    &--blue-therapy {
+    &-blue-therapy {
       padding-left: 72px;
+      &::before {
+        top: -23px;
+        width: 54px;
+        height: 54px;
+      }
     }
-    &--blue-transport {
+    &-blue-transport {
       padding-left: 56px;
+      &::before {
+        top: -10px;
+        left: -10px;
+        width: 55px;
+        height: 35px;
+      }
     }
-    &--round-one::after {
+    &-round-one::after {
       top: -85px;
       right: -115px;
       width: 161px;
       height: 165px;
     }
-    &--round-two::after {
+    &-round-two::after {
       top: -115px;
       right: -45px;
       width: 152px;
       height: 154px;
-    }
-    &--blue-therapy::before {
-      top: -23px;
-      width: 54px;
-      height: 54px;
-    }
-    &--blue-transport::before {
-      top: -10px;
-      left: -10px;
-      width: 55px;
-      height: 35px;
     }
   }
 

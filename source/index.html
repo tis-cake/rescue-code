@@ -212,13 +212,13 @@
         </div>
       </section>
 
-      <article class="banner">
+      <article class="banner banner-motivation">
         <div class="banner__wrapper container">
           <div class="banner__bg-img-wrapper banner-img-motivation">
             <img class="banner__bg-img" src="img/banner/banner1.1.png" alt="">
           </div>
           <div class="banner__main-wrapper banner__main-wrapper--padding-left">
-            <p class="banner__subtitle banner__subtitle banner-icon banner-icon--round-one">От передозировки мефедроном выживают только <span class="banner__subtitle--big">2%</span></p>
+            <p class="banner__subtitle banner__subtitle banner-icon banner-icon-round-one">От передозировки мефедроном выживают только <span class="banner__subtitle--big">2%</span></p>
             <h2 class="banner__title">Замотивируем на лечение</h2>
             <p class="banner__description">Зачастую сами зависимые неосознают проблему, поэтому отказываются от лечения!</p>
             <p class="banner__description">Мы поможем уговорить на лечение вашего близкого на бесплатной консультации.</p>
@@ -253,7 +253,10 @@
             </ul>
           </div>
           <figure class="research__chart-wrapper">
-            <img class="research__chart-img" src="img/research/схема.svg" alt="Исследование данных. График с 2016 по 2019гг.">
+            <picture>
+              <source media="(max-width: 750px)" srcset="img/research/схема-m.svg">
+              <img class="research__chart-img" src="img/research/схема-d.svg" alt="Исследование данных. График с 2016 по 2019гг.">
+            </picture>
             <figcaption class="research__chart-desctiption">Исследование данных. График с 2016 по 2019гг.</figcaption>
           </figure>
         </div>
@@ -266,51 +269,76 @@
           <a class="rehab-swiper__link link" href="centers.html">Все центры</a>
         </div>
 
-        <div class="rehab-swiper__wrapper">
-          <a class="rehab-swiper__slide" href="clinic-page.html">
-            <div class="rehab-swiper__img-wrapper">
-              <img class="rehab-swiper__img" src="img/rehab-swiper/центр.jpg" alt="">
-            </div>
-            <div class="rehab-swiper__text-wrapper">
-              <p class="rehab-swiper__price"><span class="rehab-swiper__price--bold">50 000 &#8381;</span> / в месяц</p>
-              <p class="rehab-swiper__location">Одинцово, Дебнинская, 37 к 2</p>
-              <p class="rehab-swiper__comfort-lvl">Комфорт</p>
-            </div>
-          </a>
+        <!-- <div class="rehab-swiper__wrapper"> -->
+          <div class="swiper-container" id="center-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a class="rehab-swiper__slide" href="clinic-page.html">
+                  <div class="rehab-swiper__img-wrapper">
+                    <img class="rehab-swiper__img" src="img/rehab-swiper/центр.jpg" alt="">
+                  </div>
+                  <div class="rehab-swiper__text-wrapper">
+                    <p class="rehab-swiper__price"><span class="rehab-swiper__price--bold">50 000 &#8381;</span> / в месяц</p>
+                    <p class="rehab-swiper__location">Одинцово, Дебнинская, 37 к 2</p>
+                    <p class="rehab-swiper__comfort-lvl">Комфорт</p>
+                  </div>
+                </a>
+              </div>
 
-          <a class="rehab-swiper__slide" href="clinic-page.html">
-            <div class="rehab-swiper__img-wrapper">
-              <img class="rehab-swiper__img" src="img/rehab-swiper/центр.jpg" alt="">
-            </div>
-            <div class="rehab-swiper__text-wrapper">
-              <p class="rehab-swiper__price"><span class="rehab-swiper__price--bold">50 000 &#8381;</span> / в месяц</p>
-              <p class="rehab-swiper__location">Одинцово, Дебнинская, 37 к 2</p>
-              <p class="rehab-swiper__comfort-lvl">Комфорт</p>
-            </div>
-          </a>
+              <div class="swiper-slide">
+                <a class="rehab-swiper__slide" href="clinic-page.html">
+                  <div class="rehab-swiper__img-wrapper">
+                    <img class="rehab-swiper__img" src="img/rehab-swiper/центр.jpg" alt="">
+                  </div>
+                  <div class="rehab-swiper__text-wrapper">
+                    <p class="rehab-swiper__price"><span class="rehab-swiper__price--bold">50 000 &#8381;</span> / в месяц</p>
+                    <p class="rehab-swiper__location">Одинцово, Дебнинская, 37 к 2</p>
+                    <p class="rehab-swiper__comfort-lvl">Комфорт</p>
+                  </div>
+                </a>
+              </div>
 
-          <a class="rehab-swiper__slide" href="clinic-page.html">
-            <div class="rehab-swiper__img-wrapper">
-              <img class="rehab-swiper__img" src="img/rehab-swiper/центр.jpg" alt="">
-            </div>
-            <div class="rehab-swiper__text-wrapper">
-              <p class="rehab-swiper__price"><span class="rehab-swiper__price--bold">50 000 &#8381;</span> / в месяц</p>
-              <p class="rehab-swiper__location">Одинцово, Дебнинская, 37 к 2</p>
-              <p class="rehab-swiper__comfort-lvl">Комфорт</p>
-            </div>
-          </a>
+              <div class="swiper-slide">
+                <a class="rehab-swiper__slide" href="clinic-page.html">
+                  <div class="rehab-swiper__img-wrapper">
+                    <img class="rehab-swiper__img" src="img/rehab-swiper/центр.jpg" alt="">
+                  </div>
+                  <div class="rehab-swiper__text-wrapper">
+                    <p class="rehab-swiper__price"><span class="rehab-swiper__price--bold">50 000 &#8381;</span> / в месяц</p>
+                    <p class="rehab-swiper__location">Одинцово, Дебнинская, 37 к 2</p>
+                    <p class="rehab-swiper__comfort-lvl">Комфорт</p>
+                  </div>
+                </a>
+              </div>
 
-          <a class="rehab-swiper__slide" href="clinic-page.html">
-            <div class="rehab-swiper__img-wrapper">
-              <img class="rehab-swiper__img" src="img/rehab-swiper/центр.jpg" alt="">
+              <div class="swiper-slide">
+                <a class="rehab-swiper__slide" href="clini</div>c-page.html">
+                  <div class="rehab-swiper__img-wrapper">
+                    <img class="rehab-swiper__img" src="img/rehab-swiper/центр.jpg" alt="">
+                  </div>
+                  <div class="rehab-swiper__text-wrapper">
+                    <p class="rehab-swiper__price"><span class="rehab-swiper__price--bold">50 000 &#8381;</span> / в месяц</p>
+                    <p class="rehab-swiper__location">Одинцово, Дебнинская, 37 к 2</p>
+                    <p class="rehab-swiper__comfort-lvl">Комфорт</p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a class="rehab-swiper__slide" href="clinic-page.html">
+                  <div class="rehab-swiper__img-wrapper">
+                    <img class="rehab-swiper__img" src="img/rehab-swiper/центр.jpg" alt="">
+                  </div>
+                  <div class="rehab-swiper__text-wrapper">
+                    <p class="rehab-swiper__price"><span class="rehab-swiper__price--bold">50 000 &#8381;</span> / в месяц</p>
+                    <p class="rehab-swiper__location">Одинцово, Дебнинская, 37 к 2</p>
+                    <p class="rehab-swiper__comfort-lvl">Комфорт</p>
+                  </div>
+                </a>
+              </div>
             </div>
-            <div class="rehab-swiper__text-wrapper">
-              <p class="rehab-swiper__price"><span class="rehab-swiper__price--bold">50 000 &#8381;</span> / в месяц</p>
-              <p class="rehab-swiper__location">Одинцово, Дебнинская, 37 к 2</p>
-              <p class="rehab-swiper__comfort-lvl">Комфорт</p>
-            </div>
-          </a>
-        </div>
+          </div>
+        <!-- </div> -->
       </section>
 
       <section class="program-swiper">
@@ -322,6 +350,19 @@
 
         <div class="swiper-container swiper-container--progressbar" id="program-swiper">
           <div class="swiper-wrapper">
+
+            <!-- 1 -->
+            <div class="swiper-slide">
+              <a class="program-swiper__slide" href="#">
+                <div class="program-swiper__img-wrapper">
+                  <img class="program-swiper__img" src="img/program-swiper/step1.jpg" alt="">
+                </div>
+                <div class="program-swiper__text-wrapper">
+                  <p class="program-swiper__steps-count">1 шаг</p>
+                  <h3 class="program-swiper__slide-title">Детоксикация</h3>
+                </div>
+              </a>
+            </div>
 
             <!-- 2 -->
             <div class="swiper-slide">
@@ -374,6 +415,12 @@
                 </div>
               </a>
             </div>
+          </div>
+          <div class="swiper-pagination program-progressbar"></div>
+        </div>
+
+        <div class="swiper-container swiper-container--pagination container" id="program-swiper-pagination">
+          <div class="swiper-wrapper">
 
             <!-- 1 -->
             <div class="swiper-slide">
@@ -381,18 +428,8 @@
                 <div class="program-swiper__img-wrapper">
                   <img class="program-swiper__img" src="img/program-swiper/step1.jpg" alt="">
                 </div>
-                <div class="program-swiper__text-wrapper">
-                  <p class="program-swiper__steps-count">1 шаг</p>
-                  <h3 class="program-swiper__slide-title">Детоксикация</h3>
-                </div>
               </a>
             </div>
-          </div>
-          <div class="swiper-pagination program-progressbar"></div>
-        </div>
-
-        <div class="swiper-container swiper-container--pagination container" id="program-swiper-pagination">
-          <div class="swiper-wrapper">
 
             <!-- 2 -->
             <div class="swiper-slide">
@@ -427,19 +464,8 @@
                 </div>
               </a>
             </div>
-
-            <!-- 1 -->
-            <div class="swiper-slide">
-              <a class="program-swiper__slide" href="#">
-                <div class="program-swiper__img-wrapper">
-                  <img class="program-swiper__img" src="img/program-swiper/step1.jpg" alt="">
-                </div>
-              </a>
-            </div>
           </div>
-          <!-- <div class="program-swiper__pagination-wrapper"> -->
-            <div class="swiper-pagination program-pagination"></div>
-          <!-- </div> -->
+          <div class="swiper-pagination program-pagination"></div>
         </div>
       </section>
 
@@ -521,60 +547,70 @@
           <a class="rehab-swiper__link link" href="clinics.html">Все клиники</a>
         </div>
 
-        <div class="rehab-swiper__wrapper">
-          <a class="rehab-swiper__slide" href="clinic-page.html">
-            <div class="rehab-swiper__img-wrapper">
-              <img class="rehab-swiper__img" src="img/rehab-swiper/клиника.jpg" alt="">
+        <div class="swiper-container" id="clinic-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a class="rehab-swiper__slide" href="clinic-page.html">
+                <div class="rehab-swiper__img-wrapper">
+                  <img class="rehab-swiper__img" src="img/rehab-swiper/клиника.jpg" alt="">
+                </div>
+                <div class="rehab-swiper__text-wrapper">
+                  <p class="rehab-swiper__price"><span class="rehab-swiper__price--bold">5 000 &#8381;</span> / в день</p>
+                  <p class="rehab-swiper__location">Одинцово, Дебнинская, 37 к 2</p>
+                  <p class="rehab-swiper__comfort-lvl">Комфорт</p>
+                </div>
+              </a>
             </div>
-            <div class="rehab-swiper__text-wrapper">
-              <p class="rehab-swiper__price"><span class="rehab-swiper__price--bold">5 000 &#8381;</span> / в день</p>
-              <p class="rehab-swiper__location">Одинцово, Дебнинская, 37 к 2</p>
-              <p class="rehab-swiper__comfort-lvl">Комфорт</p>
-            </div>
-          </a>
 
-          <a class="rehab-swiper__slide" href="clinic-page.html">
-            <div class="rehab-swiper__img-wrapper">
-              <img class="rehab-swiper__img" src="img/rehab-swiper/клиника.jpg" alt="">
+            <div class="swiper-slide">
+              <a class="rehab-swiper__slide" href="clinic-page.html">
+                <div class="rehab-swiper__img-wrapper">
+                  <img class="rehab-swiper__img" src="img/rehab-swiper/клиника.jpg" alt="">
+                </div>
+                <div class="rehab-swiper__text-wrapper">
+                  <p class="rehab-swiper__price"><span class="rehab-swiper__price--bold">5 000 &#8381;</span> / в день</p>
+                  <p class="rehab-swiper__location">Одинцово, Дебнинская, 37 к 2</p>
+                  <p class="rehab-swiper__comfort-lvl">Комфорт</p>
+                </div>
+              </a>
             </div>
-            <div class="rehab-swiper__text-wrapper">
-              <p class="rehab-swiper__price"><span class="rehab-swiper__price--bold">5 000 &#8381;</span> / в день</p>
-              <p class="rehab-swiper__location">Одинцово, Дебнинская, 37 к 2</p>
-              <p class="rehab-swiper__comfort-lvl">Комфорт</p>
-            </div>
-          </a>
 
-          <a class="rehab-swiper__slide" href="clinic-page.html">
-            <div class="rehab-swiper__img-wrapper">
-              <img class="rehab-swiper__img" src="img/rehab-swiper/клиника.jpg" alt="">
+            <div class="swiper-slide">
+              <a class="rehab-swiper__slide" href="clinic-page.html">
+                <div class="rehab-swiper__img-wrapper">
+                  <img class="rehab-swiper__img" src="img/rehab-swiper/клиника.jpg" alt="">
+                </div>
+                <div class="rehab-swiper__text-wrapper">
+                  <p class="rehab-swiper__price"><span class="rehab-swiper__price--bold">5 000 &#8381;</span> / в день</p>
+                  <p class="rehab-swiper__location">Одинцово, Дебнинская, 37 к 2</p>
+                  <p class="rehab-swiper__comfort-lvl">Комфорт</p>
+                </div>
+              </a>
             </div>
-            <div class="rehab-swiper__text-wrapper">
-              <p class="rehab-swiper__price"><span class="rehab-swiper__price--bold">5 000 &#8381;</span> / в день</p>
-              <p class="rehab-swiper__location">Одинцово, Дебнинская, 37 к 2</p>
-              <p class="rehab-swiper__comfort-lvl">Комфорт</p>
-            </div>
-          </a>
 
-          <a class="rehab-swiper__slide" href="clinic-page.html">
-            <div class="rehab-swiper__img-wrapper">
-              <img class="rehab-swiper__img" src="img/rehab-swiper/клиника.jpg" alt="">
+            <div class="swiper-slide">
+              <a class="rehab-swiper__slide" href="clinic-page.html">
+                <div class="rehab-swiper__img-wrapper">
+                  <img class="rehab-swiper__img" src="img/rehab-swiper/клиника.jpg" alt="">
+                </div>
+                <div class="rehab-swiper__text-wrapper">
+                  <p class="rehab-swiper__price"><span class="rehab-swiper__price--bold">5 000 &#8381;</span> / в день</p>
+                  <p class="rehab-swiper__location">Одинцово, Дебнинская, 37 к 2</p>
+                  <p class="rehab-swiper__comfort-lvl">Комфорт</p>
+                </div>
+              </a>
             </div>
-            <div class="rehab-swiper__text-wrapper">
-              <p class="rehab-swiper__price"><span class="rehab-swiper__price--bold">5 000 &#8381;</span> / в день</p>
-              <p class="rehab-swiper__location">Одинцово, Дебнинская, 37 к 2</p>
-              <p class="rehab-swiper__comfort-lvl">Комфорт</p>
-            </div>
-          </a>
+          </div>
         </div>
       </section>
 
-      <article class="banner">
+      <article class="banner banner-therapy">
         <div class="banner__bg-img-wrapper banner-img-therapy">
           <img class="banner__bg-img" src="img/banner/banner2.1.png" alt="">
         </div>
         <div class="banner__wrapper container">
           <div class="banner__main-wrapper">
-            <p class="banner__subtitle banner-icon banner-icon--blue-therapy">Организуем группы и терапию для родственников!</p>
+            <p class="banner__subtitle banner-icon banner-icon-blue-therapy">Организуем группы и терапию для родственников!</p>
             <h2 class="banner__title">Терапия созависимых</h2>
             <p class="banner__description">Лечение мефедроновой наркомании зависит не только от желания самого наркомана лечиться, но и от желания родственников помочь и бороться вместе с зависимым! </p>
             <a class="banner__link-callback link-callback--roboto-medium link-callback modal-callback" href="#">Заявка на лечение</a>
@@ -690,9 +726,11 @@
           <div class="about__column-left">
             <a class="about__logo logo logo--empty" href="index.html">
               <img class="logo__img" src="img/logo/logo-blue.svg" alt="Логотип портала «Код спасения»" width="52" height="70">
-              <h3 class="logo__title logo__title--less">Код спасения</h3>
-              <p class="logo__description">Портал помощи солевым наркоманам</p>
-              <p class="logo__about">Организация создана в 2005 г. <span class="logo__about--block">г. Москва</span></p>
+              <div class="logo__text-wrapper">
+                <h3 class="logo__title logo__title--less">Код спасения</h3>
+                <p class="logo__description">Портал помощи солевым наркоманам</p>
+                <p class="logo__about">Организация создана в 2005 г. <span class="logo__about--block">г. Москва</span></p>
+              </div>
             </a>
           </div>
 
@@ -706,14 +744,14 @@
         </div>
       </section>
 
-      <article class="banner banner--margin-empty">
+      <article class="banner banner-transport banner--margin-empty">
         <div class="banner__bg-img-wrapper banner-img-transport">
           <img class="banner__bg-img" src="img/banner/banner3.1.png" alt="">
         </div>
         <div class="banner__wrapper container">
           <div class="banner__main-wrapper banner__main-wrapper--padding-top">
-            <p class="banner__subtitle banner-icon banner-icon--blue-transport">Бесплатная транспортировка до клиники!</p>
-            <h2 class="banner__title banner__title--long banner-icon banner-icon--round-two">Транспортировка</h2>
+            <p class="banner__subtitle banner-icon banner-icon-blue-transport">Бесплатная транспортировка до клиники!</p>
+            <h2 class="banner__title banner__title--long banner-icon banner-icon-round-two">Транспортировка</h2>
             <p class="banner__description">Зачастую сами зависимые неосознают проблему, поэтому отказываются от лечения!</p>
             <p class="banner__description">Мы поможем уговорить на лечение вашего близкого на бесплатной консультации.</p>
             <a class="banner__link-callback link-callback link-callback--roboto-medium modal-callback" href="#">Вызов скорой помощи</a>
