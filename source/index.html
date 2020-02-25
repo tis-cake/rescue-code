@@ -746,15 +746,18 @@
 
       <article class="banner banner-transport banner--margin-empty">
         <div class="banner__bg-img-wrapper banner-img-transport">
-          <img class="banner__bg-img" src="img/banner/banner3.1.png" alt="">
+          <picture>
+            <source media="(max-width: 750px)" srcset="img/banner/banner3.1-m.png">
+            <img class="banner__bg-img" src="img/banner/banner3.1-d.png" alt="">
+          </picture>
         </div>
         <div class="banner__wrapper container">
           <div class="banner__main-wrapper banner__main-wrapper--padding-top">
-            <p class="banner__subtitle banner-icon banner-icon-blue-transport">Бесплатная транспортировка до клиники!</p>
+            <p class="banner__subtitle banner-icon banner-icon-blue-transport" lang="ru">Бесплатная транспортировка до клиники!</p>
             <h2 class="banner__title banner__title--long banner-icon banner-icon-round-two">Транспортировка</h2>
             <p class="banner__description">Зачастую сами зависимые неосознают проблему, поэтому отказываются от лечения!</p>
             <p class="banner__description">Мы поможем уговорить на лечение вашего близкого на бесплатной консультации.</p>
-            <a class="banner__link-callback link-callback link-callback--roboto-medium modal-callback" href="#">Вызов скорой помощи</a>
+            <a class="banner__link-callback link-callback link-callback--roboto-medium modal-callback" href="#">Вызов скорой помощи <span class="banner-icon banner-icon-round-two"></span></a>
           </div>
         </div>
       </article>
@@ -793,8 +796,10 @@
         <div class="footer__center-column">
           <a class="footer__logo logo logo--empty" href="index.html">
             <img class="logo__img" src="img/logo/logo-blue.svg" alt="Логотип портала «Код спасения»" width="52" height="70">
-            <h3 class="logo__title logo__title">Код спасения</h3>
-            <p class="logo__description">Портал помощи солевым наркоманам</p>
+            <div class="logo__text-wrapper">
+              <h3 class="logo__title">Код спасения</h3>
+              <p class="logo__description">Портал помощи солевым наркоманам</p>
+            </div>
           </a>
           <a class="footer__link-callback link-callback modal-callback" href="#">Заявка на бесплатную консультацию</a>
           <div class="footer__phone-wrapper">

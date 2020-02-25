@@ -1304,6 +1304,7 @@ body .mobile-block {
 @media (max-width: 755px) {
   .program {
     margin-bottom: 8.666vw;
+    overflow: hidden;
   }
   .program__features-text {
     margin-bottom: 15.333vw;
@@ -1574,6 +1575,18 @@ body .mobile-block {
     padding-top: 1.33vw;
     margin-bottom: 20.267vw;
   }
+  .banner-transport {
+    margin-bottom: 0;
+  }
+  .banner-transport .banner__title {
+    word-break: break-word;
+  }
+  .banner-transport .banner__title.banner-icon-round-two::after {
+    content: none;
+  }
+  .banner-transport .banner__link-callback {
+    width: 47.333vw;
+  }
   .banner-img-motivation {
     left: 28.667vw;
     width: 65.333vw;
@@ -1587,6 +1600,10 @@ body .mobile-block {
   .banner-img-therapy img {
     -o-object-position: 86.7%;
        object-position: 86.7%;
+  }
+  .banner-img-transport {
+    width: 98.667vw;
+    height: 94.667vw;
   }
   .banner__main-wrapper {
     padding-top: 19.733vw;
@@ -1605,12 +1622,28 @@ body .mobile-block {
     width: 11.2vw;
     height: 11.2vw;
   }
+  .banner-icon-blue-transport {
+    padding-left: 14.267vw;
+  }
+  .banner-icon-blue-transport::before {
+    top: -1.33vw;
+    left: 0px;
+    width: 10.8vw;
+    height: 7.066vw;
+  }
   .banner-icon-round-one::after {
     top: -12.26vw;
     right: -12vw;
     transform: rotate(8deg);
     width: 27.333vw;
     height: 27.333vw;
+  }
+  .banner-icon-round-two::after {
+    top: -4vw;
+    right: -28vw;
+    width: 25.333vw;
+    height: 25.333vw;
+    transform: rotate(80deg);
   }
   .banner__subtitle {
     width: 77.333vw;
@@ -2870,6 +2903,72 @@ body .mobile-block {
 .footer__phone-text {
   font-size: 0.9375vw;
   font-weight: 300;
+}
+@media (max-width: 755px) {
+  .footer {
+    padding-top: 11.6vw;
+    padding-bottom: 11.6vw;
+  }
+  .footer__wrapper {
+    flex-wrap: wrap;
+  }
+  .footer__list--right {
+    text-align: left;
+  }
+  .footer__item,
+  .footer__link {
+    font-size: 3.866vw;
+  }
+  .footer__item {
+    margin-bottom: 4.8vw;
+  }
+  .footer__center-column {
+    order: 3;
+    margin-top: 12vw;
+    margin-left: 2.666vw;
+  }
+  .footer__logo {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    margin-bottom: 10vw;
+    padding-top: 0px;
+    padding-left: 0;
+    text-align: left;
+  }
+  .footer__logo .logo__img {
+    width: 11.73vw;
+    height: 16vw;
+  }
+  .footer__logo .logo__text-wrapper {
+    margin-left: 2.666vw;
+  }
+  .footer__logo .logo__title {
+    margin-top: 3.866vw;
+    margin-bottom: 3.333vw;
+    font-size: 6.666vw;
+  }
+  .footer__logo .logo__description {
+    font-size: 3.733vw;
+    line-height: 4.666vw;
+  }
+  .footer__link-callback {
+    width: 100%;
+    margin-bottom: 13.3vw;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-weight: 500;
+    font-size: 4vw;
+  }
+  .footer__phone-wrapper {
+    text-align: left;
+  }
+  .footer__phone {
+    margin-bottom: 2.533vw;
+    font-size: 6vw;
+  }
+  .footer__phone-text {
+    font-size: 4vw;
+  }
 }
 @media (min-width: 1921px) {
   .footer {
