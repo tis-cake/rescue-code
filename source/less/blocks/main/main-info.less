@@ -31,6 +31,11 @@
   padding-top: @d317px;
 }
 
+.main-info__top-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .main-info__features-text {
   margin-bottom: @d43px;
 }
@@ -40,7 +45,7 @@
 
   position: relative;
   margin-bottom: @d33px;
-  padding-left: @d198px;
+  // padding-left: @d198px;
 
   font-size: @d105px;
   font-family: @circe;
@@ -48,6 +53,14 @@
   text-transform: uppercase;
 
   white-space: nowrap;
+
+  &--fz95 {
+    font-size: @d95px;
+  }
+
+  &--padding-left {
+    padding-left: @d198px;
+  }
 }
 
 .main-info__features {
@@ -74,7 +87,7 @@
   justify-content: space-between;
 }
 
-.main-info__link-callback {
+.main-info__link {
   padding-right: @d29px;
 }
 
@@ -127,23 +140,16 @@
   }
 
   .bg.main-info {
-    // height: 1540px;
     height: 205.33vw; // 1540px;
   }
 
   .main-info__bg-wrapper {
-    // height: 1540px;
     height: 205.33vw; // 1540px;
   }
 
   .main-info__content {
     overflow: visible;
     padding-top: @m236px;
-  }
-
-  .main-info__top-wrapper {
-    display: flex;
-    justify-content: space-between;
   }
 
   .main-info__link-region {
@@ -159,11 +165,19 @@
     overflow: visible;
 
     margin-bottom: @m62px;
-    .padding-inline(@m43px);
 
     font-size: @m75px;
     line-height: @m90px;
     white-space: normal;
+    &--fz95 {
+      font-size: @m60px;
+    }
+    &--fz70 {
+      font-size: @m70px;
+    }
+    &--padding-left {
+      .padding-inline(@m43px);
+    }
   }
 
   .main-info__slogan-img-wrapper {
@@ -174,7 +188,7 @@
     margin-right: 0;
   }
 
-  .main-info__link-callback {
+  .main-info__link {
     padding-right: @m28px;
     font-size: @m25px;
     &::before {
@@ -218,13 +232,17 @@
   }
 
   .main-info__title {
-    // margin-left: 196px;
-    // margin-left: auto;
-    padding-left: 198px;
     margin-bottom: 33px;
     font-size: 105px;
-    @media (min-width: 1930px) {
-      padding-left: 0;
+    &--fz95 {
+      font-size: 95px;
+    }
+    &--padding-left {
+      padding-left: 198px;
+
+      @media (min-width: 1930px) {
+        padding-left: 0;
+      }
     }
   }
 
@@ -238,7 +256,7 @@
     margin-right: 330px;
   }
 
-  .main-info__link-callback {
+  .main-info__link {
     padding-right: 29px;
   }
 

@@ -21,7 +21,7 @@ $(document).ready(function () {
 // [index page]
 // заголовок h1 в main-info
 if (width <= 755) {
-  $('.main-info__title.visually-hidden').removeClass('visually-hidden');
+  // $('.main-info__title.visually-hidden').removeClass('visually-hidden');
 }
 
 // якорь на main-info
@@ -196,6 +196,9 @@ $(document).ready(function () {
   var mySwiper = new Swiper('#center-swiper', {
     slidesPerView: '1.5',
     spaceBetween: 30,
+
+    // spaceBetween: 45,
+
     // autoplay: {
     //   delay: 3000,
     //   disableOnInteraction: false,

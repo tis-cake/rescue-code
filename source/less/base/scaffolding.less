@@ -36,6 +36,10 @@ p {
 //   font-family: @circe;
 // }
 
+.ruble {
+  font-family: @circe;
+}
+
 .noscroll {
   overflow: hidden !important;
   height: 100% !important;
@@ -107,7 +111,6 @@ input[type="radio"].visually-hidden {
 // }
 
 .link,
-.link-callback,
 .link-region {
   position: relative;
   display: inline-block;
@@ -134,8 +137,7 @@ input[type="radio"].visually-hidden {
   }
 }
 
-.link,
-.link-callback {
+.link {
   padding-right: @d39px;
   &::before {
     top: @a;
@@ -170,13 +172,12 @@ input[type="radio"].visually-hidden {
     // width: 79.375vw; //1524px;
   }
   .link,
-  .link-callback,
   .link-region {
     font-family: @roboto;
     font-weight: 700;
     color: #fff;
   }
-  .link-callback {
+  .link {
     // padding-right: @d29px;
     &::before {
       bottom: -@d8px;
@@ -207,7 +208,6 @@ input[type="radio"].visually-hidden {
   }
 
   .link,
-  .link-callback,
   .link-region {
     align-self: center;
     margin-bottom: @d10px;
@@ -247,13 +247,11 @@ body .mobile-block {
   }
 
   .link,
-  .link-callback,
   .link-region {
     font-size: @m30px;
   }
 
-  .link,
-  .link-callback {
+  .link {
     // padding-right: @m45px;
     width: @m520px;
     padding-right: 0;
@@ -283,8 +281,7 @@ body .mobile-block {
     .container {
       // width: 79.375vw; //1524px;
     }
-    .link,
-    .link-callback {
+    .link {
       width: @a;
       padding-right: @m30px;
       &::before {
@@ -316,7 +313,6 @@ body .mobile-block {
     }
 
     .link,
-    .link-callback,
     .link-region {
       align-self: stretch;
       margin-bottom: 0;
@@ -337,7 +333,6 @@ body .mobile-block {
   }
 
   .link,
-  .link-callback,
   .link-region {
     font-size: 18px;
     &::before,
@@ -346,8 +341,7 @@ body .mobile-block {
     }
   }
 
-  .link,
-  .link-callback {
+  .link {
     padding-right: 39px;
     &::before {
       top: @a;
@@ -375,7 +369,7 @@ body .mobile-block {
     .container {
       // width: 1524px;
     }
-    .link-callback {
+    .link {
       // padding-right: 29px;
       &::before {
         bottom: -8px;
@@ -392,7 +386,6 @@ body .mobile-block {
   .section-title-wrapper {
     margin-bottom: 54px;
     .link,
-    .link-callback,
     .link-region {
       margin-bottom: 10px;
     }

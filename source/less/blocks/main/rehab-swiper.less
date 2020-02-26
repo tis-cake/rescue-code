@@ -1,5 +1,8 @@
 .rehab-swiper {
   margin-bottom: @d310px;
+  &--margin-bottom {
+    margin-bottom: @d124px;
+  }
   &-clinics {
     margin-bottom: @d165px;
   }
@@ -22,20 +25,26 @@
 
 .rehab-swiper__wrapper {
   display: flex;
+  flex-wrap: wrap;
+  .rehab-swiper__slide {
+    width: @d361px;
+    margin-right: @d24px;
+    margin-bottom: @d66px;
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+  .rehab-swiper__img-wrapper {
+    width: @d361px;
+  }
 }
 
 .rehab-swiper__slide {
   display: flex;
   flex-direction: column;
-  // width: @d361px;
-  // margin-right: @d26px;
-  // &:nth-child(4n) {
-  //   margin-right: 0;
-  // }
 }
 
 .rehab-swiper__img-wrapper {
-  // width: @d361px;
   width: 100%;
   height: @d298px;
 }
@@ -94,6 +103,13 @@
 @media (max-width: @mobile-width) {
   .rehab-swiper {
     margin-bottom: @m272px;
+    .swiper-container.container {
+      // padding-left: 0;
+      // margin-left: @m43px;
+    }
+    &--margin-bottom {
+      // margin-bottom: @d124px;
+    }
     &-clinics {
       margin-bottom: @m290px;
     }
@@ -101,6 +117,21 @@
 
   .rehab-swiper__main-title-wrapper {
     margin-bottom: @m100px;
+  }
+
+  .rehab-swiper__wrapper {
+    .rehab-swiper__slide {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: @m92px;
+      &:nth-child(4n) {
+        margin-right: 0;
+      }
+    }
+    .rehab-swiper__img-wrapper {
+      width: 100%;
+      height: @m391px;
+    }
   }
 
   .rehab-swiper__link {
@@ -152,6 +183,9 @@
 @media (min-width: @max-desktop-width) {
   .rehab-swiper {
     margin-bottom: 310px;
+    &--margin-bottom {
+      margin-bottom: 124px;
+    }
     &-clinics {
       margin-bottom: 165px;
     }
@@ -167,20 +201,24 @@
 
   .rehab-swiper__link {
     width: 284px;
-    // margin-bottom: 10px;
     padding-right: 0;
   }
 
-  .rehab-swiper__slide {
-    // width: 361px;
-    // margin-right: 26px;
-    // &:nth-child(4n) {
-    //   margin-right: 0;
-    // }
+  .rehab-swiper__wrapper {
+    .rehab-swiper__slide {
+      width: 361px;
+      margin-right: 24px;
+      margin-bottom: 66px;
+      &:nth-child(4n) {
+        margin-right: 0;
+      }
+    }
+    .rehab-swiper__img-wrapper {
+      width: 361px;
+    }
   }
 
   .rehab-swiper__img-wrapper {
-    // width: 361px;
     height: 298px;
   }
 

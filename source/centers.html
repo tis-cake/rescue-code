@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="«Код спасения»">
+    <title>Код спасения</title>
+
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="./fav.ico"> -->
+
+    <link rel="preload" href="fonts/MyriadPro/regular/MyriadPro-Regular.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="stylesheet" href="css/normalise.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+
+          <button class="header__menu-toggle menu-toggle">
+            <span>Открыть меню</span>
+          </button>
+
+          <a class="header__logo logo" href="index.html">
+            <h2 class="logo__title">Код спасения</h2>
+            <p class="logo__description">Портал помощи солевым наркоманам</p>
+          </a>
+
+          <a class="header__link-call-back modal-callback" href="#">
+            <img class="header__link-call-back-img" src="img/svg/call-w.svg" alt="Обратный звонок">
+          </a>
+
+          <nav class="header__main-nav main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="centers.html">Реабилитация</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="clinics.html">Клиники</a>
+              </li>
+              <li class="main-nav__item">
+                <span class="main-nav__link">Лечение</span>
+                <ul class="main-nav__sublist">
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="service-detox.html">Детоксикация</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="service-rehab.html">Реабилитация</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="service-program.html">Программы лечения</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="service-ambulatory.html">Амбулаторное лечение</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="service-abroad.html">Лечение за границей</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="service-advocate.html">Адвокатская помощь</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="service-resoc.html">Ресоциализация</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="service-recode.html">Кодирование</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="family.html">Родственникам</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="teenagers.html">Подросткам</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="database.html">Публикации</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="about.html">О нас</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="header__phone-wrapper">
+            <a class="header__phone" href="tel:+78009009090">8 800 900 90 90</a>
+            <p class="header__phone-text">Круглосуточная бесплатная помощь</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="main-info bg">
+        <div class="main-info__bg-wrapper">
+          <picture>
+            <!-- <source type="image/webp" media="(max-width: 750px)" srcset="img/main-info/bg1-m.webp"> -->
+            <source media="(max-width: 750px)" srcset="img/main-info/bg2-m.png">
+            <!-- <source type="image/webp" srcset="img/main-info/bg1-d.webp"> -->
+            <img class="main-info__bg-img" src="img/main-info/bg2-d.png" alt="">
+          </picture>
+        </div>
+        <div class="main-info__content container">
+          <div class="main-info__top-wrapper">
+            <p class="main-info__features-text features--without-icon">
+              Помощь
+              <span class="features__text-big">24</span>
+              <span class="features__text-small">/7</span>
+            </p>
+            <p class="main-info__features-text features--without-icon desktop-block">
+              Анонимно
+              <span class="features__text-big">100</span>
+              <span class="features__text-small">%</span>
+            </p>
+            <a class="main-info__link-region link-region modal-region mobile-block" href="#">Москва и область</a>
+          </div>
+
+          <h1 class="main-info__title main-info__title--fz95">Реабилитационные <span class="main-info__title--fz70">центры</span></h1>
+
+          <div class="main-info__features features">
+            <ul class="features__list">
+              <li class="features__item features__item--program">
+                <p class="features__title">Программа</p>
+                <p class="features__description">Уникальная программа лечения.</p>
+              </li>
+              <li class="features__item features__item--call">
+                <p class="features__title">Свяжитесь с нами</p>
+                <p class="features__description">И вы успеете спасти близкого!</p>
+              </li>
+            </ul>
+
+            <div class="main-info__slogan-img-wrapper">
+              <img class="main-info__slogan-img" src="img/main-info/слоган.png" alt="Солевые наркотики уьивают за срок от 2 до 6 месяцев">
+            </div>
+          </div>
+
+          <div class="main-info__link-wrapper">
+            <a class="main-info__link link link--roboto-medium modal-callback" href="#">Отправить заявку на лечение</a>
+            <a class="main-info__link-region link-region link-region--roboto-medium modal-region desktop-block" href="#">Москва и область</a>
+          </div>
+
+          <a class="main-info__btn-bottom desktop-block" href="#main-info-btn-bottom">
+            <img class="main-info__btn-bottom-img" src="img/main-info/btn-bottom-text.png" alt="">
+          </a>
+        </div>
+        <a class="main-info__btn-bottom mobile-block" href="#main-info-btn-bottom">
+          <img class="main-info__btn-bottom-img" src="img/main-info/btn-bottom-text.png" alt="">
+        </a>
+      </section>
+
+      <section class="map container" id="main-info-btn-bottom">
+        <p class="map__subtitle subtitle-pink">Более 1000 центров по стране</p>
+        <div class="map__main-title-wrapper section-title-wrapper">
+          <h2 class="map__main-title section-title">Центры по всей России</h2>
+          <a class="map__link link modal-callback" href="#">Оставить заявку</a>
+        </div>
+        <div class="map__container">
+          <iframe class="map_y" src="https://yandex.ru/map-widget/v1/?um=constructor%3A47d08a54571b005f64741ac8ff48284250f0c6850ae2177d1327ee06a755f92c&amp;source=constructor"></iframe>
+        </div>
+      </section>
+
+      <section class="rehab-swiper rehab-swiper-centers rehab-swiper--margin-bottom">
+        <div class="container">
+          <h2 class="visually-hidden rehab-swiper__main-title section-title">Реабилитационные центры</h2>
+        </div>
+
+        <div class="rehab-swiper__wrapper container">
+          <a class="rehab-swiper__slide" href="rehab-page.html">
+            <div class="rehab-swiper__img-wrapper">
+              <img class="rehab-swiper__img" src="img/rehab-swiper/центр.jpg" alt="">
+            </div>
+            <div class="rehab-swiper__text-wrapper">
+              <p class="rehab-swiper__price"><span class="rehab-swiper__price--bold">50 000 <span class="ruble">&#8381;</span></span> / в месяц</p>
+              <p class="rehab-swiper__location">Одинцово, Дебнинская, 37 к 2</p>
+              <p class="rehab-swiper__comfort-lvl">Комфорт</p>
+            </div>
+          </a>
+
+          <a class="rehab-swiper__slide" href="rehab-page.html">
+            <div class="rehab-swiper__img-wrapper">
+              <img class="rehab-swiper__img" src="img/rehab-swiper/центр.jpg" alt="">
+            </div>
+            <div class="rehab-swiper__text-wrapper">
+              <p class="rehab-swiper__price"><span class="rehab-swiper__price--bold">50 000 <span class="ruble">&#8381;</span></span> / в месяц</p>
+              <p class="rehab-swiper__location">Одинцово, Дебнинская, 37 к 2</p>
+              <p class="rehab-swiper__comfort-lvl">Комфорт</p>
+            </div>
+          </a>
+
+          <a class="rehab-swiper__slide" href="rehab-page.html">
+            <div class="rehab-swiper__img-wrapper">
+              <img class="rehab-swiper__img" src="img/rehab-swiper/центр.jpg" alt="">
+            </div>
+            <div class="rehab-swiper__text-wrapper">
+              <p class="rehab-swiper__price"><span class="rehab-swiper__price--bold">50 000 <span class="ruble">&#8381;</span></span> / в месяц</p>
+              <p class="rehab-swiper__location">Одинцово, Дебнинская, 37 к 2</p>
+              <p class="rehab-swiper__comfort-lvl">Комфорт</p>
+            </div>
+          </a>
+
+          <a class="rehab-swiper__slide" href="rehab-page.html">
+            <div class="rehab-swiper__img-wrapper">
+              <img class="rehab-swiper__img" src="img/rehab-swiper/центр.jpg" alt="">
+            </div>
+            <div class="rehab-swiper__text-wrapper">
+              <p class="rehab-swiper__price"><span class="rehab-swiper__price--bold">50 000 <span class="ruble">&#8381;</span></span> / в месяц</p>
+              <p class="rehab-swiper__location">Одинцово, Дебнинская, 37 к 2</p>
+              <p class="rehab-swiper__comfort-lvl">Комфорт</p>
+            </div>
+          </a>
+
+          <a class="rehab-swiper__slide" href="rehab-page.html">
+            <div class="rehab-swiper__img-wrapper">
+              <img class="rehab-swiper__img" src="img/rehab-swiper/центр.jpg" alt="">
+            </div>
+            <div class="rehab-swiper__text-wrapper">
+              <p class="rehab-swiper__price"><span class="rehab-swiper__price--bold">50 000 <span class="ruble">&#8381;</span></span> / в месяц</p>
+              <p class="rehab-swiper__location">Одинцово, Дебнинская, 37 к 2</p>
+              <p class="rehab-swiper__comfort-lvl">Комфорт</p>
+            </div>
+          </a>
+
+          <a class="rehab-swiper__slide" href="rehab-page.html">
+            <div class="rehab-swiper__img-wrapper">
+              <img class="rehab-swiper__img" src="img/rehab-swiper/центр.jpg" alt="">
+            </div>
+            <div class="rehab-swiper__text-wrapper">
+              <p class="rehab-swiper__price"><span class="rehab-swiper__price--bold">50 000 <span class="ruble">&#8381;</span></span> / в месяц</p>
+              <p class="rehab-swiper__location">Одинцово, Дебнинская, 37 к 2</p>
+              <p class="rehab-swiper__comfort-lvl">Комфорт</p>
+            </div>
+          </a>
+
+          <a class="rehab-swiper__slide" href="rehab-page.html">
+            <div class="rehab-swiper__img-wrapper">
+              <img class="rehab-swiper__img" src="img/rehab-swiper/центр.jpg" alt="">
+            </div>
+            <div class="rehab-swiper__text-wrapper">
+              <p class="rehab-swiper__price"><span class="rehab-swiper__price--bold">50 000 <span class="ruble">&#8381;</span></span> / в месяц</p>
+              <p class="rehab-swiper__location">Одинцово, Дебнинская, 37 к 2</p>
+              <p class="rehab-swiper__comfort-lvl">Комфорт</p>
+            </div>
+          </a>
+
+          <a class="rehab-swiper__slide" href="rehab-page.html">
+            <div class="rehab-swiper__img-wrapper">
+              <img class="rehab-swiper__img" src="img/rehab-swiper/центр.jpg" alt="">
+            </div>
+            <div class="rehab-swiper__text-wrapper">
+              <p class="rehab-swiper__price"><span class="rehab-swiper__price--bold">50 000 <span class="ruble">&#8381;</span></span> / в месяц</p>
+              <p class="rehab-swiper__location">Одинцово, Дебнинская, 37 к 2</p>
+              <p class="rehab-swiper__comfort-lvl">Комфорт</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="program-swiper">
+        <div class="program-swiper__main-title-wrapper container">
+          <h2 class="program-swiper__main-title section-title">Что входит в программу лечения?</h2>
+          <p class="program-swiper__main-description">Солевая наркомания сегодня самая опасная! Поэтому мы разработали для ее лечения уникальную программу.</p>
+          <a class="program-swiper__link link--roboto-medium link" href="service-program.html">Подробнее о программе</a>
+        </div>
+
+        <div class="swiper-container swiper-container--progressbar" id="program-swiper">
+          <div class="swiper-wrapper">
+
+            <!-- 1 -->
+            <div class="swiper-slide">
+              <a class="program-swiper__slide" href="service-detox.html">
+                <div class="program-swiper__img-wrapper">
+                  <img class="program-swiper__img" src="img/program-swiper/step1.jpg" alt="">
+                </div>
+                <div class="program-swiper__text-wrapper">
+                  <p class="program-swiper__steps-count">1 шаг</p>
+                  <h3 class="program-swiper__slide-title">Детоксикация</h3>
+                </div>
+              </a>
+            </div>
+
+            <!-- 2 -->
+            <div class="swiper-slide">
+              <a class="program-swiper__slide" href="service-rehab.html">
+                <div class="program-swiper__img-wrapper">
+                  <img class="program-swiper__img" src="img/program-swiper/step2.jpg" alt="">
+                </div>
+                <div class="program-swiper__text-wrapper">
+                  <p class="program-swiper__steps-count">2 шаг</p>
+                  <h3 class="program-swiper__slide-title">Реабилитация</h3>
+                </div>
+              </a>
+            </div>
+
+            <!-- 3 -->
+            <div class="swiper-slide">
+              <a class="program-swiper__slide" href="service-ambulatory.html">
+                <div class="program-swiper__img-wrapper">
+                  <img class="program-swiper__img" src="img/program-swiper/step3.jpg" alt="">
+                </div>
+                <div class="program-swiper__text-wrapper">
+                  <p class="program-swiper__steps-count">3 шаг</p>
+                  <h3 class="program-swiper__slide-title">Амбулаторное лечение</h3>
+                </div>
+              </a>
+            </div>
+
+            <!-- 4 -->
+            <div class="swiper-slide">
+              <a class="program-swiper__slide" href="service-resoc.html">
+                <div class="program-swiper__img-wrapper">
+                  <img class="program-swiper__img" src="img/program-swiper/step4.jpg" alt="">
+                </div>
+                <div class="program-swiper__text-wrapper">
+                  <p class="program-swiper__steps-count">4 шаг</p>
+                  <h3 class="program-swiper__slide-title">Ресоциализация</h3>
+                </div>
+              </a>
+            </div>
+
+            <!-- 5 -->
+            <div class="swiper-slide">
+              <a class="program-swiper__slide" href="family.html">
+                <div class="program-swiper__img-wrapper">
+                  <img class="program-swiper__img" src="img/program-swiper/step5.jpg" alt="">
+                </div>
+                <div class="program-swiper__text-wrapper">
+                  <p class="program-swiper__steps-count">5 шаг</p>
+                  <h3 class="program-swiper__slide-title">Поддержка психолога</h3>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-pagination program-progressbar"></div>
+        </div>
+
+        <div class="swiper-container swiper-container--pagination container" id="program-swiper-pagination">
+          <div class="swiper-wrapper">
+
+            <!-- 1 -->
+            <div class="swiper-slide">
+              <a class="program-swiper__slide" href="service-detox.html">
+                <div class="program-swiper__img-wrapper">
+                  <img class="program-swiper__img" src="img/program-swiper/step1.jpg" alt="">
+                </div>
+              </a>
+            </div>
+
+            <!-- 2 -->
+            <div class="swiper-slide">
+              <a class="program-swiper__slide" href="service-rehab.html">
+                <div class="program-swiper__img-wrapper">
+                  <img class="program-swiper__img" src="img/program-swiper/step2.jpg" alt="">
+                </div>
+              </a>
+            </div>
+
+            <div class="swiper-slide">
+              <a class="program-swiper__slide" href="service-ambulatory.html">
+                <div class="program-swiper__img-wrapper">
+                  <img class="program-swiper__img" src="img/program-swiper/step3.jpg" alt="">
+                </div>
+              </a>
+            </div>
+
+            <div class="swiper-slide">
+              <a class="program-swiper__slide" href="service-resoc.html">
+                <div class="program-swiper__img-wrapper">
+                  <img class="program-swiper__img" src="img/program-swiper/step4.jpg" alt="">
+                </div>
+              </a>
+            </div>
+
+            <!-- 5 -->
+            <div class="swiper-slide">
+              <a class="program-swiper__slide" href="family.html">
+                <div class="program-swiper__img-wrapper">
+                  <img class="program-swiper__img" src="img/program-swiper/step5.jpg" alt="">
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-pagination program-pagination"></div>
+        </div>
+      </section>
+
+      <section class="about container">
+        <p class="about__subtitle subtitle-pink">Портал помощи и социализации зависимых</p>
+        <h2 class="about__title section-title">О лечении мефедроновой наркомании</h2>
+        <div class="about__wrapper">
+          <div class="about__column-left">
+            <a class="about__logo logo logo--empty" href="index.html">
+              <img class="logo__img" src="img/logo/logo-blue.svg" alt="Логотип портала «Код спасения»" width="52" height="70">
+              <div class="logo__text-wrapper">
+                <h3 class="logo__title logo__title--less">Код спасения</h3>
+                <p class="logo__description">Портал помощи солевым наркоманам</p>
+                <p class="logo__about">Организация создана в 2005 г. <span class="logo__about--block">г. Москва</span></p>
+              </div>
+            </a>
+          </div>
+
+          <div class="about__column-right">
+            <p class="about__description">На сегодняшний день существует большое количество псевдо- клиник, центров и врачей, которые используют положение пострадавших с целью наживы. При этом качество лечения, используемые методики и профессиональная деятельность специалистов оставляют желать лучшего.</p>
+
+            <p class="about__description">На данном портале собран полный перечень реабилитационных центров Российской Федерации с прозрачными рейтингами. Также, на нашем сайте представлена онлайн поддержка через личный кабинет, где Вы можете получить консультацию от специалистов.</p>
+
+            <p class="about__description">Итогом любой реабилитации является адаптация бывшего зависимого в социуме. Основная задача портала – социализация успешно прошедших реабилитацию и ресоциализацию нарко- и алкозависимых. Нами собраны и проверены актуальные спортивные секции, вакансии на трудоустройство, тренинги и лекции анонимных нарко- и алкозависимых, с которыми можно ознакомиться в разделе «Социализация».</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="price container">
+        <p class="price-swiper__subtitle subtitle-pink">Услуги по лечению мефедроновой зависимости</p>
+        <div class="price__main-title-wrapper section-title-wrapper">
+          <h2 class="price__main-title section-title">Цены на услуги:</h2>
+          <a class="price__link link" href="#">Оставить заявку</a>
+        </div>
+
+        <ul class="price__wrapper">
+          <li class="price__item">
+            <a class="price__item-link" href="service-detox.html">
+              <div class="price__bg-img-wrapper">
+                <img class="price__bg-img" src="img/price/детоксикация.png" alt="Детоксикая в клинике">
+              </div>
+              <div class="price__text-wrapper">
+                <p class="price__cost">от 3 000 <span class="ruble">&#8381;</span> <span class="price__cost--normal">/ в день</span></p>
+                <h3 class="price__title">Детоксикая в клинике</h3>
+                <p class="price__description">Помощь организму в физическом восстановлении</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="price__item">
+            <a class="price__item-link" href="service-rehab.html">
+              <div class="price__bg-img-wrapper">
+                <img class="price__bg-img" src="img/price/реабилитация.png" alt="Реабилитация в центре">
+              </div>
+              <div class="price__text-wrapper">
+                <p class="price__cost">от 30 000 <span class="ruble">&#8381;</span> <span class="price__cost--normal">/ в месяц</span></p>
+                <h3 class="price__title">Реабилитация в центре</h3>
+                <p class="price__description">Помощь зависимому в психологическом востановлении</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="price__item">
+            <a class="price__item-link" href="service-program.html">
+              <div class="price__bg-img-wrapper">
+                <img class="price__bg-img" src="img/price/программы-лечения.png" alt="Программы лечения">
+              </div>
+              <div class="price__text-wrapper">
+                <p class="price__cost">Бесплатное составление<span class="price__cost--normal"></span></p>
+                <h3 class="price__title">Программы лечения</h3>
+                <p class="price__description">Составление индивидуальной программы лечения</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="price__item">
+            <a class="price__item-link" href="service-ambulatory.html">
+              <div class="price__bg-img-wrapper">
+                <img class="price__bg-img" src="img/price/абмулаторное-лечения.png" alt="Абмулаторное лечения">
+              </div>
+              <div class="price__text-wrapper">
+                <p class="price__cost">от 10 000 <span class="ruble">&#8381;</span> <span class="price__cost--normal">/ в месяц</span></p>
+                <h3 class="price__title">Абмулаторное лечения</h3>
+                <p class="price__description">Поддержка зависимого после прохождения реабилитации</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="price__item">
+            <a class="price__item-link" href="service-recode.html">
+              <div class="price__bg-img-wrapper">
+                <img class="price__bg-img" src="img/price/кодирование.png" alt="Кодирование">
+              </div>
+              <div class="price__text-wrapper">
+                <p class="price__cost">от 3 000 <span class="ruble">&#8381;</span> <span class="price__cost--normal">/ в день</span></p>
+                <h3 class="price__title">Кодирование</h3>
+                <p class="price__description">Помощь организму в физическом восстановлении</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="price__item">
+            <a class="price__item-link" href="service-resoc.html">
+              <div class="price__bg-img-wrapper">
+                <img class="price__bg-img" src="img/price/ресоциализация.png" alt="Ресоциализация">
+              </div>
+              <div class="price__text-wrapper">
+                <p class="price__cost">от 10 000 <span class="ruble">&#8381;</span> <span class="price__cost--normal">/ в месяц</span></p>
+                <h3 class="price__title">Ресоциализация</h3>
+                <p class="price__description">Работа с психологаями и приобретение навыков для работы</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="price__item">
+            <a class="price__item-link" href="service-abroad.html">
+              <div class="price__bg-img-wrapper">
+                <img class="price__bg-img" src="img/price/лечение-за-границей.png" alt="Лечение за границей">
+              </div>
+              <div class="price__text-wrapper">
+                <p class="price__cost">20 000 - 300 000  <span class="ruble">&#8381;</span><span class="price__cost--normal">/ в месяц</span></p>
+
+                <h3 class="price__title">Лечение за границей</h3>
+                <p class="price__description">Лечение в Таиланде с монастырях или реабилитационных центрах</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="price__item">
+            <a class="price__item-link" href="service-advocate.html">
+              <div class="price__bg-img-wrapper">
+                <img class="price__bg-img" src="img/price/адвокатская-помощь.png" alt="Адвокатская помощь">
+              </div>
+              <div class="price__text-wrapper">
+                <p class="price__cost">По договорённости<span class="price__cost--normal"></span></p>
+                <h3 class="price__title">Адвокатская помощь</h3>
+                <p class="price__description">Адвокатская поддрежка родственников</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__wrapper container">
+        <ul class="footer__list footer__list--left">
+          <li class="footer__item footer__item--bold">Информация
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Реабилитация</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Клиники</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Лечение</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Родственникам</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Подросткам</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Публикации</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">О нас</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Контакты</a>
+          </li>
+        </ul>
+        <div class="footer__center-column">
+          <a class="footer__logo logo logo--empty" href="index.html">
+            <img class="logo__img" src="img/logo/logo-blue.svg" alt="Логотип портала «Код спасения»" width="52" height="70">
+            <div class="logo__text-wrapper">
+              <h3 class="logo__title">Код спасения</h3>
+              <p class="logo__description">Портал помощи солевым наркоманам</p>
+            </div>
+          </a>
+          <a class="footer__link link link--roboto-medium modal-callback" href="#">Заявка на бесплатную консультацию</a>
+          <div class="footer__phone-wrapper">
+            <a class="footer__phone" href="tel:+78009009090">8 800 900 90 90</a>
+            <p class="footer__phone-text">Круглосуточная бесплатная помощь</p>
+          </div>
+        </div>
+        <ul class="footer__list footer__list--right">
+          <li class="footer__item footer__item--bold">Лечение
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Детоксикация</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Реабилитация</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Программы лечения</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Амбулаторное лечение</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Лечение за границей</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Адвокатская помощь</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Ресоциализация</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Кодирование</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery.marquee.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+
+    <script src="js/main.js"></script>
+  </body>
+  </html>
