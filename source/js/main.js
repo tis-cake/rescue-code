@@ -229,3 +229,12 @@ $(document).ready(function () {
     }
   });
 });
+
+// [database page]
+
+$(document).ready(function () {
+  $('.sections-toggle__btn').on("click", function () {
+    $('.sections-toggle__btn').removeClass('active');
+    $(this).toggleClass('active');
+  });
+});

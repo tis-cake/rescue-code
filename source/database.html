@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="«Код спасения»">
+    <title>Код спасения</title>
+
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="./fav.ico"> -->
+
+    <link rel="preload" href="fonts/MyriadPro/regular/MyriadPro-Regular.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="stylesheet" href="css/normalise.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+
+          <button class="header__menu-toggle menu-toggle">
+            <span>Открыть меню</span>
+          </button>
+
+          <a class="header__logo logo" href="index.html">
+            <h2 class="logo__title">Код спасения</h2>
+            <p class="logo__description">Портал помощи солевым наркоманам</p>
+          </a>
+
+          <a class="header__link-call-back modal-callback" href="#">
+            <img class="header__link-call-back-img" src="img/svg/call-w.svg" alt="Обратный звонок">
+          </a>
+
+          <nav class="header__main-nav main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="centers.html">Реабилитация</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="clinics.html">Клиники</a>
+              </li>
+              <li class="main-nav__item">
+                <span class="main-nav__link">Лечение</span>
+                <ul class="main-nav__sublist">
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="service-detox.html">Детоксикация</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="service-rehab.html">Реабилитация</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="service-program.html">Программы лечения</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="service-ambulatory.html">Амбулаторное лечение</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="service-abroad.html">Лечение за границей</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="service-advocate.html">Адвокатская помощь</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="service-resoc.html">Ресоциализация</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="service-recode.html">Кодирование</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="family.html">Родственникам</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="teenagers.html">Подросткам</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="database.html">Публикации</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="about.html">О нас</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="header__phone-wrapper">
+            <a class="header__phone" href="tel:+78009009090">8 800 900 90 90</a>
+            <p class="header__phone-text">Круглосуточная бесплатная помощь</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="main-info bg database">
+        <div class="main-info__bg-wrapper">
+          <picture>
+            <!-- <source type="image/webp" media="(max-width: 750px)" srcset="img/main-info/bg3-m.webp"> -->
+            <source media="(max-width: 750px)" srcset="img/main-info/bg3-m.png">
+            <!-- <source type="image/webp" srcset="img/main-info/bg3-d.webp"> -->
+            <img class="main-info__bg-img" src="img/main-info/bg3-d.png" alt="">
+          </picture>
+        </div>
+        <div class="main-info__content container">
+          <p class="main-info__subtitle">Информация для зависимых и созавимых</p>
+          <h1 class="main-info__title main-info__title--fz90d">Публикации</h1>
+
+          <div class="main-info__benefits-wrapper">
+            <div class="main-info__benefit-column">
+              <h3 class="main-info__benefit-title">1 000</h3>
+              <p class="main-info__benefit-description">статей</p>
+            </div>
+
+            <div class="main-info__benefit-column">
+              <h3 class="main-info__benefit-title">24 / 7</h3>
+              <p class="main-info__benefit-description">поддержка</p>
+            </div>
+
+            <div class="main-info__benefit-column main-info__benefit-content-help">
+              <h3 class="main-info__benefit-title">Мне нужна помощь</h3>
+              <p class="main-info__benefit-description">Мы сможем почмочь на любом этапе зависимости!</p>
+              <p class="main-info__benefit-description">Оставьте заявку и мы свяжемся с вами втечении дня.</p>
+              <a class="main-info__benefit-link link modal-callback" href="#">Оставить заявку на лечение</a>
+            </div>
+
+            <div class="main-info__benefit-column">
+              <h3 class="main-info__benefit-title">100 %</h3>
+              <p class="main-info__benefit-description">анонимность</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="sections-toggle container">
+        <ul class="sections-toggle__list">
+          <li class="sections-toggle__item">
+            <button class="sections-toggle__btn active">Зависимость</button>
+          </li>
+          <li class="sections-toggle__item">
+            <button class="sections-toggle__btn">Cозависимым</button>
+          </li>
+          <li class="sections-toggle__item">
+            <button class="sections-toggle__btn">Международная практика</button>
+          </li>
+        </ul>
+      </section>
+
+      <section class="search container">
+        <form class="search__form" action="" method="post">
+          <label class="search__btn-icon" for="search-field"></label>
+          <input class="search__input" id="search-field" type="search" name="SEARCH" placeholder="Поиск по публикациям">
+
+          <button class="search__btn-submit link">Найти</button>
+        </form>
+      </section>
+
+      <section class="articles-block container">
+        <div class="articles-block__wrapper">
+          <arcticle class="articles-block__main-item">
+            <div class="articles-block__main-img-wrapper">
+              <img class="articles-block__main-img" src="img/database/database1.jpg" alt="Мефедроновая зависиомость">
+            </div>
+            <div class="articles-block__link-wrapper">
+              <span class="articles-block__count">35 статей</span>
+              <a class="articles-block__link link" href="#">Все статьи</a>
+            </div>
+            <h2 class="articles-block__main-title">Мефедроновая зависимость</h2>
+          </arcticle>
+
+          <div class="articles-block__column">
+            <article class="articles-block__item">
+              <div class="articles-block__datetime-wrapper">
+                <time class="articles-block__datetime" datetime="2020-01-20">20.01</time>
+              </div>
+              <div class="articles-block__text-wrapper">
+                <h3 class="articles-block__title">Лечение от мефедроновой зависимости</h3>
+                <p class="articles-block__description">Лечение любой зависимости должно решать две основные задачи – убрать из организма вещество, вызывающее болезненное пристрастие и предупредить его повторное употребление.</p>
+              </div>
+            </article>
+            <article class="articles-block__item">
+              <div class="articles-block__datetime-wrapper">
+                <time class="articles-block__datetime" datetime="2020-01-18">18.01</time>
+              </div>
+              <div class="articles-block__text-wrapper">
+                <h3 class="articles-block__title">Лечение от мефедроновой зависимости</h3>
+                <p class="articles-block__description">Лечение любой зависимости должно решать две основные задачи – убрать из организма вещество, вызывающее болезненное пристрастие и предупредить его повторное употребление.</p>
+              </div>
+            </article>
+            <article class="articles-block__item">
+              <div class="articles-block__datetime-wrapper">
+                <time class="articles-block__datetime" datetime="2020-01-16">16.01</time>
+              </div>
+              <div class="articles-block__text-wrapper">
+                <h3 class="articles-block__title">Лечение от мефедроновой зависимости</h3>
+                <p class="articles-block__description">Лечение любой зависимости должно решать две основные задачи – убрать из организма вещество, вызывающее болезненное пристрастие и предупредить его повторное употребление.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="articles-block container">
+        <div class="articles-block__wrapper">
+          <arcticle class="articles-block__main-item">
+            <div class="articles-block__main-img-wrapper">
+              <img class="articles-block__main-img" src="img/database/database2.jpg" alt="Мефедроновая зависиомость">
+            </div>
+            <div class="articles-block__link-wrapper">
+              <span class="articles-block__count">35 статей</span>
+              <a class="articles-block__link link" href="#">Все статьи</a>
+            </div>
+            <h2 class="articles-block__main-title">Созависимость</h2>
+          </arcticle>
+
+          <div class="articles-block__column">
+            <article class="articles-block__item">
+              <div class="articles-block__datetime-wrapper">
+                <time class="articles-block__datetime" datetime="2020-01-20">20.01</time>
+              </div>
+              <div class="articles-block__text-wrapper">
+                <h3 class="articles-block__title">Лечение от мефедроновой зависимости</h3>
+                <p class="articles-block__description">Лечение любой зависимости должно решать две основные задачи – убрать из организма вещество, вызывающее болезненное пристрастие и предупредить его повторное употребление.</p>
+              </div>
+            </article>
+            <article class="articles-block__item">
+              <div class="articles-block__datetime-wrapper">
+                <time class="articles-block__datetime" datetime="2020-01-18">18.01</time>
+              </div>
+              <div class="articles-block__text-wrapper">
+                <h3 class="articles-block__title">Лечение от мефедроновой зависимости</h3>
+                <p class="articles-block__description">Лечение любой зависимости должно решать две основные задачи – убрать из организма вещество, вызывающее болезненное пристрастие и предупредить его повторное употребление.</p>
+              </div>
+            </article>
+            <article class="articles-block__item">
+              <div class="articles-block__datetime-wrapper">
+                <time class="articles-block__datetime" datetime="2020-01-16">16.01</time>
+              </div>
+              <div class="articles-block__text-wrapper">
+                <h3 class="articles-block__title">Лечение от мефедроновой зависимости</h3>
+                <p class="articles-block__description">Лечение любой зависимости должно решать две основные задачи – убрать из организма вещество, вызывающее болезненное пристрастие и предупредить его повторное употребление.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <article class="banner banner-motivation">
+        <div class="banner__wrapper container">
+          <div class="banner__bg-img-wrapper banner-img-motivation">
+            <img class="banner__bg-img" src="img/banner/banner1.1.png" alt="">
+          </div>
+          <div class="banner__main-wrapper banner__main-wrapper--padding-left">
+            <p class="banner__subtitle banner__subtitle banner-icon banner-icon-round-one">От передозировки мефедроном выживают только <span class="banner__subtitle--big">2%</span></p>
+            <h2 class="banner__title">Замотивируем на лечение</h2>
+            <p class="banner__description">Зачастую сами зависимые неосознают проблему, поэтому отказываются от лечения!</p>
+            <p class="banner__description">Мы поможем уговорить на лечение вашего близкого на бесплатной консультации.</p>
+            <a class="banner__link link link--roboto-medium modal-callback" href="#">Заявка на бесплатную консультацию</a>
+          </div>
+
+        </div>
+      </article>
+
+      <section class="articles-block container">
+        <div class="articles-block__wrapper">
+          <arcticle class="articles-block__main-item">
+            <div class="articles-block__main-img-wrapper">
+              <img class="articles-block__main-img" src="img/database/database1.jpg" alt="Мефедроновая зависиомость">
+            </div>
+            <div class="articles-block__link-wrapper">
+              <span class="articles-block__count">35 статей</span>
+              <a class="articles-block__link link" href="#">Все статьи</a>
+            </div>
+            <h2 class="articles-block__main-title">Мефедроновая зависимость</h2>
+          </arcticle>
+
+          <div class="articles-block__column">
+            <article class="articles-block__item">
+              <div class="articles-block__datetime-wrapper">
+                <time class="articles-block__datetime" datetime="2020-01-20">20.01</time>
+              </div>
+              <div class="articles-block__text-wrapper">
+                <h3 class="articles-block__title">Лечение от мефедроновой зависимости</h3>
+                <p class="articles-block__description">Лечение любой зависимости должно решать две основные задачи – убрать из организма вещество, вызывающее болезненное пристрастие и предупредить его повторное употребление.</p>
+              </div>
+            </article>
+            <article class="articles-block__item">
+              <div class="articles-block__datetime-wrapper">
+                <time class="articles-block__datetime" datetime="2020-01-18">18.01</time>
+              </div>
+              <div class="articles-block__text-wrapper">
+                <h3 class="articles-block__title">Лечение от мефедроновой зависимости</h3>
+                <p class="articles-block__description">Лечение любой зависимости должно решать две основные задачи – убрать из организма вещество, вызывающее болезненное пристрастие и предупредить его повторное употребление.</p>
+              </div>
+            </article>
+            <article class="articles-block__item">
+              <div class="articles-block__datetime-wrapper">
+                <time class="articles-block__datetime" datetime="2020-01-16">16.01</time>
+              </div>
+              <div class="articles-block__text-wrapper">
+                <h3 class="articles-block__title">Лечение от мефедроновой зависимости</h3>
+                <p class="articles-block__description">Лечение любой зависимости должно решать две основные задачи – убрать из организма вещество, вызывающее болезненное пристрастие и предупредить его повторное употребление.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="articles-block container">
+        <div class="articles-block__wrapper">
+          <arcticle class="articles-block__main-item">
+            <div class="articles-block__main-img-wrapper">
+              <img class="articles-block__main-img" src="img/database/database2.jpg" alt="Мефедроновая зависиомость">
+            </div>
+            <div class="articles-block__link-wrapper">
+              <span class="articles-block__count">35 статей</span>
+              <a class="articles-block__link link" href="#">Все статьи</a>
+            </div>
+            <h2 class="articles-block__main-title">Созависимость</h2>
+          </arcticle>
+
+          <div class="articles-block__column">
+            <article class="articles-block__item">
+              <div class="articles-block__datetime-wrapper">
+                <time class="articles-block__datetime" datetime="2020-01-20">20.01</time>
+              </div>
+              <div class="articles-block__text-wrapper">
+                <h3 class="articles-block__title">Лечение от мефедроновой зависимости</h3>
+                <p class="articles-block__description">Лечение любой зависимости должно решать две основные задачи – убрать из организма вещество, вызывающее болезненное пристрастие и предупредить его повторное употребление.</p>
+              </div>
+            </article>
+            <article class="articles-block__item">
+              <div class="articles-block__datetime-wrapper">
+                <time class="articles-block__datetime" datetime="2020-01-18">18.01</time>
+              </div>
+              <div class="articles-block__text-wrapper">
+                <h3 class="articles-block__title">Лечение от мефедроновой зависимости</h3>
+                <p class="articles-block__description">Лечение любой зависимости должно решать две основные задачи – убрать из организма вещество, вызывающее болезненное пристрастие и предупредить его повторное употребление.</p>
+              </div>
+            </article>
+            <article class="articles-block__item">
+              <div class="articles-block__datetime-wrapper">
+                <time class="articles-block__datetime" datetime="2020-01-16">16.01</time>
+              </div>
+              <div class="articles-block__text-wrapper">
+                <h3 class="articles-block__title">Лечение от мефедроновой зависимости</h3>
+                <p class="articles-block__description">Лечение любой зависимости должно решать две основные задачи – убрать из организма вещество, вызывающее болезненное пристрастие и предупредить его повторное употребление.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <article class="banner banner--margin-empty banner-therapy">
+        <div class="banner__bg-img-wrapper banner-img-therapy">
+          <img class="banner__bg-img" src="img/banner/banner2.1.png" alt="">
+        </div>
+        <div class="banner__wrapper container">
+          <div class="banner__main-wrapper">
+            <p class="banner__subtitle banner-icon banner-icon-blue-therapy">Организуем группы и терапию для родственников!</p>
+            <h2 class="banner__title">Терапия созависимых</h2>
+            <p class="banner__description">Лечение мефедроновой наркомании зависит не только от желания самого наркомана лечиться, но и от желания родственников помочь и бороться вместе с зависимым!</p>
+            <a class="banner__link link link--roboto-medium modal-callback" href="#">Заявка на лечение</a>
+          </div>
+          <div class="banner__slogan-img-wrapper">
+            <img class="banner__slogan-img" src="img/banner/banner2.2.png" alt="">
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__wrapper container">
+        <ul class="footer__list footer__list--left">
+          <li class="footer__item footer__item--bold">Информация
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Реабилитация</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Клиники</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Лечение</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Родственникам</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Подросткам</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Публикации</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">О нас</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Контакты</a>
+          </li>
+        </ul>
+        <div class="footer__center-column">
+          <a class="footer__logo logo logo--empty" href="index.html">
+            <img class="logo__img" src="img/logo/logo-blue.svg" alt="Логотип портала «Код спасения»" width="52" height="70">
+            <div class="logo__text-wrapper">
+              <h3 class="logo__title">Код спасения</h3>
+              <p class="logo__description">Портал помощи солевым наркоманам</p>
+            </div>
+          </a>
+          <a class="footer__link link link--roboto-medium modal-callback" href="#">Заявка на бесплатную консультацию</a>
+          <div class="footer__phone-wrapper">
+            <a class="footer__phone" href="tel:+78009009090">8 800 900 90 90</a>
+            <p class="footer__phone-text">Круглосуточная бесплатная помощь</p>
+          </div>
+        </div>
+        <ul class="footer__list footer__list--right">
+          <li class="footer__item footer__item--bold">Лечение
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Детоксикация</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Реабилитация</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Программы лечения</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Амбулаторное лечение</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Лечение за границей</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Адвокатская помощь</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Ресоциализация</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Кодирование</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery.marquee.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+
+    <script src="js/main.js"></script>
+  </body>
+  </html>

@@ -31,10 +31,10 @@ p {
   .mp-reset(0,0);
 }
 
-// button,
-// input {
-//   font-family: @circe;
-// }
+button,
+input {
+  font-family: @myriad;
+}
 
 .ruble {
   font-family: @circe;
@@ -115,9 +115,14 @@ input[type="radio"].visually-hidden {
   position: relative;
   display: inline-block;
 
+  padding-left: 0;
+
   font-family: @myriad;
   font-size: @d18px;
   color: #161616;
+
+  background-color: transparent;
+  border: none;
 
   &--roboto-medium {
     font-family: @roboto;
