@@ -1,5 +1,5 @@
 .header {
-  position: absolute;
+  // position: absolute;
   z-index: 5;
   width: 100%;
 
@@ -7,6 +7,16 @@
 
   .container {
     width: 80.31vw; //1542px
+  }
+}
+
+.bg.header {
+  position: absolute;
+
+  .header__wrapper {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
   }
 }
 
@@ -18,6 +28,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  margin-bottom: @d36px;
+  padding-bottom: @d22px;
+  border-bottom: @d1px solid #C4C4C4;
 }
 
 .header__phone-wrapper {
@@ -60,13 +74,25 @@
     height: 100vh;      // убрать если js подключен
     overflow-y: scroll; // убрать если js подключен
     overflow-x: hidden; // убрать если js подключен
+  }
+
+  .no-js.header {
+    position: relative;
+    height: 200vw; // 1500px;
+    overflow: visible;
+  }
+
+  .no-js.header,
+  .active.header {
+    // height: 100vh;      // убрать если js подключен
+    // overflow-y: scroll; // убрать если js подключен
+    // overflow-x: hidden; // убрать если js подключен
 
     background-color: #303030;
 
     .header__wrapper {
       justify-content: flex-start;
       flex-wrap: wrap;
-      // align-items: stretch;
     }
 
     .header__link-call-back,
@@ -77,6 +103,15 @@
     .header__phone-wrapper {
       display: none;
     }
+  }
+
+  .active.header * {
+    color: #fff;
+  }
+
+  .header__wrapper {
+    margin-bottom: @m52px;
+    border-bottom: none;
   }
 
   .header__menu-toggle {
@@ -125,6 +160,12 @@
     .container {
       width: 1542px;
     }
+  }
+
+  .header__wrapper {
+    margin-bottom: 36px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid #C4C4C4;
   }
 
   .header__phone {

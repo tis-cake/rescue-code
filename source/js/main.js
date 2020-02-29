@@ -1,8 +1,15 @@
 var width = $(window).width();
 
+// при отключённом js - показывать меню
+$('.header').removeClass('no-js');
+
 // главный блок с фоном
 if ($(".main-info").hasClass("bg")) {
   $('.header').addClass('bg');
+}
+
+if ($(".main-info").hasClass("database")) {
+  $('.main-nav').addClass('database');
 }
 
 // мобильное меню
@@ -10,11 +17,8 @@ $(document).ready(function () {
   $('.header__menu-toggle').click(function () {
     $(this).toggleClass('active');
     $('.header').toggleClass('active');
-    $('.nav-section').toggleClass('active');
+    $('.main-nav').toggleClass('active');
     $("body").toggleClass('noscroll'); // отключить если нет js и
-    // height: 100vh; @a
-    // overflow-y: scroll;
-    // overflow-x: hidden;
   });
 });
 

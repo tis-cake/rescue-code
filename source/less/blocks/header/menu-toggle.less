@@ -17,6 +17,7 @@
 
 .menu-toggle span {
   position: relative;
+  z-index: 1;
   display: inline-block;
   vertical-align: middle;
   width: 100%;
@@ -63,6 +64,8 @@
   transition: 0.3s, transform 0.3s 0.3s;
   // top: @m20px;
   top: @m24px;
+
+  background-color: #fff;
 }
 
 .active.menu-toggle::after {
@@ -70,6 +73,8 @@
   transition: 0.3s, transform 0.3s 0.3s;
   // top: @m20px;
   bottom: @m22px;
+
+  background-color: #fff;
 }
 
 .header.bg .menu-toggle span {
