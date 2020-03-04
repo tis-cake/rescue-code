@@ -85,9 +85,13 @@ input[type="radio"].visually-hidden {
 }
 
 .container {
-  // width: 79.37vw; //1524px;
-  width: 79.1vw; //1520px;
+  width: 79.1vw; //1520px
   .margin-inline(@a);
+}
+
+.container-out-right {
+  width: 89.583vw; // 1720px
+  margin-left: @a;
 }
 
 // .double-main-wrapper {
@@ -335,6 +339,12 @@ body .mobile-block {
 @media (min-width: @max-desktop-width) {
   .container {
     width: 1520px;
+  }
+
+  .container-out-right {
+    width: 1720px;
+    margin-right: @a;
+    transform: translateX(100px);
   }
 
   .link,

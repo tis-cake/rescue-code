@@ -201,12 +201,6 @@ $(document).ready(function () {
     slidesPerView: '1.5',
     spaceBetween: 30,
 
-    // spaceBetween: 45,
-
-    // autoplay: {
-    //   delay: 3000,
-    //   disableOnInteraction: false,
-    // },
     breakpoints: {
       756: {
         slidesPerView: '4',
@@ -221,10 +215,7 @@ $(document).ready(function () {
   var mySwiper = new Swiper('#clinic-swiper', {
     slidesPerView: '1.5',
     spaceBetween: 30,
-    // autoplay: {
-    //   delay: 3000,
-    //   disableOnInteraction: false,
-    // },
+
     breakpoints: {
       756: {
         slidesPerView: '4',
@@ -235,10 +226,75 @@ $(document).ready(function () {
 });
 
 // [database page]
-
 $(document).ready(function () {
   $('.sections-toggle__btn').on("click", function () {
     $('.sections-toggle__btn').removeClass('active');
     $(this).toggleClass('active');
   });
+});
+
+// [rehab-page]
+// галерея рехаба
+$(document).ready(function () {
+  var gallerySwiperMain = new Swiper('#gallery-swiper', {
+    slidesPerView: 3.5,
+    spaceBetween: 32,
+
+    loop: true,
+    centeredSlides: true,
+
+    breakpoints: {
+      1921: {
+        slidesPerView: 3,
+        slidesOffsetBefore: 0,
+      },
+      800: {
+        slidesPerView: 3.5,
+      },
+      300: {
+        slidesPerView: 2,
+        slidesOffsetBefore: 0,
+        spaceBetween: 20,
+      }
+    },
+
+    pagination: {
+      el: '.gallery-progressbar',
+      type: 'progressbar'
+    }
+  });
+
+  var gallerySwiperPagination = new Swiper('#gallery-swiper-pagination', {
+    slidesPerView: 3.5,
+    spaceBetween: 32,
+
+    loop: true,
+    centeredSlides: true,
+
+    breakpoints: {
+      1921: {
+        slidesPerView: 3,
+        slidesOffsetBefore: 0,
+      },
+      800: {
+        slidesPerView: 3.5,
+      },
+      300: {
+        slidesPerView: 2,
+        slidesOffsetBefore: 0,
+        spaceBetween: 20,
+      }
+    },
+
+    pagination: {
+      el: '.gallery-pagination',
+      clickable: true,
+      renderBullet: function (index, className) {
+        return '<span class="' + className + '">' + (index + 1) + '</span>';
+      }
+    },
+  });
+
+  gallerySwiperMain.controller.control = gallerySwiperPagination;
+  gallerySwiperPagination.controller.control = gallerySwiperMain;
 });
