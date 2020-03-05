@@ -1,0 +1,215 @@
+.rehab-about {
+  margin-bottom: @d200px;
+}
+
+.rehab-about-wrapper {
+  display: flex;
+}
+
+.rehab-about__main-column {
+  width: @d550px;
+  margin-right: @d67px;
+}
+
+.rehab-about__subtitle {
+  margin-bottom: @d35px;
+}
+
+.rehab-about__title {
+  margin-bottom: @d38px;
+}
+
+.rehab-about__description {
+  margin-bottom: @d70px;
+
+  font-size: @d18px;
+  font-weight: 300;
+  line-height: @d22px;
+}
+
+.rehab-about__documents {
+  margin-bottom: @d75px;
+}
+
+.rehab-about__link {
+  padding-right: @d27px;
+}
+
+.rehab-about__map-wrapper-column {
+  box-sizing: border-box;
+  width: @d553px;
+  height: @d563px;
+  margin-top: @d4px;
+  padding: @d32px;
+  border: @d1px solid #C4C4C4;
+}
+
+.rehab-about__map {
+  position: relative;
+  width: @d489px;
+  height: @d499px;
+}
+
+.placemark_layout_container {
+  position: absolute;
+  top: -@d20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-width: @d100px;
+  height: @d40px;
+
+  padding-left: @d10px;
+
+  font-family: @myriad;
+  font-weight: 600;
+  font-size: @d16px;
+
+  background-color: rgba(245,245,245,0.8);
+  border-radius: 10px;
+
+  // &::before {
+  //   content: '+';
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 0;
+  //   transform: translateY(-50%);
+
+  //   width: 20px;
+  //   height: 20px;
+  //   color: #fff;
+  //   background-color: #5797e5;
+  //   border-radius: 50%;
+  //   border: 2px solid #fff;
+  //   text-align: center;
+  //   font-size: 20px;
+  // }
+}
+
+.rehab-about__list-column {
+  margin-left: @d49px;
+}
+
+.rehab-about__list-title {
+  margin-bottom: @d57px;
+}
+
+.rehab-about__list {
+  margin-left: @d38px;
+}
+
+.rehab-about__item {
+  position: relative;
+  margin-bottom: @d15px;
+  font-size: @d18px;
+  &::before {
+    content: '';
+    position: absolute;
+    top: @d2px;
+    left: -@d36px;
+
+    width: @d21px;
+    height: @d15px;
+
+    background-image: url('../img/svg/check.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  &--miss::before {
+    width: @d21px;
+    height: @d21px;
+    background-image: url('../img/svg/cross.svg');
+  }
+}
+
+@media (max-width: @mobile-width) {
+
+}
+
+@media (min-width: @max-desktop-width) {
+  .rehab-about {
+    margin-bottom: 200px;
+  }
+
+  .rehab-about__main-column {
+    width: 550px;
+    margin-right: 67px;
+  }
+
+  .rehab-about__subtitle {
+    margin-bottom: 35px;
+  }
+
+  .rehab-about__title {
+    margin-bottom: 38px;
+  }
+
+  .rehab-about__description {
+    margin-bottom: 70px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .rehab-about__documents {
+    margin-bottom: 75px;
+  }
+
+  .rehab-about__link {
+    padding-right: 27px;
+  }
+
+  .rehab-about__map-wrapper-column {
+    width: 553px;
+    height: 563px;
+    margin-top: 4px;
+    padding: 32px;
+    border: 1px solid #C4C4C4;
+  }
+
+  .rehab-about__map {
+    width: 489px;
+    height: 499px;
+  }
+
+  .placemark_layout_container {
+    top: -20px;
+    min-width: 100px;
+    height: 40px;
+    padding-left: 10px;
+
+    font-size: 16px;
+  }
+
+  .rehab-about__list-column {
+    margin-left: 49px;
+  }
+
+  .rehab-about__list-title {
+    margin-bottom: 57px;
+  }
+
+  .rehab-about__list {
+    margin-left: 38px;
+  }
+
+  .rehab-about__item {
+    margin-bottom: 15px;
+    font-size: 18px;
+    &::before {
+      top: 2px;
+      left: -36px;
+      width: 21px;
+      height: 15px;
+    }
+
+    &--miss::before {
+      width: 21px;
+      height: 21px;
+    }
+  }
+
+}
