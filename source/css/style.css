@@ -4261,18 +4261,98 @@ body .mobile-block {
     line-height: 22px;
   }
 }
+.reviews {
+  margin-bottom: 7.604vw;
+}
 .reviews__row {
   display: flex;
-  align-items: center;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 1.4583vw;
+  padding-top: 2.7604vw;
+  border-top: 0.05208vw solid #C4C4C4;
+}
+.reviews__row:first-child {
+  margin-bottom: 3.6458vw;
+  padding-top: 0;
+  border: none;
 }
 .reviews__title {
-  margin-right: 192px;
+  margin-right: 10vw;
   margin-bottom: 0;
 }
 .reviews__subtitle {
-  margin-top: 25px;
-  font-size: 18px;
+  align-self: flex-end;
+  margin-bottom: 0.5729vw;
+  font-size: 0.9375vw;
   font-weight: 600;
+}
+.reviews__datetime {
+  font-family: 'Circe', 'Arial', sans-serif;
+  font-weight: 100;
+  font-size: 7.813vw;
+}
+.reviews__content-wrapper {
+  margin-top: 0.41666vw;
+  margin-left: auto;
+  margin-right: 3.9062vw;
+}
+.reviews__author {
+  display: block;
+  margin-bottom: 1.1458vw;
+  font-family: 'Circe', 'Arial', sans-serif;
+  font-size: 1.5625vw;
+  font-style: normal;
+  font-weight: 700;
+}
+.reviews__description {
+  width: 43.229vw;
+  font-family: 'Circe', 'Arial', sans-serif;
+  font-size: 0.9375vw;
+  font-weight: 400;
+  line-height: 1.25vw;
+}
+@media (min-width: 1921px) {
+  .reviews {
+    margin-bottom: 146px;
+  }
+  .reviews__row {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 28px;
+    padding-top: 53px;
+    border-top: 1px solid #C4C4C4;
+  }
+  .reviews__row:first-child {
+    margin-bottom: 70px;
+    padding-top: 0;
+    border: none;
+  }
+  .reviews__title {
+    margin-right: 192px;
+  }
+  .reviews__subtitle {
+    margin-bottom: 11px;
+    font-size: 18px;
+  }
+  .reviews__datetime {
+    font-size: 150px;
+  }
+  .reviews__content-wrapper {
+    margin-top: 8px;
+    margin-right: 75px;
+  }
+  .reviews__author {
+    margin-bottom: 22px;
+    font-size: 30px;
+  }
+  .reviews__description {
+    width: 830px;
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 .footer {
   padding-top: 4.5833vw;
