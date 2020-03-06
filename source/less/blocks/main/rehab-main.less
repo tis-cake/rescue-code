@@ -7,8 +7,6 @@
 }
 
 .rehab-main__main-column {
-  // display: flex;
-  // flex-direction: column;
   position: relative;
   width: @d617px;
 }
@@ -37,9 +35,6 @@
   margin-bottom: @d42px;
   padding-bottom: @d43px;
   border-bottom: @d1px solid #C4C4C4;
-  // .features__text-big {
-  //   font-size: 30px;
-  // }
 }
 
 .rehab-main__description {
@@ -59,8 +54,6 @@
 }
 
 .rehab-main__central-column {
-  // display: flex;
-  // flex-direction: column;
   width: @d185px;
   margin-left: @d39px;
   padding-top: @d263px;
@@ -75,12 +68,17 @@
   font-weight: 700;
 }
 
+.rehab-main__feature-title {
+  display: none;
+}
+
 .rehab-main__feature-description {
   margin-bottom: @d10px;
   font-size: @d18px;
 }
 
 .rehab-main__feature-description--gray {
+  font-weight: 300;
   color: #777;
 }
 
@@ -105,6 +103,101 @@
 }
 
 @media (max-width: @mobile-width) {
+
+  .rehab-main {
+    margin-bottom: @m315px;
+  }
+
+  .rehab-main__wrapper {
+    flex-wrap: wrap;
+  }
+
+  .rehab-main__main-column {
+    width: @a;
+  }
+
+  .rehab-main__breadcrumbs {
+    margin-bottom: @m80px;
+  }
+
+  .rehab-main__city {
+    margin-bottom: @m12px;
+    font-size: @m60px;
+  }
+
+  .rehab-main__street {
+    margin-bottom: @m34px;
+    font-size: @m45px;
+  }
+
+  .rehab-main__features-text {
+    margin-bottom: @m45px;
+    padding-bottom: @m50px;
+    border-bottom: @m1px solid #C4C4C4;
+  }
+
+  .rehab-main__description {
+    width: @m630px;
+    margin-bottom: @m47px;
+    font-size: @m30px;
+    line-height: @m36px;
+  }
+
+  .rehab-main__link {
+    position: relative;
+    bottom: @a;
+    width: @m420px;
+    margin-bottom: @m86px;
+    padding-right: 0;
+  }
+
+  .rehab-main__central-column {
+    display: flex;
+    flex-wrap: wrap;
+    width: @a;
+    margin-left: 0;
+    margin-bottom: @m28px;
+    padding-top: 0;
+    padding-left: 0;
+
+    border-left: none;
+  }
+
+  .rehab-main__feature-wrapper {
+    width: @m230px;
+    margin-top: @m18px;
+    margin-left: @m38px;
+    margin-bottom: @m73px;
+  }
+
+  .rehab-main__feature-title {
+    display: block;
+    margin-bottom: @m15px;
+    font-size: @m24px;
+  }
+
+  .rehab-main__feature {
+    margin-bottom: 0px;
+    font-size: @m50px;
+  }
+
+  .rehab-main__feature-description {
+    margin-bottom: @m19px;
+    font-size: @m30px;
+  }
+
+  .rehab-main__little-img-wrapper {
+    order: -1;
+    width: @m283px;
+    height: @m272px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .rehab-main__img-wrapper-column {
+    width: 100%;
+    height: @m615px;
+  }
 }
 
 @media (min-width: @max-desktop-width) {

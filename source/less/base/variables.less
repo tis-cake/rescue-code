@@ -13,7 +13,15 @@
 
 @a: auto;
 
-.bred() {
+.o () {
+  outline: 1px solid red;
+}
+
+.o (@color) {
+  outline: 1px solid @color;
+}
+
+.b() {
   border: 1px solid red;
 }
 
