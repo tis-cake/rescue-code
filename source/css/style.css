@@ -262,6 +262,11 @@ input[type="radio"].visually-hidden {
   font-size: 3.125vw;
   color: #161616;
 }
+.map-y {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
 body .mobile-block {
   display: none;
 }
@@ -3333,11 +3338,6 @@ body .mobile-block {
   height: 28.229vw;
   border-radius: 15px;
 }
-.map_y {
-  width: 100%;
-  height: 100%;
-  border: none;
-}
 @media (max-width: 755px) {
   .map {
     margin-bottom: 94px;
@@ -4031,6 +4031,10 @@ body .mobile-block {
   height: 38.698vw;
   margin-left: auto;
 }
+.rehab-main__map-wrapper-column {
+  width: 34.583vw;
+  height: 38.646vw;
+}
 @media (max-width: 755px) {
   .rehab-main {
     margin-bottom: 42vw;
@@ -4167,6 +4171,10 @@ body .mobile-block {
     width: 858px;
     height: 743px;
   }
+  .rehab-main__map-wrapper-column {
+    width: 664px;
+    height: 742px;
+  }
 }
 .gallery-swiper {
   margin-bottom: 11.042vw;
@@ -4258,23 +4266,18 @@ body .mobile-block {
   padding: 1.6666vw;
   border: 0.05208vw solid #C4C4C4;
 }
-.rehab-about__map {
-  position: relative;
-  width: 25.469vw;
-  height: 25.99vw;
-}
 .placemark_layout_container {
   position: absolute;
-  top: -1.0416vw;
+  top: -20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 5.208vw;
-  height: 2.0833vw;
-  padding-left: 0.5208vw;
+  min-width: 100px;
+  height: 40px;
+  padding-left: 10px;
   font-family: 'Myriad Pro', 'Arial', sans-serif;
   font-weight: 600;
-  font-size: 0.8333vw;
+  font-size: 16px;
   background-color: rgba(245, 245, 245, 0.8);
   border-radius: 10px;
 }
@@ -4347,17 +4350,6 @@ body .mobile-block {
     padding: 4.666vw;
     border: 0.133vw solid #C4C4C4;
   }
-  .rehab-about__map {
-    width: 100%;
-    height: 100%;
-  }
-  .placemark_layout_container {
-    top: -20px;
-    min-width: 100px;
-    height: 40px;
-    padding-left: 10px;
-    font-size: 16px;
-  }
   .rehab-about__list-column {
     margin-left: 0;
   }
@@ -4414,17 +4406,6 @@ body .mobile-block {
     margin-top: 4px;
     padding: 32px;
     border: 1px solid #C4C4C4;
-  }
-  .rehab-about__map {
-    width: 489px;
-    height: 499px;
-  }
-  .placemark_layout_container {
-    top: -20px;
-    min-width: 100px;
-    height: 40px;
-    padding-left: 10px;
-    font-size: 16px;
   }
   .rehab-about__list-column {
     margin-left: 49px;
