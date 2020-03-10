@@ -1293,6 +1293,9 @@ body .mobile-block {
     padding-left: 5.733vw;
     padding-right: 5.733vw;
   }
+  .main-info__title--block {
+    display: block;
+  }
   .main-info__slogan-img-wrapper {
     top: 65.6vw;
     right: -3.733vw;
@@ -2885,7 +2888,7 @@ body .mobile-block {
   .banner-info {
     margin-bottom: 27.333vw;
     padding-top: 14vw;
-    padding-bottom: 11.33vw;
+    padding-bottom: 0;
   }
   .banner-info__row-top {
     position: relative;
@@ -2984,6 +2987,7 @@ body .mobile-block {
     width: 28.267vw;
     margin-right: 1.86vw;
     margin-bottom: 0;
+    margin-bottom: 9.333vw;
   }
   .banner-info__block-item:nth-child(3n) {
     margin-right: 0;
@@ -3048,11 +3052,55 @@ body .mobile-block {
     width: 23.067vw;
     margin-bottom: 0.266vw;
   }
-  .banner-info-team .banner-info__block-item {
-    margin-bottom: 9.333vw;
+  .banner-info-team .banner-info__block-item:nth-child(3n) {
+    margin-right: 0;
   }
   .banner-info-team .banner-info__block-item:nth-child(5n) {
     margin-right: 1.86vw;
+  }
+  .banner-info-team-lead {
+    background-color: #f9f9f9;
+  }
+  .banner-info-team-lead .banner-info__text-top-wrapper {
+    width: 40vw;
+    margin-top: 0;
+    margin-left: 6vw;
+    padding-top: 2.13vw;
+  }
+  .banner-info-team-lead .banner-info__subtitle {
+    position: static;
+    margin-bottom: 2.8vw;
+  }
+  .banner-info-team-lead .banner-info__title {
+    margin-bottom: 4.533vw;
+  }
+  .banner-info-team-lead .banner-info__logo-img-wrapper {
+    top: 49.333vw;
+    right: -2.666vw;
+  }
+  .banner-info-team-lead .banner-info__text-bottom-wrapper {
+    width: auto;
+    padding-top: 0px;
+    margin-bottom: 9.333vw;
+  }
+  .banner-info-team-lead .banner-info__article-title {
+    margin-bottom: 7.333vw;
+  }
+  .banner-info-team-lead .banner-info__block-images {
+    padding-top: 0;
+  }
+  .banner-info-team-lead .banner-info__block-item {
+    margin-bottom: 6.666vw;
+  }
+  .banner-info-team-lead .banner-info__block-item:nth-child(3n) {
+    margin-right: 0;
+  }
+  .banner-info-team-lead .banner-info__block-img-wrapper {
+    height: 34vw;
+  }
+  .banner-info-team-lead .banner-info__block-description--black {
+    width: 23.067vw;
+    margin-bottom: 0.266vw;
   }
 }
 @media (min-width: 1921px) {
@@ -4949,6 +4997,75 @@ body .mobile-block {
   font-size: 0.9375vw;
   font-weight: 400;
   color: #000;
+}
+@media (max-width: 755px) {
+  .banner-documents {
+    margin-bottom: 40vw;
+  }
+  .banner-documents.container-out-right {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .banner-documents__wrapper {
+    flex-direction: column;
+  }
+  .banner-documents__column-left {
+    width: auto;
+    margin-bottom: 17.333vw;
+    padding-top: 0;
+    padding-left: 0;
+    padding-left: 5.733vw;
+    padding-right: 5.733vw;
+  }
+  .banner-documents__subtitle {
+    font-size: 4.8vw;
+  }
+  .banner-documents__title {
+    margin-bottom: 11.2vw;
+  }
+  .banner-documents__desc-title {
+    margin-bottom: 5.066vw;
+    font-size: 4.8vw;
+  }
+  .banner-documents__desc {
+    margin-bottom: 10.66vw;
+    font-size: 4vw;
+    line-height: 4.8vw;
+  }
+  .banner-documents__link {
+    font-family: 'Myriad Pro', 'Arial', sans-serif;
+    font-weight: 400;
+  }
+  .banner-documents__column-right {
+    margin-left: 0;
+  }
+  .banner-documents__img-wrapper {
+    width: 100%;
+    height: 120.66vw;
+  }
+  .banner-documents__doc-wrapper {
+    width: 66.667vw;
+    height: 55.333vw;
+    padding: 3.2vw;
+  }
+  .banner-documents__item {
+    margin-right: 1.33vw;
+  }
+  .banner-documents__item-img-wrapper {
+    width: 29.733vw;
+    height: 35.6vw;
+    margin-bottom: 4.933vw;
+    padding-top: 1.6vw;
+    padding-left: 3.066vw;
+    padding-right: 3.066vw;
+    padding-bottom: 1.6vw;
+  }
+  .banner-documents__item-desc {
+    font-size: 3.333vw;
+  }
+  .banner-documents__item-desc--black {
+    font-size: 4vw;
+  }
 }
 @media (min-width: 1921px) {
   .banner-documents {

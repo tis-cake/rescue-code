@@ -120,7 +120,7 @@
             <a class="main-info__link-region link-region modal-region mobile-block" href="#">Москва и область</a>
           </div>
 
-          <h1 class="main-info__title main-info__title--fz130d"><span class="main-info__title--fz60m">О сети код спасения</h1>
+          <h1 class="main-info__title main-info__title--fz130d">О сети <span class="main-info__title--block">код спасения</span></h1>
 
           <div class="main-info__features main-info__features--mb135 features">
             <ul class="features__list">
@@ -143,10 +143,6 @@
             <a class="main-info__link link link--roboto-medium modal-callback" href="#">Отправить заявку на лечение</a>
             <a class="main-info__link-region link-region link-region--roboto-medium modal-region desktop-block" href="#">Москва и область</a>
           </div>
-
-          <!-- <a class="main-info__btn-bottom desktop-block" href="#main-info-btn-bottom">
-            <img class="main-info__btn-bottom-img" src="img/main-info/btn-bottom-text.png" alt="">
-          </a> -->
         </div>
         <a class="main-info__btn-bottom" href="#main-info-btn-bottom">
           <img class="main-info__btn-bottom-img" src="img/main-info/btn-bottom-text.png" alt="">
@@ -165,7 +161,7 @@
               <p class="banner-info__subtitle subtitle-pink">Руководство</p>
               <h2 class="banner-info__title section-title">Иван Петров</h2>
               <p class="banner-info__description banner-info__description--fw400">Руководитель ассоциации</p>
-              <p class="banner-info__description">
+              <p class="banner-info__description desktop-block">
                 <span>Здравствуйте!</span>
                 Меня зовут Иван Петров. Я врач психиатр-нарколог, психотерапевт, кандидат медицинских наук. Сегодня я являюсь стратегическим директором сети центров выздоровления для нарко- и алкозависимых «Код Спасения» и помогаю выздоравливать людям по всей России.
               </p>
@@ -214,7 +210,7 @@
                   <img class="banner-info__block-img" src="img/banner-info/team2.jpg" alt="">
                 </div>
                 <figcaption class="banner-info__block-description">
-                  <span class="banner-info__block-description--black">Саркис Чепнян</span>
+                  <span class="banner-info__block-description--black">Анастасия Кучевая</span>
                   Руководитель
                 </figcaption>
               </figure>
@@ -223,7 +219,7 @@
                   <img class="banner-info__block-img" src="img/banner-info/team2.jpg" alt="">
                 </div>
                 <figcaption class="banner-info__block-description">
-                  <span class="banner-info__block-description--black">Саркис Чепнян</span>
+                  <span class="banner-info__block-description--black">Анастасия Кучевая</span>
                   Руководитель
                 </figcaption>
               </figure>
@@ -274,7 +270,13 @@
           </div>
           <div class="banner-documents__column-right">
             <div class="banner-documents__img-wrapper">
-              <img class="banner-documents__img" src="img/banner-documents/bd1.png" alt="">
+
+              <picture>
+                <!-- <source type="image/webp" media="(max-width: 750px)" srcset="img/banner-documents/bd1-m.webp"> -->
+                <source media="(max-width: 750px)" srcset="img/banner-documents/bd1-m.png">
+                <!-- <source type="image/webp" srcset="img/banner-documents/bd1-d.webp"> -->
+                <img class="banner-documents__img" src="img/banner-documents/bd1-d.png" alt="">
+              </picture>
             </div>
             <div class="banner-documents__doc-wrapper">
               <figure class="banner-documents__item">

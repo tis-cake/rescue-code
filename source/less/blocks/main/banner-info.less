@@ -225,7 +225,8 @@
   .banner-info {
     margin-bottom: @m205px;
     padding-top: @m105px;
-    padding-bottom: @m85px;
+    // padding-bottom: @m85px;
+    padding-bottom: 0;
   }
 
   .banner-info__row-top {
@@ -348,6 +349,7 @@
 
     margin-right: @m14px;
     margin-bottom: 0;
+    margin-bottom: @m70px;
     &:nth-child(3n) {
       margin-right: 0;
     }
@@ -421,9 +423,59 @@
     }
 
     .banner-info__block-item {
-      margin-bottom: @m70px;
+      // margin-bottom: @m70px;
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
       &:nth-child(5n) {
         margin-right: @m14px;
+      }
+    }
+  }
+
+  .banner-info-team-lead {
+    background-color: #f9f9f9;
+    .banner-info__text-top-wrapper {
+      width: @m300px;
+      margin-top: 0;
+      margin-left: @m45px;
+      padding-top: @m16px;
+    }
+    .banner-info__subtitle {
+      position: static;
+      margin-bottom: @m21px;
+    }
+    .banner-info__title {
+      margin-bottom: @m34px;
+    }
+    .banner-info__logo-img-wrapper {
+      top: @m370px;
+      right: -@m20px;
+    }
+    .banner-info__text-bottom-wrapper {
+      width: @a;
+      padding-top: 0px;
+      margin-bottom: @m70px;
+    }
+    .banner-info__article-title {
+      margin-bottom: @m55px;
+    }
+    .banner-info__block-images {
+      padding-top: 0;
+    }
+    .banner-info__block-item {
+      margin-bottom: @m50px;
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+    }
+    .banner-info__block-img-wrapper {
+      height: @m255px;
+    }
+    .banner-info__block-description {
+      &--black {
+        width: @m173px;
+        margin-bottom: @m2px;
       }
     }
   }
