@@ -3,8 +3,10 @@
 }
 
 .about__title {
-  width: @d665px;
   line-height: @d60px;
+  &--w665 {
+    width: @d665px;
+  }
 }
 
 .about__wrapper {
@@ -80,6 +82,9 @@
 @media (min-width: @max-desktop-width) {
   .about {
     margin-bottom: 160px;
+    &--w665 {
+      width: 665px;
+    }
   }
 
   .about__title {

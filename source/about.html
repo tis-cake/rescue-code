@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="«Код спасения»">
+    <title>Код спасения</title>
+
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="./fav.ico"> -->
+
+    <link rel="preload" href="fonts/MyriadPro/regular/MyriadPro-Regular.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="stylesheet" href="css/normalise.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+  <body>
+    <header class="header no-js">
+      <div class="container">
+        <div class="header__wrapper">
+
+          <button class="header__menu-toggle menu-toggle">
+            <span>Открыть меню</span>
+          </button>
+
+          <a class="header__logo logo" href="index.html">
+            <h2 class="logo__title">Код спасения</h2>
+            <p class="logo__description">Портал помощи солевым наркоманам</p>
+          </a>
+
+          <a class="header__link-call-back modal-callback" href="#">
+            <img class="header__link-call-back-img" src="img/svg/call-w.svg" alt="Обратный звонок">
+          </a>
+
+          <nav class="header__main-nav main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="centers.html">Реабилитация</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="clinics.html">Клиники</a>
+              </li>
+              <li class="main-nav__item">
+                <span class="main-nav__link">Лечение</span>
+                <ul class="main-nav__sublist">
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="service-detox.html">Детоксикация</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="service-rehab.html">Реабилитация</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="service-program.html">Программы лечения</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="service-ambulatory.html">Амбулаторное лечение</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="service-abroad.html">Лечение за границей</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="service-advocate.html">Адвокатская помощь</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="service-resoc.html">Ресоциализация</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="service-recode.html">Кодирование</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="family.html">Родственникам</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="teenagers.html">Подросткам</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="database.html">Публикации</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="about.html">О нас</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="header__phone-wrapper">
+            <a class="header__phone" href="tel:+78009009090">8 800 900 90 90</a>
+            <p class="header__phone-text">Круглосуточная бесплатная помощь</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="main-info main-info--mb0 bg">
+        <div class="main-info__bg-wrapper">
+          <picture>
+            <!-- <source type="image/webp" media="(max-width: 750px)" srcset="img/main-info/bg1-m.webp"> -->
+            <source media="(max-width: 750px)" srcset="img/main-info/bg1-m.png">
+            <!-- <source type="image/webp" srcset="img/main-info/bg1-d.webp"> -->
+            <img class="main-info__bg-img" src="img/main-info/bg1-d.png" alt="">
+          </picture>
+        </div>
+        <div class="main-info__content container">
+          <div class="main-info__top-wrapper">
+            <p class="main-info__features-text features--without-icon">
+              Помощь
+              <span class="features__text-big">24</span>
+              <span class="features__text-small">/7</span>
+            </p>
+            <p class="main-info__features-text features--without-icon desktop-block">
+              Анонимно
+              <span class="features__text-big">100</span>
+              <span class="features__text-small">%</span>
+            </p>
+            <a class="main-info__link-region link-region modal-region mobile-block" href="#">Москва и область</a>
+          </div>
+
+          <h1 class="main-info__title main-info__title--fz130d"><span class="main-info__title--fz60m">О сети код спасения</h1>
+
+          <div class="main-info__features main-info__features--mb135 features">
+            <ul class="features__list">
+              <li class="features__item features__item--program">
+                <p class="features__title">Программа</p>
+                <p class="features__description">Уникальная программа лечения.</p>
+              </li>
+              <li class="features__item features__item--call">
+                <p class="features__title">Свяжитесь с нами</p>
+                <p class="features__description">И вы успеете спасти близкого!</p>
+              </li>
+            </ul>
+
+            <div class="main-info__slogan-img-wrapper">
+              <img class="main-info__slogan-img" src="img/main-info/слоган.png" alt="Солевые наркотики уьивают за срок от 2 до 6 месяцев">
+            </div>
+          </div>
+
+          <div class="main-info__link-wrapper">
+            <a class="main-info__link link link--roboto-medium modal-callback" href="#">Отправить заявку на лечение</a>
+            <a class="main-info__link-region link-region link-region--roboto-medium modal-region desktop-block" href="#">Москва и область</a>
+          </div>
+
+          <!-- <a class="main-info__btn-bottom desktop-block" href="#main-info-btn-bottom">
+            <img class="main-info__btn-bottom-img" src="img/main-info/btn-bottom-text.png" alt="">
+          </a> -->
+        </div>
+        <a class="main-info__btn-bottom" href="#main-info-btn-bottom">
+          <img class="main-info__btn-bottom-img" src="img/main-info/btn-bottom-text.png" alt="">
+        </a>
+      </section>
+
+      <article class="banner-info banner-info-team-lead" id="main-info-btn-bottom">
+        <div class="container">
+          <div class="banner-info__row-top">
+
+            <div class="banner-info__main-img-wrapper">
+              <img class="banner-info__main-img" src="img/banner-info/team3.jpg" alt="">
+            </div>
+
+            <div class="banner-info__text-top-wrapper">
+              <p class="banner-info__subtitle subtitle-pink">Руководство</p>
+              <h2 class="banner-info__title section-title">Иван Петров</h2>
+              <p class="banner-info__description banner-info__description--fw400">Руководитель ассоциации</p>
+              <p class="banner-info__description">
+                <span>Здравствуйте!</span>
+                Меня зовут Иван Петров. Я врач психиатр-нарколог, психотерапевт, кандидат медицинских наук. Сегодня я являюсь стратегическим директором сети центров выздоровления для нарко- и алкозависимых «Код Спасения» и помогаю выздоравливать людям по всей России.
+              </p>
+            </div>
+
+            <div class="banner-info__logo-img-wrapper">
+              <img class="banner-info__logo-img" src="img/banner-info/skull-text.png" alt="">
+            </div>
+          </div>
+
+          <div class="banner-info__row-bottom">
+            <div class="banner-info__text-bottom-wrapper">
+              <h3 class="banner-info__article-title">Наши  специалисты</h3>
+              <p class="banner-info__description">
+                В нашей команде настоящие профессионалы своего дело.
+              </p>
+
+              <p class="banner-info__description">
+              <span>Вы не одиноки!</span>
+              Мы всегда готовы помочь.</p>
+
+              <a class="banner-info__link link modal-callback desktop-block" href="#">Мне нужна помощь</a>
+            </div>
+
+            <div class="banner-info__block-images">
+              <figure class="banner-info__block-item">
+                <div class="banner-info__block-img-wrapper">
+                  <img class="banner-info__block-img" src="img/banner-info/team1.jpg" alt="">
+                </div>
+                <figcaption class="banner-info__block-description">
+                  <span class="banner-info__block-description--black">Саркис Чепнян</span>
+                  Руководитель
+                </figcaption>
+              </figure>
+              <figure class="banner-info__block-item">
+                <div class="banner-info__block-img-wrapper">
+                  <img class="banner-info__block-img" src="img/banner-info/team1.jpg" alt="">
+                </div>
+                <figcaption class="banner-info__block-description">
+                  <span class="banner-info__block-description--black">Саркис Чепнян</span>
+                  Руководитель
+                </figcaption>
+              </figure>
+              <figure class="banner-info__block-item">
+                <div class="banner-info__block-img-wrapper">
+                  <img class="banner-info__block-img" src="img/banner-info/team2.jpg" alt="">
+                </div>
+                <figcaption class="banner-info__block-description">
+                  <span class="banner-info__block-description--black">Саркис Чепнян</span>
+                  Руководитель
+                </figcaption>
+              </figure>
+              <figure class="banner-info__block-item">
+                <div class="banner-info__block-img-wrapper">
+                  <img class="banner-info__block-img" src="img/banner-info/team2.jpg" alt="">
+                </div>
+                <figcaption class="banner-info__block-description">
+                  <span class="banner-info__block-description--black">Саркис Чепнян</span>
+                  Руководитель
+                </figcaption>
+              </figure>
+            </div>
+
+          </div>
+
+        </div>
+      </article>
+
+      <section class="about container">
+        <p class="about__subtitle subtitle-pink">Портал помощи и социализации зависимых</p>
+        <h2 class="about__title section-title">Об ассоциции Код Спасния</h2>
+        <div class="about__wrapper">
+          <div class="about__column-left">
+            <a class="about__logo logo logo--empty" href="index.html">
+              <img class="logo__img" src="img/logo/logo-blue.svg" alt="Логотип портала «Код спасения»" width="52" height="70">
+              <div class="logo__text-wrapper">
+                <h3 class="logo__title logo__title--less">Код спасения</h3>
+                <p class="logo__description">Портал помощи солевым наркоманам</p>
+                <p class="logo__about">Организация создана в 2005 г. <span class="logo__about--block">г. Москва</span></p>
+              </div>
+            </a>
+          </div>
+
+          <div class="about__column-right">
+            <p class="about__description">На сегодняшний день существует большое количество псевдо- клиник, центров и врачей, которые используют положение пострадавших с целью наживы. При этом качество лечения, используемые методики и профессиональная деятельность специалистов оставляют желать лучшего.</p>
+
+            <p class="about__description">На данном портале собран полный перечень реабилитационных центров Российской Федерации с прозрачными рейтингами. Также, на нашем сайте представлена онлайн поддержка через личный кабинет, где Вы можете получить консультацию от специалистов.</p>
+
+            <p class="about__description">Итогом любой реабилитации является адаптация бывшего зависимого в социуме. Основная задача портала – социализация успешно прошедших реабилитацию и ресоциализацию нарко- и алкозависимых. Нами собраны и проверены актуальные спортивные секции, вакансии на трудоустройство, тренинги и лекции анонимных нарко- и алкозависимых, с которыми можно ознакомиться в разделе «Социализация».</p>
+
+            <p class="about__description">На данном портале собран полный перечень реабилитационных центров Российской Федерации с прозрачными рейтингами. Также, на нашем сайте представлена онлайн поддержка через личный кабинет, где Вы можете получить консультацию от специалистов.</p>
+
+            <p class="about__description">Итогом любой реабилитации является адаптация бывшего зависимого в социуме. Основная задача портала – социализация успешно прошедших реабилитацию и ресоциализацию нарко- и алкозависимых. Нами собраны и проверены актуальные спортивные секции, вакансии на трудоустройство, тренинги и лекции анонимных нарко- и алкозависимых, с которыми можно ознакомиться в разделе «Социализация».</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="banner-documents container-out-right">
+        <div class="banner-documents__wrapper">
+          <div class="banner-documents__column-left">
+            <p class="banner-documents__subtitle subtitle-pink">Индивидуальная программа для мефедроновых наркоманов</p>
+            <h2 class="banner-documents__title section-title">Работаем открыто и легально</h2>
+            <h3 class="banner-documents__desc-title">Миссия команды</h3>
+            <p class="banner-documents__desc">Через постоянный личностный и профессиональный рост улучшать качество реабилитации наркозависимых в России и спасать человеческие жизни.</p>
+            <a class="banner-documents__link link link--roboto-medium modal-callback" href="#">Заявка на бесплатную консультацию</a>
+          </div>
+          <div class="banner-documents__column-right">
+            <div class="banner-documents__img-wrapper">
+              <img class="banner-documents__img" src="img/banner-documents/bd1.png" alt="">
+            </div>
+            <div class="banner-documents__doc-wrapper">
+              <figure class="banner-documents__item">
+                <div class="banner-documents__item-img-wrapper">
+                  <img class="banner-documents__item-img" src="img/banner-documents/bd2.png" alt="">
+                </div>
+                <figcaption class="banner-documents__item-desc">
+                  <span class="banner-documents__item-desc--black">Лицензия</span> лицензированные специалисты
+                </figcaption>
+              </figure>
+              <figure class="banner-documents__item">
+                <div class="banner-documents__item-img-wrapper">
+                  <img class="banner-documents__item-img" src="img/banner-documents/bd3.png" alt="">
+                </div>
+                <figcaption class="banner-documents__item-desc">
+                  <span class="banner-documents__item-desc--black">Лицензия</span> лицензированные специалисты
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews container">
+        <div class="reviews__top-row">
+          <h2 class="reviews__title section-title">Отзывы</h2>
+          <p class="reviews__subtitle">Индивидуальная работа с каждым зависимым и созависимым</p>
+        </div>
+        <blockquote class="reviews__row">
+          <time class="reviews__datetime" datetime="2020-01-18">18.01</time>
+          <div class="reviews__content-wrapper">
+            <cite class="reviews__author">Anon</cite>
+            <p class="reviews__description">Саркис Абрамович, поздравляю Вас с наступающим Новым Годом! Пусть в Вашей семье всегда царит тепло и любовь! Желаю Вам безграничного счастья и здоровья! Благодарен Вас за вклад в мою трезвость и новую жизнь, это бесценно.</p>
+          </div>
+        </blockquote>
+        <blockquote class="reviews__row">
+          <time class="reviews__datetime" datetime="2020-01-20">20.01</time>
+          <div class="reviews__content-wrapper">
+            <cite class="reviews__author">Анастасия</cite>
+            <p class="reviews__description">Саркис Абрамович, поздравляю Вас с наступающим Новым Годом! Пусть в Вашей семье всегда царит тепло и любовь! Желаю Вам безграничного счастья и здоровья! Благодарен Вас за вклад в мою трезвость и новую жизнь, это бесценно.</p>
+          </div>
+        </blockquote>
+        <blockquote class="reviews__row">
+          <time class="reviews__datetime" datetime="2020-01-25">25.01</time>
+          <div class="reviews__content-wrapper">
+            <cite class="reviews__author">Anon</cite>
+            <p class="reviews__description">Саркис Абрамович, поздравляю Вас с наступающим Новым Годом! Пусть в Вашей семье всегда царит тепло и любовь! Желаю Вам безграничного счастья и здоровья! Благодарен Вас за вклад в мою трезвость и новую жизнь, это бесценно.</p>
+          </div>
+        </blockquote>
+      </section>
+
+      <article class="banner banner--mb0 banner-motivation">
+        <div class="banner__wrapper container">
+          <div class="banner__bg-img-wrapper banner-img-motivation">
+            <img class="banner__bg-img" src="img/banner/banner1.1.png" alt="">
+          </div>
+          <div class="banner__main-wrapper banner__main-wrapper--padding-left">
+            <p class="banner__subtitle banner__subtitle banner-icon banner-icon-round-one">От передозировки мефедроном выживают только <span class="banner__subtitle--big">2%</span></p>
+            <h2 class="banner__title">Замотивируем на лечение</h2>
+            <p class="banner__description">Зачастую сами зависимые неосознают проблему, поэтому отказываются от лечения!</p>
+            <p class="banner__description">Мы поможем уговорить на лечение вашего близкого на бесплатной консультации.</p>
+            <a class="banner__link link link--roboto-medium modal-callback" href="#">Заявка на бесплатную консультацию</a>
+          </div>
+
+        </div>
+      </article>
+
+    </main>
+
+    <footer class="footer">
+      <div class="footer__wrapper container">
+        <ul class="footer__list footer__list--left">
+          <li class="footer__item footer__item--bold">Информация
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Реабилитация</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Клиники</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Лечение</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Родственникам</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Подросткам</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Публикации</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">О нас</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Контакты</a>
+          </li>
+        </ul>
+        <div class="footer__center-column">
+          <a class="footer__logo logo logo--empty" href="index.html">
+            <img class="logo__img" src="img/logo/logo-blue.svg" alt="Логотип портала «Код спасения»" width="52" height="70">
+            <div class="logo__text-wrapper">
+              <h3 class="logo__title">Код спасения</h3>
+              <p class="logo__description">Портал помощи солевым наркоманам</p>
+            </div>
+          </a>
+          <a class="footer__link link link--roboto-medium modal-callback" href="#">Заявка на бесплатную консультацию</a>
+          <div class="footer__phone-wrapper">
+            <a class="footer__phone" href="tel:+78009009090">8 800 900 90 90</a>
+            <p class="footer__phone-text">Круглосуточная бесплатная помощь</p>
+          </div>
+        </div>
+        <ul class="footer__list footer__list--right">
+          <li class="footer__item footer__item--bold">Лечение
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Детоксикация</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Реабилитация</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Программы лечения</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Амбулаторное лечение</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Лечение за границей</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Адвокатская помощь</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Ресоциализация</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__item-link" href="#">Кодирование</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery.marquee.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+
+    <script src="js/main.js"></script>
+  </body>
+  </html>
