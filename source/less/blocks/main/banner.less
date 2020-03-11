@@ -9,11 +9,17 @@
   background-color: #fff;
 
   &-therapy {
-    margin-bottom: @d190px;
+    // margin-bottom: @d190px;
   }
 
   &-transport {
     padding-top: @d207px;
+  }
+
+  &-diagnostics {
+    .banner__description {
+      width: @d680px;
+    }
   }
 
   &--mb0 {
@@ -22,6 +28,10 @@
 
   &--mb150 {
     margin-bottom: @d150px;
+  }
+
+  &--mb190 {
+    margin-bottom: @d190px;
   }
 }
 
@@ -52,6 +62,12 @@
     right: 0;
     width: @d882px;
     height: @d552px;
+  }
+
+  &-diagnostics {
+    left: 0;
+    width: 56.25vw; // 1080px;
+    height: @d670px;
   }
 }
 
@@ -194,7 +210,7 @@
     margin-bottom: @m192px;
     padding-top: @m148px;
     &-therapy {
-      margin-bottom: @m152px;
+      // margin-bottom: @m152px;
     }
     &-transport {
       .banner__title {
@@ -213,6 +229,9 @@
     }
     &--mb150 {
       // margin-bottom: @d150px;
+    }
+    &--mb190 {
+      margin-bottom: @m152px;
     }
   }
 
@@ -343,16 +362,24 @@
     margin-bottom: 285px;
     padding-top: 148px;
     &-therapy {
-      margin-bottom: 190px;
+      // margin-bottom: 190px;
     }
     &-transport {
       padding-top: 207px;
+    }
+    &-diagnostics {
+      .banner__description {
+        width: 680px;
+      }
     }
     &--mb0 {
       margin-bottom: 0;
     }
     &--mb150 {
       margin-bottom: 150px;
+    }
+    &--mb190 {
+      margin-bottom: 190px;
     }
   }
 
@@ -362,14 +389,17 @@
       width: 553px;
       height: 625px;
     }
-
     &-therapy {
       height: 670px;
     }
-
     &-transport {
       width: 882px;
       height: 552px;
+    }
+    &-diagnostics {
+      left: 0;
+      width: 1080px;
+      height: 670px;
     }
   }
 
