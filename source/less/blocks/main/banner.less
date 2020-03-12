@@ -79,14 +79,10 @@
 }
 
 .banner__main-wrapper {
-  // padding-top: @d148px;
   padding-left: @d8px;
   &--padding-left {
     padding-left: @d618px;
   }
-  // &--padding-top {
-    // padding-top: @d207px;
-  // }
 }
 
 .banner-icon {
@@ -110,7 +106,7 @@
       width: @d54px;
       height: @d54px;
 
-      background-image: url('../img/banner/banner2.3.svg');
+      background-image: url('../img/bnbg/b2.2.svg');
     }
   }
 
@@ -123,7 +119,7 @@
       width: @d55px;
       height: @d35px;
 
-      background-image: url('../img/banner/banner3.3.svg');
+      background-image: url('../img/bnbg/b3.2.svg');
     }
   }
 
@@ -134,7 +130,7 @@
     width: @d161px;
     height: @d165px;
 
-    background-image: url('../img/banner/banner1.2.png');
+    background-image: url('../img/bnbg/b1.1.png');
   }
 
   &-round-two::after {
@@ -144,7 +140,7 @@
     width: @d152px;
     height: @d154px;
 
-    background-image: url('../img/banner/banner3.2.png');
+    background-image: url('../img/bnbg/b3.1.png');
   }
 }
 
@@ -207,21 +203,35 @@
 @media (max-width: @mobile-width) {
   .banner {
     height: 182.13vw; // 1366px;
+
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+    overflow: hidden;
+
     margin-bottom: @m192px;
     padding-top: @m148px;
-    &-therapy {
-      // margin-bottom: @m152px;
-    }
     &-transport {
       .banner__title {
         // hyphens: auto;
         word-break: break-word;
       }
-      .banner__title.banner-icon-round-two::after {
+      .banner__title.banner-icon::after {
         content: none;
       }
       .banner__link {
         width: @m355px;
+      }
+    }
+    &-diagnostics {
+      .banner-icon-round-one::after {
+        right: -@m150px;
+      }
+      .banner__title .banner-icon::after {
+        content: none;
+      }
+      .banner__description {
+        width: @a;
       }
     }
     &--mb0 {
@@ -237,11 +247,10 @@
 
   .banner-img {
     &-motivation {
-      left: @m215px;
+      left: @m170px;
       width: @m490px;
       height: @m554px;
     }
-
     &-therapy {
       right: 0;
       width: 100%;
@@ -250,11 +259,20 @@
         object-position: 86.7%;
       }
     }
-
     &-transport {
-      width: @m740px;
+      // width: @m750px;
+      width: 100%;
       height: @m710px;
     }
+    &-diagnostics {
+      width: 100%;
+      height: @m670px;
+    }
+  }
+
+  .banner__bg-img-wrapper {
+    position: relative;
+    margin-top: @m42px;
   }
 
   .banner__main-wrapper {
@@ -262,6 +280,11 @@
     &--padding-left {
       padding-left: 0;
     }
+  }
+
+  .banner__wrapper {
+    display: flex;
+    flex-direction: column-reverse;
   }
 
   .banner-icon {
@@ -294,8 +317,10 @@
       height: @m205px;
     }
     &-round-two::after {
-      top: -@m30px;
-      right: -@m210px;
+      // top: -@m30px;
+      // right: -@m210px;
+      top: -@m70px;
+      right: -@m150px;
 
       width: @m190px;
       height: @m190px;
@@ -348,8 +373,11 @@
 
   .banner__slogan-img-wrapper {
     top: @a;
-    bottom: @m295px;
-    right: @m290px;
+    // bottom: @m295px;
+    // right: @m290px;
+
+    bottom: -@m398px;
+    right: @m280px;
 
     width: @m260px;
     height: @m260px;

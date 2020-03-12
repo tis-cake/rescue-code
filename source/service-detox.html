@@ -113,10 +113,10 @@
         </ul>
       </div>
 
-      <section class="main-info">
+      <section class="main-info service-page">
         <div class="container">
-          <p class="main-info__subtitle">Для мефедроновых наркоманов</p>
-          <h1 class="main-info__title main-info__title--fz72d">Детоксикация в клинике</h1>
+          <p class="main-info__subtitle desktop-block">Для мефедроновых наркоманов</p>
+          <h1 class="main-info__title">Детоксикация в клинике</h1>
 
           <div class="main-info__service-wrapper">
             <div class="main-info__service-column-left">
@@ -272,15 +272,15 @@
       <section class="service-advantages container">
         <h2 class="service-advantages__main-title section-title">Чем поможет лечение?</h2>
         <ul class="service-advantages__list">
-          <li class="service-advantages__item service-advantages__item--first">
+          <li class="service-advantages__item">
             <h3 class="service-advantages__title">Бесплатная полная дигностика.</h3>
             <p class="service-advantages__desc">В больнице можно получить бесплатный осмотр и детоксикацию в критическом состоянии.</p>
           </li>
-          <li class="service-advantages__item service-advantages__item--second">
+          <li class="service-advantages__item">
             <h3 class="service-advantages__title">Комплекс витаминов. Ускорее снятия ломки.</h3>
             <p class="service-advantages__desc">В диспансерах работают дипломированные врачи с внушительным опытом работы.</p>
           </li>
-          <li class="service-advantages__item service-advantages__item--third">
+          <li class="service-advantages__item">
             <h3 class="service-advantages__title">Законность и безопасность.</h3>
             <p class="service-advantages__desc">Используем только лицензированное медицинское оборудование. А так же предоставим адвокатскую помощь в случае необходимости!</p>
           </li>
@@ -289,16 +289,20 @@
 
       <article class="banner banner--mb190 banner-diagnostics">
         <div class="banner__bg-img-wrapper banner-img-diagnostics">
-          <img class="banner__bg-img" src="img/banner/banner4.1.png" alt="">
+          <picture>
+            <source type="image/webp" media="(max-width: 750px)" srcset="img/bnbg/bg4-m.webp">
+            <source media="(max-width: 750px)" srcset="img/bnbg/bg4-m.png">
+            <source type="image/webp" srcset="img/bnbg/bg4-d.webp">
+            <img class="banner__bg-img" src="img/bnbg/bg4-d.png" alt="Бесплатная диагностика">
+          </picture>
         </div>
         <div class="banner__wrapper container">
           <div class="banner__main-wrapper banner__main-wrapper--padding-left">
-            <p class="banner__subtitle">Анонимность <span class="banner__subtitle--big">100%</span></p>
+            <p class="banner__subtitle">Анонимность <span class="banner__subtitle--big banner-icon banner-icon-round-one">100%</span></p>
             <h2 class="banner__title"><span class="banner-icon banner-icon-round-one">Бесплатная</span> диагностика</h2>
             <p class="banner__description">В диагностику входит общий анализ крови, психологическое тестирование, а так же анализы на маркеры и венерологические заболевания.</p>
             <a class="banner__link link link--roboto-medium modal-callback" href="#">Заявка на бесплатную консультацию</a>
           </div>
-
         </div>
       </article>
 
@@ -429,7 +433,7 @@
       <article class="banner banner--mb0 banner-motivation">
         <div class="banner__wrapper container">
           <div class="banner__bg-img-wrapper banner-img-motivation">
-            <img class="banner__bg-img" src="img/banner/banner1.1.png" alt="">
+            <img class="banner__bg-img" src="img/bnbg/bg1.png" alt="">
           </div>
           <div class="banner__main-wrapper banner__main-wrapper--padding-left">
             <p class="banner__subtitle banner__subtitle banner-icon banner-icon-round-one">От передозировки мефедроном выживают только <span class="banner__subtitle--big">2%</span></p>
