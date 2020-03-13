@@ -18,17 +18,11 @@ $(document).ready(function () {
     $(this).toggleClass('active');
     $('.header').toggleClass('active');
     $('.main-nav').toggleClass('active');
-    $('.main-info').toggleClass('active');
     $("body").toggleClass('noscroll'); // отключить если нет js и
   });
 });
 
 // [index page]
-// заголовок h1 в main-info
-if (width <= 755) {
-  // $('.main-info__title.visually-hidden').removeClass('visually-hidden');
-}
-
 // якорь на main-info
 $(document).ready(function(){
   $(".main-info__btn-bottom" ).on("click", function () {

@@ -77,7 +77,7 @@
   }
 
   .no-js.header {
-    position: relative;
+    // position: relative;
     height: 200vw; // 1500px;
     overflow: visible;
   }
@@ -89,7 +89,7 @@
     // overflow-x: hidden; // убрать если js подключен
 
     position: relative;
-    z-index: 100;
+    z-index: 10;
     background-color: #303030;
 
     .header__wrapper {
@@ -111,11 +111,7 @@
     color: #fff;
   }
 
-  .active.bg {
-    position: relative;
-    border: 1px solid red;
-  }
-
+  .header.bg .header__wrapper,
   .header__wrapper {
     margin-bottom: @m52px;
     border-bottom: none;
