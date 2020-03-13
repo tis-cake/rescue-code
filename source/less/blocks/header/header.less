@@ -88,6 +88,8 @@
     // overflow-y: scroll; // убрать если js подключен
     // overflow-x: hidden; // убрать если js подключен
 
+    position: relative;
+    z-index: 100;
     background-color: #303030;
 
     .header__wrapper {
@@ -107,6 +109,11 @@
 
   .active.header * {
     color: #fff;
+  }
+
+  .active.bg {
+    position: relative;
+    border: 1px solid red;
   }
 
   .header__wrapper {

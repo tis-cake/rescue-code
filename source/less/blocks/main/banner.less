@@ -17,6 +17,9 @@
   }
 
   &-diagnostics {
+    .banner__subtitle .banner-icon::after {
+      content: none;
+    }
     .banner__description {
       width: @d680px;
     }
@@ -226,6 +229,9 @@
     &-diagnostics {
       .banner-icon-round-one::after {
         right: -@m150px;
+      }
+      .banner__subtitle .banner-icon::after {
+        content: '';
       }
       .banner__title .banner-icon::after {
         content: none;

@@ -1,0 +1,109 @@
+.article-rating {
+  display: flex;
+  align-items: center;
+}
+
+.article-rating__title {
+  font-weight: 300;
+  font-size: 18px;
+  // margin-top: @d3px;
+  margin-right: 13px;
+
+  // font-size: @d19px;
+  // font-weight: 400;
+  // letter-spacing: 0.1px;
+}
+
+.article-rating__area {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+
+  width: 162px;
+}
+
+.article-rating__area:not(:checked) > input {
+  display: none;
+}
+
+.article-rating__area:not(:checked) > label {
+  position: relative;
+  cursor: pointer;
+
+  width: @d24px;
+  height: @d24px;
+  padding: 0;
+}
+.article-rating__area:not(:checked) > label::before {
+  content: '';
+  position: absolute;
+
+  width: @d24px;
+  height: @d24px;
+
+  background-image: url("../img/svg/star-gray.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.article-rating__area > input:checked ~ label::before,
+.article-rating__area:not(:checked) > label:hover,
+.article-rating__area:not(:checked) > label:hover ~ label {
+  background-image: url("../img/svg/star-blue-fill.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: @mobile-width) {
+  .article-rating {
+    flex-wrap: wrap;
+  }
+
+  .article-rating__title {
+    width: 100%;
+    margin: 0;
+    margin-bottom: @m30px;
+
+    font-size: @m33px;
+  }
+
+  .article-rating__area {
+    width: @m415px;
+  }
+
+  .article-rating__area:not(:checked) > label {
+    width: @m60px;
+    height: @m60px;
+    padding: 0;
+  }
+  .article-rating__area:not(:checked) > label::before {
+    width: @m60px;
+    height: @m60px;
+  }
+}
+
+@media (min-width: @max-desktop-width) {
+  .article-rating {
+  }
+
+  .article-rating__title {
+    // margin-top: 3px;
+    // margin-right: 20px;
+    // font-size: 19px;
+  }
+
+  .article-rating__area {
+    width: 162px;
+  }
+
+  .article-rating__area:not(:checked) > label {
+    width: 24px;
+    height: 24px;
+  }
+  .article-rating__area:not(:checked) > label::before {
+    width: 24px;
+    height: 24px;
+  }
+}

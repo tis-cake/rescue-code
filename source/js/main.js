@@ -18,6 +18,7 @@ $(document).ready(function () {
     $(this).toggleClass('active');
     $('.header').toggleClass('active');
     $('.main-nav').toggleClass('active');
+    $('.main-info').toggleClass('active');
     $("body").toggleClass('noscroll'); // отключить если нет js и
   });
 });
@@ -233,6 +234,22 @@ $(document).ready(function () {
   });
 });
 
+// автофокус поиска
+$(document).ready(function () {
+  if ($("section").hasClass("search") && width > 755) {
+    var windowHeight = $(window).height();
+    var search = $('.search__input');
+    var height = search.offset().top + search.height();
+    $(document).on('scroll', function() {
+      // если расстояние до поиска + его высота >= расстоянию,
+      //  которое пользователь пролистал + высота окна
+      if ($(document).scrollTop() + windowHeight >= height) {
+        search.focus();
+      }
+    });
+  }
+});
+
 // [rehab-page]
 // галерея рехаба
 $(document).ready(function () {
@@ -298,3 +315,4 @@ $(document).ready(function () {
   gallerySwiperMain.controller.control = gallerySwiperPagination;
   gallerySwiperPagination.controller.control = gallerySwiperMain;
 });
+
