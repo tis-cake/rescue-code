@@ -5,13 +5,8 @@
 
 .article-rating__title {
   font-weight: 300;
-  font-size: 18px;
-  // margin-top: @d3px;
-  margin-right: 13px;
-
-  // font-size: @d19px;
-  // font-weight: 400;
-  // letter-spacing: 0.1px;
+  font-size: @d18px;
+  margin-right: @d13px;
 }
 
 .article-rating__area {
@@ -19,7 +14,7 @@
   flex-direction: row-reverse;
   justify-content: space-between;
 
-  width: 162px;
+  width: @d162px;
 }
 
 .article-rating__area:not(:checked) > input {
@@ -52,46 +47,34 @@
 .article-rating__area:not(:checked) > label:hover ~ label {
   background-image: url("../img/svg/star-blue-fill.svg");
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center;
+  background-size: cover;
 }
 
 @media (max-width: @mobile-width) {
-  .article-rating {
-    flex-wrap: wrap;
-  }
-
   .article-rating__title {
-    width: 100%;
-    margin: 0;
-    margin-bottom: @m30px;
-
-    font-size: @m33px;
+    margin-right: @m35px;
+    font-size: @m30px;
   }
 
   .article-rating__area {
-    width: @m415px;
+    width: @m265px;
   }
 
   .article-rating__area:not(:checked) > label {
-    width: @m60px;
-    height: @m60px;
-    padding: 0;
+    width: @m40px;
+    height: @m40px;
   }
   .article-rating__area:not(:checked) > label::before {
-    width: @m60px;
-    height: @m60px;
+    width: @m40px;
+    height: @m40px;
   }
 }
 
 @media (min-width: @max-desktop-width) {
-  .article-rating {
-  }
-
   .article-rating__title {
-    // margin-top: 3px;
-    // margin-right: 20px;
-    // font-size: 19px;
+    font-size: 18px;
+    margin-right: 13px;
   }
 
   .article-rating__area {

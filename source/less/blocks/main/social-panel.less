@@ -19,15 +19,6 @@
   font-size: @d16px;
 }
 
-.social-panel__datetime {
-}
-
-.social-panel__views {
-}
-
-.social-panel__views-count {
-}
-
 .social-panel__share {
   display: flex;
   align-items: center;
@@ -56,7 +47,35 @@
 }
 
 @media (max-width: @mobile-width) {
+  .social-panel {
+    margin-bottom: @m64px;
+  }
 
+  .social-panel__wrap {
+    flex-wrap: wrap;
+    width: @a;
+  }
+
+  .social-panel__desc {
+    font-size: @m25px;
+  }
+
+  .social-panel__views {
+    order: 1;
+  }
+
+  .social-panel__btn-list {
+    margin-left: @m20px;
+  }
+
+  .social-panel__btn-item {
+    margin-right: @m10px;
+  }
+
+  .ya-share2__icon {
+    height: @m53px!important;
+    width: @m53px!important;
+  }
 }
 
 @media (min-width: @max-desktop-width) {

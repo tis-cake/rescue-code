@@ -8,13 +8,14 @@
 .bg.main-info {
   height: @d934px;
   color: #fff;
-  background-color: #253b88;
-  // background: linear-gradient(to bottom, #24387f 0%,#24387f 16%,#253982 17%,#233982 24%,#243a85 25%,#253c8a 57%,#24387f 100%);
-  // background-image: radial-gradient(66.17% 66.17% at 50.39% 55.25%, #2B47AA 0%, #23387F 100%);
+  // background-color: #253b88;
 }
 
 .database.main-info {
-  background-color: #3B2424;
+  // background-color: #3B2424;
+  .main-info__bg-wrapper {
+    background-color: #3B2424;
+  }
   .main-info__content {
     padding-top: @d382px;
   }
@@ -38,14 +39,23 @@
 
 .main-info__bg-wrapper {
   position: absolute;
-  z-index: 0;
+  z-index: -1;
   width: 100%;
   height: @d934px;
+  background-color: #253b88;
 }
 
-.article-page .main-info__bg-wrapper {
-  position: relative;
-  height: @d641px;
+.article-page {
+  .main-info__bg-wrapper {
+    position: relative;
+    height: @d641px;
+    background-color: #484242;
+  }
+  .main-info__slogan-img-wrapper {
+    top: @d95px;
+    right: @d238px;
+    margin-right: 0;
+  }
 }
 
 .main-info__bg-img,
@@ -333,6 +343,21 @@
     }
   }
 
+  .article-page.main-info {
+    margin-bottom: @m74px;
+  }
+
+  .article-page {
+   .main-info__bg-wrapper {
+      height: @m680px;
+    }
+    .main-info__slogan-img-wrapper {
+      top: @m195px;
+      right: @a;
+      left: @m121px;
+    }
+  }
+
   .main-info__bg-wrapper {
     height: 205.33vw; // 1540px;
   }
@@ -506,6 +531,18 @@
     width: @m257px;
     height: @m254px;
   }
+
+  .main-info__central-block {
+    bottom: -@m13px;
+    width: @m614px;
+    padding-top: @m30px;
+    .padding-inline(@m30px);
+  }
+
+  .main-info__central-title {
+    font-size: @m50px;
+    line-height: @m60px;
+  }
 }
 
 @media (min-width: @max-desktop-width) {
@@ -533,8 +570,15 @@
     margin-bottom: 55px;
   }
 
-  .article-page .main-info__bg-wrapper {
-    height: 641px;
+  .article-page {
+    .main-info__bg-wrapper {
+      height: 641px;
+    }
+    .main-info__slogan-img-wrapper {
+      top: 95px;
+      right: 238px;
+      margin-right: 0;
+    }
   }
 
   .main-info__bg-wrapper {
