@@ -46,13 +46,7 @@ $(document).ready(function () {
 // слайдер программы
 $(document).ready(function () {
   var programSwiperMain = new Swiper('#program-swiper', {
-    // slidesPerView: 2,
-    // slidesOffsetBefore: 0,
-    // spaceBetween: 20,
-
     slidesPerView: 3.5,
-    // slidesPerView: 3,
-    // slidesOffsetBefore: 120,
     spaceBetween: 32,
 
     loop: true,
@@ -63,43 +57,8 @@ $(document).ready(function () {
         slidesPerView: 3,
         slidesOffsetBefore: 0,
       },
-      1920: {
-        // slidesOffsetBefore: 280,
-      },
-      1700: {
-        // slidesOffsetBefore: 240,
-      },
-      1600: {
-        // slidesOffsetBefore: 220,
-      },
-      1500: {
-        // slidesOffsetBefore: 200,
-      },
-      1400: {
-        // slidesOffsetBefore: 180,
-      },
-      1300: {
-        // slidesOffsetBefore: 160,
-      },
-      1200: {
-        // slidesOffsetBefore: 150,
-        // spaceBetween: 26,
-      },
-      1100: {
-        // slidesOffsetBefore: 140,
-        // spaceBetween: 24,
-      },
-      1000: {
-        // slidesOffsetBefore: 130,
-        // spaceBetween: 22,
-      },
-      900: {
-        // slidesOffsetBefore: 120,
-      },
       800: {
         slidesPerView: 3.5,
-        // slidesOffsetBefore: 110,
-        // spaceBetween: 20,
       },
       300: {
         slidesPerView: 2,
@@ -115,13 +74,7 @@ $(document).ready(function () {
   });
 
   var programSwiperPagination = new Swiper('#program-swiper-pagination', {
-    // slidesPerView: 2,
-    // slidesOffsetBefore: 0,
-    // spaceBetween: 20,
-
     slidesPerView: 3.5,
-    // slidesPerView: 3,
-    // slidesOffsetBefore: 120,
     spaceBetween: 32,
 
     loop: true,
@@ -132,43 +85,8 @@ $(document).ready(function () {
         slidesPerView: 3,
         slidesOffsetBefore: 0,
       },
-      1920: {
-        // slidesOffsetBefore: 280,
-      },
-      1700: {
-        // slidesOffsetBefore: 240,
-      },
-      1600: {
-        // slidesOffsetBefore: 220,
-      },
-      1500: {
-        // slidesOffsetBefore: 200,
-      },
-      1400: {
-        // slidesOffsetBefore: 180,
-      },
-      1300: {
-        // slidesOffsetBefore: 160,
-      },
-      1200: {
-        // slidesOffsetBefore: 150,
-        // spaceBetween: 26,
-      },
-      1100: {
-        // slidesOffsetBefore: 140,
-        // spaceBetween: 24,
-      },
-      1000: {
-        // slidesOffsetBefore: 130,
-        // spaceBetween: 22,
-      },
-      900: {
-        // slidesOffsetBefore: 120,
-      },
       800: {
         slidesPerView: 3.5,
-        // slidesOffsetBefore: 110,
-        // spaceBetween: 20,
       },
       300: {
         slidesPerView: 2,
@@ -310,3 +228,72 @@ $(document).ready(function () {
   gallerySwiperPagination.controller.control = gallerySwiperMain;
 });
 
+// маска для поля ввода номера
+$(document).ready(function () {
+  $(".phone-mask").mask("+7 ( 999 ) 999 99 - 99");
+});
+
+// модальные окна
+$(document).ready(function () {
+
+  // оставить заявку
+  // $('.modal-callback').click(function (evt) {
+  //   evt.preventDefault();
+  //   $('.overlay').fadeIn('active');
+  //   $('.modal--callback').toggleClass('active');
+  //   $('.modal__input-phone').focus();
+  // });
+
+  // изменить город
+  // $('.modal-region').click(function (evt) {
+  //   evt.preventDefault();
+  //   $('.overlay').fadeIn('active');
+  //   $('.modal--region').toggleClass('active');
+  //   $('.modal__input').focus();
+  // });
+
+  // btn-close
+  // $('.modal__close').click(function () {
+  //   $('.modal').removeClass('active');
+  //   $('.overlay').fadeOut('active');
+  // });
+
+  // открыть модальное окно
+  function openModal(modalClass, focusClass) {
+    $('.overlay').fadeIn('active');
+    $('.' + modalClass).toggleClass('active'); // класс модалки
+    $('.' + focusClass).focus();               // класс для фокуса
+  }
+
+  // оставить заявку (модалка 1)
+  $('.modal-callback').click(function (evt) {
+    evt.preventDefault();
+    openModal('modal--callback', 'modal__input-phone');
+  });
+
+  // закрыть модальное окно
+  function closeModal() {
+    if ($(".modal").hasClass("active")) {
+      $('.modal').removeClass('active');
+      $('.overlay').fadeOut('active');
+    }
+  }
+
+  // клик/тач вне модального окна -> закрыть окно
+  function clickOutsideModal(evt) {
+    var modal = $(".modal");
+    if (!modal.is(evt.target) && modal.has(evt.target).length === 0) {
+      closeModal();
+    }
+  }
+
+  // нажат esc -> закрыть окно
+  window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      closeModal();
+    }
+  });
+
+  // слушаем клик/тач вне модального окна
+  $(document).on('mouseup touchstart', clickOutsideModal);
+});

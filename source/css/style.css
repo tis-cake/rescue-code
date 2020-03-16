@@ -6242,6 +6242,126 @@ body .mobile-block {
     line-height: 22px;
   }
 }
+.modal {
+  display: none;
+  z-index: 100;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 29.583vw;
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
+}
+.modal--callback.active,
+.modal--region.active {
+  display: block;
+}
+.modal__form {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3.9062vw;
+  padding: 0.26041vw;
+}
+.modal__input-phone,
+.modal__btn {
+  box-sizing: border-box;
+  padding: 0;
+  padding-left: 0.9895vw;
+  padding-right: 0.9895vw;
+  text-align: left;
+  border: none;
+  background-color: transparent;
+}
+.modal__input-phone:focus,
+.modal__btn:focus {
+  outline: none;
+}
+.modal__input-phone {
+  width: 43.9%;
+  font-size: 1.25vw;
+}
+.modal__btn {
+  position: relative;
+  width: 56%;
+  height: 100%;
+  font-size: 0.9375vw;
+  color: #161616;
+  background-color: #DCE4FF;
+  border: 0.15625vw solid #9BB1FF;
+  border-radius: 20px;
+}
+.modal__btn::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 6%;
+  transform: translateY(-50%);
+  width: 0.5208vw;
+  height: 0.8854vw;
+  background-image: url('../img/svg/arrow-right-b.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (max-width: 755px) {
+  .modal {
+    width: 89.067vw;
+  }
+  .modal__form {
+    height: 11.6vw;
+    padding: 1.33vw;
+  }
+  .modal__input-phone,
+  .modal__btn {
+    padding-left: 3.066vw;
+    padding-right: 3.066vw;
+  }
+  .modal__input-phone {
+    width: 50%;
+    padding-left: 2vw;
+    padding-right: 0;
+    font-size: 4.666vw;
+  }
+  .modal__btn {
+    width: 49%;
+    font-size: 4vw;
+    border: 0.4vw solid #9BB1FF;
+  }
+  .modal__btn::after {
+    width: 1.33vw;
+    height: 2.26vw;
+  }
+}
+@media (min-width: 1921px) {
+  .modal {
+    width: 568px;
+  }
+  .modal__form {
+    height: 75px;
+    padding: 5px;
+  }
+  .modal__input-phone,
+  .modal__btn {
+    padding-left: 19px;
+    padding-right: 19px;
+  }
+  .modal__input-phone {
+    font-size: 24px;
+  }
+  .modal__btn {
+    font-size: 18px;
+    border: 3px solid #9BB1FF;
+  }
+  .modal__btn::after {
+    width: 10px;
+    height: 17px;
+  }
+}
 .footer {
   padding-top: 4.5833vw;
   padding-bottom: 4.5833vw;
