@@ -29,7 +29,7 @@
 }
 
 .banner-info__text-top-wrapper {
-  width: @d780px;
+  width: @d805px;
   margin-left: @d23px;
   padding-top: @d36px;
 }
@@ -44,7 +44,8 @@
   line-height: @d72px;
 }
 
-.banner-info__description {
+.banner-info__description,
+.banner-info__item {
   margin-bottom: @d22px;
   font-size: @d18px;
   font-weight: 300;
@@ -52,12 +53,21 @@
   &:last-of-type {
     margin-bottom: @d28px;
   }
+
+  &--fw600 {
+    font-weight: 600;
+  }
   &--fw400 {
     font-weight: 400;
   }
   & span {
     display: block;
   }
+}
+
+.banner-info__list {
+  display: flex;
+  flex-direction: column;
 }
 
 .banner-info__logo-img-wrapper {
@@ -120,6 +130,11 @@
 }
 
 .banner-info__block-item {
+  display: flex;
+  flex-direction: column;
+
+  width: @d287px;
+
   margin: 0;
   margin-right: @d20px;
   margin-bottom: @d25px;
@@ -137,6 +152,10 @@
 }
 
 .banner-info__block-description {
+  display: flex;
+  flex-direction: column;
+  // height: 100%;
+
   margin-top: @d25px;
 
   font-size: @d16px;
@@ -147,6 +166,15 @@
     display: block;
     .margin-inline(@a);
     font-size: @d18px;
+    color: #000;
+
+    // -moz-hyphens: auto;
+    // -ms-hyphens: auto;
+    // -webkit-hyphens: auto;
+    // hyphens: auto;
+  }
+
+  &--black-color {
     color: #000;
   }
 }
@@ -277,7 +305,8 @@
     line-height: @m84px;
   }
 
-  .banner-info__description {
+  .banner-info__description,
+  .banner-info__item {
     position: relative;
     z-index: 1;
 
@@ -291,7 +320,8 @@
 
   .banner-info__logo-img-wrapper {
     position: absolute;
-    top: @m295px;
+    // top: @m295px;
+    top: @m265px;
     right: -@m27px;
 
     width: @m254px;
@@ -362,6 +392,10 @@
     &--black {
       margin-bottom: @m22px;
       font-size: @m25px;
+    }
+
+    &--mb0 {
+      margin-bottom: 0;
     }
   }
 
@@ -499,7 +533,7 @@
   }
 
   .banner-info__text-top-wrapper {
-    width: 780px;
+    width: 805px;
     margin-left: 23px;
     padding-top: 36px;
   }
@@ -514,7 +548,8 @@
     line-height: 72px;
   }
 
-  .banner-info__description {
+  .banner-info__description,
+  .banner-info__item {
     margin-bottom: 22px;
     font-size: 18px;
     line-height: 22px;
@@ -558,6 +593,7 @@
   }
 
   .banner-info__block-item {
+    width: 287px;
     margin-right: 20px;
     margin-bottom: 25px;
     &:nth-child(3n) {

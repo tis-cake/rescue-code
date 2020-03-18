@@ -2993,7 +2993,7 @@ body .mobile-block {
      object-fit: cover;
 }
 .banner-info__text-top-wrapper {
-  width: 40.625vw;
+  width: 41.927vw;
   margin-left: 1.1979vw;
   padding-top: 1.875vw;
 }
@@ -3005,20 +3005,32 @@ body .mobile-block {
   margin-bottom: 2.1875vw;
   line-height: 3.75vw;
 }
-.banner-info__description {
+.banner-info__description,
+.banner-info__item {
   margin-bottom: 1.1458vw;
   font-size: 0.9375vw;
   font-weight: 300;
   line-height: 1.1458vw;
 }
-.banner-info__description:last-of-type {
+.banner-info__description:last-of-type,
+.banner-info__item:last-of-type {
   margin-bottom: 1.4583vw;
 }
-.banner-info__description--fw400 {
+.banner-info__description--fw600,
+.banner-info__item--fw600 {
+  font-weight: 600;
+}
+.banner-info__description--fw400,
+.banner-info__item--fw400 {
   font-weight: 400;
 }
-.banner-info__description span {
+.banner-info__description span,
+.banner-info__item span {
   display: block;
+}
+.banner-info__list {
+  display: flex;
+  flex-direction: column;
 }
 .banner-info__logo-img-wrapper {
   position: relative;
@@ -3068,6 +3080,9 @@ body .mobile-block {
   border-left: 0.05208vw solid #EAEAEA;
 }
 .banner-info__block-item {
+  display: flex;
+  flex-direction: column;
+  width: 14.948vw;
   margin: 0;
   margin-right: 1.0416vw;
   margin-bottom: 1.302vw;
@@ -3083,6 +3098,8 @@ body .mobile-block {
   height: 17.813vw;
 }
 .banner-info__block-description {
+  display: flex;
+  flex-direction: column;
   margin-top: 1.302vw;
   font-size: 0.8333vw;
   text-align: center;
@@ -3093,6 +3110,9 @@ body .mobile-block {
   margin-left: auto;
   margin-right: auto;
   font-size: 0.9375vw;
+  color: #000;
+}
+.banner-info__block-description--black-color {
   color: #000;
 }
 .banner-info-team {
@@ -3202,19 +3222,21 @@ body .mobile-block {
     margin-bottom: 6.133vw;
     line-height: 11.2vw;
   }
-  .banner-info__description {
+  .banner-info__description,
+  .banner-info__item {
     position: relative;
     z-index: 1;
     margin-bottom: 4.666vw;
     font-size: 4vw;
     line-height: 4.8vw;
   }
-  .banner-info__description:last-of-type {
+  .banner-info__description:last-of-type,
+  .banner-info__item:last-of-type {
     margin-bottom: 0;
   }
   .banner-info__logo-img-wrapper {
     position: absolute;
-    top: 39.333vw;
+    top: 35.333vw;
     right: -3.599vw;
     width: 33.867vw;
     height: 33.867vw;
@@ -3272,6 +3294,9 @@ body .mobile-block {
   .banner-info__block-description--black {
     margin-bottom: 2.933vw;
     font-size: 3.333vw;
+  }
+  .banner-info__block-description--mb0 {
+    margin-bottom: 0;
   }
   .banner-info-team {
     margin-bottom: 16.4vw;
@@ -3391,7 +3416,7 @@ body .mobile-block {
     min-height: 367px;
   }
   .banner-info__text-top-wrapper {
-    width: 780px;
+    width: 805px;
     margin-left: 23px;
     padding-top: 36px;
   }
@@ -3403,12 +3428,14 @@ body .mobile-block {
     margin-bottom: 42px;
     line-height: 72px;
   }
-  .banner-info__description {
+  .banner-info__description,
+  .banner-info__item {
     margin-bottom: 22px;
     font-size: 18px;
     line-height: 22px;
   }
-  .banner-info__description:last-of-type {
+  .banner-info__description:last-of-type,
+  .banner-info__item:last-of-type {
     margin-bottom: 28px;
   }
   .banner-info__logo-img-wrapper {
@@ -3440,6 +3467,7 @@ body .mobile-block {
     border-left: 1px solid #EAEAEA;
   }
   .banner-info__block-item {
+    width: 287px;
     margin-right: 20px;
     margin-bottom: 25px;
   }
