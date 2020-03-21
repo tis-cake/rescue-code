@@ -4355,6 +4355,9 @@ body .mobile-block {
 .breadcrumbs {
   margin-bottom: 3.3854vw;
 }
+.breadcrumbs--mb30 {
+  margin-bottom: 1.5625vw;
+}
 .breadcrumbs__list {
   display: flex;
 }
@@ -4404,6 +4407,9 @@ body .mobile-block {
 @media (min-width: 1921px) {
   .breadcrumbs {
     margin-bottom: 65px;
+  }
+  .breadcrumbs--mb30 {
+    margin-bottom: 30px;
   }
   .breadcrumbs__item {
     margin-right: 37px;
