@@ -337,51 +337,16 @@
           <div class="swiper-pagination program-progressbar"></div>
         </div>
 
+        <!-- Второй слайдер инициализируется для корректной работы пагинации,
+             так как в одном слайдере не может быть двух элементов пагинации (progressbar и pagination-bullet).
+             Колличесто слайдов должно быть равным в двух слайдерах -->
         <div class="swiper-container swiper-container--pagination container" id="program-swiper-pagination">
           <div class="swiper-wrapper">
-
-            <!-- 1 -->
-            <div class="swiper-slide">
-              <a class="program-swiper__slide" href="service-detox.html">
-                <div class="program-swiper__img-wrapper">
-                  <img class="program-swiper__img" src="img/program-swiper/step1.jpg" alt="">
-                </div>
-              </a>
-            </div>
-
-            <!-- 2 -->
-            <div class="swiper-slide">
-              <a class="program-swiper__slide" href="service-rehab.html">
-                <div class="program-swiper__img-wrapper">
-                  <img class="program-swiper__img" src="img/program-swiper/step2.jpg" alt="">
-                </div>
-              </a>
-            </div>
-
-            <div class="swiper-slide">
-              <a class="program-swiper__slide" href="service-ambulatory.html">
-                <div class="program-swiper__img-wrapper">
-                  <img class="program-swiper__img" src="img/program-swiper/step3.jpg" alt="">
-                </div>
-              </a>
-            </div>
-
-            <div class="swiper-slide">
-              <a class="program-swiper__slide" href="service-resoc.html">
-                <div class="program-swiper__img-wrapper">
-                  <img class="program-swiper__img" src="img/program-swiper/step4.jpg" alt="">
-                </div>
-              </a>
-            </div>
-
-            <!-- 5 -->
-            <div class="swiper-slide">
-              <a class="program-swiper__slide" href="family.html">
-                <div class="program-swiper__img-wrapper">
-                  <img class="program-swiper__img" src="img/program-swiper/step5.jpg" alt="">
-                </div>
-              </a>
-            </div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
           </div>
           <div class="swiper-pagination program-pagination"></div>
         </div>
