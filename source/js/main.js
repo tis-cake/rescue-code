@@ -48,6 +48,7 @@ $(document).ready(function () {
   var programSwiperMain = new Swiper('#program-swiper', {
     slidesPerView: 3.5,
     spaceBetween: 32,
+    preloadImages: false,
 
     loop: true,
     centeredSlides: true,
