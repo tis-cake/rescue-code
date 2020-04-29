@@ -1,0 +1,521 @@
+.banner {
+  box-sizing: border-box;
+  position: relative;
+  height: @d670px;
+
+  margin-bottom: @d285px;
+  padding-top: @d148px;
+
+  background-color: #fff;
+
+  &-therapy {
+    // margin-bottom: @d190px;
+  }
+
+  &-transport {
+    padding-top: @d207px;
+  }
+
+  &-diagnostics {
+    .banner__subtitle .banner-icon::after {
+      content: none;
+    }
+    .banner__description {
+      width: @d680px;
+    }
+  }
+
+  &--mb0 {
+    margin-bottom: 0;
+  }
+
+  &--mb150 {
+    margin-bottom: @d150px;
+  }
+
+  &--mb190 {
+    margin-bottom: @d190px;
+  }
+}
+
+.banner__wrapper {
+  position: relative;
+  height: 100%;
+}
+
+.banner__bg-img-wrapper {
+  position: absolute;
+  bottom: 0;
+}
+
+.banner-img {
+  &-motivation {
+    left: @d80px;
+    width: @d553px;
+    height: @d625px;
+  }
+
+  &-therapy {
+    right: 0;
+    width: 100%;
+    height: @d670px;
+  }
+
+  &-transport {
+    right: 0;
+    width: @d882px;
+    height: @d552px;
+  }
+
+  &-diagnostics {
+    left: 0;
+    width: 56.25vw; // 1080px;
+    height: @d670px;
+  }
+}
+
+.banner__bg-img,
+.banner__slogan-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner__main-wrapper {
+  padding-left: @d8px;
+  &--padding-left {
+    padding-left: @d618px;
+  }
+}
+
+.banner-icon {
+  position: relative;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &-blue-therapy {
+    padding-left: @d72px;
+    &::before {
+      top: -@d23px;
+      left: 0px;
+      width: @d54px;
+      height: @d54px;
+
+      background-image: url('../img/bnbg/b2.2.svg');
+    }
+  }
+
+  &-blue-transport {
+    padding-left: @d56px;
+    &::before {
+      top: -@d10px;
+      left: -@d10px;
+
+      width: @d55px;
+      height: @d35px;
+
+      background-image: url('../img/bnbg/b3.2.svg');
+    }
+  }
+
+  &-round-one::after {
+    top: -@d85px;
+    right: -@d115px;
+
+    width: @d161px;
+    height: @d165px;
+
+    background-image: url('../img/bnbg/b1.1.png');
+  }
+
+  &-round-two::after {
+    top: -@d115px;
+    right: -@d45px;
+
+    width: @d152px;
+    height: @d154px;
+
+    background-image: url('../img/bnbg/b3.1.png');
+  }
+}
+
+.banner__subtitle {
+  position: relative;
+  display: inline-block;
+  margin-bottom: @d45px;
+
+  font-family: @circe;
+  font-size: @d20px;
+  font-weight: 400;
+
+  &--big {
+    font-size: @d40px;
+  }
+}
+
+.banner__title {
+  width: @d800px;
+  margin-left: -@d7px;
+  margin-bottom: @d27px;
+
+  font-family: @circe;
+  font-weight: 200;
+  font-size: @d90px;
+  line-height: @d90px;
+  text-transform: uppercase;
+  &--w660 {
+    width: @d660px;
+  }
+  &--w950 {
+    width: @d950px;
+  }
+}
+
+.banner__description {
+  width: @d770px;
+  font-family: @circe;
+  font-weight: 400;
+  font-size: @d18px;
+  line-height: @d24px;
+  &:last-of-type {
+    margin-bottom: @d34px;
+  }
+}
+
+.banner__link {
+  width: @d356px;
+  padding-right: 0;
+}
+
+.banner__slogan-img-wrapper {
+  position: absolute;
+  top: @d100px;
+  right: @d240px;
+  width: @d251px;
+  height: @d252px;
+}
+
+@media (max-width: @mobile-width) {
+  .banner {
+    height: 182.13vw; // 1366px;
+
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+    overflow: hidden;
+
+    margin-bottom: @m192px;
+    padding-top: @m148px;
+    &-transport {
+      .banner__title {
+        // hyphens: auto;
+        word-break: break-word;
+      }
+      .banner__title.banner-icon::after {
+        content: none;
+      }
+      .banner__link {
+        width: @m355px;
+      }
+    }
+    &-diagnostics {
+      .banner-icon-round-one::after {
+        right: -@m150px;
+      }
+      .banner__subtitle .banner-icon::after {
+        content: '';
+      }
+      .banner__title .banner-icon::after {
+        content: none;
+      }
+      .banner__description {
+        width: @a;
+      }
+    }
+    &--mb0 {
+      margin-bottom: 0;
+    }
+    &--mb150 {
+      // margin-bottom: @d150px;
+    }
+    &--mb190 {
+      margin-bottom: @m152px;
+    }
+  }
+
+  .banner-img {
+    &-motivation {
+      left: @m170px;
+      width: @m490px;
+      height: @m554px;
+    }
+    &-therapy {
+      right: 0;
+      width: 100%;
+      height: @m670px;
+      img {
+        object-position: 86.7%;
+      }
+    }
+    &-transport {
+      // width: @m750px;
+      width: 100%;
+      height: @m710px;
+    }
+    &-diagnostics {
+      width: 100%;
+      height: @m670px;
+    }
+  }
+
+  .banner__bg-img-wrapper {
+    position: relative;
+    margin-top: @m42px;
+  }
+
+  .banner__main-wrapper {
+    padding-left: 0px;
+    &--padding-left {
+      padding-left: 0;
+    }
+  }
+
+  .banner__wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .banner-icon {
+    &-blue-therapy {
+      padding-left: @m106px;
+      line-height: @m44px;
+      &::before {
+        top: -@m13px;
+        left: 0px;
+        width: @m84px;
+        height: @m84px;
+      }
+    }
+    &-blue-transport {
+      padding-left: @m107px;
+      &::before {
+        top: -@m10px;
+        left: 0px;
+
+        width: @m81px;
+        height: @m53px;
+      }
+    }
+    &-round-one::after {
+      top: -@m92px;
+      right: -@m90px;
+      transform: rotate(8deg);
+
+      width: @m205px;
+      height: @m205px;
+    }
+    &-round-two::after {
+      // top: -@m30px;
+      // right: -@m210px;
+      top: -@m70px;
+      right: -@m150px;
+
+      width: @m190px;
+      height: @m190px;
+      transform: rotate(80deg);
+    }
+  }
+
+  .banner__subtitle {
+    width: @m580px;
+    margin-bottom: @m60px;
+    font-size: @m30px;
+    &--big {
+      font-size: @m50px;
+    }
+  }
+
+  .banner__title {
+    width: @a;
+    margin-left: 0;
+    margin-bottom: @m45px;
+
+    font-weight: 400;
+    font-size: @m75px;
+    line-height: @m90px;
+    &--w660,
+    &--w950 {
+      width: @a;
+    }
+  }
+
+  .banner__description {
+    width: @a;
+    font-family: @myriad;
+    font-weight: 300;
+    font-size: @m30px;
+    line-height: @m36px;
+
+    &:last-of-type {
+      margin-bottom: @m53px;
+    }
+  }
+
+  .banner__link {
+    width: @m520px;
+    padding-right: 0;
+
+    font-family: @myriad;
+    font-weight: 400;
+  }
+
+  .banner__slogan-img-wrapper {
+    top: @a;
+    // bottom: @m295px;
+    // right: @m290px;
+
+    bottom: -@m398px;
+    right: @m280px;
+
+    width: @m260px;
+    height: @m260px;
+  }
+}
+
+@media (min-width: @max-desktop-width) {
+  .banner {
+    height: 670px;
+    margin-bottom: 285px;
+    padding-top: 148px;
+    &-therapy {
+      // margin-bottom: 190px;
+    }
+    &-transport {
+      padding-top: 207px;
+    }
+    &-diagnostics {
+      .banner__description {
+        width: 680px;
+      }
+    }
+    &--mb0 {
+      margin-bottom: 0;
+    }
+    &--mb150 {
+      margin-bottom: 150px;
+    }
+    &--mb190 {
+      margin-bottom: 190px;
+    }
+  }
+
+  .banner-img {
+    &-motivation {
+      left: 80px;
+      width: 553px;
+      height: 625px;
+    }
+    &-therapy {
+      height: 670px;
+    }
+    &-transport {
+      width: 882px;
+      height: 552px;
+    }
+    &-diagnostics {
+      left: 0;
+      width: 1080px;
+      height: 670px;
+    }
+  }
+
+  .banner__main-wrapper {
+    padding-left: 8px;
+    &--padding-left {
+      padding-left: 618px;
+    }
+  }
+
+  .banner-icon {
+    &-blue-therapy {
+      padding-left: 72px;
+      &::before {
+        top: -23px;
+        width: 54px;
+        height: 54px;
+      }
+    }
+    &-blue-transport {
+      padding-left: 56px;
+      &::before {
+        top: -10px;
+        left: -10px;
+        width: 55px;
+        height: 35px;
+      }
+    }
+    &-round-one::after {
+      top: -85px;
+      right: -115px;
+      width: 161px;
+      height: 165px;
+    }
+    &-round-two::after {
+      top: -115px;
+      right: -45px;
+      width: 152px;
+      height: 154px;
+    }
+  }
+
+  .banner__subtitle {
+    margin-bottom: 45px;
+    font-size: 20px;
+    &-big {
+      font-size: 40px;
+    }
+  }
+
+  .banner__title {
+    width: 800px;
+    margin-left: -7px;
+    margin-bottom: 27px;
+    font-size: 90px;
+    line-height: 90px;
+    &--w660 {
+      width: 660px;
+    }
+    &--w950 {
+      width: 950px;
+    }
+  }
+
+  .banner__description {
+    width: 770px;
+    font-size: 18px;
+    line-height: 24px;
+    &:last-of-type {
+      margin-bottom: 34px;
+    }
+  }
+
+  .banner__link {
+    width: 356px;
+    padding-right: 0;
+  }
+
+  .banner__slogan-img-wrapper {
+    top: 100px;
+    right: 240px;
+    width: 251px;
+    height: 252px;
+  }
+}

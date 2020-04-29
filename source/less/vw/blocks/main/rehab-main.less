@@ -1,0 +1,302 @@
+.rehab-main {
+  margin-bottom: @d235px;
+  &--mb160 {
+    margin-bottom: @d163px;
+  }
+}
+
+.rehab-main__wrapper {
+  display: flex;
+}
+
+.rehab-main__main-column {
+  position: relative;
+  width: @d617px;
+}
+
+.rehab-main__breadcrumbs {
+  margin-bottom: @d162px;
+}
+
+.rehab-main__city,
+.rehab-main__street {
+  font-family: @circe;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.rehab-main__city {
+  margin-bottom: @d7px;
+  font-size: @d35px;
+}
+
+.rehab-main__street {
+  font-size: @d30px;
+}
+
+.rehab-main__features-text {
+  margin-bottom: @d42px;
+  padding-bottom: @d43px;
+  border-bottom: @d1px solid #C4C4C4;
+}
+
+.rehab-main__description {
+  width: @d570px;
+  font-size: @d18px;
+  font-weight: 300;
+  line-height: @d24px;
+  &-items {
+    display: block;
+  }
+}
+
+.rehab-main__link {
+  position: absolute;
+  bottom: @d17px;
+  padding-right: @d27px;
+}
+
+.rehab-main__central-column {
+  width: @d185px;
+  margin-left: @d39px;
+  padding-top: @d213px;
+  padding-left: @d14px;
+
+  border-left: @d1px solid #C4C4C4;
+}
+
+.rehab-main__feature {
+  margin-bottom: @d5px;
+  font-size: @d37px;
+  font-weight: 700;
+}
+
+.rehab-main__feature-title {
+  display: none;
+}
+
+.rehab-main__feature-description {
+  margin-bottom: @d10px;
+  font-size: @d18px;
+}
+
+.rehab-main__feature-description--gray {
+  font-weight: 300;
+  color: #777;
+}
+
+.rehab-main__little-img-wrapper {
+  width: @d175px;
+  height: @d170px;
+  margin-top: @d20px;
+  margin-bottom: @d26px;
+}
+
+.rehab-main__little-img,
+.rehab-main__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.rehab-main__img-wrapper-column {
+  width: @d858px;
+  // height: @d693px;
+  margin-left: @a;
+}
+
+.rehab-main__map-wrapper-column {
+  width: @d664px;
+  // height: @d692px;
+}
+
+@media (max-width: @mobile-width) {
+
+  .rehab-main {
+    margin-bottom: @m315px;
+    &--mb160 {
+      margin-bottom: @m166px;
+    }
+  }
+
+  .rehab-main__wrapper {
+    flex-wrap: wrap;
+  }
+
+  .rehab-main__main-column {
+    width: @a;
+  }
+
+  .rehab-main__breadcrumbs {
+    margin-bottom: @m80px;
+  }
+
+  .rehab-main__city {
+    margin-bottom: @m12px;
+    font-size: @m60px;
+  }
+
+  .rehab-main__street {
+    margin-bottom: @m34px;
+    font-size: @m45px;
+  }
+
+  .rehab-main__features-text {
+    margin-bottom: @m45px;
+    padding-bottom: @m50px;
+    border-bottom: @m1px solid #C4C4C4;
+  }
+
+  .rehab-main__description {
+    width: @m630px;
+    margin-bottom: @m47px;
+    font-size: @m30px;
+    line-height: @m36px;
+  }
+
+  .rehab-main__link {
+    position: relative;
+    bottom: @a;
+    width: @m420px;
+    margin-bottom: @m86px;
+    padding-right: 0;
+  }
+
+  .rehab-main__central-column {
+    display: flex;
+    flex-wrap: wrap;
+    width: @a;
+    margin-left: 0;
+    margin-bottom: @m28px;
+    padding-top: 0;
+    padding-left: 0;
+
+    border-left: none;
+  }
+
+  .rehab-main__feature-wrapper {
+    width: @m230px;
+    margin-top: @m18px;
+    margin-left: @m38px;
+    margin-bottom: @m73px;
+  }
+
+  .rehab-main__feature-title {
+    display: block;
+    margin-bottom: @m15px;
+    font-size: @m24px;
+  }
+
+  .rehab-main__feature {
+    margin-bottom: 0px;
+    font-size: @m50px;
+  }
+
+  .rehab-main__feature-description {
+    font-size: @m30px;
+  }
+
+  .rehab-main__little-img-wrapper {
+    order: -1;
+    width: @m283px;
+    height: @m272px;
+    margin-top: 0;
+    margin-bottom: @m60px;
+  }
+
+  .rehab-main__img-wrapper-column {
+    width: 100%;
+    height: @m615px;
+  }
+
+  .rehab-main__rehab-contacts {
+    margin-bottom: @m55px;
+    .rehab-contacts__item {
+      margin-bottom: 0;
+    }
+  }
+
+  .rehab-main__map-wrapper-column {
+    width: 100%;
+    height: @m742px;
+  }
+}
+
+@media (min-width: @max-desktop-width) {
+  .rehab-main {
+    margin-bottom: 235px;
+    &--mb160 {
+     margin-bottom: 163px;
+   }
+  }
+
+  .rehab-main__main-column {
+    width: 617px;
+  }
+
+  .rehab-main__breadcrumbs {
+    margin-bottom: 162px;
+  }
+
+  .rehab-main__city {
+    margin-bottom: 7px;
+    font-size: 35px;
+  }
+
+  .rehab-main__street {
+    font-size: 30px;
+  }
+
+  .rehab-main__features-text {
+    margin-bottom: 42px;
+    padding-bottom: 43px;
+    border-bottom: 1px solid #C4C4C4;
+  }
+
+  .rehab-main__description {
+    width: 570px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .rehab-main__link {
+    bottom: 17px;
+    padding-right: 27px;
+  }
+
+  .rehab-main__central-column {
+    width: 185px;
+    margin-left: 39px;
+    padding-top: 213px;
+    padding-left: 14px;
+
+    border-left: 1px solid #C4C4C4;
+  }
+
+  .rehab-main__feature {
+    margin-bottom: 5px;
+    font-size: 37px;
+  }
+
+  .rehab-main__feature-description {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+
+  .rehab-main__little-img-wrapper {
+    width: 175px;
+    height: 170px;
+    margin-top: 20px;
+    margin-bottom: 26px;
+  }
+
+  .rehab-main__img-wrapper-column {
+    width: 858px;
+    // height: 693px;
+  }
+
+  .rehab-main__map-wrapper-column {
+    width: 664px;
+    // height: 692px;
+  }
+}

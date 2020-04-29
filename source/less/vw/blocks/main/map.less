@@ -1,0 +1,50 @@
+.map {
+  margin-bottom: @d40px;
+}
+
+.map__link {
+  width: @d284px;
+  padding-right: 0;
+}
+
+.map__container {
+  overflow: hidden;
+  width: 100%;
+  height: @d542px;
+
+  border-radius: 15px;
+}
+
+@media (max-width: @mobile-width) {
+  .map {
+    margin-bottom: 94px;
+  }
+
+  .map__main-title-wrapper {
+    margin-bottom: @m100px;
+  }
+
+  .map__container {
+    height: @m711px;
+  }
+
+  .map__link {
+    width: @m520px;
+    padding-right: 0;
+  }
+}
+
+@media (min-width: @max-desktop-width) {
+  .map {
+    margin-bottom: 40px;
+  }
+
+  .map__link {
+    width: 284px;
+    padding-right: 0;
+  }
+
+  .map__container {
+    height: 542px;
+  }
+}

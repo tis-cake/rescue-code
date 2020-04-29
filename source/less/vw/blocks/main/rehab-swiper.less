@@ -1,0 +1,252 @@
+.rehab-swiper {
+  margin-bottom: @d310px;
+  &--margin-bottom {
+    margin-bottom: @d124px;
+  }
+  &-clinics {
+    margin-bottom: @d165px;
+  }
+}
+
+.rehab-swiper__main-title-wrapper {
+  // display: flex;
+  // justify-content: space-between;
+  margin-bottom: @d48px;
+}
+
+.rehab-swiper__main-title {
+  margin-bottom: 0;
+}
+
+.rehab-swiper__link {
+  width: @d284px;
+  padding-right: 0;
+}
+
+.rehab-swiper__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  .rehab-swiper__slide {
+    width: @d361px;
+    margin-right: @d24px;
+    margin-bottom: @d66px;
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+  .rehab-swiper__img-wrapper {
+    width: @d361px;
+  }
+}
+
+.rehab-swiper__slide {
+  display: flex;
+  flex-direction: column;
+}
+
+.rehab-swiper__img-wrapper {
+  width: 100%;
+  height: @d298px;
+}
+
+.rehab-swiper__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.rehab-swiper__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: @d24px;
+}
+
+.rehab-swiper__price {
+  margin-bottom: @d10px;
+  font-size: @d16px;
+  &--bold {
+    font-weight: 700;
+  }
+}
+
+.rehab-swiper__location {
+  margin-bottom: @d17px;
+  font-size: @d20px;
+  line-height: @d30px;
+}
+
+.rehab-swiper__comfort-lvl {
+  position: relative;
+  padding-left: 14px;
+
+  font-weight: 600;
+  font-size: 14px;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -5px;
+
+    width: 14px;
+    height: 14px;
+
+    background-image: url('../img/svg/star-blue.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .rehab-swiper {
+    margin-bottom: @m272px;
+    .swiper-container.container {
+      // padding-left: 0;
+      // margin-left: @m43px;
+    }
+    &--margin-bottom {
+      // margin-bottom: @d124px;
+    }
+    &-clinics {
+      margin-bottom: @m290px;
+    }
+  }
+
+  .rehab-swiper__main-title-wrapper {
+    margin-bottom: @m100px;
+  }
+
+  .rehab-swiper__wrapper {
+    .rehab-swiper__slide {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: @m128px;
+      &:nth-child(4n) {
+        margin-right: 0;
+      }
+    }
+    .rehab-swiper__img-wrapper {
+      width: 100%;
+      height: @m391px;
+    }
+    .rehab-swiper__location {
+      width: @a;
+    }
+  }
+
+  .rehab-swiper__link {
+    width: @m520px;
+    padding-right: 0;
+  }
+
+  .rehab-swiper__slide {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0;
+  }
+
+  .rehab-swiper__img-wrapper {
+    height: @m334px;
+  }
+
+  .rehab-swiper__text-wrapper {
+    padding-top: @m35px;
+  }
+
+  .rehab-swiper__price {
+    margin-bottom: @m22px;
+    font-size: @m27px;
+  }
+
+  .rehab-swiper__location {
+    width: @m340px;
+    margin-bottom: @m22px;
+
+    font-size: @m30px;
+    line-height: @m36px;
+    text-align: center;
+  }
+
+  .rehab-swiper__comfort-lvl {
+    padding-left: @m14px;
+    font-size: @m25px;
+    &::before {
+      top: -@m2px;
+      left: -@m25px;
+
+      width: @m30px;
+      height: @m30px;
+    }
+  }
+}
+
+@media (min-width: @max-desktop-width) {
+  .rehab-swiper {
+    margin-bottom: 310px;
+    &--margin-bottom {
+      margin-bottom: 124px;
+    }
+    &-clinics {
+      margin-bottom: 165px;
+    }
+  }
+
+  .rehab-swiper__main-title-wrapper {
+    margin-bottom: 48px;
+  }
+
+  .rehab-swiper__main-title {
+    margin-bottom: 0;
+  }
+
+  .rehab-swiper__link {
+    width: 284px;
+    padding-right: 0;
+  }
+
+  .rehab-swiper__wrapper {
+    .rehab-swiper__slide {
+      width: 361px;
+      margin-right: 24px;
+      margin-bottom: 66px;
+      &:nth-child(4n) {
+        margin-right: 0;
+      }
+    }
+    .rehab-swiper__img-wrapper {
+      width: 361px;
+    }
+  }
+
+  .rehab-swiper__img-wrapper {
+    height: 298px;
+  }
+
+  .rehab-swiper__text-wrapper {
+    padding-top: 24px;
+  }
+
+  .rehab-swiper__price {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+  .rehab-swiper__location {
+    margin-bottom: 17px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .rehab-swiper__comfort-lvl {
+    padding-left: 14px;
+    font-size: 14px;
+    &::before {
+      left: -5px;
+      width: 14px;
+      height: 14px;
+    }
+  }
+}

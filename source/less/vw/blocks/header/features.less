@@ -1,0 +1,250 @@
+.features {
+  display: flex;
+  .link-callback {
+    align-self: flex-end;
+    // margin-left: @d85px;
+    // margin-bottom: @d28px;
+  }
+}
+
+.features--without-icon {
+  // display: flex;
+  font-size: @d20px;
+  font-weight: 400;
+  color: #262628;
+}
+
+.features__text-long {
+  // margin-top: @d18px;
+}
+
+.features__text-big {
+  margin-left: @d4px;
+  font-size: @d40px;
+  font-weight: 700;
+}
+
+.features__text-small {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: @d5px;
+  margin-left: @d4px;
+  // margin-left: 8px;
+}
+
+.features__list {
+  display: flex;
+  justify-content: space-between;
+  width: @d530px;
+  font-size: @d18px;
+  font-weight: 300;
+}
+
+.features__item {
+  position: relative;
+  width: @d178px;
+  padding-left: @d51px;
+
+  color: #262628;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: @d4px;
+    left: 0;
+
+    width: @d32px;
+    height: @d32px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &--program::before {
+    background-image: url("../img/features/program-b.svg");
+  }
+
+  &--call::before {
+    left: @d8px;
+    background-image: url("../img/features/call-b.svg");
+  }
+
+  &--mef::before,
+  &--alpha::before {
+    top: -@d10px;
+    left: @d2px;
+    width: @d40px;
+    height: @d40px;
+    background-image: url("../img/features/research-b.svg");
+  }
+}
+
+.features__title {
+  margin-bottom: @d24px;
+  color: #3F5FD3;
+}
+
+.features__description {
+  // width: @d170px;
+  line-height: @d22px;
+  font-weight: 400;
+}
+
+.bg {
+  .features--without-icon {
+    font-weight: 600;
+    color: #fff;
+  }
+  .features__title {
+    color: #9BB1FF;
+  }
+  .features__item {
+    color: #fff;
+    &--program::before {
+      background-image: url("../img/features/program-w.svg");
+    }
+
+    &--call::before {
+      background-image: url("../img/features/call-w.svg");
+    }
+  }
+}
+
+@media (max-width: @mobile-width) {
+
+  .features--without-icon {
+    font-size: @m30px;
+  }
+
+  .features__text-big {
+    margin-left: @m4px;
+    font-size: @m50px;
+  }
+
+  .features__text-small {
+    margin-top: @m5px;
+    margin-left: @m4px;
+  }
+
+  .features__list {
+    width: @a;
+    font-size: @m30px;
+  }
+
+  .features__item {
+    width: @m240px;
+    padding-left: @m70px;
+
+    &::before {
+      top: -@m4px;
+      left: 0;
+
+      width: @m41px;
+      height: @m41px;
+    }
+
+    &--program::before,
+    &--call::before {
+      left: @m10px;
+    }
+
+    // &--mef::before,
+    // &--alpha::before {
+    //   top: -@d10px;
+    //   left: @d2px;
+    //   width: @d40px;
+    //   height: @d40px;
+    // }
+  }
+
+  .features__title {
+    margin-bottom: @m32px;
+  }
+
+  .features__description {
+    line-height: @m36px;
+  }
+
+  .bg {
+    .features--without-icon {
+      font-size: @m20px;
+    }
+    .features__text-big {
+      font-size: @m40px;
+    }
+    .features__item {
+      padding-left: @m51px;
+      &--program::before {
+        left: 0;
+      }
+      &--call::before {
+        left: -@m4px;
+      }
+    }
+    .features__title {
+      margin-bottom: @m26px;
+    }
+  }
+}
+
+@media (min-width: @max-desktop-width) {
+  .features {
+    // .link-callback {
+    //   margin-left: 85px;
+    //   margin-bottom: 28px;
+    // }
+  }
+
+  .features--without-icon {
+    font-size: 20px;
+  }
+
+  .features__text-long {
+    // margin-top: 18px;
+  }
+
+  .features__text-big {
+    margin-left: 4px;
+    font-size: 40px;
+  }
+
+  .features__text-small {
+    margin-top: 6px;
+    margin-left: 4px;
+  }
+
+  .features__list {
+    width: 530px;
+    font-size: 18px;
+  }
+
+  .features__item {
+    width: 178px;
+    padding-left: 51px;
+    &::before {
+      top: 4px;
+      left: 0;
+      width: 32px;
+      height: 32px;
+    }
+    &--call::before {
+      left: 8px;
+    }
+    &--mef::before,
+    &--alpha::before {
+      top: -10px;
+      left: 2px;
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .features__title {
+    margin-bottom: 24px;
+  }
+
+  .features__description {
+    // width: 170px;
+    line-height: 22px;
+  }
+}

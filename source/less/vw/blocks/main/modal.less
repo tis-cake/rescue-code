@@ -1,0 +1,144 @@
+.modal {
+  display: none;
+
+  z-index: 100;
+  position: fixed;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+
+  width: @d568px;
+
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+.modal--callback.active,
+.modal--region.active {
+  display: block;
+}
+
+.modal__form {
+  box-sizing: border-box;
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: @d75px;
+  padding: @d5px;
+}
+
+.modal__input-phone,
+.modal__btn  {
+  box-sizing: border-box;
+  padding: 0;
+  .padding-inline(@d19px);
+
+  text-align: left;
+  border: none;
+  background-color: transparent;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.modal__input-phone {
+  width: 43.9%;
+  font-size: @d24px;
+}
+
+.modal__btn {
+  position: relative;
+  width: 56%;
+  height: 100%;
+
+  font-size: @d18px;
+  color: #161616;
+
+  background-color: #DCE4FF;
+  border: @d3px solid #9BB1FF;
+  border-radius: 20px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 6%;
+    transform: translateY(-50%);
+
+    width: @d10px;
+    height: @d17px;
+
+    background-image: url('../img/svg/arrow-right-b.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .modal {
+    width: @m668px;
+  }
+
+  .modal__form {
+    height: @m87px;
+    padding: @m10px;
+  }
+
+  .modal__input-phone,
+  .modal__btn  {
+    .padding-inline(@m23px);
+  }
+
+  .modal__input-phone {
+    width: 50%;
+    padding-left: @m15px;
+    padding-right: 0;
+    font-size: @m35px;
+  }
+
+  .modal__btn {
+    width: 49%;
+    font-size: @m30px;
+    border: @m3px solid #9BB1FF;
+    &::after {
+      width: @m10px;
+      height: @m17px;
+    }
+  }
+}
+
+@media (min-width: @max-desktop-width) {
+  .modal {
+    width: 568px;
+  }
+
+  .modal__form {
+    height: 75px;
+    padding: 5px;
+  }
+
+  .modal__input-phone,
+  .modal__btn  {
+    .padding-inline(19px);
+  }
+
+  .modal__input-phone {
+    font-size: 24px;
+  }
+
+  .modal__btn {
+    font-size: 18px;
+    border: 3px solid #9BB1FF;
+    &::after {
+      width: 10px;
+      height: 17px;
+    }
+  }
+}

@@ -1,0 +1,748 @@
+.main-info {
+  margin-bottom: @d176px;
+  &--mb0 {
+    margin-bottom: 0;
+  }
+}
+
+.bg.main-info {
+  height: @d934px;
+  color: #fff;
+  // background-color: #253b88;
+}
+
+.database.main-info {
+  // background-color: #3B2424;
+  .main-info__bg-wrapper {
+    background-color: #3B2424;
+  }
+  .main-info__content {
+    padding-top: @d382px;
+  }
+  .main-info__title {
+    font-family: @myriad;
+    margin-bottom: @d89px;
+  }
+  .main-info__benefit-link {
+    font-family: @myriad;
+    font-weight: 400;
+    &::before {
+      background-color: #9BB1FF;
+    }
+  }
+}
+
+.article-page.main-info {
+  position: relative;
+  margin-bottom: @d55px;
+}
+
+.main-info__bg-wrapper {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: @d934px;
+  background-color: #253b88;
+}
+
+.article-page {
+  .main-info__bg-wrapper {
+    position: relative;
+    height: @d641px;
+    background-color: #484242;
+  }
+  .main-info__slogan-img-wrapper {
+    top: @d95px;
+    right: @d238px;
+    margin-right: 0;
+  }
+}
+
+.main-info__bg-img,
+.main-info__slogan-img,
+.main-info__service-img,
+.main-info__service-slogan-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main-info__content {
+  position: relative;
+  z-index: 1;
+
+  padding-top: @d317px;
+}
+
+.main-info__top-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-info__features-text {
+  margin-bottom: @d43px;
+}
+
+.main-info__title {
+  overflow: hidden;
+
+  position: relative;
+  margin-bottom: @d33px;
+
+  font-size: @d95px;
+  font-family: @circe;
+  font-weight: 800;
+  text-transform: uppercase;
+
+  white-space: nowrap;
+
+  &--fz130d { // about
+    font-size: @d130px;
+  }
+
+  &--fz105d { // index
+    font-size: @d105px;
+  }
+
+  // &--fz95d { // centers
+  //   font-size: @d95px;
+  // }
+
+  &--fz90d { // database
+    font-size: @d90px;
+  }
+
+  // &--fz72d { // service-detox
+  //   font-size: @d72px;
+  // }
+
+  &--padding-left {
+    padding-left: @d198px;
+  }
+}
+
+.service-page {
+  .main-info__title {
+    font-size: @d72px;
+  }
+}
+
+.main-info__features {
+  position: relative;
+  margin-bottom: @d162px;
+  &--mb135 {
+    margin-bottom: @d135px;
+  }
+}
+
+.main-info__slogan-img-wrapper {
+  position: absolute;
+  right: 0px;
+  width: @d257px;
+  height: @d254px;
+  margin-right: @d330px;
+}
+
+.main-info__link-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-info__link {
+  padding-right: @d29px;
+}
+
+.main-info__btn-bottom {
+  position: relative;
+
+  display: flex;
+  width: @d92px;
+  height: @d91px;
+
+  .margin-inline(@a);
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  &-img {
+    border-radius: 50%;
+  }
+
+  &:active {
+    padding: 0;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: @d25px;
+    height: @d40px;
+
+    background-image: url('../img/main-info/btn-bottom-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.main-info__subtitle {
+  margin-bottom: @d17px;
+  font-size: @d20px;
+  font-weight: 600;
+}
+
+.main-info__benefits-wrapper {
+  display: flex;
+}
+
+.main-info__benefit-column {
+  margin-right: @d100px;
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.main-info__benefit-title {
+  font-size: @d60px;
+  font-weight: 700;
+}
+
+.main-info__benefit-description {
+  font-size: @d20px;
+}
+
+.main-info__benefit-content-help {
+  margin-top: @d6px;
+  margin-left: @d10px;
+  margin-right: @d112px;
+
+  .main-info__benefit-title {
+    margin-bottom: @d22px;
+    font-size: @d30px;
+  }
+
+  .main-info__benefit-description {
+    font-size: @d18px;
+    line-height: @d24px;
+  }
+}
+
+.main-info__benefit-text-wrapper {
+  width: @d310px;
+}
+
+.main-info__benefit-link {
+  margin-top: @d40px;
+}
+
+.main-info__service-wrapper {
+  position: relative;
+  display: flex;
+}
+
+.main-info__service-column-left {
+  width: @d600px;
+  height: @d605px;
+  margin-left: @d20px;
+}
+
+.main-info__service-column-right {
+  width: @d588px;
+  padding-top: @d90px;
+}
+
+.main-info__desc-title {
+  margin-bottom: @d23px;
+  font-weight: 400;
+  font-size: @d30px;
+}
+
+.main-info__desc {
+  font-weight: 300;
+  font-size: @d18px;
+  line-height: @d24px;
+}
+
+.main-info__service-benefits {
+  margin-top: @d40px;
+  .main-info__benefit-column {
+    margin-right: @d120px;
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+  .main-info__benefit-title {
+    font-size: @d50px;
+  }
+}
+
+.main-info__service-slogan-wrapper {
+  position: absolute;
+  top: -@d106px;
+  right: @d38px;
+  width: @d257px;
+  height: @d254px;
+}
+
+.main-info__central-block {
+  box-sizing: border-box;
+
+  position: absolute;
+  bottom: -@d13px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 66.66vw; // 1280px
+  padding-top: @d53px;
+  .padding-inline(@d80px);
+  padding-bottom: 0px;
+
+  background-color: #f9f9f9;
+}
+
+.main-info__central-title {
+  font-weight: 300;
+  font-size: @d50px;
+  line-height: @d60px;
+  text-align: center;
+}
+
+@media (max-width: @mobile-width) {
+  // .active.main-info {
+  //   position: relative;
+  //   .main-info__bg-wrapper {
+  //     position: relative;
+  //   }
+  // }
+
+  .main-info {
+    position: relative;
+    margin-bottom: @m153px;
+  }
+
+  .bg.main-info {
+    height: 205.33vw; // 1540px;
+  }
+
+  .database.main-info {
+    .main-info__content {
+      padding-top: @m300px;
+    }
+    .main-info__title {
+      margin-bottom: @m112px;
+      font-size: @m100px;
+    }
+  }
+
+  .article-page.main-info {
+    margin-bottom: @m74px;
+  }
+
+  .article-page {
+   .main-info__bg-wrapper {
+      height: @m680px;
+    }
+    .main-info__slogan-img-wrapper {
+      top: @m195px;
+      right: @a;
+      left: @m121px;
+    }
+  }
+
+  .main-info__bg-wrapper {
+    height: 205.33vw; // 1540px;
+  }
+
+  .main-info__content {
+    overflow: visible;
+    padding-top: @m236px;
+  }
+
+  .main-info__link-region {
+    margin-top: @m12px;
+    font-size: @m18px;
+  }
+
+  .main-info__features-text {
+    margin-bottom: @m70px;
+  }
+
+  .main-info__title {
+    overflow: visible;
+
+    margin-bottom: @m62px;
+
+    font-size: @m75px;
+    line-height: @m90px;
+    white-space: normal;
+    &--fz60m {
+      font-size: @m60px;
+    }
+    &--padding-left {
+      .padding-inline(@m43px);
+    }
+    &--block {
+      display: block;
+    }
+  }
+
+  .service-page {
+    .main-info__title {
+      font-size: @m60px;
+    }
+  }
+
+  .main-info__slogan-img-wrapper {
+    top: @m492px;
+    right: -@m28px;
+    width: @m257px;
+    height: @m254px;
+    margin-right: 0;
+  }
+
+  .main-info__link {
+    padding-right: @m28px;
+    font-size: @m25px;
+    &::before {
+      height: @m2px;
+    }
+  }
+
+  .main-info__btn-bottom {
+    position: absolute;
+    bottom: @m65px;
+    left: 50%;
+    transform: translateX(-50%);
+
+
+    width: @m92px;
+    height: @m91px;
+    &::before {
+      width: @m25px;
+      height: @m40px;
+    }
+  }
+
+  .main-info__subtitle {
+    margin-bottom: @m47px;
+    font-size: @m30px;
+  }
+
+  .main-info__benefits-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .main-info__benefit-column {
+    margin-right: @m170px;
+    margin-bottom: @m95px;
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+
+  .main-info__benefit-title {
+    font-size: @m70px;
+  }
+
+  .main-info__benefit-description {
+    font-size: @m30px;
+  }
+
+  .main-info__benefit-content-help {
+    margin-top: @m11px;
+    margin-left: 0;
+    margin-right: @m20px;
+    margin-bottom: 0;
+
+    .main-info__benefit-title {
+      margin-bottom: @m34px;
+      font-size: @m40px;
+      font-weight: 600;
+      line-height: @m48px;
+    }
+
+    .main-info__benefit-description {
+      font-size: @m30px;
+      line-height: @m36px;
+    }
+  }
+
+  .main-info__benefit-text-wrapper {
+    width: @m315px;
+  }
+
+  .main-info__benefit-link {
+    margin-top: @m70px;
+  }
+
+  .main-info__service-wrapper {
+    flex-wrap: wrap-reverse;
+  }
+
+  .main-info__service-column-left {
+    width: @m600px;
+    height: @m605px;
+    margin-top: @m100px;
+    margin-left: 0px;
+  }
+
+  .main-info__service-column-right {
+    width: @a;
+    padding-top: 0px;
+  }
+
+  .main-info__desc-title {
+    margin-bottom: @m35px;
+    font-size: @m40px;
+  }
+
+  .main-info__desc {
+    font-size: @m30px;
+    line-height: @m36px;
+  }
+
+  .main-info__service-benefits {
+    margin-top: @m75px;
+    .main-info__benefit-column {
+      margin-right: @m212px;
+      margin-bottom: @m17px;
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+    .main-info__benefit-title {
+      font-size: @m70px;
+    }
+  }
+
+  .main-info__service-slogan-wrapper {
+    top: @a;
+    right: @m10px;
+    bottom: @m390px;
+    width: @m257px;
+    height: @m254px;
+  }
+
+  .main-info__central-block {
+    bottom: -@m13px;
+    width: @m614px;
+    padding-top: @m30px;
+    .padding-inline(@m30px);
+  }
+
+  .main-info__central-title {
+    font-size: @m50px;
+    line-height: @m60px;
+  }
+}
+
+@media (min-width: @max-desktop-width) {
+  .main-info {
+    margin-bottom: 176px;
+      &--mb0 {
+      margin-bottom: 0;
+    }
+  }
+
+  .bg.main-info {
+    height: 934px;
+  }
+
+  .database.main-info {
+    .main-info__content {
+      padding-top: 382px;
+    }
+    .main-info__title {
+      margin-bottom: 89px;
+    }
+  }
+
+  .article-page.main-info {
+    margin-bottom: 55px;
+  }
+
+  .article-page {
+    .main-info__bg-wrapper {
+      height: 641px;
+    }
+    .main-info__slogan-img-wrapper {
+      top: 95px;
+      right: 238px;
+      margin-right: 0;
+    }
+  }
+
+  .main-info__bg-wrapper {
+    height: 934px;
+  }
+
+  .main-info__content {
+    padding-top: 317px;
+  }
+
+  .main-info__features-text {
+    margin-bottom: 43px;
+  }
+
+  .main-info__title {
+    margin-bottom: 33px;
+    font-size: 95px;
+    &--fz130d {
+      font-size: 130px;
+    }
+    &--fz105d {
+      font-size: 105px;
+    }
+    // &--fz95d {
+    //   font-size: 95px;
+    // }
+    &--fz90d {
+      font-size: 90px;
+    }
+    // &--fz72d {
+    //   font-size: 72px;
+    // }
+    &--padding-left {
+      padding-left: 198px;
+
+      @media (min-width: 1930px) {
+        padding-left: 0;
+      }
+    }
+  }
+
+  .service-page {
+    .main-info__title {
+      font-size: 72px;
+    }
+  }
+
+  .main-info__features {
+    margin-bottom: 162px;
+    &--mb135 {
+      margin-bottom: 135px;
+    }
+  }
+
+  .main-info__slogan-img-wrapper {
+    width: 257px;
+    height: 254px;
+    margin-right: 330px;
+  }
+
+  .main-info__link {
+    padding-right: 29px;
+  }
+
+  .main-info__btn-bottom {
+    width: 92px;
+    height: 91px;
+    &::before {
+      width: 25px;
+      height: 40px;
+    }
+  }
+
+  .main-info__subtitle {
+    margin-bottom: 17px;
+    font-size: 20px;
+  }
+
+  .main-info__benefit-column {
+    margin-right: 100px;
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  .main-info__benefit-title {
+    font-size: 60px;
+  }
+
+  .main-info__benefit-description {
+    font-size: 20px;
+  }
+
+  .main-info__benefit-content-help {
+    margin-top: 6px;
+    margin-left: 10px;
+    margin-right: 112px;
+    .main-info__benefit-title {
+      margin-bottom: 22px;
+      font-size: 30px;
+    }
+    .main-info__benefit-description {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+
+  .main-info__benefit-text-wrapper {
+    width: 310px;
+  }
+
+  .main-info__benefit-link {
+    margin-top: 40px;
+  }
+
+  .main-info__service-column-left {
+    width: 600px;
+    height: 605px;
+    margin-left: 20px;
+  }
+
+  .main-info__service-column-right {
+    width: 588px;
+    padding-top: 90px;
+  }
+
+  .main-info__desc-title {
+    margin-bottom: 23px;
+    font-size: 30px;
+  }
+
+  .main-info__desc {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .main-info__service-benefits {
+    margin-top: 40px;
+    .main-info__benefit-column {
+      margin-right: 120px;
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+    .main-info__benefit-title {
+      font-size: 50px;
+    }
+  }
+
+  .main-info__service-slogan-wrapper {
+    top: -106px;
+    right: 38px;
+    width: 257px;
+    height: 254px;
+  }
+  .main-info__central-block {
+    width: 1280px;
+    bottom: -13px;
+    padding-top: 53px;
+    .padding-inline(80px);
+  }
+
+  .main-info__central-title {
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
