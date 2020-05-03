@@ -10,31 +10,31 @@
   display: flex;
   flex-direction: column;
 
-  width: @d360px;
-  margin-right: @d26px;
-  margin-bottom: @d120px;
+  width: 36rem;
+  margin-right: 2.6rem;
+  margin-bottom: 12rem;
   &:nth-child(4n) {
     margin-right: 0;
   }
 }
 
 .rehab-contacts__city {
-  margin-bottom: @d26px;
-  padding-bottom: @d25px;
+  margin-bottom: 2.6rem;
+  padding-bottom: 2.5rem;
 
   font-family: @circe;
   font-weight: 800;
-  font-size: @d25px;
+  font-size: 2.5rem;
   text-transform: uppercase;
 
-  border-bottom: @d1px solid #C4C4C4;
+  border-bottom: 0.1rem solid #C4C4C4;
 }
 
 .rehab-contacts__table {
-  font-size: @d18px;
+  font-size: 1.8rem;
 
   td {
-    padding-bottom: @d12px;
+    padding-bottom: 1.2rem;
   }
 
   td:first-child {
@@ -85,28 +85,4 @@
     }
   }
 
-}
-@media (min-width: @max-desktop-width) {
-  .rehab-contacts__item {
-    width: 360px;
-    margin-right: 26px;
-    margin-bottom: 120px;
-    &:nth-child(4n) {
-      margin-right: 0;
-    }
-  }
-
-  .rehab-contacts__city {
-    margin-bottom: 26px;
-    padding-bottom: 25px;
-    font-size: 25px;
-    border-bottom: 1px solid #C4C4C4;
-  }
-
-  .rehab-contacts__table {
-    font-size: 18px;
-    td {
-      padding-bottom: 12px;
-    }
-  }
 }

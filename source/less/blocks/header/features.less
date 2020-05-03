@@ -2,59 +2,51 @@
   display: flex;
   .link-callback {
     align-self: flex-end;
-    // margin-left: @d85px;
-    // margin-bottom: @d28px;
   }
 }
 
 .features--without-icon {
-  // display: flex;
-  font-size: @d20px;
+  font-size: 2rem;
   font-weight: 400;
   color: #262628;
 }
 
-.features__text-long {
-  // margin-top: @d18px;
-}
-
 .features__text-big {
-  margin-left: @d4px;
-  font-size: @d40px;
+  margin-left: 0.4rem;
+  font-size: 4rem;
   font-weight: 700;
 }
 
 .features__text-small {
   display: inline-block;
   vertical-align: top;
-  margin-top: @d5px;
-  margin-left: @d4px;
-  // margin-left: 8px;
+  margin-top: 0.5rem;
+  margin-left: 0.4rem;
 }
 
 .features__list {
   display: flex;
   justify-content: space-between;
-  width: @d530px;
-  font-size: @d18px;
+  width: 53rem;
+  font-size: 1.8rem;
   font-weight: 300;
 }
 
 .features__item {
   position: relative;
-  width: @d178px;
-  padding-left: @d51px;
+  width: 17.8rem;
+  padding-left: 5.1rem;
 
   color: #262628;
 
   &::before {
     content: '';
     position: absolute;
-    top: @d4px;
+    top: 0.4rem;
     left: 0;
 
-    width: @d32px;
-    height: @d32px;
+    width: 3.2rem;
+    height: 3.2rem;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -65,28 +57,27 @@
   }
 
   &--call::before {
-    left: @d8px;
+    left: 0.8rem;
     background-image: url("../img/features/call-b.svg");
   }
 
   &--mef::before,
   &--alpha::before {
-    top: -@d10px;
-    left: @d2px;
-    width: @d40px;
-    height: @d40px;
+    top: -1rem;
+    left: 0.2rem;
+    width: 4rem;
+    height: 4rem;
     background-image: url("../img/features/research-b.svg");
   }
 }
 
 .features__title {
-  margin-bottom: @d24px;
+  margin-bottom: 2.4rem;
   color: #3F5FD3;
 }
 
 .features__description {
-  // width: @d170px;
-  line-height: @d22px;
+  line-height: 2.2rem;
   font-weight: 400;
 }
 
@@ -113,138 +104,68 @@
 @media (max-width: @mobile-width) {
 
   .features--without-icon {
-    font-size: @m30px;
+    font-size: 3rem;
   }
 
   .features__text-big {
-    margin-left: @m4px;
-    font-size: @m50px;
+    margin-left: 0.4rem;
+    font-size: 5rem;
   }
 
   .features__text-small {
-    margin-top: @m5px;
-    margin-left: @m4px;
+    margin-top: 0.5rem;
+    margin-left: 0.4rem;
   }
 
   .features__list {
     width: @a;
-    font-size: @m30px;
+    font-size: 3rem;
   }
 
   .features__item {
-    width: @m240px;
-    padding-left: @m70px;
+    width: 24rem;
+    padding-left: 7rem;
 
     &::before {
-      top: -@m4px;
+      top: -0.4rem;
       left: 0;
 
-      width: @m41px;
-      height: @m41px;
+      width: 4.1rem;
+      height: 4.1rem;
     }
 
     &--program::before,
     &--call::before {
-      left: @m10px;
+      left: 1rem;
     }
-
-    // &--mef::before,
-    // &--alpha::before {
-    //   top: -@d10px;
-    //   left: @d2px;
-    //   width: @d40px;
-    //   height: @d40px;
-    // }
   }
 
   .features__title {
-    margin-bottom: @m32px;
+    margin-bottom: 3.2rem;
   }
 
   .features__description {
-    line-height: @m36px;
+    line-height: 3.6rem;
   }
 
   .bg {
     .features--without-icon {
-      font-size: @m20px;
+      font-size: 2rem;
     }
     .features__text-big {
-      font-size: @m40px;
+      font-size: 4rem;
     }
     .features__item {
-      padding-left: @m51px;
+      padding-left: 5.1rem;
       &--program::before {
         left: 0;
       }
       &--call::before {
-        left: -@m4px;
+        left: -0.4rem;
       }
     }
     .features__title {
-      margin-bottom: @m26px;
+      margin-bottom: 2.6rem;
     }
-  }
-}
-
-@media (min-width: @max-desktop-width) {
-  .features {
-    // .link-callback {
-    //   margin-left: 85px;
-    //   margin-bottom: 28px;
-    // }
-  }
-
-  .features--without-icon {
-    font-size: 20px;
-  }
-
-  .features__text-long {
-    // margin-top: 18px;
-  }
-
-  .features__text-big {
-    margin-left: 4px;
-    font-size: 40px;
-  }
-
-  .features__text-small {
-    margin-top: 6px;
-    margin-left: 4px;
-  }
-
-  .features__list {
-    width: 530px;
-    font-size: 18px;
-  }
-
-  .features__item {
-    width: 178px;
-    padding-left: 51px;
-    &::before {
-      top: 4px;
-      left: 0;
-      width: 32px;
-      height: 32px;
-    }
-    &--call::before {
-      left: 8px;
-    }
-    &--mef::before,
-    &--alpha::before {
-      top: -10px;
-      left: 2px;
-      width: 40px;
-      height: 40px;
-    }
-  }
-
-  .features__title {
-    margin-bottom: 24px;
-  }
-
-  .features__description {
-    // width: 170px;
-    line-height: 22px;
   }
 }

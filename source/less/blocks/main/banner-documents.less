@@ -1,5 +1,5 @@
 .banner-documents {
-  margin-bottom: @d290px;
+  margin-bottom: 29rem;
 }
 
 .banner-documents__wrapper {
@@ -7,36 +7,35 @@
 }
 
 .banner-documents__column-left {
-  // width: @d470px;
-  padding-top: @d165px;
-  padding-left: @d10px;
+  padding-top: 16.5rem;
+  padding-left: 1rem;
   &--w470 {
-    width: @d470px;
+    width: 47rem;
   }
   &--w515 {
-    width: @d515px;
+    width: 51.5rem;
   }
 }
 
 .banner-documents__subtitle {
-  font-size: @d16px;
+  font-size: 1.6rem;
 }
 
 .banner-documents__title {
-  margin-bottom: @d43px;
+  margin-bottom: 4.3rem;
 }
 
 .banner-documents__desc-title {
-  margin-bottom: @d10px;
-  font-size: @d22px;
+  margin-bottom: 1rem;
+  font-size: 2.2rem;
   font-weight: 700;
 }
 
 .banner-documents__desc {
-  margin-bottom: @d54px;
-  font-size: @d18px;
+  margin-bottom: 5.4rem;
+  font-size: 1.8rem;
   font-weight: 300;
-  line-height: @d22px;
+  line-height: 2.2rem;
 }
 
 .banner-documents__link {
@@ -50,8 +49,9 @@
 .banner-documents__img-wrapper {
   position: relative;
   z-index: -1;
-  width: 57.65vw; // 1107px;
-  height: @d748px;
+  // width: 57.65vw; // 1107px;
+  width: 110.7rem;
+  height: 74.8rem;
 }
 
 .banner-documents__item-img,
@@ -70,29 +70,29 @@
   display: flex;
   box-sizing: border-box;
 
-  width: @d795px;
-  height: @d405px;
-  padding: @d24px;
+  width: 79.5rem;
+  height: 40.5rem;
+  padding: 2.4rem;
 
   background-color: #f9f9f9;
 }
 
 .banner-documents__item {
   margin: 0;
-  margin-right: @d20px;
+  margin-right: 2rem;
   text-align: center;
 }
 
 .banner-documents__item-img-wrapper {
   box-sizing: border-box;
 
-  width: @d285px;
-  height: @d332px;
+  width: 28.5rem;
+  height: 33.2rem;
 
-  margin-bottom: @d15px;
-  padding-top: @d10px;
-  .padding-inline(@d32px);
-  padding-bottom: @d10px;
+  margin-bottom: 1.5rem;
+  padding-top: 1rem;
+  .padding-inline(3.2rem);
+  padding-bottom: 1.0rem;
 
   background-color: #FFFFFF;
   border-radius: 15px;
@@ -102,7 +102,7 @@
 }
 
 .banner-documents__item-desc {
-  font-size: @d16px;
+  font-size: 1.6rem;
   font-weight: 300;
   text-align: center;
 
@@ -110,7 +110,7 @@
 
   &--black {
     display: block;
-    font-size: @d18px;
+    font-size: 1.8rem;
     font-weight: 400;
     color: #000;
   }
@@ -118,25 +118,25 @@
 
 .banner-documents__list {
   counter-reset: contraindications;
-  margin-bottom: @d65px;
+  margin-bottom: 6.5rem;
 }
 
 .banner-documents_item {
   counter-increment: contraindications;
   position: relative;
 
-  margin-bottom: @d24px;
-  padding-left: @d25px;
+  margin-bottom: 2.4rem;
+  padding-left: 2.5rem;
 
   font-weight: 300;
-  font-size: @d18px;
+  font-size: 1.8rem;
   &::before {
     content: counter(contraindications);
     position: absolute;
-    top: -@d4px;
+    top: -0.4rem;
     left: 0;
     font-weight: bold;
-    font-size: @d22px;
+    font-size: 2.2rem;
   }
 }
 
@@ -238,90 +238,6 @@
       top: -@m2px;
       left: @m7px;
       font-size: @m36px;
-    }
-  }
-}
-
-@media (min-width: @max-desktop-width) {
-  .banner-documents {
-    margin-bottom: 290px;
-  }
-
-  .banner-documents__column-left {
-    // width: 470px;
-    padding-top: 165px;
-    padding-left: 10px;
-    &--w470 {
-      width: 470px;
-    }
-    &--w515 {
-      width: 515px;
-    }
-  }
-
-  .banner-documents__subtitle {
-    font-size: 16px;
-  }
-
-  .banner-documents__title {
-    margin-bottom: 43px;
-  }
-
-  .banner-documents__desc-title {
-    margin-bottom: 10px;
-    font-size: 22px;
-  }
-
-  .banner-documents__desc {
-    margin-bottom: 54px;
-    font-size: 18px;
-    line-height: 22px;
-  }
-
-  .banner-documents__img-wrapper {
-    width: 1107px;
-    height: 748px;
-  }
-
-  .banner-documents__doc-wrapper {
-    width: 795px;
-    height: 405px;
-    padding: 24px;
-  }
-
-  .banner-documents__item {
-    margin-right: 20px;
-  }
-
-  .banner-documents__item-img-wrapper {
-    width: 285px;
-    height: 332px;
-
-    margin-bottom: 15px;
-    padding-top: 10px;
-    .padding-inline(32px);
-    padding-bottom: 10px;
-  }
-
-  .banner-documents__item-desc {
-    font-size: 16px;
-    color: #777777;
-    &--black {
-      font-size: 18px;
-    }
-  }
-
-  .banner-documents__list {
-    margin-bottom: 65px;
-  }
-
-  .banner-documents_item {
-    margin-bottom: 24px;
-    padding-left: 25px;
-    font-size: 18px;
-    &::before {
-      top: -4px;
-      font-size: 22px;
     }
   }
 }

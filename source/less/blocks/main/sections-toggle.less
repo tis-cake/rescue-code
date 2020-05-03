@@ -1,23 +1,23 @@
 .sections-toggle {
-  margin-bottom: @d139px;
+  margin-bottom: 13.9rem;
 }
 
 .sections-toggle__list {
   display: flex;
   justify-content: space-between;
 
-  width: @d795px;
+  width: 79.5rem;
   .margin-inline(@a);
 }
 
 .sections-toggle__btn {
   position: relative;
 
-  .padding-inline(@d25px);
+  .padding-inline(2.5rem);
 
   font-family: @circe;
   font-weight: 300;
-  font-size: @d20px;
+  font-size: 2rem;
 
   text-transform: uppercase;
   background-color: transparent;
@@ -34,11 +34,11 @@
     content: '';
     position: absolute;
 
-    bottom: -@d12px;
+    bottom: -1.2rem;
     left: 0;
 
     width: 0;
-    height: @d2px;
+    height: 0.2rem;
     transition-duration: 0.3s;
 
     background-color: #9BB1FF;
@@ -111,24 +111,4 @@
     outline: none;
   }
 
-}
-
-@media (min-width: @max-desktop-width) {
-
-  .sections-toggle {
-    margin-bottom: 139px;
-  }
-
-  .sections-toggle__list {
-    width: 795px;
-  }
-
-  .sections-toggle__btn {
-    .padding-inline(25px);
-    font-size: 20px;
-    &::before {
-      bottom: -12px;
-      height: 2px;
-    }
-  }
 }

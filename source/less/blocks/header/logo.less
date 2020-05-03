@@ -1,18 +1,18 @@
 .logo {
   position: relative;
 
-  width: @d182px;
-  margin-top: @d3px;
-  padding-left: @d76px;
+  width: 18.2rem;
+  margin-top: 0.3rem;
+  padding-left: 7.6rem;
 
   &::before {
     content: '';
     position: absolute;
-    top: @d6px;
-    left: @d10px;
+    top: 0.6rem;
+    left: 1rem;
 
-    width: @d50px;
-    height: @d68px;
+    width: 5.0rem;
+    height: 6.8rem;
 
     background-image: url('../img/logo/logo-blue.svg');
     background-repeat: no-repeat;
@@ -31,31 +31,30 @@
 }
 
 .logo__title {
-  margin-bottom: @d6px;
-  font-size: @d30px;
+  margin-bottom: 0.6rem;
+  font-size: 3rem;
   font-weight: 600;
-  // line-height: 36px;
   &--less {
-    margin-bottom: @d12px;
-    font-size: @d24px;
+    margin-bottom: 1.2rem;
+    font-size: 2.4rem;
   }
 }
 
 .logo__description {
-  margin-left: @d2px;
+  margin-left: 0.2rem;
 
   font-family: @roboto;
-  font-size: @d15px;
+  font-size: 1.5rem;
   font-weight: 300;
-  line-height: @d18px;
+  line-height: 1.8rem;
 }
 
 .logo__img {
-  margin-bottom: @d9px;
+  margin-bottom: 0.9rem;
 }
 
 .logo__about {
-  margin-top: @d33px;
+  margin-top: 3.3rem;
   font-weight: 300;
   &--block {
     display: block;
@@ -71,93 +70,52 @@
 
 @media (max-width: @mobile-width) {
   .logo {
-    width: @m134px;
+    width: 13.4rem;
     margin-top: 0px;
-    padding-left: @m58px;
+    padding-left: 5.8rem;
 
     &::before {
-      top: @m8px;
-      left: @m4px;
-      width: @m42px;
-      height: @m58px;
+      top: 0.8rem;
+      left: 0.4rem;
+      width: 4.2rem;
+      height: 5.8rem;
     }
   }
 
   .logo__title {
-    margin-bottom: @m8px;
-    font-size: @m40px;
-    line-height: @m38px;
+    margin-bottom: 0.8rem;
+    font-size: 4rem;
+    line-height: 3.8rem;
   }
 
   .logo__img {
-    width: @m112px;
-    height: @m152px;
+    width: 11.2rem;
+    height: 15.2rem;
   }
 
   .logo__text-wrapper {
     display: flex;
     flex-direction: column;
-    margin-left: @m30px;
+    margin-left: 0.3rem;
   }
 
   .logo__description {
     margin-left: 0;
-    margin-bottom: @m13px;
+    margin-bottom: 1.3rem;
 
-    font-size: @m22px;
-    line-height: @m26px;
+    font-size: 2.2rem;
+    line-height: 2.6rem;
   }
 
   .logo__about {
-    margin-top: @d33px;
-    font-size: @m25px;
+    margin-top: 3.3rem;
+    font-size: 2.5rem;
   }
 
   .bg {
     .logo__title {
       margin-bottom: 0px;
-      font-size: @m32px;
+      font-size: 3.2rem;
     }
-  }
-}
-
-@media (min-width: @max-desktop-width) {
-  .logo {
-    width: 182px;
-    margin-top: 3px;
-    padding-left: 76px;
-    &::before {
-      top: 6px;
-      left: 10px;
-      width: 50px;
-      height: 68px;
-    }
-    &--empty {
-      margin-top: 0;
-      padding-left: 0;
-    }
-  }
-
-  .logo__title {
-    margin-bottom: 6px;
-    font-size: 30px;
-    &--less {
-      margin-bottom: 12px;
-      font-size: 24px;
-    }
-  }
-
-  .logo__description {
-    margin-left: 2px;
-    font-size: 15px;
-    line-height: 18px;
-  }
-
-  .logo__img {
-    margin-bottom: 9px;
-  }
-
-  .logo__about {
-    margin-top: 33px;
   }
 }

@@ -1,11 +1,11 @@
 .service-advantages {
-  margin-bottom: @d180px;
-  padding-top: @d67px;
+  margin-bottom: 18rem;
+  padding-top: 6.7rem;
   text-align: center;
 }
 
 .service-advantages__main-title {
-  margin-bottom: @d90px;
+  margin-bottom: 9rem;
 }
 
 .service-advantages__list {
@@ -17,55 +17,36 @@
 .service-advantages__item {
   counter-increment: advantages;
   position: relative;
-  width: @d325px;
-  padding-top: @d64px;
+  width: 32.5rem;
+  padding-top: 6.4rem;
 
   &::before {
     content: counter(advantages);
     position: absolute;
-    top: -@d12px;
+    top: -1.2rem;
     left: 50%;
     transform: translateX(-50%);
 
-    font-size: @d62px;
+    font-size: 6.2rem;
     font-weight: 700;
     color: transparent;
-    -webkit-text-stroke-width: @d2px;
+    -webkit-text-stroke-width: 0.2rem;
     -webkit-text-stroke-color: #9BB1FF;
-
-    // width: @d30px;
-    // height: @d45px;
-
-    // background-repeat: no-repeat;
-    // background-position: center;
-    // background-size: contain;
   }
-
-  // &--first::before {
-  //   background-image: url('../img/service-advantages/1.svg');
-  // }
-
-  // &--second::before {
-  //   background-image: url('../img/service-advantages/2.svg');
-  // }
-
-  // &--third::before {
-  //   background-image: url('../img/service-advantages/3.svg');
-  // }
 }
 
 .service-advantages__title {
-  margin-bottom: @d20px;
+  margin-bottom: 2rem;
 
   font-weight: 300;
-  font-size: @d30px;
-  line-height: @d36px;
+  font-size: 3rem;
+  line-height: 3.6rem;
 }
 
 .service-advantages__desc {
   font-weight: 300;
-  font-size: @d18px;
-  line-height: @d22px;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
 }
 
 @media (max-width: @mobile-width) {
@@ -103,40 +84,5 @@
   .service-advantages__desc {
     font-size: @m30px;
     line-height: @m36px;
-  }
-}
-
-@media (min-width: @max-desktop-width) {
-  .service-advantages {
-    margin-bottom: 180px;
-    padding-top: 67px;
-  }
-
-  .service-advantages__main-title {
-    margin-bottom: 90px;
-  }
-
-  .service-advantages__item {
-    width: 325px;
-    padding-top: 64px;
-    &::before {
-      top: -12px;
-      font-size: 62px;
-      color: transparent;
-      -webkit-text-stroke-width: 2px;
-      // width: 30px;
-      // height: 45px;
-    }
-  }
-
-  .service-advantages__title {
-    margin-bottom: 20px;
-    font-size: 30px;
-    line-height: 36px;
-  }
-
-  .service-advantages__desc {
-    font-size: 18px;
-    line-height: 22px;
   }
 }
