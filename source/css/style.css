@@ -724,21 +724,25 @@ body .mobile-block {
   }
   .main-nav__link {
     display: block;
+    padding-bottom: 0;
   }
   .main-nav__link::before {
     content: none;
   }
   .main-nav__sublist {
+    display: none;
     position: relative;
     visibility: visible;
     opacity: 1;
     width: auto;
     padding: 0;
-    padding-top: 1.73vw;
     padding-left: 5.066vw;
     font-weight: 300;
     text-transform: none;
     background-color: transparent;
+  }
+  .main-nav__sublist.show {
+    display: block;
   }
   .main-nav__subitem:not(:last-child) {
     margin-bottom: 4.933vw;

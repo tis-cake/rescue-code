@@ -43,6 +43,20 @@ $(document).ready(function () {
   }
 });
 
+// подменю на мобильном
+$(document).ready(function () {
+  if (width <= 756) {
+    $('.main-nav-sub').click(function(evt) {
+      evt.preventDefault();
+      var currentSublist = $(this).closest('.main-nav__item').find('.main-nav__sublist');
+      // $('.main-nav__sublist').not(currentSublist).slideUp(300);
+      // currentSublist.slideToggle(300);
+      $('.main-nav__sublist').not(currentSublist).removeClass('show');
+      currentSublist.toggleClass('show');
+    });
+  }
+});
+
 // слайдер программы
 $(document).ready(function () {
   var programSwiperMain = new Swiper('#program-swiper', {

@@ -118,24 +118,31 @@
 
   .main-nav__link {
     display: block;
+    padding-bottom: 0;
     &::before {
       content: none;
     }
   }
 
   .main-nav__sublist {
+    display: none;
+
     position: relative;
     visibility: visible;
     opacity: 1;
 
     width: @a;
     padding: 0;
-    padding-top: @m13px;
+    // padding-top: @m13px;
     padding-left: @m38px;
 
     font-weight: 300;
     text-transform: none;
     background-color: transparent;
+
+    &.show {
+      display: block;
+    }
   }
 
   .main-nav__subitem {
