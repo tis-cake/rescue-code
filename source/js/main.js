@@ -59,68 +59,72 @@ $(document).ready(function () {
 
 // слайдер программы
 $(document).ready(function () {
-  var programSwiperMain = new Swiper('#program-swiper', {
-    slidesPerView: 3.5,
-    spaceBetween: 32,
-    preloadImages: false,
+  var doubleProgram = $('.program-swiper');
+  // если блок с этим слайдером есть на странице
+  if (doubleProgram.length != 0) {
+    var programSwiperMain = new Swiper('#program-swiper', {
+      slidesPerView: 3.5,
+      spaceBetween: 32,
+      preloadImages: false,
 
-    loop: true,
-    centeredSlides: true,
+      loop: true,
+      centeredSlides: true,
 
-    breakpoints: {
-      1921: {
-        slidesPerView: 3,
-        slidesOffsetBefore: 0,
+      breakpoints: {
+        1921: {
+          slidesPerView: 3,
+          slidesOffsetBefore: 0,
+        },
+        800: {
+          slidesPerView: 3.5,
+        },
+        300: {
+          slidesPerView: 2,
+          slidesOffsetBefore: 0,
+          spaceBetween: 20,
+        }
       },
-      800: {
-        slidesPerView: 3.5,
-      },
-      300: {
-        slidesPerView: 2,
-        slidesOffsetBefore: 0,
-        spaceBetween: 20,
+
+      pagination: {
+        el: '.program-progressbar',
+        type: 'progressbar'
       }
-    },
+    });
 
-    pagination: {
-      el: '.program-progressbar',
-      type: 'progressbar'
-    }
-  });
+    var programSwiperPagination = new Swiper('#program-swiper-pagination', {
+      slidesPerView: 3.5,
+      spaceBetween: 32,
 
-  var programSwiperPagination = new Swiper('#program-swiper-pagination', {
-    slidesPerView: 3.5,
-    spaceBetween: 32,
+      loop: true,
+      centeredSlides: true,
 
-    loop: true,
-    centeredSlides: true,
-
-    breakpoints: {
-      1921: {
-        slidesPerView: 3,
-        slidesOffsetBefore: 0,
+      breakpoints: {
+        1921: {
+          slidesPerView: 3,
+          slidesOffsetBefore: 0,
+        },
+        800: {
+          slidesPerView: 3.5,
+        },
+        300: {
+          slidesPerView: 2,
+          slidesOffsetBefore: 0,
+          spaceBetween: 20,
+        }
       },
-      800: {
-        slidesPerView: 3.5,
+
+      pagination: {
+        el: '.program-pagination',
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (index + 1) + '</span>';
+        }
       },
-      300: {
-        slidesPerView: 2,
-        slidesOffsetBefore: 0,
-        spaceBetween: 20,
-      }
-    },
+    });
 
-    pagination: {
-      el: '.program-pagination',
-      clickable: true,
-      renderBullet: function (index, className) {
-        return '<span class="' + className + '">' + (index + 1) + '</span>';
-      }
-    },
-  });
-
-  programSwiperMain.controller.control = programSwiperPagination;
-  programSwiperPagination.controller.control = programSwiperMain;
+    programSwiperMain.controller.control = programSwiperPagination;
+    programSwiperPagination.controller.control = programSwiperMain;
+  }
 });
 
 // слайдер центров
@@ -180,68 +184,76 @@ $(document).ready(function () {
 // [rehab-page]
 // галерея рехаба
 $(document).ready(function () {
-  var gallerySwiperMain = new Swiper('#gallery-swiper', {
-    slidesPerView: 3.5,
-    spaceBetween: 32,
+  var doubleGallery = $('.gallery-swiper');
+  // если блок с этим слайдером есть на странице
+  if (doubleGallery.length != 0) {
+    var gallerySwiperMain = new Swiper('#gallery-swiper', {
+      slidesPerView: 3.5,
+      spaceBetween: 32,
 
-    loop: true,
-    centeredSlides: true,
+      loop: true,
+      centeredSlides: true,
 
-    breakpoints: {
-      1921: {
-        slidesPerView: 3,
-        slidesOffsetBefore: 0,
+      breakpoints: {
+        1921: {
+          slidesPerView: 3,
+          slidesOffsetBefore: 0,
+        },
+        800: {
+          slidesPerView: 3.5,
+        },
+        300: {
+          slidesPerView: 2,
+          slidesOffsetBefore: 0,
+          spaceBetween: 20,
+        }
       },
-      800: {
-        slidesPerView: 3.5,
-      },
-      300: {
-        slidesPerView: 2,
-        slidesOffsetBefore: 0,
-        spaceBetween: 20,
+
+      pagination: {
+        el: '.gallery-progressbar',
+        type: 'progressbar'
       }
-    },
+    });
 
-    pagination: {
-      el: '.gallery-progressbar',
-      type: 'progressbar'
-    }
-  });
+    var gallerySwiperPagination = new Swiper('#gallery-swiper-pagination', {
+      slidesPerView: 3.5,
+      spaceBetween: 32,
 
-  var gallerySwiperPagination = new Swiper('#gallery-swiper-pagination', {
-    slidesPerView: 3.5,
-    spaceBetween: 32,
+      loop: true,
+      centeredSlides: true,
 
-    loop: true,
-    centeredSlides: true,
-
-    breakpoints: {
-      1921: {
-        slidesPerView: 3,
-        slidesOffsetBefore: 0,
+      breakpoints: {
+        1921: {
+          slidesPerView: 3,
+          slidesOffsetBefore: 0,
+        },
+        800: {
+          slidesPerView: 3.5,
+        },
+        300: {
+          slidesPerView: 2,
+          slidesOffsetBefore: 0,
+          spaceBetween: 20,
+        }
       },
-      800: {
-        slidesPerView: 3.5,
+
+      pagination: {
+        el: '.gallery-pagination',
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (index + 1) + '</span>';
+        }
       },
-      300: {
-        slidesPerView: 2,
-        slidesOffsetBefore: 0,
-        spaceBetween: 20,
-      }
-    },
+    });
 
-    pagination: {
-      el: '.gallery-pagination',
-      clickable: true,
-      renderBullet: function (index, className) {
-        return '<span class="' + className + '">' + (index + 1) + '</span>';
-      }
-    },
-  });
-
-  gallerySwiperMain.controller.control = gallerySwiperPagination;
-  gallerySwiperPagination.controller.control = gallerySwiperMain;
+    gallerySwiperMain.controller.control = gallerySwiperPagination;
+    gallerySwiperPagination.controller.control = gallerySwiperMain;
+  }
 });
+
+// if (gal.length != 0) {
+//   // galleryInit();
+// }
 
 // маска для поля ввода номера
 $(document).ready(function () {
