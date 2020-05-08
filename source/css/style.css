@@ -330,6 +330,19 @@ input[type="radio"].visually-hidden {
   height: 100%;
   border: none;
 }
+.nakarte {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.nakarte img {
+  width: 10rem;
+  height: 100%;
+  margin-right: 2rem;
+}
+.address-card-btn {
+  text-decoration: underline;
+  color: blue;
+}
 body .mobile-block {
   display: none;
 }
@@ -2907,6 +2920,7 @@ body .mobile-block {
   margin-left: 10.8rem;
   padding-top: 1.9rem;
 }
+.about__column-right p,
 .about__description {
   margin-bottom: 2.4rem;
   font-size: 2rem;
@@ -2944,6 +2958,7 @@ body .mobile-block {
     margin-left: 0;
     padding-top: 0;
   }
+  .about__column-right p,
   .about__description {
     margin-left: 0.266vw;
     margin-bottom: 4.8vw;
