@@ -298,6 +298,19 @@ $(document).ready(function () {
     openModal('modal--callback', 'modal__input-phone');
   });
 
+  // выбрать регион (модалка 2)
+  $('.modal-region').click(function (evt) {
+    evt.preventDefault();
+    openModal('modal--region');
+  });
+
+  // $('.header__link-call-back').click(function (evt) {
+  //   $(this).addClass('active');
+  //   if($('.header__link-call-back').hasClass('active')) {
+  //     $('body').removeClass('noscroll');
+  //   }
+  // });
+
   // закрыть модальное окно
   function closeModal() {
     if ($(".modal").hasClass("active")) {
@@ -323,4 +336,9 @@ $(document).ready(function () {
 
   // слушаем клик/тач вне модального окна
   $(document).on('mouseup touchstart', clickOutsideModal);
+
+  // кнопка закрыть
+  $('.modal__close').click(function (evt) {
+    closeModal();
+  });
 });
