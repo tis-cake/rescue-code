@@ -147,6 +147,7 @@ body {
   padding: 0;
   font-family: 'Myriad Pro', 'Arial', sans-serif;
   font-weight: 400;
+  font-size: 1.8rem;
   color: #000;
   background-color: #f9f9f9;
 }
@@ -1182,11 +1183,13 @@ body .mobile-block {
   width: 58.8rem;
   padding-top: 9rem;
 }
+.main-info__service-column-right h3,
 .main-info__desc-title {
   margin-bottom: 2.3rem;
   font-weight: 400;
   font-size: 3rem;
 }
+.main-info__service-column-right p,
 .main-info__desc {
   font-weight: 300;
   font-size: 1.8rem;
@@ -1371,10 +1374,12 @@ body .mobile-block {
     width: auto;
     padding-top: 0px;
   }
+  .main-info__service-column-right h3,
   .main-info__desc-title {
     margin-bottom: 4.666vw;
     font-size: 5.333vw;
   }
+  .main-info__service-column-right p,
   .main-info__desc {
     font-size: 4vw;
     line-height: 4.8vw;
@@ -2397,6 +2402,8 @@ body .mobile-block {
   margin-bottom: 4.2rem;
   line-height: 7.2rem;
 }
+.banner-info__text-top-wrapper p:not(.banner-info__subtitle),
+.banner-info__text-bottom-wrapper p,
 .banner-info__description,
 .banner-info__item {
   margin-bottom: 2.2rem;
@@ -2404,18 +2411,26 @@ body .mobile-block {
   font-weight: 300;
   line-height: 2.2rem;
 }
+.banner-info__text-top-wrapper p:not(.banner-info__subtitle):last-of-type,
+.banner-info__text-bottom-wrapper p:last-of-type,
 .banner-info__description:last-of-type,
 .banner-info__item:last-of-type {
   margin-bottom: 2.8rem;
 }
+.banner-info__text-top-wrapper p:not(.banner-info__subtitle)--fw600,
+.banner-info__text-bottom-wrapper p--fw600,
 .banner-info__description--fw600,
 .banner-info__item--fw600 {
   font-weight: 600;
 }
+.banner-info__text-top-wrapper p:not(.banner-info__subtitle)--fw400,
+.banner-info__text-bottom-wrapper p--fw400,
 .banner-info__description--fw400,
 .banner-info__item--fw400 {
   font-weight: 400;
 }
+.banner-info__text-top-wrapper p:not(.banner-info__subtitle) span,
+.banner-info__text-bottom-wrapper p span,
 .banner-info__description span,
 .banner-info__item span {
   display: block;
@@ -2555,7 +2570,7 @@ body .mobile-block {
   margin-bottom: 2rem;
 }
 .banner-info-team-lead .banner-info__link {
-  margin-top: auto;
+  margin-top: 5.5rem;
   margin-bottom: 5.5rem;
 }
 .banner-info-team-lead .banner-info__block-images {
@@ -2614,6 +2629,8 @@ body .mobile-block {
     margin-bottom: 6.133vw;
     line-height: 11.2vw;
   }
+  .banner-info__text-top-wrapper p:not(.banner-info__subtitle),
+  .banner-info__text-bottom-wrapper p,
   .banner-info__description,
   .banner-info__item {
     position: relative;
@@ -2622,6 +2639,8 @@ body .mobile-block {
     font-size: 4vw;
     line-height: 4.8vw;
   }
+  .banner-info__text-top-wrapper p:not(.banner-info__subtitle):last-of-type,
+  .banner-info__text-bottom-wrapper p:last-of-type,
   .banner-info__description:last-of-type,
   .banner-info__item:last-of-type {
     margin-bottom: 0;
@@ -2784,6 +2803,9 @@ body .mobile-block {
   }
   .banner-info-team-lead .banner-info__block-item:nth-child(3n) {
     margin-right: 0;
+  }
+  .banner-info-team-lead .banner-info__block-item:nth-child(4n) {
+    margin-right: 1.86vw;
   }
   .banner-info-team-lead .banner-info__block-img-wrapper {
     height: 34vw;
@@ -2982,6 +3004,9 @@ body .mobile-block {
 @media (max-width: 755px) {
   .map {
     margin-bottom: 94px;
+  }
+  .map .map__link-region {
+    align-self: center;
   }
   .map__main-title-wrapper {
     margin-bottom: 13.3vw;
@@ -4134,10 +4159,12 @@ body .mobile-block {
   font-weight: 400;
   color: #000;
 }
+.banner-documents__column-left ul,
 .banner-documents__list {
   counter-reset: contraindications;
   margin-bottom: 6.5rem;
 }
+.banner-documents__column-left li,
 .banner-documents_item {
   counter-increment: contraindications;
   position: relative;
@@ -4146,6 +4173,7 @@ body .mobile-block {
   font-weight: 300;
   font-size: 1.8rem;
 }
+.banner-documents__column-left li::before,
 .banner-documents_item::before {
   content: counter(contraindications);
   position: absolute;
@@ -4225,17 +4253,21 @@ body .mobile-block {
   .banner-documents__item-desc--black {
     font-size: 4vw;
   }
+  .banner-documents__column-left ul,
   .banner-documents__list {
     margin-bottom: 12.66vw;
   }
+  .banner-documents__column-left li,
   .banner-documents_item {
     margin-bottom: 5.333vw;
     padding-left: 7.466vw;
     font-size: 4vw;
   }
+  .banner-documents__column-left li:last-child,
   .banner-documents_item:last-child {
     margin-bottom: 0;
   }
+  .banner-documents__column-left li::before,
   .banner-documents_item::before {
     top: -0.266vw;
     left: 0.933vw;
@@ -4837,6 +4869,57 @@ body .mobile-block {
 .modal--region.active {
   display: block;
 }
+.modal--region {
+  top: 30%;
+  width: 70%;
+  height: auto;
+  padding: 6rem 2rem;
+  background-color: #fff;
+}
+.modal__title {
+  margin-bottom: 6rem;
+  font-size: 2.4rem;
+  text-align: center;
+}
+.modal__close {
+  position: absolute;
+  top: 1.8rem;
+  right: 3.2rem;
+  display: flex;
+  justify-content: center;
+  width: 6rem;
+  height: 6rem;
+  padding: 0;
+  color: transparent;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+.modal__close::before,
+.modal__close::after {
+  position: absolute;
+  content: "";
+  top: 2.8rem;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+}
+.modal__close::before {
+  transform: rotate(45deg);
+}
+.modal__close::after {
+  transform: rotate(-45deg);
+}
+.modal__list {
+  -webkit-column-count: 4;
+     -moz-column-count: 4;
+          column-count: 4;
+}
+.modal__item {
+  margin-bottom: 1.5rem;
+  margin-left: 4.5rem;
+  margin-right: 4.5rem;
+}
 .modal__form {
   box-sizing: border-box;
   position: relative;
@@ -4890,6 +4973,40 @@ body .mobile-block {
 @media (max-width: 755px) {
   .modal {
     width: 89.067vw;
+  }
+  .modal--region {
+    top: 20%;
+    padding: 8vw 1.33vw;
+  }
+  .modal__title {
+    margin-bottom: 5.333vw;
+    font-size: 4vw;
+  }
+  .modal__close {
+    top: 4vw;
+    right: 4vw;
+    width: 6.666vw;
+    height: 6.666vw;
+  }
+  .modal__close::before,
+  .modal__close::after {
+    top: 3.2vw;
+    right: 0;
+    height: 0.266vw;
+  }
+  .modal__list {
+    -webkit-column-count: 1;
+       -moz-column-count: 1;
+            column-count: 1;
+    overflow: hidden;
+    overflow-y: scroll;
+    max-height: 53.333vw;
+  }
+  .modal__item {
+    margin-bottom: 2vw;
+    margin-left: 6vw;
+    margin-right: 6vw;
+    font-size: 2.933vw;
   }
   .modal__form {
     height: 11.6vw;
