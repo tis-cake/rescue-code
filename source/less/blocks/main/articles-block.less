@@ -62,11 +62,17 @@
 .articles-block__column {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  // justify-content: space-between;
 
   padding-left: 2.5rem;
 
   border-left: 1px solid #C4C4C4;
+}
+
+.articles-block-column {
+  .articles-block__item:not(:last-child) {
+    margin-bottom: 8.5rem;
+  }
 }
 
 .articles-block__item {
@@ -187,6 +193,7 @@
     border-left: none;
   }
 
+  .articles-block-column .articles-block__item:not(:last-child),
   .articles-block__item {
     // flex-direction: column;
     margin-bottom: @m130px;
