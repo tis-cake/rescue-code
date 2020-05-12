@@ -158,10 +158,16 @@ $(document).ready(function () {
 });
 
 // [database page]
+// табы
 $(document).ready(function () {
   $('.sections-toggle__btn').on("click", function () {
     $('.sections-toggle__btn').removeClass('active');
     $(this).toggleClass('active');
+
+    var data = $(this).data('id');
+    // console.log(data);
+    $('.articles-toggle-block').removeClass('active');
+    $('.articles-toggle-block[data-id='+data+']').toggleClass('active');
   });
 });
 

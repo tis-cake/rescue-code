@@ -4550,6 +4550,12 @@ body .mobile-block {
 .article {
   margin-bottom: 9.4rem;
 }
+.articles-toggle-block {
+  display: none;
+}
+.articles-toggle-block.active {
+  display: block;
+}
 .article__block {
   margin-bottom: 4.4rem;
 }

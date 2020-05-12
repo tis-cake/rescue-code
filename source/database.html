@@ -143,13 +143,13 @@
         <h2 class="visually-hidden">Темы статей</h2>
         <ul class="sections-toggle__list">
           <li class="sections-toggle__item">
-            <button class="sections-toggle__btn active">Зависимость</button>
+            <button data-id='1' class="sections-toggle__btn active">Зависимость</button>
           </li>
           <li class="sections-toggle__item">
-            <button class="sections-toggle__btn">Cозависимым</button>
+            <button data-id='2' class="sections-toggle__btn">Cозависимым</button>
           </li>
           <li class="sections-toggle__item">
-            <button class="sections-toggle__btn">Международная практика</button>
+            <button data-id='3' class="sections-toggle__btn">Международная практика</button>
           </li>
         </ul>
 
@@ -174,111 +174,329 @@
         </form>
       </section>
 
-      <section class="articles-block articles-block-column container">
-        <h2 class="visually-hidden">Блок со статьями</h2>
-        <div class="articles-block__wrapper">
-          <article class="articles-block__main-item">
-            <div class="articles-block__main-img-wrapper">
-              <img class="articles-block__main-img" src="img/database/database1.jpg" alt="Мефедроновая зависиомость">
-            </div>
-            <div class="articles-block__link-wrapper">
-              <span class="articles-block__count">35 статей</span>
-              <a class="articles-block__link link desktop-block" href="theme-page.html">Все статьи</a>
-            </div>
-            <h2 class="articles-block__main-title">Мефедроновая зависимость</h2>
-            <a class="articles-block__link link mobile-block" href="theme-page.html">Все статьи по теме</a>
-          </article>
+      <div class="articles-toggle-block active" data-id="1">
+        <section class="articles-block articles-block-column container">
+          <h2 class="visually-hidden">Блок со статьями</h2>
+          <div class="articles-block__wrapper">
+            <article class="articles-block__main-item">
+              <div class="articles-block__main-img-wrapper">
+                <img class="articles-block__main-img" src="img/database/database1.jpg" alt="Мефедроновая зависиомость">
+              </div>
+              <div class="articles-block__link-wrapper">
+                <span class="articles-block__count">35 статей</span>
+                <a class="articles-block__link link desktop-block" href="theme-page.html">Все статьи</a>
+              </div>
+              <h2 class="articles-block__main-title">Мефедроновая зависимость</h2>
+              <a class="articles-block__link link mobile-block" href="theme-page.html">Все статьи по теме</a>
+            </article>
 
-          <div class="articles-block__column">
-            <article class="articles-block__item">
-              <a class="articles-block__content-wrapper" href="article-page.html">
-                <div class="articles-block__datetime-wrapper">
-                <time class="articles-block__datetime" datetime="2020-01-20">20.01</time>
-                </div>
-                <div class="articles-block__text-wrapper">
-                <h3 class="articles-block__title">Лечение от мефедроновой зависимости</h3>
-                <p class="articles-block__description">Лечение любой зависимости должно решать две основные задачи – убрать из организма вещество, вызывающее болезненное пристрастие и предупредить его повторное употребление.</p>
-                </div>
-              </a>
-            </article>
-            <article class="articles-block__item">
-              <a class="articles-block__content-wrapper" href="article-page.html">
-                <div class="articles-block__datetime-wrapper">
-                  <time class="articles-block__datetime" datetime="2020-01-18">18.01</time>
-                </div>
-                <div class="articles-block__text-wrapper">
+            <div class="articles-block__column">
+              <article class="articles-block__item">
+                <a class="articles-block__content-wrapper" href="article-page.html">
+                  <div class="articles-block__datetime-wrapper">
+                  <time class="articles-block__datetime" datetime="2020-01-20">20.01</time>
+                  </div>
+                  <div class="articles-block__text-wrapper">
                   <h3 class="articles-block__title">Лечение от мефедроновой зависимости</h3>
                   <p class="articles-block__description">Лечение любой зависимости должно решать две основные задачи – убрать из организма вещество, вызывающее болезненное пристрастие и предупредить его повторное употребление.</p>
-                </div>
-              </a>
-            </article>
-            <article class="articles-block__item">
-              <a class="articles-block__content-wrapper" href="article-page.html">
-                <div class="articles-block__datetime-wrapper">
-                  <time class="articles-block__datetime" datetime="2020-01-16">16.01</time>
-                </div>
-                <div class="articles-block__text-wrapper">
-                  <h3 class="articles-block__title">Лечение от мефедроновой зависимости</h3>
-                  <p class="articles-block__description">Лечение любой зависимости должно решать две основные задачи – убрать из организма вещество, вызывающее болезненное пристрастие и предупредить его повторное употребление.</p>
-                </div>
-              </a>
-            </article>
+                  </div>
+                </a>
+              </article>
+              <article class="articles-block__item">
+                <a class="articles-block__content-wrapper" href="article-page.html">
+                  <div class="articles-block__datetime-wrapper">
+                    <time class="articles-block__datetime" datetime="2020-01-18">18.01</time>
+                  </div>
+                  <div class="articles-block__text-wrapper">
+                    <h3 class="articles-block__title">Лечение от мефедроновой зависимости</h3>
+                    <p class="articles-block__description">Лечение любой зависимости должно решать две основные задачи – убрать из организма вещество, вызывающее болезненное пристрастие и предупредить его повторное употребление.</p>
+                  </div>
+                </a>
+              </article>
+              <article class="articles-block__item">
+                <a class="articles-block__content-wrapper" href="article-page.html">
+                  <div class="articles-block__datetime-wrapper">
+                    <time class="articles-block__datetime" datetime="2020-01-16">16.01</time>
+                  </div>
+                  <div class="articles-block__text-wrapper">
+                    <h3 class="articles-block__title">Лечение от мефедроновой зависимости</h3>
+                    <p class="articles-block__description">Лечение любой зависимости должно решать две основные задачи – убрать из организма вещество, вызывающее болезненное пристрастие и предупредить его повторное употребление.</p>
+                  </div>
+                </a>
+              </article>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section class="articles-block articles-block-column container">
-        <h2 class="visually-hidden">Блок со статьями</h2>
-        <div class="articles-block__wrapper">
-          <article class="articles-block__main-item">
-            <div class="articles-block__main-img-wrapper">
-              <img class="articles-block__main-img" src="img/database/database2.jpg" alt="Мефедроновая зависиомость">
-            </div>
-            <div class="articles-block__link-wrapper">
-              <span class="articles-block__count">35 статей</span>
-              <a class="articles-block__link link desktop-block" href="theme-page.html">Все статьи</a>
-            </div>
-            <h2 class="articles-block__main-title">Созависимость</h2>
-            <a class="articles-block__link link mobile-block" href="theme-page.html">Все статьи по теме</a>
-          </article>
-
-          <div class="articles-block__column">
-            <article class="articles-block__item">
-              <a class="articles-block__content-wrapper" href="article-page.html">
-                <div class="articles-block__datetime-wrapper">
-                <time class="articles-block__datetime" datetime="2020-01-20">20.01</time>
-                </div>
-                <div class="articles-block__text-wrapper">
-                <h3 class="articles-block__title">Лечение от мефедроновой зависимости</h3>
-                <p class="articles-block__description">Лечение любой зависимости должно решать две основные задачи – убрать из организма вещество, вызывающее болезненное пристрастие и предупредить его повторное употребление.</p>
-                </div>
-              </a>
+        <section class="articles-block articles-block-column container">
+          <h2 class="visually-hidden">Блок со статьями</h2>
+          <div class="articles-block__wrapper">
+            <article class="articles-block__main-item">
+              <div class="articles-block__main-img-wrapper">
+                <img class="articles-block__main-img" src="img/database/database2.jpg" alt="Мефедроновая зависиомость">
+              </div>
+              <div class="articles-block__link-wrapper">
+                <span class="articles-block__count">35 статей</span>
+                <a class="articles-block__link link desktop-block" href="theme-page.html">Все статьи</a>
+              </div>
+              <h2 class="articles-block__main-title">Созависимость</h2>
+              <a class="articles-block__link link mobile-block" href="theme-page.html">Все статьи по теме</a>
             </article>
-            <article class="articles-block__item">
-              <a class="articles-block__content-wrapper" href="article-page.html">
-                <div class="articles-block__datetime-wrapper">
-                  <time class="articles-block__datetime" datetime="2020-01-18">18.01</time>
-                </div>
-                <div class="articles-block__text-wrapper">
+
+            <div class="articles-block__column">
+              <article class="articles-block__item">
+                <a class="articles-block__content-wrapper" href="article-page.html">
+                  <div class="articles-block__datetime-wrapper">
+                  <time class="articles-block__datetime" datetime="2020-01-20">20.01</time>
+                  </div>
+                  <div class="articles-block__text-wrapper">
                   <h3 class="articles-block__title">Лечение от мефедроновой зависимости</h3>
                   <p class="articles-block__description">Лечение любой зависимости должно решать две основные задачи – убрать из организма вещество, вызывающее болезненное пристрастие и предупредить его повторное употребление.</p>
-                </div>
-              </a>
-            </article>
-            <article class="articles-block__item">
-              <a class="articles-block__content-wrapper" href="article-page.html">
-                <div class="articles-block__datetime-wrapper">
-                  <time class="articles-block__datetime" datetime="2020-01-16">16.01</time>
-                </div>
-                <div class="articles-block__text-wrapper">
-                  <h3 class="articles-block__title">Лечение от мефедроновой зависимости</h3>
-                  <p class="articles-block__description">Лечение любой зависимости должно решать две основные задачи – убрать из организма вещество, вызывающее болезненное пристрастие и предупредить его повторное употребление.</p>
-                </div>
-              </a>
-            </article>
+                  </div>
+                </a>
+              </article>
+              <article class="articles-block__item">
+                <a class="articles-block__content-wrapper" href="article-page.html">
+                  <div class="articles-block__datetime-wrapper">
+                    <time class="articles-block__datetime" datetime="2020-01-18">18.01</time>
+                  </div>
+                  <div class="articles-block__text-wrapper">
+                    <h3 class="articles-block__title">Лечение от мефедроновой зависимости</h3>
+                    <p class="articles-block__description">Лечение любой зависимости должно решать две основные задачи – убрать из организма вещество, вызывающее болезненное пристрастие и предупредить его повторное употребление.</p>
+                  </div>
+                </a>
+              </article>
+              <article class="articles-block__item">
+                <a class="articles-block__content-wrapper" href="article-page.html">
+                  <div class="articles-block__datetime-wrapper">
+                    <time class="articles-block__datetime" datetime="2020-01-16">16.01</time>
+                  </div>
+                  <div class="articles-block__text-wrapper">
+                    <h3 class="articles-block__title">Лечение от мефедроновой зависимости</h3>
+                    <p class="articles-block__description">Лечение любой зависимости должно решать две основные задачи – убрать из организма вещество, вызывающее болезненное пристрастие и предупредить его повторное употребление.</p>
+                  </div>
+                </a>
+              </article>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
+
+      <div class="articles-toggle-block" data-id="2">
+        <section class="articles-block articles-block-column container">
+          <h2 class="visually-hidden">Блок со статьями</h2>
+          <div class="articles-block__wrapper">
+            <article class="articles-block__main-item">
+              <div class="articles-block__main-img-wrapper">
+                <img class="articles-block__main-img" src="img/banner-info/b3-1.jpg" alt="Мефедроновая зависиомость">
+              </div>
+              <div class="articles-block__link-wrapper">
+                <span class="articles-block__count">35 статей</span>
+                <a class="articles-block__link link desktop-block" href="theme-page.html">Все статьи</a>
+              </div>
+              <h2 class="articles-block__main-title">Мефедроновая зависимость</h2>
+              <a class="articles-block__link link mobile-block" href="theme-page.html">Все статьи по теме</a>
+            </article>
+
+            <div class="articles-block__column">
+              <article class="articles-block__item">
+                <a class="articles-block__content-wrapper" href="article-page.html">
+                  <div class="articles-block__datetime-wrapper">
+                  <time class="articles-block__datetime" datetime="2020-01-20">20.01</time>
+                  </div>
+                  <div class="articles-block__text-wrapper">
+                  <h3 class="articles-block__title">LOREM TUTULOREM</h3>
+                  <p class="articles-block__description">Лечение любой зависимости должно решать две основные задачи – убрать из организма вещество, вызывающее болезненное пристрастие и предупредить его повторное употребление.</p>
+                  </div>
+                </a>
+              </article>
+              <article class="articles-block__item">
+                <a class="articles-block__content-wrapper" href="article-page.html">
+                  <div class="articles-block__datetime-wrapper">
+                    <time class="articles-block__datetime" datetime="2020-01-18">18.01</time>
+                  </div>
+                  <div class="articles-block__text-wrapper">
+                    <h3 class="articles-block__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro quasi aliquam mollitia iste minus, fugit obcaecati reprehenderit ex deserunt dignissimos itaque facere beatae facilis quisquam voluptatibus, optio fuga voluptatum rerum!</h3>
+                    <p class="articles-block__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates dolorem repellendus nemo similique, numquam. Enim rem, ducimus magnam iusto. Quae officiis nesciunt molestias dicta, qui veniam ipsum cupiditate, iusto sunt?</p>
+                  </div>
+                </a>
+              </article>
+              <article class="articles-block__item">
+                <a class="articles-block__content-wrapper" href="article-page.html">
+                  <div class="articles-block__datetime-wrapper">
+                    <time class="articles-block__datetime" datetime="2020-01-16">16.01</time>
+                  </div>
+                  <div class="articles-block__text-wrapper">
+                    <h3 class="articles-block__title">Лечение от мефедроновой зависимости</h3>
+                    <p class="articles-block__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam blanditiis, perspiciatis in at iusto impedit mollitia nobis doloribus quo, vel culpa nostrum quaerat ratione similique assumenda placeat, animi magni minima?</p>
+                  </div>
+                </a>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="articles-block articles-block-column container">
+          <h2 class="visually-hidden">Блок со статьями</h2>
+          <div class="articles-block__wrapper">
+            <article class="articles-block__main-item">
+              <div class="articles-block__main-img-wrapper">
+                <img class="articles-block__main-img" src="img/banner-info/b4-1.jpg" alt="Мефедроновая зависиомость">
+              </div>
+              <div class="articles-block__link-wrapper">
+                <span class="articles-block__count">35 статей</span>
+                <a class="articles-block__link link desktop-block" href="theme-page.html">Все статьи</a>
+              </div>
+              <h2 class="articles-block__main-title">Созависимость</h2>
+              <a class="articles-block__link link mobile-block" href="theme-page.html">Все статьи по теме</a>
+            </article>
+
+            <div class="articles-block__column">
+              <article class="articles-block__item">
+                <a class="articles-block__content-wrapper" href="article-page.html">
+                  <div class="articles-block__datetime-wrapper">
+                  <time class="articles-block__datetime" datetime="2020-01-20">20.01</time>
+                  </div>
+                  <div class="articles-block__text-wrapper">
+                  <h3 class="articles-block__title">Лечение от мефедроновой зависимости</h3>
+                  <p class="articles-block__description">Лечение любой зависимости должно решать две основные задачи – убрать из организма вещество, вызывающее болезненное пристрастие и предупредить его повторное употребление.</p>
+                  </div>
+                </a>
+              </article>
+              <article class="articles-block__item">
+                <a class="articles-block__content-wrapper" href="article-page.html">
+                  <div class="articles-block__datetime-wrapper">
+                    <time class="articles-block__datetime" datetime="2020-01-18">18.01</time>
+                  </div>
+                  <div class="articles-block__text-wrapper">
+                    <h3 class="articles-block__title">Лечение от мефедроновой зависимости</h3>
+                    <p class="articles-block__description">Лечение любой зависимости должно решать две основные задачи – убрать из организма вещество, вызывающее болезненное пристрастие и предупредить его повторное употребление.</p>
+                  </div>
+                </a>
+              </article>
+              <article class="articles-block__item">
+                <a class="articles-block__content-wrapper" href="article-page.html">
+                  <div class="articles-block__datetime-wrapper">
+                    <time class="articles-block__datetime" datetime="2020-01-16">16.01</time>
+                  </div>
+                  <div class="articles-block__text-wrapper">
+                    <h3 class="articles-block__title">Лечение от мефедроновой зависимости</h3>
+                    <p class="articles-block__description">Лечение любой зависимости должно решать две основные задачи – убрать из организма вещество, вызывающее болезненное пристрастие и предупредить его повторное употребление.</p>
+                  </div>
+                </a>
+              </article>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="articles-toggle-block" data-id="3">
+        <section class="articles-block articles-block-column container">
+          <h2 class="visually-hidden">Блок со статьями</h2>
+          <div class="articles-block__wrapper">
+            <article class="articles-block__main-item">
+              <div class="articles-block__main-img-wrapper">
+                <img class="articles-block__main-img" src="img/banner-info/b5-1.jpg" alt="Мефедроновая зависиомость">
+              </div>
+              <div class="articles-block__link-wrapper">
+                <span class="articles-block__count">35 статей</span>
+                <a class="articles-block__link link desktop-block" href="theme-page.html">Все статьи</a>
+              </div>
+              <h2 class="articles-block__main-title">Мефедроновая зависимость</h2>
+              <a class="articles-block__link link mobile-block" href="theme-page.html">Все статьи по теме</a>
+            </article>
+
+            <div class="articles-block__column">
+              <article class="articles-block__item">
+                <a class="articles-block__content-wrapper" href="article-page.html">
+                  <div class="articles-block__datetime-wrapper">
+                  <time class="articles-block__datetime" datetime="2020-01-20">20.01</time>
+                  </div>
+                  <div class="articles-block__text-wrapper">
+                  <h3 class="articles-block__title">LOREM TUTULOREM</h3>
+                  <p class="articles-block__description">Лечение любой зависимости должно решать две основные задачи – убрать из организма вещество, вызывающее болезненное пристрастие и предупредить его повторное употребление.</p>
+                  </div>
+                </a>
+              </article>
+              <article class="articles-block__item">
+                <a class="articles-block__content-wrapper" href="article-page.html">
+                  <div class="articles-block__datetime-wrapper">
+                    <time class="articles-block__datetime" datetime="2020-01-18">18.01</time>
+                  </div>
+                  <div class="articles-block__text-wrapper">
+                    <h3 class="articles-block__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro quasi aliquam mollitia iste minus, fugit obcaecati reprehenderit ex deserunt dignissimos itaque facere beatae facilis quisquam voluptatibus, optio fuga voluptatum rerum!</h3>
+                    <p class="articles-block__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates dolorem repellendus nemo similique, numquam. Enim rem, ducimus magnam iusto. Quae officiis nesciunt molestias dicta, qui veniam ipsum cupiditate, iusto sunt?</p>
+                  </div>
+                </a>
+              </article>
+              <article class="articles-block__item">
+                <a class="articles-block__content-wrapper" href="article-page.html">
+                  <div class="articles-block__datetime-wrapper">
+                    <time class="articles-block__datetime" datetime="2020-01-16">16.01</time>
+                  </div>
+                  <div class="articles-block__text-wrapper">
+                    <h3 class="articles-block__title">Лечение от мефедроновой зависимости</h3>
+                    <p class="articles-block__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam blanditiis, perspiciatis in at iusto impedit mollitia nobis doloribus quo, vel culpa nostrum quaerat ratione similique assumenda placeat, animi magni minima?</p>
+                  </div>
+                </a>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="articles-block articles-block-column container">
+          <h2 class="visually-hidden">Блок со статьями</h2>
+          <div class="articles-block__wrapper">
+            <article class="articles-block__main-item">
+              <div class="articles-block__main-img-wrapper">
+                <img class="articles-block__main-img" src="img/banner-info/b6-1.jpg" alt="Мефедроновая зависиомость">
+              </div>
+              <div class="articles-block__link-wrapper">
+                <span class="articles-block__count">35 статей</span>
+                <a class="articles-block__link link desktop-block" href="theme-page.html">Все статьи</a>
+              </div>
+              <h2 class="articles-block__main-title">Созависимость</h2>
+              <a class="articles-block__link link mobile-block" href="theme-page.html">Все статьи по теме</a>
+            </article>
+
+            <div class="articles-block__column">
+              <article class="articles-block__item">
+                <a class="articles-block__content-wrapper" href="article-page.html">
+                  <div class="articles-block__datetime-wrapper">
+                  <time class="articles-block__datetime" datetime="2020-01-20">20.01</time>
+                  </div>
+                  <div class="articles-block__text-wrapper">
+                  <h3 class="articles-block__title">Лечение от мефедроновой зависимости</h3>
+                  <p class="articles-block__description">Лечение любой зависимости должно решать две основные задачи – убрать из организма вещество, вызывающее болезненное пристрастие и предупредить его повторное употребление.</p>
+                  </div>
+                </a>
+              </article>
+              <article class="articles-block__item">
+                <a class="articles-block__content-wrapper" href="article-page.html">
+                  <div class="articles-block__datetime-wrapper">
+                    <time class="articles-block__datetime" datetime="2020-01-18">18.01</time>
+                  </div>
+                  <div class="articles-block__text-wrapper">
+                    <h3 class="articles-block__title">Лечение от мефедроновой зависимости</h3>
+                    <p class="articles-block__description">Лечение любой зависимости должно решать две основные задачи – убрать из организма вещество, вызывающее болезненное пристрастие и предупредить его повторное употребление.</p>
+                  </div>
+                </a>
+              </article>
+              <article class="articles-block__item">
+                <a class="articles-block__content-wrapper" href="article-page.html">
+                  <div class="articles-block__datetime-wrapper">
+                    <time class="articles-block__datetime" datetime="2020-01-16">16.01</time>
+                  </div>
+                  <div class="articles-block__text-wrapper">
+                    <h3 class="articles-block__title">Лечение от мефедроновой зависимости</h3>
+                    <p class="articles-block__description">Лечение любой зависимости должно решать две основные задачи – убрать из организма вещество, вызывающее болезненное пристрастие и предупредить его повторное употребление.</p>
+                  </div>
+                </a>
+              </article>
+            </div>
+          </div>
+        </section>
+      </div>
 
       <article class="banner banner-motivation">
         <div class="banner__wrapper container">
@@ -299,111 +517,329 @@
         </div>
       </article>
 
-      <section class="articles-block articles-block-column container">
-        <h2 class="visually-hidden">Блок со статьями</h2>
-        <div class="articles-block__wrapper">
-          <article class="articles-block__main-item">
-            <div class="articles-block__main-img-wrapper">
-              <img class="articles-block__main-img" src="img/database/database1.jpg" alt="Мефедроновая зависиомость">
-            </div>
-            <div class="articles-block__link-wrapper">
-              <span class="articles-block__count">35 статей</span>
-              <a class="articles-block__link link desktop-block" href="theme-page.html">Все статьи</a>
-            </div>
-            <h2 class="articles-block__main-title">Мефедроновая зависимость</h2>
-            <a class="articles-block__link link mobile-block" href="theme-page.html">Все статьи по теме</a>
-          </article>
+      <div class="articles-toggle-block active" data-id="1">
+        <section class="articles-block articles-block-column container">
+          <h2 class="visually-hidden">Блок со статьями</h2>
+          <div class="articles-block__wrapper">
+            <article class="articles-block__main-item">
+              <div class="articles-block__main-img-wrapper">
+                <img class="articles-block__main-img" src="img/database/database1.jpg" alt="Мефедроновая зависиомость">
+              </div>
+              <div class="articles-block__link-wrapper">
+                <span class="articles-block__count">35 статей</span>
+                <a class="articles-block__link link desktop-block" href="theme-page.html">Все статьи</a>
+              </div>
+              <h2 class="articles-block__main-title">Мефедроновая зависимость</h2>
+              <a class="articles-block__link link mobile-block" href="theme-page.html">Все статьи по теме</a>
+            </article>
 
-          <div class="articles-block__column">
-            <article class="articles-block__item">
-              <a class="articles-block__content-wrapper" href="article-page.html">
-                <div class="articles-block__datetime-wrapper">
-                <time class="articles-block__datetime" datetime="2020-01-20">20.01</time>
-                </div>
-                <div class="articles-block__text-wrapper">
-                <h3 class="articles-block__title">Лечение от мефедроновой зависимости</h3>
-                <p class="articles-block__description">Лечение любой зависимости должно решать две основные задачи – убрать из организма вещество, вызывающее болезненное пристрастие и предупредить его повторное употребление.</p>
-                </div>
-              </a>
-            </article>
-            <article class="articles-block__item">
-              <a class="articles-block__content-wrapper" href="article-page.html">
-                <div class="articles-block__datetime-wrapper">
-                  <time class="articles-block__datetime" datetime="2020-01-18">18.01</time>
-                </div>
-                <div class="articles-block__text-wrapper">
+            <div class="articles-block__column">
+              <article class="articles-block__item">
+                <a class="articles-block__content-wrapper" href="article-page.html">
+                  <div class="articles-block__datetime-wrapper">
+                  <time class="articles-block__datetime" datetime="2020-01-20">20.01</time>
+                  </div>
+                  <div class="articles-block__text-wrapper">
                   <h3 class="articles-block__title">Лечение от мефедроновой зависимости</h3>
                   <p class="articles-block__description">Лечение любой зависимости должно решать две основные задачи – убрать из организма вещество, вызывающее болезненное пристрастие и предупредить его повторное употребление.</p>
-                </div>
-              </a>
-            </article>
-            <article class="articles-block__item">
-              <a class="articles-block__content-wrapper" href="article-page.html">
-                <div class="articles-block__datetime-wrapper">
-                  <time class="articles-block__datetime" datetime="2020-01-16">16.01</time>
-                </div>
-                <div class="articles-block__text-wrapper">
-                  <h3 class="articles-block__title">Лечение от мефедроновой зависимости</h3>
-                  <p class="articles-block__description">Лечение любой зависимости должно решать две основные задачи – убрать из организма вещество, вызывающее болезненное пристрастие и предупредить его повторное употребление.</p>
-                </div>
-              </a>
-            </article>
+                  </div>
+                </a>
+              </article>
+              <article class="articles-block__item">
+                <a class="articles-block__content-wrapper" href="article-page.html">
+                  <div class="articles-block__datetime-wrapper">
+                    <time class="articles-block__datetime" datetime="2020-01-18">18.01</time>
+                  </div>
+                  <div class="articles-block__text-wrapper">
+                    <h3 class="articles-block__title">Лечение от мефедроновой зависимости</h3>
+                    <p class="articles-block__description">Лечение любой зависимости должно решать две основные задачи – убрать из организма вещество, вызывающее болезненное пристрастие и предупредить его повторное употребление.</p>
+                  </div>
+                </a>
+              </article>
+              <article class="articles-block__item">
+                <a class="articles-block__content-wrapper" href="article-page.html">
+                  <div class="articles-block__datetime-wrapper">
+                    <time class="articles-block__datetime" datetime="2020-01-16">16.01</time>
+                  </div>
+                  <div class="articles-block__text-wrapper">
+                    <h3 class="articles-block__title">Лечение от мефедроновой зависимости</h3>
+                    <p class="articles-block__description">Лечение любой зависимости должно решать две основные задачи – убрать из организма вещество, вызывающее болезненное пристрастие и предупредить его повторное употребление.</p>
+                  </div>
+                </a>
+              </article>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section class="articles-block articles-block-column container">
-        <h2 class="visually-hidden">Блок со статьями</h2>
-        <div class="articles-block__wrapper">
-          <article class="articles-block__main-item">
-            <div class="articles-block__main-img-wrapper">
-              <img class="articles-block__main-img" src="img/database/database2.jpg" alt="Мефедроновая зависиомость">
-            </div>
-            <div class="articles-block__link-wrapper">
-              <span class="articles-block__count">35 статей</span>
-              <a class="articles-block__link link desktop-block" href="theme-page.html">Все статьи</a>
-            </div>
-            <h2 class="articles-block__main-title">Созависимость</h2>
-            <a class="articles-block__link link mobile-block" href="theme-page.html">Все статьи по теме</a>
-          </article>
-
-          <div class="articles-block__column">
-            <article class="articles-block__item">
-              <a class="articles-block__content-wrapper" href="article-page.html">
-                <div class="articles-block__datetime-wrapper">
-                <time class="articles-block__datetime" datetime="2020-01-20">20.01</time>
-                </div>
-                <div class="articles-block__text-wrapper">
-                <h3 class="articles-block__title">Лечение от мефедроновой зависимости</h3>
-                <p class="articles-block__description">Лечение любой зависимости должно решать две основные задачи – убрать из организма вещество, вызывающее болезненное пристрастие и предупредить его повторное употребление.</p>
-                </div>
-              </a>
+        <section class="articles-block articles-block-column container">
+          <h2 class="visually-hidden">Блок со статьями</h2>
+          <div class="articles-block__wrapper">
+            <article class="articles-block__main-item">
+              <div class="articles-block__main-img-wrapper">
+                <img class="articles-block__main-img" src="img/database/database2.jpg" alt="Мефедроновая зависиомость">
+              </div>
+              <div class="articles-block__link-wrapper">
+                <span class="articles-block__count">35 статей</span>
+                <a class="articles-block__link link desktop-block" href="theme-page.html">Все статьи</a>
+              </div>
+              <h2 class="articles-block__main-title">Созависимость</h2>
+              <a class="articles-block__link link mobile-block" href="theme-page.html">Все статьи по теме</a>
             </article>
-            <article class="articles-block__item">
-              <a class="articles-block__content-wrapper" href="article-page.html">
-                <div class="articles-block__datetime-wrapper">
-                  <time class="articles-block__datetime" datetime="2020-01-18">18.01</time>
-                </div>
-                <div class="articles-block__text-wrapper">
+
+            <div class="articles-block__column">
+              <article class="articles-block__item">
+                <a class="articles-block__content-wrapper" href="article-page.html">
+                  <div class="articles-block__datetime-wrapper">
+                  <time class="articles-block__datetime" datetime="2020-01-20">20.01</time>
+                  </div>
+                  <div class="articles-block__text-wrapper">
                   <h3 class="articles-block__title">Лечение от мефедроновой зависимости</h3>
                   <p class="articles-block__description">Лечение любой зависимости должно решать две основные задачи – убрать из организма вещество, вызывающее болезненное пристрастие и предупредить его повторное употребление.</p>
-                </div>
-              </a>
-            </article>
-            <article class="articles-block__item">
-              <a class="articles-block__content-wrapper" href="article-page.html">
-                <div class="articles-block__datetime-wrapper">
-                  <time class="articles-block__datetime" datetime="2020-01-16">16.01</time>
-                </div>
-                <div class="articles-block__text-wrapper">
-                  <h3 class="articles-block__title">Лечение от мефедроновой зависимости</h3>
-                  <p class="articles-block__description">Лечение любой зависимости должно решать две основные задачи – убрать из организма вещество, вызывающее болезненное пристрастие и предупредить его повторное употребление.</p>
-                </div>
-              </a>
-            </article>
+                  </div>
+                </a>
+              </article>
+              <article class="articles-block__item">
+                <a class="articles-block__content-wrapper" href="article-page.html">
+                  <div class="articles-block__datetime-wrapper">
+                    <time class="articles-block__datetime" datetime="2020-01-18">18.01</time>
+                  </div>
+                  <div class="articles-block__text-wrapper">
+                    <h3 class="articles-block__title">Лечение от мефедроновой зависимости</h3>
+                    <p class="articles-block__description">Лечение любой зависимости должно решать две основные задачи – убрать из организма вещество, вызывающее болезненное пристрастие и предупредить его повторное употребление.</p>
+                  </div>
+                </a>
+              </article>
+              <article class="articles-block__item">
+                <a class="articles-block__content-wrapper" href="article-page.html">
+                  <div class="articles-block__datetime-wrapper">
+                    <time class="articles-block__datetime" datetime="2020-01-16">16.01</time>
+                  </div>
+                  <div class="articles-block__text-wrapper">
+                    <h3 class="articles-block__title">Лечение от мефедроновой зависимости</h3>
+                    <p class="articles-block__description">Лечение любой зависимости должно решать две основные задачи – убрать из организма вещество, вызывающее болезненное пристрастие и предупредить его повторное употребление.</p>
+                  </div>
+                </a>
+              </article>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
+
+      <div class="articles-toggle-block" data-id="2">
+        <section class="articles-block articles-block-column container">
+          <h2 class="visually-hidden">Блок со статьями</h2>
+          <div class="articles-block__wrapper">
+            <article class="articles-block__main-item">
+              <div class="articles-block__main-img-wrapper">
+                <img class="articles-block__main-img" src="img/banner-info/b1-1.jpg" alt="Мефедроновая зависиомость">
+              </div>
+              <div class="articles-block__link-wrapper">
+                <span class="articles-block__count">35 статей</span>
+                <a class="articles-block__link link desktop-block" href="theme-page.html">Все статьи</a>
+              </div>
+              <h2 class="articles-block__main-title">Мефедроновая зависимость</h2>
+              <a class="articles-block__link link mobile-block" href="theme-page.html">Все статьи по теме</a>
+            </article>
+
+            <div class="articles-block__column">
+              <article class="articles-block__item">
+                <a class="articles-block__content-wrapper" href="article-page.html">
+                  <div class="articles-block__datetime-wrapper">
+                  <time class="articles-block__datetime" datetime="2020-01-20">20.01</time>
+                  </div>
+                  <div class="articles-block__text-wrapper">
+                  <h3 class="articles-block__title">LOREM TUTULOREM</h3>
+                  <p class="articles-block__description">Лечение любой зависимости должно решать две основные задачи – убрать из организма вещество, вызывающее болезненное пристрастие и предупредить его повторное употребление.</p>
+                  </div>
+                </a>
+              </article>
+              <article class="articles-block__item">
+                <a class="articles-block__content-wrapper" href="article-page.html">
+                  <div class="articles-block__datetime-wrapper">
+                    <time class="articles-block__datetime" datetime="2020-01-18">18.01</time>
+                  </div>
+                  <div class="articles-block__text-wrapper">
+                    <h3 class="articles-block__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro quasi aliquam mollitia iste minus, fugit obcaecati reprehenderit ex deserunt dignissimos itaque facere beatae facilis quisquam voluptatibus, optio fuga voluptatum rerum!</h3>
+                    <p class="articles-block__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates dolorem repellendus nemo similique, numquam. Enim rem, ducimus magnam iusto. Quae officiis nesciunt molestias dicta, qui veniam ipsum cupiditate, iusto sunt?</p>
+                  </div>
+                </a>
+              </article>
+              <article class="articles-block__item">
+                <a class="articles-block__content-wrapper" href="article-page.html">
+                  <div class="articles-block__datetime-wrapper">
+                    <time class="articles-block__datetime" datetime="2020-01-16">16.01</time>
+                  </div>
+                  <div class="articles-block__text-wrapper">
+                    <h3 class="articles-block__title">Лечение от мефедроновой зависимости</h3>
+                    <p class="articles-block__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam blanditiis, perspiciatis in at iusto impedit mollitia nobis doloribus quo, vel culpa nostrum quaerat ratione similique assumenda placeat, animi magni minima?</p>
+                  </div>
+                </a>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="articles-block articles-block-column container">
+          <h2 class="visually-hidden">Блок со статьями</h2>
+          <div class="articles-block__wrapper">
+            <article class="articles-block__main-item">
+              <div class="articles-block__main-img-wrapper">
+                <img class="articles-block__main-img" src="img/banner-info/b2-1.jpg" alt="Мефедроновая зависиомость">
+              </div>
+              <div class="articles-block__link-wrapper">
+                <span class="articles-block__count">35 статей</span>
+                <a class="articles-block__link link desktop-block" href="theme-page.html">Все статьи</a>
+              </div>
+              <h2 class="articles-block__main-title">Созависимость</h2>
+              <a class="articles-block__link link mobile-block" href="theme-page.html">Все статьи по теме</a>
+            </article>
+
+            <div class="articles-block__column">
+              <article class="articles-block__item">
+                <a class="articles-block__content-wrapper" href="article-page.html">
+                  <div class="articles-block__datetime-wrapper">
+                  <time class="articles-block__datetime" datetime="2020-01-20">20.01</time>
+                  </div>
+                  <div class="articles-block__text-wrapper">
+                  <h3 class="articles-block__title">Лечение от мефедроновой зависимости</h3>
+                  <p class="articles-block__description">Лечение любой зависимости должно решать две основные задачи – убрать из организма вещество, вызывающее болезненное пристрастие и предупредить его повторное употребление.</p>
+                  </div>
+                </a>
+              </article>
+              <article class="articles-block__item">
+                <a class="articles-block__content-wrapper" href="article-page.html">
+                  <div class="articles-block__datetime-wrapper">
+                    <time class="articles-block__datetime" datetime="2020-01-18">18.01</time>
+                  </div>
+                  <div class="articles-block__text-wrapper">
+                    <h3 class="articles-block__title">Лечение от мефедроновой зависимости</h3>
+                    <p class="articles-block__description">Лечение любой зависимости должно решать две основные задачи – убрать из организма вещество, вызывающее болезненное пристрастие и предупредить его повторное употребление.</p>
+                  </div>
+                </a>
+              </article>
+              <article class="articles-block__item">
+                <a class="articles-block__content-wrapper" href="article-page.html">
+                  <div class="articles-block__datetime-wrapper">
+                    <time class="articles-block__datetime" datetime="2020-01-16">16.01</time>
+                  </div>
+                  <div class="articles-block__text-wrapper">
+                    <h3 class="articles-block__title">Лечение от мефедроновой зависимости</h3>
+                    <p class="articles-block__description">Лечение любой зависимости должно решать две основные задачи – убрать из организма вещество, вызывающее болезненное пристрастие и предупредить его повторное употребление.</p>
+                  </div>
+                </a>
+              </article>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="articles-toggle-block" data-id="3">
+        <section class="articles-block articles-block-column container">
+          <h2 class="visually-hidden">Блок со статьями</h2>
+          <div class="articles-block__wrapper">
+            <article class="articles-block__main-item">
+              <div class="articles-block__main-img-wrapper">
+                <img class="articles-block__main-img" src="img/banner-info/b7-1.jpg" alt="Мефедроновая зависиомость">
+              </div>
+              <div class="articles-block__link-wrapper">
+                <span class="articles-block__count">35 статей</span>
+                <a class="articles-block__link link desktop-block" href="theme-page.html">Все статьи</a>
+              </div>
+              <h2 class="articles-block__main-title">Мефедроновая зависимость</h2>
+              <a class="articles-block__link link mobile-block" href="theme-page.html">Все статьи по теме</a>
+            </article>
+
+            <div class="articles-block__column">
+              <article class="articles-block__item">
+                <a class="articles-block__content-wrapper" href="article-page.html">
+                  <div class="articles-block__datetime-wrapper">
+                  <time class="articles-block__datetime" datetime="2020-01-20">20.01</time>
+                  </div>
+                  <div class="articles-block__text-wrapper">
+                  <h3 class="articles-block__title">LOREM TUTULOREM</h3>
+                  <p class="articles-block__description">Лечение любой зависимости должно решать две основные задачи – убрать из организма вещество, вызывающее болезненное пристрастие и предупредить его повторное употребление.</p>
+                  </div>
+                </a>
+              </article>
+              <article class="articles-block__item">
+                <a class="articles-block__content-wrapper" href="article-page.html">
+                  <div class="articles-block__datetime-wrapper">
+                    <time class="articles-block__datetime" datetime="2020-01-18">18.01</time>
+                  </div>
+                  <div class="articles-block__text-wrapper">
+                    <h3 class="articles-block__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro quasi aliquam mollitia iste minus, fugit obcaecati reprehenderit ex deserunt dignissimos itaque facere beatae facilis quisquam voluptatibus, optio fuga voluptatum rerum!</h3>
+                    <p class="articles-block__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates dolorem repellendus nemo similique, numquam. Enim rem, ducimus magnam iusto. Quae officiis nesciunt molestias dicta, qui veniam ipsum cupiditate, iusto sunt?</p>
+                  </div>
+                </a>
+              </article>
+              <article class="articles-block__item">
+                <a class="articles-block__content-wrapper" href="article-page.html">
+                  <div class="articles-block__datetime-wrapper">
+                    <time class="articles-block__datetime" datetime="2020-01-16">16.01</time>
+                  </div>
+                  <div class="articles-block__text-wrapper">
+                    <h3 class="articles-block__title">Лечение от мефедроновой зависимости</h3>
+                    <p class="articles-block__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam blanditiis, perspiciatis in at iusto impedit mollitia nobis doloribus quo, vel culpa nostrum quaerat ratione similique assumenda placeat, animi magni minima?</p>
+                  </div>
+                </a>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="articles-block articles-block-column container">
+          <h2 class="visually-hidden">Блок со статьями</h2>
+          <div class="articles-block__wrapper">
+            <article class="articles-block__main-item">
+              <div class="articles-block__main-img-wrapper">
+                <img class="articles-block__main-img" src="img/banner-info/b8-1.jpg" alt="Мефедроновая зависиомость">
+              </div>
+              <div class="articles-block__link-wrapper">
+                <span class="articles-block__count">35 статей</span>
+                <a class="articles-block__link link desktop-block" href="theme-page.html">Все статьи</a>
+              </div>
+              <h2 class="articles-block__main-title">Созависимость</h2>
+              <a class="articles-block__link link mobile-block" href="theme-page.html">Все статьи по теме</a>
+            </article>
+
+            <div class="articles-block__column">
+              <article class="articles-block__item">
+                <a class="articles-block__content-wrapper" href="article-page.html">
+                  <div class="articles-block__datetime-wrapper">
+                  <time class="articles-block__datetime" datetime="2020-01-20">20.01</time>
+                  </div>
+                  <div class="articles-block__text-wrapper">
+                  <h3 class="articles-block__title">Лечение от мефедроновой зависимости</h3>
+                  <p class="articles-block__description">Лечение любой зависимости должно решать две основные задачи – убрать из организма вещество, вызывающее болезненное пристрастие и предупредить его повторное употребление.</p>
+                  </div>
+                </a>
+              </article>
+              <article class="articles-block__item">
+                <a class="articles-block__content-wrapper" href="article-page.html">
+                  <div class="articles-block__datetime-wrapper">
+                    <time class="articles-block__datetime" datetime="2020-01-18">18.01</time>
+                  </div>
+                  <div class="articles-block__text-wrapper">
+                    <h3 class="articles-block__title">Лечение от мефедроновой зависимости</h3>
+                    <p class="articles-block__description">Лечение любой зависимости должно решать две основные задачи – убрать из организма вещество, вызывающее болезненное пристрастие и предупредить его повторное употребление.</p>
+                  </div>
+                </a>
+              </article>
+              <article class="articles-block__item">
+                <a class="articles-block__content-wrapper" href="article-page.html">
+                  <div class="articles-block__datetime-wrapper">
+                    <time class="articles-block__datetime" datetime="2020-01-16">16.01</time>
+                  </div>
+                  <div class="articles-block__text-wrapper">
+                    <h3 class="articles-block__title">Лечение от мефедроновой зависимости</h3>
+                    <p class="articles-block__description">Лечение любой зависимости должно решать две основные задачи – убрать из организма вещество, вызывающее болезненное пристрастие и предупредить его повторное употребление.</p>
+                  </div>
+                </a>
+              </article>
+            </div>
+          </div>
+        </section>
+      </div>
 
       <article class="banner banner--mb0 banner-therapy">
         <div class="banner__bg-img-wrapper banner-img-therapy">
