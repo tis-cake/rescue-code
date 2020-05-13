@@ -5,9 +5,22 @@
 .sections-toggle__list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 
-  width: 79.5rem;
+  // width: 79.5rem;
+  width: 130rem;
   .margin-inline(@a);
+}
+
+.sections-toggle__item {
+  width: 30%;
+  margin-bottom: 2.5rem;
+  margin-right: 4.5rem;
+  text-align: center;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
 }
 
 .sections-toggle__btn {
@@ -53,12 +66,14 @@
 }
 
 .active.sections-toggle__btn {
+  display: inline-block;
   font-weight: 700;
   &::before {
     width: 100%;
   }
 }
 
+.sections-toggle__select,
 .sections-toggle__title,
 .sections-toggle__form {
   display: none;
@@ -85,7 +100,11 @@
   }
 
   .sections-toggle__select {
+    position: relative;
+
+    display: block;
     width: 100%;
+    margin-bottom: @m20px;
     padding-top: @m5px;
     padding-bottom: @m8px;
 
@@ -95,10 +114,10 @@
     text-transform: uppercase;
 
     background-color: transparent;
-    background-image: url('../img/svg/arrow-bottom-b.svg');
-    background-repeat: no-repeat;
-    background-position: right @m6px top 50%;
-    background-size: @m25px;
+    // background-image: url('../img/svg/arrow-bottom-b.svg');
+    // background-repeat: no-repeat;
+    // background-position: right @m6px top 50%;
+    // background-size: @m25px;
 
     border: none;
     border-radius: 0;
@@ -109,6 +128,56 @@
             appearance: none;
 
     outline: none;
+
+    &::after {
+      position: absolute;
+      content: '';
+
+      transform: translateY(-50%);
+      top: 50%;
+      right: 0;
+
+      width: @m30px;
+      height: @m30px;
+
+      background-image: url('../img/svg/arrow-bottom-b.svg');
+      background-repeat: no-repeat;
+      // background-position: right @m6px top 50%;
+      background-position: center;
+      background-size: @m25px;
+
+      transition: 0.5s;
+    }
+
+    &.active {
+      &::after {
+        transform: translateY(-50%) rotate(180deg);
+      }
+    }
+  }
+
+  .sections-toggle__list {
+    flex-direction: column;
+    width: @a;
+  }
+
+  .sections-toggle__item {
+    width: 100%;
+    margin-left: 0;
+    padding-top: @m10px;
+    padding-bottom: @m10px;
+    text-align: left;
+  }
+
+  .sections-toggle__btn {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: @m20px;
+
+    &::before {
+      content: none;
+    }
   }
 
 }

@@ -171,6 +171,16 @@ $(document).ready(function () {
   });
 });
 
+$(document).ready(function () {
+  if(width <= 755) {
+    $('.sections-toggle__select').on("click", function(evt) {
+      evt.preventDefault();
+      $(this).toggleClass('active');
+      $('.sections-toggle__list').slideToggle();
+    });
+  }
+});
+
 // автофокус поиска
 $(document).ready(function () {
   if ($("section").hasClass("search") && width > 755) {
