@@ -2878,7 +2878,7 @@ body .mobile-block {
   font-size: 2.4rem;
   font-weight: 400;
 }
-.price__title + p,
+.price__title ~ p,
 .price__description {
   width: 30.4rem;
   line-height: 1.9rem;
@@ -2917,7 +2917,7 @@ body .mobile-block {
     margin-bottom: 2.933vw;
     font-size: 4vw;
   }
-  .price__title + p,
+  .price__title ~ p,
   .price__description {
     width: 40.533vw;
     line-height: 3.2vw;
@@ -4740,10 +4740,7 @@ body .mobile-block {
   margin-right: 1.3rem;
 }
 .article-rating__area {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  width: 16.2rem;
+  width: auto;
 }
 .article-rating__area:not(:checked) > input {
   display: none;
