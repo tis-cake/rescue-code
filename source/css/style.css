@@ -3616,8 +3616,11 @@ body .mobile-block {
      object-fit: cover;
 }
 .rehab-main__img-wrapper-column {
-  width: 85.8rem;
+  width: 44.688vw;
+  height: 69.3rem;
   margin-left: auto;
+  position: absolute;
+  right: 0;
 }
 .rehab-main__map-wrapper-column {
   width: 66.4rem;
@@ -3700,6 +3703,7 @@ body .mobile-block {
     margin-bottom: 8vw;
   }
   .rehab-main__img-wrapper-column {
+    position: relative;
     width: 100%;
     height: 82vw;
   }
@@ -3712,6 +3716,13 @@ body .mobile-block {
   .rehab-main__map-wrapper-column {
     width: 100%;
     height: 98.933vw;
+  }
+}
+@media (min-width: 1921px) {
+  .rehab-main__img-wrapper-column {
+    width: 858px;
+    right: 50%;
+    transform: translateX(112%);
   }
 }
 .gallery-swiper {
