@@ -57,6 +57,165 @@ $(document).ready(function () {
   }
 });
 
+// updateFraction START
+
+// function updateFraction(slider) {
+//   var sliderActiveIndex = slider.activeIndex + 1;
+//   var sliderElement = slider.el;
+//   var fractionActiveZero = sliderElement.querySelector('.swiper-pagination-current-zero');
+
+//   if (sliderActiveIndex >= 10) {
+//     fractionActiveZero.classList.add('hidden');
+//   } else if (sliderActiveIndex < 10) {
+//     fractionActiveZero.classList.remove('hidden');
+//   }
+// }
+
+function updateFraction(slider) {
+  // если loop = true -> realIndex, иначе activeIndex
+
+  var { params, realIndex } = slider;
+
+  slider.$el
+    .find(`.${params.pagination.currentClass}`)
+    // .text(`${activeIndex + 1} - ${activeIndex + params.slidesPerView}`);
+    // .text(`${activeIndex + 1}`);
+
+  $('.swiper-pagination-slash').text(`${slider.realIndex + 2} ...`);
+
+  // slider.$el
+    // .find(`.${params.pagination.totalClass}`)
+    // .text(slider.slides.length)
+    // .text(`${realIndex + 2} ${realIndex + 3} ... ${slider.slides.length - 1}`)
+}
+
+// mainSwiper.on('slideChange', function () {
+//   updateFraction(this);
+// });
+
+// updateFraction END
+
+// [rehab-page]
+// галерея рехаба
+$(document).ready(function () {
+  var doubleGallery = $('.gallery-swiper');
+
+  // если блок с этим слайдером есть на странице
+  if (doubleGallery.length != 0) {
+    var gallerySwiperMain = new Swiper('#gallery-swiper', {
+      slidesPerView: 3.5,
+      spaceBetween: 32,
+
+      loop: true,
+      centeredSlides: true,
+
+      breakpoints: {
+        1921: {
+          slidesPerView: 3,
+          slidesOffsetBefore: 0,
+        },
+        800: {
+          slidesPerView: 3.5,
+        },
+        300: {
+          slidesPerView: 2,
+          slidesOffsetBefore: 0,
+          spaceBetween: 20,
+        }
+      },
+
+      pagination: {
+        el: '.gallery-progressbar',
+        type: 'progressbar'
+      }
+    });
+
+    // параметры для пагинации
+    var paginationParam = {
+      el: '.gallery-pagination',
+      clickable: true,
+    }
+
+    // количество слайдов (учитывая зацикленность)
+    var gallerySlidesLength = $('.gallery-swiper__slide:not(.swiper-slide-duplicate)').length;
+
+    // если элементов > 6, то пагинация - fraction-формата, иначе - bullet-формата
+    if (gallerySlidesLength > 6) {
+      paginationParam.type = 'fraction';
+      paginationParam.renderFraction = function (currentClass, totalClass) {
+        return '<span class="' + currentClass + '"></span>' +
+               '<span class="swiper-pagination-slash">/</span>' +
+               '<span class="' + totalClass + '"></span>';
+        }
+
+      if (gallerySlidesLength < 10) {
+        $('.gallery-pagination').addClass('swiper-pagination-fraction-small');
+      }
+
+    } else {
+      paginationParam.renderBullet = function (index, className) {
+        return '<span class="' + className + '">' + (index + 1) + '</span>';
+      }
+    }
+
+    var gallerySwiperPagination = new Swiper('#gallery-swiper-pagination', {
+      slidesPerView: 3.5,
+      spaceBetween: 32,
+
+      loop: true,
+      centeredSlides: true,
+
+      // on: {
+      //   init() {
+      //     setTimeout(updateFraction, 0, this)
+      //   },
+      //   slideChange() {
+      //     updateFraction(this);
+      //   },
+      //   resize() {
+      //     updateFraction(this);
+      //   },
+      // },
+
+      breakpoints: {
+        1921: {
+          slidesPerView: 3,
+          slidesOffsetBefore: 0,
+        },
+        800: {
+          slidesPerView: 3.5,
+        },
+        300: {
+          slidesPerView: 2,
+          slidesOffsetBefore: 0,
+          spaceBetween: 20,
+        }
+      },
+
+      pagination: paginationParam,
+
+      // pagination: {
+      //   el: '.gallery-pagination',
+      //   clickable: true,
+
+      //   renderBullet: function (index, className) {
+      //     return '<span class="' + className + '">' + (index + 1) + '</span>';
+      //   }
+
+      //   // type: 'fraction',
+      //   // renderFraction: function (currentClass, totalClass) {
+      //   //   return '<span class="' + currentClass + '"></span>' +
+      //   //          '<span class="swiper-pagination-slash">/</span>' +
+      //   //          '<span class="' + totalClass + '"></span>';
+      //   // },
+      // },
+    });
+
+    gallerySwiperMain.controller.control = gallerySwiperPagination;
+    gallerySwiperPagination.controller.control = gallerySwiperMain;
+  }
+});
+
 // слайдер программы
 $(document).ready(function () {
   var doubleProgram = $('.program-swiper');
@@ -197,75 +356,75 @@ $(document).ready(function () {
   }
 });
 
-// [rehab-page]
-// галерея рехаба
-$(document).ready(function () {
-  var doubleGallery = $('.gallery-swiper');
-  // если блок с этим слайдером есть на странице
-  if (doubleGallery.length != 0) {
-    var gallerySwiperMain = new Swiper('#gallery-swiper', {
-      slidesPerView: 3.5,
-      spaceBetween: 32,
+// // [rehab-page]
+// // галерея рехаба
+// $(document).ready(function () {
+//   var doubleGallery = $('.gallery-swiper');
+//   // если блок с этим слайдером есть на странице
+//   if (doubleGallery.length != 0) {
+//     var gallerySwiperMain = new Swiper('#gallery-swiper', {
+//       slidesPerView: 3.5,
+//       spaceBetween: 32,
 
-      loop: true,
-      centeredSlides: true,
+//       loop: true,
+//       centeredSlides: true,
 
-      breakpoints: {
-        1921: {
-          slidesPerView: 3,
-          slidesOffsetBefore: 0,
-        },
-        800: {
-          slidesPerView: 3.5,
-        },
-        300: {
-          slidesPerView: 2,
-          slidesOffsetBefore: 0,
-          spaceBetween: 20,
-        }
-      },
+//       breakpoints: {
+//         1921: {
+//           slidesPerView: 3,
+//           slidesOffsetBefore: 0,
+//         },
+//         800: {
+//           slidesPerView: 3.5,
+//         },
+//         300: {
+//           slidesPerView: 2,
+//           slidesOffsetBefore: 0,
+//           spaceBetween: 20,
+//         }
+//       },
 
-      pagination: {
-        el: '.gallery-progressbar',
-        type: 'progressbar'
-      }
-    });
+//       pagination: {
+//         el: '.gallery-progressbar',
+//         type: 'progressbar'
+//       }
+//     });
 
-    var gallerySwiperPagination = new Swiper('#gallery-swiper-pagination', {
-      slidesPerView: 3.5,
-      spaceBetween: 32,
+//     var gallerySwiperPagination = new Swiper('#gallery-swiper-pagination', {
+//       slidesPerView: 3.5,
+//       spaceBetween: 32,
 
-      loop: true,
-      centeredSlides: true,
+//       loop: true,
+//       centeredSlides: true,
 
-      breakpoints: {
-        1921: {
-          slidesPerView: 3,
-          slidesOffsetBefore: 0,
-        },
-        800: {
-          slidesPerView: 3.5,
-        },
-        300: {
-          slidesPerView: 2,
-          slidesOffsetBefore: 0,
-          spaceBetween: 20,
-        }
-      },
+//       breakpoints: {
+//         1921: {
+//           slidesPerView: 3,
+//           slidesOffsetBefore: 0,
+//         },
+//         800: {
+//           slidesPerView: 3.5,
+//         },
+//         300: {
+//           slidesPerView: 2,
+//           slidesOffsetBefore: 0,
+//           spaceBetween: 20,
+//         }
+//       },
 
-      pagination: {
-        el: '.gallery-pagination',
-        clickable: true,
-        renderBullet: function (index, className) {
-          return '<span class="' + className + '">' + (index + 1) + '</span>';
-        }
-      },
-    });
+//       pagination: {
+//         el: '.gallery-pagination',
+//         clickable: true,
+//         renderBullet: function (index, className) {
+//           return '<span class="' + className + '">' + (index + 1) + '</span>';
+//         }
+//       },
+//     });
 
-    gallerySwiperMain.controller.control = gallerySwiperPagination;
-    gallerySwiperPagination.controller.control = gallerySwiperMain;
-  }
-});
+//     gallerySwiperMain.controller.control = gallerySwiperPagination;
+//     gallerySwiperPagination.controller.control = gallerySwiperMain;
+//   }
+// });
 
 // if (gal.length != 0) {
 //   // galleryInit();
