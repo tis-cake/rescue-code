@@ -66,13 +66,13 @@
   }
 
   .active.header {
-    height: 100vh;      // убрать если js подключен
+    min-height: 100vh;      // убрать если js подключен
     overflow-y: scroll; // убрать если js подключен
     overflow-x: hidden; // убрать если js подключен
   }
 
   .no-js.header {
-    // position: relative;
+    position: relative;
     height: 200vw; // 1500px;
     overflow: visible;
   }
@@ -83,7 +83,7 @@
     // overflow-y: scroll; // убрать если js подключен
     // overflow-x: hidden; // убрать если js подключен
 
-    position: relative;
+    // position: relative;
     z-index: 10;
     background-color: #303030;
 
@@ -100,6 +100,10 @@
     .header__phone-wrapper {
       display: none;
     }
+  }
+
+  .active.header {
+    position: fixed;
   }
 
   .active.header * {

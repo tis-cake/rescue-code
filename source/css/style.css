@@ -347,6 +347,12 @@ input[type="radio"].visually-hidden {
 body .mobile-block {
   display: none;
 }
+.last-block .banner,
+.last-block > article,
+.last-block > section,
+.last-block > div {
+  margin-bottom: 0;
+}
 @media (max-width: 755px) {
   .container,
   .container-out-right {
@@ -484,17 +490,17 @@ body .mobile-block {
     display: none;
   }
   .active.header {
-    height: 100vh;
+    min-height: 100vh;
     overflow-y: scroll;
     overflow-x: hidden;
   }
   .no-js.header {
+    position: relative;
     height: 200vw;
     overflow: visible;
   }
   .no-js.header,
   .active.header {
-    position: relative;
     z-index: 10;
     background-color: #303030;
   }
@@ -512,6 +518,9 @@ body .mobile-block {
   .no-js.header .header__phone-wrapper,
   .active.header .header__phone-wrapper {
     display: none;
+  }
+  .active.header {
+    position: fixed;
   }
   .active.header * {
     color: #fff;
