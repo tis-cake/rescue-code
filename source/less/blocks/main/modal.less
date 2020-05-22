@@ -4,11 +4,15 @@
   z-index: 100;
   position: fixed;
 
-  top: 50%;
+  // top: 50%;
+  top: 30%;
   left: 50%;
-  transform: translate(-50%);
+  transform: translateX(-50%);
 
-  width: 56.8rem;
+  // width: 56.8rem;
+  width: 40%;
+  height: auto;
+  padding: 6rem 2rem;
 
   border-radius: 20px;
   background-color: #ffffff;
@@ -20,22 +24,13 @@
   display: block;
 }
 
-// .modal--callback.mobile-call {
-//   top: 20%;
-// }
-
 .modal--region {
-  top: 30%;
-
   width: 70%;
-  height: auto;
-  padding: 6rem 2rem;
-  background-color: #fff;
 }
 
 .modal__title {
   margin-bottom: 6rem;
-  font-size: 2.4rem;
+  font-size: 3rem;
   text-align: center;
 }
 
@@ -47,8 +42,8 @@
   display: flex;
   justify-content: center;
 
-  width: 6rem;
-  height: 6rem;
+  width: 5rem;
+  height: 5rem;
   padding: 0;
 
   color: transparent;
@@ -115,6 +110,7 @@
 
 .modal__input-phone {
   width: 43.9%;
+  margin-right: 2rem;
   font-size: 2.4rem;
 }
 
@@ -149,12 +145,15 @@
 
 @media (max-width: @mobile-width) {
   .modal {
+    top: 50%;
+    transform: translate(-50%, -50%);
     width: @m668px;
+    padding: @m60px @m10px;
+    border-radius: 15px;
   }
 
   .modal--region {
     top: 20%;
-    padding: @m60px @m10px;
   }
 
   .modal__title {
