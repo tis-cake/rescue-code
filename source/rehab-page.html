@@ -11,6 +11,7 @@
     <link rel="preload" href="fonts/MyriadPro/regular/MyriadPro-Regular.woff2" as="font" type="font/woff2" crossorigin="">
     <link rel="stylesheet" href="css/normalise.css">
     <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -157,20 +158,28 @@
         <div class="swiper-container swiper-container--progressbar" id="gallery-swiper">
           <div class="swiper-wrapper">
 
-            <div class="swiper-slide gallery-swiper__slide">
-              <img class="gallery-swiper__img" src="img/gallery-swiper/gs1.jpg" alt="">
+            <div class="swiper-slide">
+              <a data-fancybox="images" href="img/gallery-swiper/gs1.jpg" class="gallery-swiper__slide">
+                <img class="gallery-swiper__img" src="img/gallery-swiper/gs1.jpg" alt="">
+              </a>
             </div>
 
-            <div class="swiper-slide gallery-swiper__slide">
-              <img class="gallery-swiper__img" src="img/gallery-swiper/gs2.jpg" alt="">
+            <div class="swiper-slide">
+              <a data-fancybox="images" href="img/gallery-swiper/gs2.jpg" class="gallery-swiper__slide">
+                <img class="gallery-swiper__img" src="img/gallery-swiper/gs2.jpg" alt="">
+              </a>
             </div>
 
-            <div class="swiper-slide gallery-swiper__slide">
-              <img class="gallery-swiper__img" src="img/gallery-swiper/gs3.jpg" alt="">
+            <div class="swiper-slide">
+              <a data-fancybox="images" href="img/gallery-swiper/gs3.jpg" class="gallery-swiper__slide">
+                <img class="gallery-swiper__img" src="img/gallery-swiper/gs3.jpg" alt="">
+              </a>
             </div>
 
-            <div class="swiper-slide gallery-swiper__slide">
-              <img class="gallery-swiper__img" src="img/gallery-swiper/gs4.jpg" alt="">
+            <div class="swiper-slide">
+              <a data-fancybox="images" href="img/gallery-swiper/gs4.jpg" class="gallery-swiper__slide">
+                <img class="gallery-swiper__img" src="img/gallery-swiper/gs4.jpg" alt="">
+              </a>
             </div>
           </div>
           <div class="swiper-pagination gallery-progressbar"></div>
@@ -514,6 +523,7 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/jquery.marquee.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/swiper.min.js"></script>
 
     <script src="js/main.js"></script>

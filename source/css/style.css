@@ -3776,6 +3776,7 @@ body .mb {
   font-weight: 300;
 }
 .gallery-swiper__slide {
+  display: block;
   height: 45.5rem;
 }
 @media (max-width: 755px) {
@@ -5257,5 +5258,3 @@ body .mb {
     font-size: 4vw;
   }
 }
-
-/*# sourceMappingURL=style.css.map */

@@ -216,6 +216,12 @@ $(document).ready(function () {
   }
 });
 
+$().fancybox({
+    selector : '.gallery-swiper__slide',
+    backFocus: false
+});
+
+
 // слайдер программы
 $(document).ready(function () {
   var doubleProgram = $('.program-swiper');
