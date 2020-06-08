@@ -89,6 +89,15 @@
   }
 }
 
+.banner-info ol {
+  padding-left: 2.4rem;
+  li {
+    &::before {
+      content: none;
+    }
+  }
+}
+
 .banner-info__logo-img-wrapper {
   position: relative;
   align-self: center;
@@ -348,6 +357,11 @@
     &::before {
       left: -@m25px;
     }
+  }
+
+  .banner-info ol {
+    // padding-left: @m40px;
+    padding-left: 0;
   }
 
   .banner-info__logo-img-wrapper {

@@ -9,6 +9,10 @@
   }
 }
 
+.article__block > ol:first-of-type {
+  // .b;
+}
+
 .article__block {
   margin-bottom: 4.4rem;
   h3,
@@ -78,6 +82,11 @@
   text-decoration: underline;
 }
 
+.article__contents-list ol > li > a {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
 .article ol li,
 .article ul li {
   // margin-bottom: 2.4rem;
@@ -92,6 +101,7 @@
   margin-left: 1rem;
 }
 
+.article__contents-list ol,
 .article__block > ol {
   padding-left: 2.4rem;
 }
@@ -236,6 +246,8 @@
     object-fit: contain;
   }
 
+  .article__contents-list {}
+
   .article__date-block {
     flex-wrap: wrap;
 
@@ -300,6 +312,7 @@
     margin-bottom: @m36px;
   }
 
+  .article__contents-list ol,
   .article__block > ol {
     padding-left: @m40px;
   }
