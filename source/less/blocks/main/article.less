@@ -11,7 +11,9 @@
 
 .article__block {
   margin-bottom: 4.4rem;
-  h3 {
+  h3,
+  h2,
+  .article__list-references-title {
     margin-bottom: 2.8rem;
     font-weight: 400;
     font-size: 3rem;
@@ -76,6 +78,132 @@
   text-decoration: underline;
 }
 
+.article ol li,
+.article ul li {
+  // margin-bottom: 2.4rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+}
+
+.article ul {
+  margin-left: 1rem;
+}
+
+.article__block > ol {
+  padding-left: 2.4rem;
+}
+
+.article__block > ul,
+.article__block > ol {
+  margin-top: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+
+.article ul li {
+  position: relative;
+  &::before {
+    content: '-';
+    position: absolute;
+    left: -1rem;
+    // top: 0;
+
+  }
+}
+
+.article .article__review-list {
+  margin-left: 0;
+  & li {
+    &::before {
+      content: none;
+    }
+  }
+}
+
+// .article__list-references-title {}
+
+.article__blockquote {
+  margin: 0;
+
+  &--bold-green {
+    position: relative;
+    margin-left: 2.9rem;
+
+    p {
+      font-weight: 700;
+      line-height: 3.5rem;
+      color: #2f2f2f;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -2.7rem;
+
+      height: 100%;
+      width: 0.8rem;
+
+      border-radius: 2px;
+      background-color: #3F5FD3;
+    }
+  }
+
+  &--light-white {
+    box-sizing: border-box;
+    position: relative;
+
+    margin-top: 5.2rem;
+    margin-left: 2rem;
+    margin-bottom: 6.8rem;
+    padding-top: 4.6rem;
+    padding-left: 7.6rem;
+    padding-right: 4.5rem;
+    padding-bottom: 5rem;
+
+
+    box-shadow: 0 0 55px 5px rgba(11, 13, 65, 0.04);
+    border-radius: 19px;
+    background-color: #ffffff;
+
+    p {
+      // margin-bottom: 0;
+      font-weight: 300;
+      font-style: italic;
+      line-height: 3.2rem;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+
+    cite {
+      display: block;
+      margin-top: 2.3rem;
+      font-size: 1.8rem;
+      font-weight: 700;
+      font-style: italic;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 3.1rem;
+      left: -2rem;
+
+      width: 6rem;
+      height: 5rem;
+
+      background-image: url('../img/svg/commas.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+}
+
 @media (max-width: @mobile-width) {
   .article {
     margin-bottom: @m135px;
@@ -83,7 +211,9 @@
 
   .article__block {
     margin-bottom: @m150px;
-    h3 {
+    h3,
+    h2,
+    .article__list-references-title {
       margin-bottom: @m33px;
       font-size: @m40px;
       line-height: @m48px;
@@ -150,5 +280,88 @@
     margin-top: 0px;
     margin-left: 0px;
     font-size: @m30px;
+  }
+
+  .article ol li,
+  .article ul li {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: @m30px;
+    line-height: @m36px;
+  }
+
+  .article ul {
+    margin-left: 0;
+  }
+
+  .article__block > ul,
+  .article__block > ol {
+    margin-top: @m36px;
+    margin-bottom: @m36px;
+  }
+
+  .article__block > ol {
+    padding-left: @m40px;
+  }
+
+  .article ul li {
+    &::before {
+      left: -@m25px;
+    }
+  }
+
+  .article .article__review-list {
+    margin-left: 0;
+    & li {
+      &::before {
+        content: none;
+      }
+    }
+  }
+
+  // .article__list-references-title {}
+
+  .article__blockquote {
+    margin: 0;
+    font-size: @m33px;
+    &--bold-green {
+      margin-left: @m28px;
+      // margin-bottom: @m138px;
+      p {
+        line-height: @m40px;
+        // letter-spacing: 0.17px;
+      }
+      &::before {
+        top: -@m6px;
+        left: -@m27px;
+        width: @m8px;
+        height: 107%;
+      }
+    }
+
+    &--light-white {
+      margin-top: @m112px;
+      margin-left: @m20px;
+      margin-bottom: @m117px;
+
+      padding-top: @m88px;
+      padding-left: @m74px;
+      padding-right: @m20px;
+      padding-bottom: @m82px;
+      p {
+        line-height: @m40px;
+        // letter-spacing: 0.17px;
+      }
+      cite {
+        margin-top: @m32px;
+        font-size: @m27px;
+      }
+      &::before {
+        top: @m78px;
+        left: -@m20px;
+        width: @m60px;
+        height: @m50px;
+      }
+    }
   }
 }

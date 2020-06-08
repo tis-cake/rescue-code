@@ -17,7 +17,7 @@
 
 .banner-info__main-img-wrapper {
   width: 28.4rem;
-  min-height: 36.7rem;
+  // min-height: 36.7rem;
 }
 
 .banner-info__main-img,
@@ -47,7 +47,8 @@
 .banner-info__text-top-wrapper p:not(.banner-info__subtitle),
 .banner-info__text-bottom-wrapper p,
 .banner-info__description,
-.banner-info__item {
+.banner-info__item,
+.banner-info li {
   margin-bottom: 2.2rem;
   font-size: 1.8rem;
   font-weight: 300;
@@ -55,7 +56,6 @@
   &:last-of-type {
     margin-bottom: 2.8rem;
   }
-
   &--fw600 {
     font-weight: 600;
   }
@@ -67,9 +67,26 @@
   }
 }
 
+.banner-info ul,
 .banner-info__list {
   display: flex;
   flex-direction: column;
+  margin-left: 1rem;
+}
+
+.banner-info__item,
+.banner-info li {
+  position: relative;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+  &::before {
+    position: absolute;
+    content: '-';
+    left: -1rem;
+  }
 }
 
 .banner-info__logo-img-wrapper {
@@ -163,7 +180,8 @@
   text-align: center;
   color: #777;
 
-  &--black {
+  &--black,
+  span {
     display: block;
     .margin-inline(@a);
     font-size: 1.8rem;
@@ -305,7 +323,8 @@
   .banner-info__text-top-wrapper p:not(.banner-info__subtitle),
   .banner-info__text-bottom-wrapper p,
   .banner-info__description,
-  .banner-info__item {
+  .banner-info__item,
+  .banner-info li {
     position: relative;
     z-index: 1;
 
@@ -314,6 +333,20 @@
     line-height: @m36px;
     &:last-of-type {
       margin-bottom: 0;
+    }
+  }
+
+  .banner-info ul,
+  .banner-info__list {
+    margin-left: @m27px;
+  }
+
+  .banner-info__item,
+  .banner-info li {
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    &::before {
+      left: -@m25px;
     }
   }
 
@@ -388,7 +421,8 @@
     margin-top: @m24px;
     font-size: @m20px;
 
-    &--black {
+    &--black,
+    span {
       margin-bottom: @m22px;
       font-size: @m25px;
     }
@@ -446,7 +480,8 @@
       margin-top: @m15px;
       font-size: @m25px;
       text-align: center;
-      &--black {
+      &--black,
+      span {
         width: @m173px;
         margin-bottom: @m2px;
       }
@@ -505,7 +540,8 @@
       height: @m255px;
     }
     .banner-info__block-description {
-      &--black {
+      &--black,
+      span {
         width: @m173px;
         margin-bottom: @m2px;
       }

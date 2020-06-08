@@ -8,12 +8,19 @@
 
 .banner-documents__column-left {
   padding-top: 16.5rem;
-  padding-left: 1rem;
+  // padding-left: 1rem;
   &--w470 {
     width: 47rem;
   }
   &--w515 {
     width: 51.5rem;
+  }
+
+  p {
+    margin-bottom: 2.4rem;
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 2.4rem;
   }
 }
 
@@ -159,9 +166,16 @@
     padding-top: 0;
     padding-left: 0;
     .padding-inline(@m43px);
+
     &--w470,
     &--w515 {
       width: @a;
+    }
+
+    p {
+      margin-bottom: @m36px;
+      font-size: @m30px;
+      line-height: @m36px;
     }
   }
 
