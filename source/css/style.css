@@ -5220,6 +5220,7 @@ body .mb {
   margin-left: auto;
   text-align: left;
   border-bottom: 0.2rem solid #9BB1FF;
+  cursor: pointer;
 }
 .comments__btn::before {
   content: none;
@@ -5599,5 +5600,3 @@ body .mb {
   }
 }
 /* FOOTER END */
-
-/*# sourceMappingURL=style.css.map */
