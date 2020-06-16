@@ -316,10 +316,18 @@
 
   .banner-info__subtitle {
     position: absolute;
-    top: @m100px;
-    right: @m62px;
+    // top: @m100px;
+    // right: @m62px;
+    // width: @m260px;
 
-    width: @m260px;
+    top: 0;
+    right: 0;
+    width: @m270px;
+    height: @m380px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: @m20px;
+
     margin-bottom: 0;
     padding-left: 0;
   }
@@ -365,6 +373,8 @@
   }
 
   .banner-info__logo-img-wrapper {
+    display: none;
+
     position: absolute;
     // top: @m295px;
     top: @m265px;

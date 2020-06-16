@@ -1102,6 +1102,11 @@ body .mb {
 }
 .service-page .main-info__title {
   font-size: 7.2rem;
+  white-space: initial;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+  overflow: hidden;
 }
 .main-info__features {
   position: relative;
@@ -1351,7 +1356,7 @@ body .mb {
     display: block;
   }
   .service-page .main-info__title {
-    font-size: 8vw;
+    font-size: 6.933vw;
   }
   .main-info__slogan-img-wrapper {
     top: 65.6vw;
@@ -2086,7 +2091,7 @@ body .mb {
 /* RESEARCH END */
 /* REHAB-SWIPER START */
 .rehab-swiper {
-  margin-bottom: 31rem;
+  margin-bottom: 21rem;
 }
 .rehab-swiper--margin-bottom {
   margin-bottom: 12.4rem;
@@ -2236,7 +2241,7 @@ body .mb {
 /* PROGRAM-SWIPER START */
 .gallery-swiper,
 .program-swiper {
-  margin-bottom: 31rem;
+  margin-bottom: 26rem;
 }
 .gallery-swiper .swiper-container--progressbar,
 .program-swiper .swiper-container--progressbar {
@@ -2753,9 +2758,13 @@ body .mb {
   }
   .banner-info__subtitle {
     position: absolute;
-    top: 13.3vw;
-    right: 8.266vw;
-    width: 34.667vw;
+    top: 0;
+    right: 0;
+    width: 36vw;
+    height: 50.667vw;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 2.666vw;
     margin-bottom: 0;
     padding-left: 0;
   }
@@ -2798,6 +2807,7 @@ body .mb {
     padding-left: 0;
   }
   .banner-info__logo-img-wrapper {
+    display: none;
     position: absolute;
     top: 35.333vw;
     right: -3.599vw;
@@ -4377,6 +4387,9 @@ body .mb {
   font-size: 2rem;
   font-weight: 300;
   line-height: 2.4rem;
+}
+.banner-documents .banner-documents__subtitle {
+  font-weight: 400;
 }
 .banner-documents__subtitle {
   font-size: 1.6rem;
