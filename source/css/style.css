@@ -743,6 +743,7 @@ body .mb {
     margin-left: 0;
     font-size: 4vw;
     text-transform: uppercase;
+    min-height: 100vh;
   }
   .main-nav__list {
     flex-direction: column;
@@ -778,7 +779,7 @@ body .mb {
     display: block;
   }
   .main-nav__subitem:not(:last-child) {
-    margin-bottom: 4.933vw;
+    margin-bottom: 3.333vw;
   }
   .main-nav__subitem:last-child {
     margin-bottom: 3.333vw;
@@ -787,7 +788,7 @@ body .mb {
     color: #fff;
   }
   .active .main-nav {
-    margin-bottom: 30.667vw;
+    margin-bottom: 33.333vw;
   }
   .active .main-nav__sublist {
     background-color: transparent;
@@ -1214,11 +1215,45 @@ body .mb {
   font-weight: 400;
   font-size: 3rem;
 }
+.main-info__service-column-right ol,
+.main-info__service-column-right ul,
 .main-info__service-column-right p,
 .main-info__desc {
   font-weight: 300;
   font-size: 1.8rem;
   line-height: 2.4rem;
+}
+.main-info__service-benefits .main-info__benefit-title {
+  line-height: 1.15;
+}
+.main-info__service-column-right ol,
+.main-info__service-column-right ul {
+  margin-top: 2.4rem;
+  margin-bottom: 2.4rem;
+  margin-left: 1rem;
+}
+.main-info__service-column-right ol li,
+.main-info__service-column-right ul li {
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+}
+.main-info__service-column-right ul li {
+  position: relative;
+}
+.main-info__service-column-right ul li::before {
+  content: '-';
+  position: absolute;
+  left: -1rem;
+}
+.main-info__service-column-right .main-info__service-benefits {
+  margin-left: 0;
+}
+.main-info__service-column-right .main-info__service-benefits li {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.main-info__service-column-right .main-info__service-benefits li::before {
+  content: none;
 }
 .main-info__service-benefits {
   margin-top: 4rem;
@@ -1406,10 +1441,21 @@ body .mb {
     margin-bottom: 4.666vw;
     font-size: 5.333vw;
   }
+  .main-info__service-column-right ol,
+  .main-info__service-column-right ul,
   .main-info__service-column-right p,
   .main-info__desc {
     font-size: 4vw;
     line-height: 4.8vw;
+  }
+  .main-info__service-column-right ol,
+  .main-info__service-column-right ul {
+    margin-top: 4.666vw;
+    margin-bottom: 4.666vw;
+    margin-left: 0;
+  }
+  .main-info__service-column-right ul li::before {
+    left: -3.333vw;
   }
   .main-info__service-benefits {
     margin-top: 10vw;
@@ -5422,7 +5468,7 @@ body .mb {
     border-radius: 15px;
   }
   .modal--region {
-    top: 20%;
+    top: 40%;
   }
   .modal__title {
     margin-bottom: 5.333vw;
@@ -5446,7 +5492,7 @@ body .mb {
             column-count: 1;
     overflow: hidden;
     overflow-y: scroll;
-    max-height: 53.333vw;
+    max-height: 55.333vw;
   }
   .modal__item {
     margin-bottom: 2vw;

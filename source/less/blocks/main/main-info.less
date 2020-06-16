@@ -267,11 +267,49 @@
   font-size: 3rem;
 }
 
+.main-info__service-column-right ol,
+.main-info__service-column-right ul,
 .main-info__service-column-right p,
 .main-info__desc {
   font-weight: 300;
   font-size: 1.8rem;
   line-height: 2.4rem;
+}
+
+.main-info__service-benefits .main-info__benefit-title {
+  line-height: 1.15;
+}
+
+.main-info__service-column-right ol,
+.main-info__service-column-right ul {
+  margin-top: 2.4rem;
+  margin-bottom: 2.4rem;
+  margin-left: 1rem;
+  li {
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+  }
+}
+
+.main-info__service-column-right ul li {
+  position: relative;
+
+  &::before {
+    content: '-';
+    position: absolute;
+    left: -1rem;
+  }
+}
+
+.main-info__service-column-right .main-info__service-benefits {
+  margin-left: 0;
+  li {
+    margin-top: 0;
+    margin-bottom: 0;
+    &::before {
+      content: none;
+    }
+  }
 }
 
 .main-info__service-benefits {
@@ -512,11 +550,31 @@
     font-size: @m40px;
   }
 
+  .main-info__service-column-right ol,
+  .main-info__service-column-right ul,
   .main-info__service-column-right p,
   .main-info__desc {
     font-size: @m30px;
     line-height: @m36px;
   }
+
+.main-info__service-column-right ol,
+.main-info__service-column-right ul {
+  margin-top: @m35px;
+  margin-bottom: @m35px;
+  // margin-left: @m2px;
+  margin-left: 0;
+  li {
+    // margin-top: 0.3rem;
+    // margin-bottom: 0.3rem;
+  }
+}
+
+.main-info__service-column-right ul li {
+  &::before {
+    left: -@m25px;
+  }
+}
 
   .main-info__service-benefits {
     margin-top: @m75px;
