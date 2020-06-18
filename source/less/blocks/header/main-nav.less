@@ -53,7 +53,7 @@
   box-sizing: border-box;
   position: absolute;
   z-index: 5;
-  top: 3rem;
+  top: 4rem;
 
   visibility: hidden;
   opacity: 0;
@@ -61,8 +61,11 @@
   transition-duration: 0.3s;
 
 
-  width: 30.1rem;
+  // width: 30.1rem;
   padding: 2.6rem;
+
+  width: 104.3rem;
+  column-count: 2;
 
   background-color: #F5F5F5;
 }
@@ -104,7 +107,7 @@
 
     // overflow-x: hidden;
     // overflow-y: scroll;
-    min-height: 100vh;
+    // min-height: 100vh;
   }
 
   .main-nav__list {
@@ -131,11 +134,15 @@
   .main-nav__sublist {
     display: none;
 
+    top: auto;
     position: relative;
     visibility: visible;
     opacity: 1;
 
+    column-count: initial;
+
     width: @a;
+    margin-top: @m25px;
     padding: 0;
     // padding-top: @m13px;
     padding-left: @m38px;
@@ -155,7 +162,7 @@
       margin-bottom: @m25px;
     }
     &:last-child {
-      margin-bottom: @m25px;
+      margin-bottom: 0;
     }
   }
 

@@ -527,6 +527,7 @@ body .mb {
   }
   .active.header {
     position: fixed;
+    height: 100vh;
   }
   .active.header * {
     color: #fff;
@@ -714,12 +715,15 @@ body .mb {
   box-sizing: border-box;
   position: absolute;
   z-index: 5;
-  top: 3rem;
+  top: 4rem;
   visibility: hidden;
   opacity: 0;
   transition-duration: 0.3s;
-  width: 30.1rem;
   padding: 2.6rem;
+  width: 104.3rem;
+  -webkit-column-count: 2;
+     -moz-column-count: 2;
+          column-count: 2;
   background-color: #F5F5F5;
 }
 .main-nav__subitem:not(:last-child) {
@@ -743,7 +747,6 @@ body .mb {
     margin-left: 0;
     font-size: 4vw;
     text-transform: uppercase;
-    min-height: 100vh;
   }
   .main-nav__list {
     flex-direction: column;
@@ -765,10 +768,15 @@ body .mb {
   }
   .main-nav__sublist {
     display: none;
+    top: auto;
     position: relative;
     visibility: visible;
     opacity: 1;
+    -webkit-column-count: initial;
+       -moz-column-count: initial;
+            column-count: initial;
     width: auto;
+    margin-top: 3.333vw;
     padding: 0;
     padding-left: 5.066vw;
     font-weight: 300;
@@ -782,7 +790,7 @@ body .mb {
     margin-bottom: 3.333vw;
   }
   .main-nav__subitem:last-child {
-    margin-bottom: 3.333vw;
+    margin-bottom: 0;
   }
   .active .main-nav * {
     color: #fff;
@@ -1274,7 +1282,7 @@ body .mb {
 }
 .main-info__service-slogan-wrapper {
   position: absolute;
-  top: -10.6rem;
+  top: 0;
   right: 3.8rem;
   width: 25.7rem;
   height: 25.4rem;
@@ -2554,6 +2562,8 @@ body .mb {
   display: flex;
   flex-direction: column;
   margin-left: 1rem;
+  margin-top: 2.2rem;
+  margin-bottom: 2.2rem;
 }
 .banner-info__item,
 .banner-info li {
@@ -2793,6 +2803,8 @@ body .mb {
   .banner-info ul,
   .banner-info__list {
     margin-left: 3.599vw;
+    margin-top: 4.666vw;
+    margin-bottom: 4.666vw;
   }
   .banner-info__item,
   .banner-info li {
