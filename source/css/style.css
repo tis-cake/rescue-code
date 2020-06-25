@@ -1115,6 +1115,7 @@ body .mb {
       -ms-hyphens: auto;
           hyphens: auto;
   overflow: hidden;
+  width: 80%;
 }
 .main-info__features {
   position: relative;
@@ -1170,7 +1171,7 @@ body .mb {
   background-size: cover;
 }
 .main-info__subtitle {
-  margin-bottom: 1.7rem;
+  margin-bottom: 3.7rem;
   font-size: 2rem;
   font-weight: 600;
 }
@@ -1220,6 +1221,7 @@ body .mb {
 }
 .main-info__service-column-right {
   width: 58.8rem;
+  margin: 8.6rem 0 0 0;
 }
 .main-info__service-column-right h2,
 .main-info__service-column-right h3,
@@ -1282,7 +1284,7 @@ body .mb {
 }
 .main-info__service-slogan-wrapper {
   position: absolute;
-  top: -3.7rem;
+  top: -11rem;
   right: 3.8rem;
   width: 25.7rem;
   height: 25.4rem;
@@ -5581,9 +5583,9 @@ body .mb {
     height: 0.266vw;
   }
   .modal__list {
-    -webkit-column-count: 1;
-       -moz-column-count: 1;
-            column-count: 1;
+    -webkit-column-count: initial;
+       -moz-column-count: initial;
+            column-count: initial;
     overflow: hidden;
     overflow-y: scroll;
     max-height: 55.333vw;
