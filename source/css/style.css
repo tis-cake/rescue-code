@@ -1048,6 +1048,9 @@ body .mb {
   position: relative;
   margin-bottom: 5.5rem;
 }
+.service-page.main-info {
+  margin-bottom: 0;
+}
 .main-info__bg-wrapper {
   position: absolute;
   z-index: -1;
@@ -1109,13 +1112,14 @@ body .mb {
   padding-left: 19.8rem;
 }
 .service-page .main-info__title {
+  width: 80%;
+  margin-bottom: 6.3rem;
   font-size: 7.2rem;
   white-space: initial;
   -webkit-hyphens: auto;
       -ms-hyphens: auto;
           hyphens: auto;
   overflow: hidden;
-  width: 80%;
 }
 .main-info__features {
   position: relative;
@@ -1221,7 +1225,7 @@ body .mb {
 }
 .main-info__service-column-right {
   width: 58.8rem;
-  margin: 8.6rem 0 0 0;
+  padding-top: 8.6rem;
 }
 .main-info__service-column-right h2,
 .main-info__service-column-right h3,
@@ -1284,7 +1288,7 @@ body .mb {
 }
 .main-info__service-slogan-wrapper {
   position: absolute;
-  top: -11rem;
+  top: -3.7rem;
   right: 3.8rem;
   width: 25.7rem;
   height: 25.4rem;
@@ -4606,15 +4610,17 @@ body .mb {
 /* SERVICE-PRICE START */
 .service-price {
   padding-top: 14.7rem;
-  text-align: center;
+  padding-bottom: 14.7rem;
   background-color: #fff;
+}
+.section-title-wrapper {
+  margin-bottom: 3.4rem;
 }
 .service-price__main-title {
   margin-bottom: 4rem;
 }
 .service-price__link {
-  margin-bottom: 7rem;
-  padding-right: 6.6rem;
+  padding-right: 7.9rem;
 }
 .service-price__list {
   display: flex;
@@ -4685,6 +4691,82 @@ body .mb {
   background-position: center;
   background-size: contain;
 }
+.service-price__content-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.service-price__banner-wrap,
+.service-price__cards-wrap {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.service-price__table,
+.service-price__banner-wrap,
+.service-price__cards-wrap {
+  box-sizing: border-box;
+  padding-left: 3.2rem;
+  padding-right: 3.2rem;
+  border-width: 0.2rem;
+  border-style: solid;
+  border-radius: 1.5rem;
+}
+.service-price__column-wrap {
+  width: 47rem;
+}
+.service-price__table {
+  width: 101.9rem;
+  background-color: #F8F9FF;
+  border-color: #9BB1FF;
+  font-weight: 300;
+  font-size: 2rem;
+}
+.service-price__table td {
+  width: 79.5%;
+  padding-top: 1.7rem;
+  padding-bottom: 1.7rem;
+  border-bottom: 0.1rem solid #DFE2F8;
+}
+.service-price__table td:last-child {
+  width: auto;
+  font-family: 'Circe', 'Arial', sans-serif;
+  font-weight: 400;
+}
+.service-price__table tr:last-child td {
+  border-bottom: none;
+}
+.service-price__banner-wrap {
+  height: 47.6rem;
+  margin-bottom: 2.3rem;
+  padding-top: 4.1rem;
+  padding-right: 1.5rem;
+  background-color: #FCF1FF;
+  background-image: url(../img/service-price/1.png);
+  border-color: #AE63C4;
+}
+.service-price__advantages-desc {
+  margin-bottom: 3rem;
+}
+.service-price__cards-wrap {
+  padding-top: 5.3rem;
+  padding-bottom: 13.5rem;
+  text-align: center;
+  background-color: #EFF3FF;
+  background-image: url(../img/service-price/2.png);
+  background-size: cover;
+  border-color: #5B7AE4;
+}
+.service-price__desc {
+  font-weight: 300;
+  font-size: 3rem;
+}
+.service-price__desc strong,
+.service-price__desc span {
+  display: inline-block;
+  margin-top: 0.2rem;
+  font-weight: 400;
+  font-size: 4rem;
+}
 @media (max-width: 755px) {
   .service-price {
     padding-top: 31.733vw;
@@ -4734,6 +4816,52 @@ body .mb {
     left: 0px;
     width: 4vw;
     height: 2.933vw;
+  }
+  .service-price__content-wrap {
+    flex-direction: column;
+  }
+  .service-price__table,
+  .service-price__banner-wrap,
+  .service-price__cards-wrap {
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+    border-width: 0.2rem;
+    border-style: solid;
+    border-radius: 1.5rem;
+  }
+  .service-price__column-wrap {
+    width: 100%;
+  }
+  .service-price__table {
+    width: 100%;
+    font-size: 2rem;
+  }
+  .service-price__table td {
+    width: 79.5%;
+    padding-top: 1.7rem;
+    padding-bottom: 1.7rem;
+    border-bottom: 0.1rem solid #DFE2F8;
+  }
+  .service-price__banner-wrap {
+    height: 47.6rem;
+    margin-bottom: 2.3rem;
+    padding-top: 4.1rem;
+    padding-right: 1.5rem;
+  }
+  .service-price__advantages-desc {
+    margin-bottom: 3rem;
+  }
+  .service-price__cards-wrap {
+    padding-top: 5.3rem;
+    padding-bottom: 13.5rem;
+  }
+  .service-price__desc {
+    font-size: 3rem;
+  }
+  .service-price__desc strong,
+  .service-price__desc span {
+    margin-top: 0.2rem;
+    font-size: 4rem;
   }
 }
 /* SERVICE-PRICE END */
@@ -5621,7 +5749,7 @@ body .mb {
     height: 2.26vw;
   }
 }
-/* END START */
+/* MODAL END */
 /* FOOTER START */
 .footer {
   padding-top: 8.8rem;
