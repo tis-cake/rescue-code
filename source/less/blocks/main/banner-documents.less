@@ -4,6 +4,8 @@
 
 .banner-documents__wrapper {
   display: flex;
+
+  min-height: 75rem;
 }
 
 .banner-documents__column-left {
@@ -53,8 +55,11 @@
 }
 
 .banner-documents__column-right {
-  position: relative;
+  // position: relative;
   margin-left: @a;
+
+  position: absolute;
+  right: 0;
 }
 
 .banner-documents__img-wrapper {
@@ -164,6 +169,7 @@
 
   .banner-documents__wrapper {
     flex-direction: column;
+    min-height: 0;
   }
 
   .banner-documents__column-left {
@@ -210,6 +216,9 @@
 
   .banner-documents__column-right {
     margin-left: 0;
+
+    position: static;
+    right: auto;
   }
 
   .banner-documents__img-wrapper {

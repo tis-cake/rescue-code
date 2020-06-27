@@ -146,6 +146,9 @@
 }
 
 .service-price__table {
+  display: flex;
+  flex-direction: column;
+
   width: 101.9rem;
 
   background-color: #F8F9FF;
@@ -154,23 +157,37 @@
   font-weight: 300;
   font-size: 2rem;
 
-  td {
-    width: 79.5%;
-    padding-top: 1.7rem;
-    padding-bottom: 1.7rem;
+  // td {
+  //   width: 79.5%;
+  //   padding-top: 1.7rem;
+  //   padding-bottom: 1.7rem;
+  //   border-bottom: 0.1rem solid #DFE2F8;
+  // }
+
+  // td:last-child {
+  //   width: auto;
+  //   font-family: @circe;
+  //   font-weight: 400;
+  // }
+
+  // tr:last-child {
+  //   td {
+  //     border-bottom: none;
+  //   }
+  // }
+
+  li {
+    display: flex;
+    padding-top: 1.81rem;
+    padding-bottom: 1.81rem;
     border-bottom: 0.1rem solid #DFE2F8;
   }
 
-  td:last-child {
-    width: auto;
+  span {
+    width: 20.5%;
+    margin-left: auto;
     font-family: @circe;
     font-weight: 400;
-  }
-
-  tr:last-child {
-    td {
-      border-bottom: none;
-    }
   }
 }
 
@@ -181,7 +198,7 @@
   padding-right: 1.5rem;
 
   background-color: #FCF1FF;
-  background-image: url(../img/service-price/1.png);
+  background-image: url(../img/service-price/1-d.png);
   border-color: #AE63C4;
 }
 
@@ -195,7 +212,7 @@
 
   text-align: center;
   background-color: #EFF3FF;
-  background-image: url(../img/service-price/2.png);
+  background-image: url(../img/service-price/2-d.png);
   background-size: cover;
   border-color: #5B7AE4;
 }
@@ -216,6 +233,16 @@
   .service-price {
     padding-top: @m238px;
     padding-bottom: @m108px;
+  }
+
+  .service-price__main-title-wrapper {
+    margin-bottom: @m85px;
+    text-align: center;
+    .service-price__link {
+      align-self: flex-start;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   .service-price__main-title {
@@ -268,7 +295,7 @@
 
     &::before {
       top: @m3px;
-      left: 0px;
+      left: 0;
 
       width: @m30px;
       height: @m22px;
@@ -283,11 +310,10 @@
   .service-price__banner-wrap,
   .service-price__cards-wrap {
 
-    .padding-inline(3.2rem);
+    .padding-inline(@m35px);
 
-    border-width: 0.2rem;
-    border-style: solid;
-    border-radius: 1.5rem;
+    border-width: @m2px;
+    border-radius: @m15px;
   }
 
   .service-price__column-wrap {
@@ -296,38 +322,77 @@
 
   .service-price__table {
     width: 100%;
-    font-size: 2rem;
+    margin-bottom: @m37px;
+    font-size: @m30px;
 
-    td {
-      width: 79.5%;
-      padding-top: 1.7rem;
-      padding-bottom: 1.7rem;
-      border-bottom: 0.1rem solid #DFE2F8;
+    // td {
+    //   width: auto;
+    //   padding-top: 1.7rem;
+    //   padding-bottom: 1.7rem;
+    //   border-bottom: 0.1rem solid #DFE2F8;
+    // }
+
+    li {
+      flex-direction: column;
+      padding-top: @m25px;
+      padding-bottom: @m25px;
+      border-bottom: @m1px solid #DFE2F8;
+    }
+
+    span {
+      margin-top: @m7px;
+      margin-left: 0;
     }
   }
 
   .service-price__banner-wrap {
-    height: 47.6rem;
-    margin-bottom: 2.3rem;
-    padding-top: 4.1rem;
-    padding-right: 1.5rem;
+    height: @m478px;
+    margin-bottom: @m33px;
+    padding-top: @m63px;
+    padding-left: @m30px;
+    padding-right: @m30px;
+
+    background-image: url(../img/service-price/1-m.png);
+
+    .service-price__advantages-list {
+      flex-direction: column;
+    }
+    .service-price__advantages-item {
+      margin-bottom: @m23px;
+      font-size: @m20px;
+      line-height: @m25px;
+    }
   }
 
   .service-price__advantages-desc {
-    margin-bottom: 3rem;
+    margin-bottom: @m45px;
   }
 
   .service-price__cards-wrap {
-    padding-top: 5.3rem;
-    padding-bottom: 13.5rem;
+    display: flex;
+    justify-content: flex-end;
+
+    padding-top: @m60px;
+    padding-right: @m66px;
+    padding-bottom: @m66px;
+
+    text-align: left;
+
+    background-image: url(../img/service-price/2-m.png);
   }
 
   .service-price__desc {
-    font-size: 3rem;
+    font-size: @m40px;
     strong,
     span {
-      margin-top: 0.2rem;
-      font-size: 4rem;
+      margin-top: @m13px;
+      font-size: @m50px;
     }
+  }
+
+  .service-price__cards-desc {
+    width: @m300px;
+    font-size: @m40px;
+    line-height: @m48px;
   }
 }
