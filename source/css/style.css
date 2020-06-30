@@ -1048,9 +1048,6 @@ body .mb {
   position: relative;
   margin-bottom: 5.5rem;
 }
-.service-page.main-info {
-  margin-bottom: 0;
-}
 .main-info__bg-wrapper {
   position: absolute;
   z-index: -1;
@@ -1709,6 +1706,9 @@ body .mb {
 .banner--mb190 {
   margin-bottom: 19rem;
 }
+.baza-znaniy-list .banner:last-of-type {
+  margin-bottom: 0;
+}
 .banner__wrapper {
   position: relative;
   height: 100%;
@@ -2191,7 +2191,7 @@ body .mb {
 }
 @media (max-width: 755px) {
   .rehab-swiper {
-    margin-bottom: 36.267vw;
+    margin-bottom: 18.933vw;
   }
   .rehab-swiper-clinics {
     margin-bottom: 38.667vw;
@@ -3739,6 +3739,9 @@ body .mb {
           text-decoration-line: none;
   color: #C4C4C4;
 }
+.breadcrumbs__item:last-child span {
+  color: #C4C4C4;
+}
 .breadcrumbs__item::after {
   content: '>';
   position: absolute;
@@ -4434,6 +4437,12 @@ body .mb {
   margin-left: auto;
   position: absolute;
   right: 0;
+  width: 109rem;
+}
+@media (max-width: 1200px) {
+  .banner-documents__column-right {
+    width: 102rem;
+  }
 }
 .banner-documents__img-wrapper {
   position: relative;
@@ -4564,6 +4573,7 @@ body .mb {
     margin-left: 0;
     position: static;
     right: auto;
+    width: auto;
   }
   .banner-documents__img-wrapper {
     width: 100%;
@@ -4621,7 +4631,7 @@ body .mb {
   padding-bottom: 14.7rem;
   background-color: #fff;
 }
-.section-title-wrapper {
+.service-price__main-title-wrapper {
   margin-bottom: 3.4rem;
 }
 .service-price__main-title {
