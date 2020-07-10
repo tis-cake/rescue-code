@@ -216,10 +216,10 @@ $(document).ready(function () {
   }
 });
 
-$().fancybox({
-    selector : '.gallery-swiper__slide',
-    backFocus: false
-});
+// $().fancybox({
+//     selector : '.gallery-swiper__slide',
+//     backFocus: false
+// });
 
 
 // слайдер программы
@@ -483,6 +483,12 @@ $(document).ready(function () {
   $('.modal-region').click(function (evt) {
     evt.preventDefault();
     openModal('modal--region');
+  });
+
+  // выбрать регион (модалка 3)
+  $('.modal-region-second').click(function (evt) {
+    evt.preventDefault();
+    openModal('modal--region-second');
   });
 
   // $('.header__link-call-back').click(function (evt) {
