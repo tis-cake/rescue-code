@@ -336,10 +336,6 @@ $(document).ready(function () {
       // centeredSlides: false,
 
       breakpoints: {
-        // 1921: {
-        //   slidesPerView: 3,
-        //   slidesOffsetBefore: 0,
-        // },
         800: {
           // slidesPerView: 3.5,
           // centeredSlides: true,
@@ -379,7 +375,6 @@ $(document).ready(function () {
       if (expertSlidesLength < 10) {
         $('.expert-pagination').addClass('swiper-pagination-fraction-small');
       }
-
     } else {
       paginationParam.renderBullet = function (index, className) {
         return '<span class="' + className + '">' + (index + 1) + '</span>';
@@ -387,24 +382,22 @@ $(document).ready(function () {
     }
 
     var expertSwiperPagination = new Swiper('#expert-swiper-pagination', {
-      slidesPerView: 3.5,
+      slidesPerView: 4,
       spaceBetween: 32,
 
       loop: true,
-      centeredSlides: true,
+      // centeredSlides: false,
 
       breakpoints: {
-        1921: {
-          slidesPerView: 3,
-          slidesOffsetBefore: 0,
-        },
         800: {
-          slidesPerView: 3.5,
+          // slidesPerView: 3.5,
+          // centeredSlides: true,
         },
         300: {
           slidesPerView: 2,
           slidesOffsetBefore: 0,
           spaceBetween: 20,
+          centeredSlides: true,
         }
       },
 
