@@ -1446,7 +1446,7 @@ body .mb {
   }
   .main-info__service-column-left {
     width: 100%;
-    height: 80.667vw;
+    height: 84.667vw;
     margin-top: 13.3vw;
     margin-left: 0;
     margin-right: 0;
@@ -4443,6 +4443,7 @@ body .mb {
   position: absolute;
   right: 0;
   width: 109rem;
+  overflow: hidden;
 }
 @media (max-width: 1200px) {
   .banner-documents__column-right {
