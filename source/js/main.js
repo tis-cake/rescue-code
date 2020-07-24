@@ -137,7 +137,7 @@ $(document).ready(function () {
     }
 
     // количество слайдов (учитывая зацикленность)
-    var gallerySlidesLength = $('.gallery-swiper__slide:not(.swiper-slide-duplicate)').length;
+    var gallerySlidesLength = $('#gallery-swiper .swiper-slide:not(.swiper-slide-duplicate)').length;
 
     // если элементов > 6, то пагинация - fraction-формата, иначе - bullet-формата
     if (gallerySlidesLength > 6) {
@@ -321,6 +321,106 @@ $(document).ready(function () {
     }
   });
 });
+
+// слайдер экспертов
+$(document).ready(function () {
+  var doubleExpert = $('.expert-swiper');
+
+  // если блок с этим слайдером есть на странице
+  if (doubleExpert.length != 0) {
+    var expertSwiperMain = new Swiper('#expert-swiper', {
+      slidesPerView: 4,
+      spaceBetween: 32,
+
+      loop: true,
+      // centeredSlides: false,
+
+      breakpoints: {
+        // 1921: {
+        //   slidesPerView: 3,
+        //   slidesOffsetBefore: 0,
+        // },
+        800: {
+          // slidesPerView: 3.5,
+          // centeredSlides: true,
+        },
+        300: {
+          slidesPerView: 2,
+          slidesOffsetBefore: 0,
+          spaceBetween: 20,
+          centeredSlides: true,
+        }
+      },
+
+      pagination: {
+        el: '.expert-progressbar',
+        type: 'progressbar'
+      }
+    });
+
+    // параметры для пагинации
+    var paginationParam = {
+      el: '.expert-pagination',
+      clickable: true,
+    }
+
+    // количество слайдов (учитывая зацикленность)
+    var expertSlidesLength = $('#expert-swiper .swiper-slide:not(.swiper-slide-duplicate)').length;
+
+    // если элементов > 6, то пагинация - fraction-формата, иначе - bullet-формата
+    if (expertSlidesLength > 5) {
+      paginationParam.type = 'fraction';
+      paginationParam.renderFraction = function (currentClass, totalClass) {
+        return '<span class="' + currentClass + '"></span>' +
+               '<span class="swiper-pagination-slash">/</span>' +
+               '<span class="' + totalClass + '"></span>';
+        }
+
+      if (expertSlidesLength < 10) {
+        $('.expert-pagination').addClass('swiper-pagination-fraction-small');
+      }
+
+    } else {
+      paginationParam.renderBullet = function (index, className) {
+        return '<span class="' + className + '">' + (index + 1) + '</span>';
+      }
+    }
+
+    var expertSwiperPagination = new Swiper('#expert-swiper-pagination', {
+      slidesPerView: 3.5,
+      spaceBetween: 32,
+
+      loop: true,
+      centeredSlides: true,
+
+      breakpoints: {
+        1921: {
+          slidesPerView: 3,
+          slidesOffsetBefore: 0,
+        },
+        800: {
+          slidesPerView: 3.5,
+        },
+        300: {
+          slidesPerView: 2,
+          slidesOffsetBefore: 0,
+          spaceBetween: 20,
+        }
+      },
+
+      pagination: paginationParam,
+    });
+
+    expertSwiperMain.controller.control = expertSwiperPagination;
+    expertSwiperPagination.controller.control = expertSwiperMain;
+  }
+});
+
+$().fancybox({
+    selector : '.expert-swiper__slide',
+    backFocus: false
+});
+
 
 // [database page]
 // табы
