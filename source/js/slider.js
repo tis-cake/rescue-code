@@ -265,7 +265,7 @@ $(document).ready(function () {
   });
 });
 
-// слайдер экспертов
+// слайдер лицензий экспертов
 $(document).ready(function () {
   // var doubleExpert = $('.expert-swiper');
   var doubleExpert = $('.expert__licenses-swiper');
@@ -367,28 +367,17 @@ $(document).ready(function () {
     var swiperID = selector.id;
     var currentSwiper = '#' + swiperID;
 
+    // контейнер свайпера с прогресс-баром
     var swiperMainContainer = currentSwiper + ' .swiper-container--progressbar';
+    // контейнер свайпера с пагинацией
     var swiperPaginationContainer = currentSwiper + ' .swiper-container--pagination';
 
+    // прогресс-бар
     var progressbarEl = swiperMainContainer + ' .swiper-pagination';
+    // пагинация
     var paginationEl = swiperPaginationContainer + ' .swiper-pagination';
 
-    // var swiperСommonParam = {
-    //   slidesPerView: 2,
-    //   spaceBetween: 32,
-
-    //   loop: true,
-    //   centeredSlides: true,
-
-    //   breakpoints: {
-    //     800: {
-    //       loop: false,
-    //       slidesPerView: 5,
-    //       centeredSlides: false,
-    //     },
-    //   },
-    // }
-
+    // параметры свайпера с прогресс-баром
     var swiperMainParam = {
       slidesPerView: 2,
       spaceBetween: 32,
@@ -409,6 +398,7 @@ $(document).ready(function () {
         type: 'progressbar'
       }
     }
+    // параметры свайпера с пагинацией
     var swiperPaginationParam = {
       slidesPerView: 2,
       spaceBetween: 22,
@@ -440,13 +430,7 @@ $(document).ready(function () {
     var swiperMain = new Swiper(swiperMainContainer, swiperMainParam);
     var swiperPagination = new Swiper(swiperPaginationContainer, swiperPaginationParam);
 
-    // swiperMain.pagination.el = progressbarEl;
-    // swiperMain.pagination.type = 'progressbar';
-
-    // swiperPagination.pagination.el = paginationEl;
-    // swiperPagination.pagination.type = 'fraction';
-    // swiperPagination.pagination.clickable = true;
-
+    // связываем друг с другом
     swiperMain.controller.control = swiperPagination;
     swiperPagination.controller.control = swiperMain;
   }
