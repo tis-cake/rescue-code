@@ -267,7 +267,8 @@ $(document).ready(function () {
 
 // слайдер экспертов
 $(document).ready(function () {
-  var doubleExpert = $('.expert-swiper');
+  // var doubleExpert = $('.expert-swiper');
+  var doubleExpert = $('.expert__licenses-swiper');
 
   // если блок с этим слайдером есть на странице
   if (doubleExpert.length != 0) {
@@ -354,76 +355,99 @@ $(document).ready(function () {
   }
 });
 
-// // [rehab-page]
-// // галерея рехаба
-// $(document).ready(function () {
-//   var doubleGallery = $('.gallery-swiper');
-//   // если блок с этим слайдером есть на странице
-//   if (doubleGallery.length != 0) {
-//     var gallerySwiperMain = new Swiper('#gallery-swiper', {
-//       slidesPerView: 3.5,
-//       spaceBetween: 32,
+// слайдеры с экспертами
+$(document).ready(function () {
+  var expertsSwiperArr = document.querySelectorAll('.experts-swiper')
+  for (var i = 0; i < expertsSwiperArr.length; i++) {
+    var currentSwiper = expertsSwiperArr[i];
+    renderExpertsSwipers(currentSwiper);
+  }
 
-//       loop: true,
-//       centeredSlides: true,
+  function renderExpertsSwipers (selector) {
+    var swiperID = selector.id;
+    var currentSwiper = '#' + swiperID;
 
-//       breakpoints: {
-//         1921: {
-//           slidesPerView: 3,
-//           slidesOffsetBefore: 0,
-//         },
-//         800: {
-//           slidesPerView: 3.5,
-//         },
-//         300: {
-//           slidesPerView: 2,
-//           slidesOffsetBefore: 0,
-//           spaceBetween: 20,
-//         }
-//       },
+    var swiperMainContainer = currentSwiper + ' .swiper-container--progressbar';
+    var swiperPaginationContainer = currentSwiper + ' .swiper-container--pagination';
 
-//       pagination: {
-//         el: '.gallery-progressbar',
-//         type: 'progressbar'
-//       }
-//     });
+    var progressbarEl = swiperMainContainer + ' .swiper-pagination';
+    var paginationEl = swiperPaginationContainer + ' .swiper-pagination';
 
-//     var gallerySwiperPagination = new Swiper('#gallery-swiper-pagination', {
-//       slidesPerView: 3.5,
-//       spaceBetween: 32,
+    // var swiperСommonParam = {
+    //   slidesPerView: 2,
+    //   spaceBetween: 32,
 
-//       loop: true,
-//       centeredSlides: true,
+    //   loop: true,
+    //   centeredSlides: true,
 
-//       breakpoints: {
-//         1921: {
-//           slidesPerView: 3,
-//           slidesOffsetBefore: 0,
-//         },
-//         800: {
-//           slidesPerView: 3.5,
-//         },
-//         300: {
-//           slidesPerView: 2,
-//           slidesOffsetBefore: 0,
-//           spaceBetween: 20,
-//         }
-//       },
+    //   breakpoints: {
+    //     800: {
+    //       loop: false,
+    //       slidesPerView: 5,
+    //       centeredSlides: false,
+    //     },
+    //   },
+    // }
 
-//       pagination: {
-//         el: '.gallery-pagination',
-//         clickable: true,
-//         renderBullet: function (index, className) {
-//           return '<span class="' + className + '">' + (index + 1) + '</span>';
-//         }
-//       },
-//     });
+    var swiperMainParam = {
+      slidesPerView: 2,
+      spaceBetween: 32,
 
-//     gallerySwiperMain.controller.control = gallerySwiperPagination;
-//     gallerySwiperPagination.controller.control = gallerySwiperMain;
-//   }
-// });
+      loop: true,
+      centeredSlides: true,
 
-// if (gal.length != 0) {
-//   // galleryInit();
-// }
+      breakpoints: {
+        800: {
+          loop: false,
+          slidesPerView: 5,
+          centeredSlides: false,
+        },
+      },
+
+      pagination: {
+        el: progressbarEl,
+        type: 'progressbar'
+      }
+    }
+    var swiperPaginationParam = {
+      slidesPerView: 2,
+      spaceBetween: 22,
+
+      loop: true,
+      centeredSlides: true,
+
+      breakpoints: {
+        800: {
+          loop: false,
+          slidesPerView: 5,
+          centeredSlides: false,
+        },
+      },
+
+      pagination: {
+        el: paginationEl,
+        clickable: true,
+        type: 'fraction',
+
+        // renderFraction: function (currentClass, totalClass) {
+        //   return '<span class="' + currentClass + '"></span>' +
+        //          '<span class="swiper-pagination-slash">/</span>' +
+        //          '<span class="' + totalClass + '"></span>';
+        // }
+      }
+    }
+
+    var swiperMain = new Swiper(swiperMainContainer, swiperMainParam);
+    var swiperPagination = new Swiper(swiperPaginationContainer, swiperPaginationParam);
+
+    // swiperMain.pagination.el = progressbarEl;
+    // swiperMain.pagination.type = 'progressbar';
+
+    // swiperPagination.pagination.el = paginationEl;
+    // swiperPagination.pagination.type = 'fraction';
+    // swiperPagination.pagination.clickable = true;
+
+    swiperMain.controller.control = swiperPagination;
+    swiperPagination.controller.control = swiperMain;
+  }
+});
