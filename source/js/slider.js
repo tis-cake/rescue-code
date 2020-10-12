@@ -367,6 +367,8 @@ $(document).ready(function () {
     var swiperID = selector.id;
     var currentSwiper = '#' + swiperID;
 
+    console.log(swiperID);
+
     // контейнер свайпера с прогресс-баром
     var swiperMainContainer = currentSwiper + ' .swiper-container--progressbar';
     // контейнер свайпера с пагинацией
@@ -396,8 +398,14 @@ $(document).ready(function () {
       pagination: {
         el: progressbarEl,
         type: 'progressbar'
-      }
+      },
+
+      navigation: {
+        nextEl: currentSwiper + ' .swiper-button-next',
+        prevEl: currentSwiper + ' .swiper-button-prev',
+      },
     }
+
     // параметры свайпера с пагинацией
     var swiperPaginationParam = {
       slidesPerView: 2,

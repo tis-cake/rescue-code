@@ -5892,13 +5892,69 @@ body .mb {
 /* EXPERT-SWIPER END */
 /* EXPERTS-SWIPER START */
 /* слайдер экспертов */
+.experts-swiper .experts-progressbar {
+  bottom: 1.8rem;
+  width: 74rem;
+  transform: translateX(-33.5%);
+}
+.experts-swiper .swiper-pagination-fraction {
+  bottom: 0.8rem;
+  right: 32.4rem;
+}
+.experts-swiper .swiper-container--progressbar .swiper-wrapper {
+  margin-bottom: 8.2rem;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  top: auto;
+  bottom: 0;
+  width: 3.8rem;
+  height: 3.8rem;
+  color: #FFF;
+  background-color: #3F5FD3;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  margin-top: 0;
+  font-size: 1.4rem;
+}
+.swiper-button-next {
+  right: 0;
+}
+.swiper-button-prev {
+  left: 0;
+}
 @media (max-width: 755px) {
+  .experts-swiper .experts-progressbar {
+    bottom: 2.666vw;
+    transform: translateX(-50%);
+    width: 60%;
+  }
+  .experts-swiper .swiper-pagination-fraction {
+    bottom: -5.333vw;
+    right: auto;
+  }
   .experts-swiper .banner-info__block-item,
   .experts-swiper .banner-info__block-img-wrapper {
     width: 100%;
   }
   .swiper-container--progressbar {
     padding: 0;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 6.666vw;
+    height: 6.666vw;
+  }
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 4vw;
+  }
+  .swiper-button-next {
+    right: 5.733vw;
+  }
+  .swiper-button-prev {
+    left: 5.733vw;
   }
 }
 /* EXPERTS-SWIPER END */
